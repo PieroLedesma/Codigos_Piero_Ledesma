@@ -46,3 +46,11 @@ Esto abrirá la aplicación en tu navegador predeterminado (generalmente en http
 streamlit
 pandas
 openpyxl
+
+#Para subir y actualizar archivos en Git con cmd
+- git status
+- git add . (Puede ser pundo o un archiv en especifico)
+- git commit -m "Nombre de actualización"
+- git push
+
+# cuando trabajas con mas gente puedes lanzar git pull para bajar todos los cambios.
