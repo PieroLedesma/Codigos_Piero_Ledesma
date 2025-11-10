@@ -1,0 +1,237 @@
+@L+ UHL223_FRANCISCO_BULNES_CORREA_BORRADO_(LSB03).log
+
+eaw LSB03;
+
+@GETTIME {HMM} HH:MM
+@GETDATE {DDMMYYYY} DD-MM-YYYY
+@COMMENT +------------------------------------------------+ 
+@COMMENT | DATE: {DDMMYYYY}               TIME: {HMM}     |
+@COMMENT +------------------------------------------------+
+@COMMENT |     DEFINITION OF UTRAN CELLS IN BSC LSB03     |
+@COMMENT +------------------------------------------------+ 
+RLDEE:CELL=U49244;
+
+@COMMENT +------------------------------------------------+
+@COMMENT |     DEFINITION OF UTRAN NEIGHBOURING CELLS     | 
+@COMMENT +------------------------------------------------+
+
+eaw ANMS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: ANMS01      | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw SAMS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMS01      | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw SAMSS02;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMSS02     | ##
+@COMMENT +------------------------------------------------+ ## 
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw SAMSS03;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMSS03     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw NE=SAMBC01,CSL=1;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMBC01     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw RAMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: RAMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw COMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: COMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw NE=CHMBC01,CSL=1;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: CHMBC01     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw PMMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: PMMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+eaw VAMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: VAMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+MGAAE:AREA=U49244;
+MGAAE:AREA=U55902;
+MGAAE:AREA=U55903;
+MGAAE:AREA=U55904;
+MGAAE:AREA=U55905;
+MGAAE:AREA=U55906;
+MGAAE:AREA=U55907;
+MGAAE:AREA=U55908;
+MGAAE:AREA=U55909;
+
+exit;
+@GETTIME {HMM} HH:MM
+@GETDATE {DDMMYYYY} DD-MM-YYYY
+@COMMENT +------------------------------------------------+ ##
+@COMMENT | DATE:  {DDMMYYYY}                 TIME:  {HMM} | ##
+@COMMENT +------------------------------------------------+ ##
+@L-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

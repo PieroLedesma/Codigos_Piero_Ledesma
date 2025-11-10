@@ -1,0 +1,500 @@
+
+
+#############################################################
+### ReportConfigEUtraBadCovPrim  V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrpPrim -118
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 a2ThresholdRsrqPrim -195
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 hysteresisA2Prim 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 timeToTriggerA2Prim 512
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovPrim=1 triggerQuantityA2Prim 0
+
+#############################################################
+### ReportConfigEUtraBadCovSec V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrpSec -140
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 a2ThresholdRsrqSec -195
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 hysteresisA2Sec 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 timeToTriggerA2Sec 512
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBadCovSec=1 triggerQuantityA2Sec 0
+
+#############################################################
+### ReportConfigEUtraBestCell V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 timeToTriggerA3 256
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1 triggerQuantityA3 0
+
+#############################################################
+### ReportConfigEUtraBestCellAnr V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 a3offsetAnrDelta 3
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraBestCell=1,ReportConfigEUtraBestCellAnr=1 timeToTriggerA3 80
+
+#############################################################
+### ReportConfigEUtraIFA3UlTrig V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 a3Offset 0
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 reportIntervalA3 12
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFA3UlTrig=1 timeToTriggerA3 40
+
+#############################################################
+### ReportConfigEUtraIFBestCell V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3offset 30
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3 40
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 triggerQuantityA3 0
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 timeToTriggerA3Rsrq -1
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 a3RsrqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraIFBestCell=1 hysteresisA3RsrqOffset 0
+
+#############################################################
+### ReportConfigEUtraInterFreqLb V2                                
+#############################################################
+
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -90
+set ENodeBFunction=1,EUtranCellFDD=L24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -90
+set ENodeBFunction=1,EUtranCellFDD=L24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -90
+set ENodeBFunction=1,EUtranCellFDD=L24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -90
+set ENodeBFunction=1,EUtranCellFDD=P24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -90
+set ENodeBFunction=1,EUtranCellFDD=P24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -90
+set ENodeBFunction=1,EUtranCellFDD=P24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -44
+set ENodeBFunction=1,EUtranCellFDD=Q24664,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -44
+set ENodeBFunction=1,EUtranCellFDD=Q24665,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrp -108
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 hysteresisA5 10
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold1Rsrp -44
+set ENodeBFunction=1,EUtranCellFDD=Q24666,UeMeasControl=1,ReportConfigEUtraInterFreqLb=1 a5Threshold2Rsrq -195
+
+#############################################################
+### ConfiguredMaxTxPower                      
+#############################################################
+
+bl EUtranCellFDD|sector
+y
+set ^SectorCarrier=1$ configuredMaxTxPower 120000
+set ^SectorCarrier=1$ noOfRxAntennas 4
+set ^SectorCarrier=1$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=1$ evmPowerBackoffAllowed false
+set ^SectorCarrier=2$ configuredMaxTxPower 120000
+set ^SectorCarrier=2$ noOfRxAntennas 4
+set ^SectorCarrier=2$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=2$ evmPowerBackoffAllowed false
+set ^SectorCarrier=3$ configuredMaxTxPower 120000
+set ^SectorCarrier=3$ noOfRxAntennas 4
+set ^SectorCarrier=3$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=3$ evmPowerBackoffAllowed false
+set ^SectorCarrier=7$ configuredMaxTxPower 120000
+set ^SectorCarrier=7$ noOfRxAntennas 4
+set ^SectorCarrier=7$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=7$ evmPowerBackoffAllowed false
+set ^SectorCarrier=8$ configuredMaxTxPower 120000
+set ^SectorCarrier=8$ noOfRxAntennas 4
+set ^SectorCarrier=8$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=8$ evmPowerBackoffAllowed false
+set ^SectorCarrier=9$ configuredMaxTxPower 120000
+set ^SectorCarrier=9$ noOfRxAntennas 4
+set ^SectorCarrier=9$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=9$ evmPowerBackoffAllowed false
+set ^SectorCarrier=17$ configuredMaxTxPower 80000
+set ^SectorCarrier=17$ noOfRxAntennas 4
+set ^SectorCarrier=17$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=17$ evmPowerBackoffAllowed false
+set ^SectorCarrier=18$ configuredMaxTxPower 80000
+set ^SectorCarrier=18$ noOfRxAntennas 4
+set ^SectorCarrier=18$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=18$ evmPowerBackoffAllowed false
+set ^SectorCarrier=19$ configuredMaxTxPower 80000
+set ^SectorCarrier=19$ noOfRxAntennas 4
+set ^SectorCarrier=19$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=19$ evmPowerBackoffAllowed false
+COMMIT 
+#############################################################
+### CORRECCIONES                                
+#############################################################
+
+CR Transport=1,Ntp=1,NtpFrequencySync=1
+Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+D
+sET Transport=1,Ntp=1,NtpFrequencySync=1 dscp 46
+
+set . rrcConnReestActive true
+set . s1HODirDataPathAvail true
+set . ulSchedulerDynamicBWAllocationEnabled true
+set . x2IpAddrViaS1Active true
+set . csfbMeasFromIdleMode true
+set . initPreschedulingEnable true
+set . mtRreWithoutNeighborActive true
+set QciTable=default,QciProfileOperatorDefined=qci254       caOffloadingEnabled true
+set ENodeBFunction=1,SubscriberGroupProfile=0 bearerTriggerList qci=1,arp=0
+set ENodeBFunction=1,SubscriberGroupProfile=1 bearerTriggerList qci=6,arp=0;qci=9,arp=0;qci=8,arp=0
+lset VlanPort=LTE encapsulation   EthernetPort=TN_IDL_B
+lset VlanPort=LTE encapsulation   EthernetPort=TN_B
+set ENodeBFunction=1,pmFlexCounterFilter=Endc1To99 endcFilterEnabled TRUE
+set ENodeBFunction=1,pmFlexCounterFilter=Endc2To99 endcFilterEnabled TRUE
+
+'dlPollPdu|ulPollPdu'
+
+ set GNBDUFunction=1,UeCC=1,RadioLinkControl=1,DrbRlc=Default,DrbRlcUeCfg=Base ulPollPdu 4
+
+'PollRetransmitUl'
+
+ SET ENodeBFunction=1,RadioBearerTable=default,SignalingRadioBearer=1 tPollRetransmitUl 160
+ SET ENodeBFunction=1,RadioBearerTable=default,DataRadioBearer=1 tPollRetransmitUl 160 
+
+'BASE tStatusProhibitUl'
+
+ set GNBDUFunction=1,UeCC=1,RadioLinkControl=1,DrbRlc=Default,DrbRlcUeCfg=Base tStatusProhibitUl 15
+
+'initPreschedulingControl'
+
+ set PreschedulingProfile=initial initPreschedulingControl 2
+
+'Base##drxInactivityTimer|drxLongCycle|drxOnDurationTimer'
+
+ set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxInactivityTimer 15
+ set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxLongCycle 10
+ set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxOnDurationTimer 39
+
+'CXC4012492 featurestate'
+
+ set CXC4012273|CXC4012330|CXC4012375|CXC4012492|CXC4012589 featurestate 1
+
+ 'lastModification'
+
+ set EUtranCellFDD=L.* lastModification 0
+ set EUtranCellFDD=M.* lastModification 0
+ set EUtranCellFDD=P.* lastModification 0
+ set EUtranCellFDD=Q.* lastModification 0
+
+set CXC4011356 FeatureState 1
+set CXC4011820 featurestate 1
+ BL FieldReplaceableUnit=SUP
+'qciA1A2ThrOffsets'
+Lset ENodeBFunction=1,EUtranCellFDD=M.*,UeMeasControl=1,ReportConfigSearch=1  qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=0,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1 
+
+set . decoupledPdcchLaEnabled true
+set . pdcchUlDtxWorseThres 1
+
+#################################################################################
+//////#          ___  
+//////#         (ov<)   
+//////#        ((   ))  
+//////#        ^^^ ^^^
+#################################################################################
+
+cvms PARAMETROS_3_pd_$nodename 
+

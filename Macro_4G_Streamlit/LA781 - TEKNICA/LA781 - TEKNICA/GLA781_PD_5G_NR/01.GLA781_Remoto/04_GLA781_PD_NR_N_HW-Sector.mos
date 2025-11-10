@@ -1,0 +1,556 @@
+//////////////////////-PDUARTE-///////////////////////////////
+//
+// SCRIPT     : HW_Sector_ NR
+// NEMONICO   : GLA781
+// HORA       : 9:30:34
+// FECHA      : 05-11-2025
+//
+/////////////////////////////////////////////////////////////
+
+confb+
+gs+
+
+set NodeSupport=1,MpClusterHandling=1 primaryCoreRef FieldReplaceableUnit=BB-1
+################################################################
+## FieldReplaceableUnit V2 
+################################################################
+cr Equipment=1,FieldReplaceableUnit=AAS-1
+crn Equipment=1,FieldReplaceableUnit=AAS-1,Transceiver=1
+maxTotalTilt 900
+mechanicalAntennaTilt 0
+minTotalTilt -900
+retSubUnitRef
+end
+
+crn Equipment=1,FieldReplaceableUnit=AAS-1,Transceiver=1,AasData=1
+antSegmentation 1
+end
+
+cr Equipment=1,FieldReplaceableUnit=AAS-1,RiPort=DATA_1
+cr Equipment=1,FieldReplaceableUnit=AAS-1,RiPort=DATA_1,RiEthernetPort=1
+cr Equipment=1,FieldReplaceableUnit=AAS-1,RiPort=DATA_2
+cr Equipment=1,FieldReplaceableUnit=AAS-1,RiPort=DATA_2,RiEthernetPort=1
+ 
+set Equipment=1,FieldReplaceableUnit=AAS-1 isSharedWithExternalMe true
+ 
+cr Equipment=1,FieldReplaceableUnit=AAS-2
+crn Equipment=1,FieldReplaceableUnit=AAS-2,Transceiver=1
+maxTotalTilt 900
+mechanicalAntennaTilt 0
+minTotalTilt -900
+retSubUnitRef
+end
+
+crn Equipment=1,FieldReplaceableUnit=AAS-2,Transceiver=1,AasData=1
+antSegmentation 1
+end
+
+cr Equipment=1,FieldReplaceableUnit=AAS-2,RiPort=DATA_1
+cr Equipment=1,FieldReplaceableUnit=AAS-2,RiPort=DATA_1,RiEthernetPort=1
+cr Equipment=1,FieldReplaceableUnit=AAS-2,RiPort=DATA_2
+cr Equipment=1,FieldReplaceableUnit=AAS-2,RiPort=DATA_2,RiEthernetPort=1
+ 
+set Equipment=1,FieldReplaceableUnit=AAS-2 isSharedWithExternalMe true
+ 
+cr Equipment=1,FieldReplaceableUnit=AAS-3
+crn Equipment=1,FieldReplaceableUnit=AAS-3,Transceiver=1
+maxTotalTilt 900
+mechanicalAntennaTilt 0
+minTotalTilt -900
+retSubUnitRef
+end
+
+crn Equipment=1,FieldReplaceableUnit=AAS-3,Transceiver=1,AasData=1
+antSegmentation 1
+end
+
+cr Equipment=1,FieldReplaceableUnit=AAS-3,RiPort=DATA_1
+cr Equipment=1,FieldReplaceableUnit=AAS-3,RiPort=DATA_1,RiEthernetPort=1
+cr Equipment=1,FieldReplaceableUnit=AAS-3,RiPort=DATA_2
+cr Equipment=1,FieldReplaceableUnit=AAS-3,RiPort=DATA_2,RiEthernetPort=1
+ 
+set Equipment=1,FieldReplaceableUnit=AAS-3 isSharedWithExternalMe true
+ 
+ 
+################################################################
+## SectorEquipmentFunction V2 
+################################################################
+
+crn NodeSupport=1,SectorEquipmentFunction=75
+administrativeState 1
+rfBranchRef Equipment=1,FieldReplaceableUnit=AAS-1,Transceiver=1
+userLabel GLA781
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=76
+administrativeState 1
+rfBranchRef Equipment=1,FieldReplaceableUnit=AAS-2,Transceiver=1
+userLabel GLA781
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=77
+administrativeState 1
+rfBranchRef Equipment=1,FieldReplaceableUnit=AAS-3,Transceiver=1
+userLabel GLA781
+end
+
+################################################################
+## NRSectorCarrier V2 
+################################################################
+
+crn GNBDUFunction=1,NRSectorCarrier=1
+administrativeState 1
+altitude 24
+arfcnDL 621668
+bSChannelBwDL 50
+bSChannelBwUL 50
+configuredMaxTxPower 100000
+coverage bearing=0,openingAngle=1,radius=1
+latitude -41455470
+longitude -72961611
+nullSteeringMode 0
+radioTransmitPerfMode 0
+arfcnUL 621668
+sectorEquipmentFunctionRef SectorEquipmentFunction=75
+txDirection 0
+txPowerChangeRate 1
+txPowerPersistentLock false
+txPowerRatio 100
+noOfRxAntennas 0
+noOfTxAntennas 0
+nRMicroSleepTxEnabled true
+end
+
+crn GNBDUFunction=1,NRSectorCarrier=2
+administrativeState 1
+altitude 24
+arfcnDL 621668
+bSChannelBwDL 50
+bSChannelBwUL 50
+configuredMaxTxPower 100000
+coverage bearing=120,openingAngle=1,radius=1
+latitude -41455470
+longitude -72961611
+nullSteeringMode 0
+radioTransmitPerfMode 0
+arfcnUL 621668
+sectorEquipmentFunctionRef SectorEquipmentFunction=76
+txDirection 0
+txPowerChangeRate 1
+txPowerPersistentLock false
+txPowerRatio 100
+noOfRxAntennas 0
+noOfTxAntennas 0
+nRMicroSleepTxEnabled true
+end
+
+crn GNBDUFunction=1,NRSectorCarrier=3
+administrativeState 1
+altitude 24
+arfcnDL 621668
+bSChannelBwDL 50
+bSChannelBwUL 50
+configuredMaxTxPower 100000
+coverage bearing=250,openingAngle=1,radius=1
+latitude -41455470
+longitude -72961611
+nullSteeringMode 0
+radioTransmitPerfMode 0
+arfcnUL 621668
+sectorEquipmentFunctionRef SectorEquipmentFunction=77
+txDirection 0
+txPowerChangeRate 1
+txPowerPersistentLock false
+txPowerRatio 100
+noOfRxAntennas 0
+noOfTxAntennas 0
+nRMicroSleepTxEnabled true
+end
+
+################################################################
+## CommonBeamforming V2 
+################################################################            
+
+cr GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 cbfMacroTaperType 0
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 coverageShape 0
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 digitalTilt 30
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 usedDigitalTilt 30
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 usedDigitalPan 0
+end
+
+cr GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 cbfMacroTaperType 0
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 coverageShape 0
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 digitalTilt 50
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 usedDigitalTilt 50
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 usedDigitalPan 0
+end
+
+cr GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 cbfMacroTaperType 0
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 coverageShape 0
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 digitalTilt 60
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 usedDigitalTilt 60
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 usedDigitalPan 0
+end
+
+################################################################
+## GNBDUFunction->NRCellDU V2 
+################################################################
+
+bl cell
+
+crn GNBDUFunction=1,NRCellDU=N37811
+cellLocalId 1
+nRPCI 462
+nRTAC 10102
+pLMNIdList  mcc=730,mnc=01
+nRSectorCarrierRef GNBDUFunction=1,NRSectorCarrier=1
+subCarrierSpacing 30
+ssbSubCarrierSpacing 30
+tddUlDlPattern 1
+tddSpecialSlotPattern 3
+end
+
+lset NRCellDU=N37811 advancedDlSuMimoEnabled true
+lset NRCellDU=N37811 maxNoOfAdvancedDlMuMimoLayers 16
+lset NRCellDU=N37811 ailgDlPrbLoadLevel 0
+lset NRCellDU=N37811 ailgModType 0
+lset NRCellDU=N37811 ailgPdcchLoadLevel 0
+lset NRCellDU=N37811 bandListManual 78
+lset NRCellDU=N37811 cellBarred 1
+lset NRCellDU=N37811 cellLocalId 1
+lset NRCellDU=N37811 cellRange 7000
+lset NRCellDU=N37811 cellReservedForOperator 1
+lset NRCellDU=N37811 cellState 2
+lset NRCellDU=N37811 csiReportFormat 0
+lset NRCellDU=N37811 csiRsActivePortConfig 2 4
+lset NRCellDU=N37811 csiRsPeriodicity 40
+lset NRCellDU=N37811 csiRsShiftingPrimary 1
+lset NRCellDU=N37811 csiRsShiftingSecondary 1
+lset NRCellDU=N37811 dftSOfdmMsg3Enabled false
+lset NRCellDU=N37811 dftSOfdmPuschEnabled true
+lset NRCellDU=N37811 dftSOfdmPuschStartRsrpThresh -104
+lset NRCellDU=N37811 dl256QamEnabled true
+lset NRCellDU=N37811 dlMaxMuMimoLayers 8
+lset NRCellDU=N37811 dlRobustLaEnabled false
+lset NRCellDU=N37811 dlStartCrb 0
+lset NRCellDU=N37811 maxUeSpeed 2
+lset NRCellDU=N37811 nCI 2258010113
+lset NRCellDU=N37811 nRCellDUId N37811
+lset NRCellDU=N37811 nRPCI 462
+lset NRCellDU=N37811 nRTAC 10102
+lset NRCellDU=N37811 pdschAllowedInDmrsSym true
+lset NRCellDU=N37811 pMax 23
+lset NRCellDU=N37811 pZeroNomPucch -116
+lset NRCellDU=N37811 pZeroNomPuschGrant 1000
+lset NRCellDU=N37811 pZeroNomSrs -100
+lset NRCellDU=N37811 pZeroUePuschOffset256Qam 0
+lset NRCellDU=N37811 pdschStartPrbStrategy 3
+lset NRCellDU=N37811 puschStartPrbStrategy 3
+lset NRCellDU=N37811 pwsBroadcastOngoing false
+lset NRCellDU=N37811 qQualMin -34
+lset NRCellDU=N37811 qQualMinOffset 1
+lset NRCellDU=N37811 qRxLevMin -128
+lset NRCellDU=N37811 qRxLevMinOffset 2
+lset NRCellDU=N37811 rachPreambleFormat 0
+lset NRCellDU=N37811 rachPreambleRecTargetPower -110
+lset NRCellDU=N37811 rachPreambleTransMax 20
+lset NRCellDU=N37811 rachRootSequence 0
+lset NRCellDU=N37811 secondaryCellOnly false
+lset NRCellDU=N37811 siWindowLength 20
+lset NRCellDU=N37811 srsPeriodicity 40
+lset NRCellDU=N37811 ssbDuration 1
+lset NRCellDU=N37811 ssbFrequency 0
+lset NRCellDU=N37811 ssbFrequencyAutoSelected 620736
+lset NRCellDU=N37811 ssbOffset 0
+lset NRCellDU=N37811 ssbPeriodicity 20
+lset NRCellDU=N37811 ssbPowerBoost 2
+lset NRCellDU=N37811 tddUlDlPattern 1
+lset NRCellDU=N37811 trsPeriodicity 40
+lset NRCellDU=N37811 trsPowerBoosting 0
+lset NRCellDU=N37811 ul256QamEnabled true
+lset NRCellDU=N37811 ulMaxMuMimoLayers 4
+lset NRCellDU=N37811 ulRobustLaEnabled false
+lset NRCellDU=N37811 ulStartCrb 0
+lset NRCellDU=N37811 nrLteCoexistence false
+lset NRCellDU=N37811 userLabel GLA781
+lset NRCellDU=N37811 puschAllowedInDmrsSym false
+lset NRCellDU=N37811 srsHoppingBandwidth 0
+lset NRCellDU=N37811 sfnOffset 0
+lset NRCellDU=N37811 trsResourceShifting 1
+lset NRCellDU=N37811 pdcchLaSinrOffset -15
+lset NRCellDU=N37811 dlDmrsMuxSinrThresh -10
+lset NRCellDU=N37811 drxProfileEnabled true
+lset NRCellDU=N37811 drxProfileRef GNBDUFunction=1,UeCC=1,DrxProfile=Default
+lset NRCellDU=N37811 csiRsConfig16P csiRsControl16Ports=0
+lset NRCellDU=N37811 csiRsConfig2P aRestriction=3F,csiRsControl2Ports=1
+lset NRCellDU=N37811 csiRsConfig32P csiRsControl32Ports=1,i11Restriction=FFFFFFFF,i12Restriction=FF
+lset NRCellDU=N37811 csiRsConfig4P csiRsControl4Ports=1,i11Restriction=FF
+lset NRCellDU=N37811 csiRsConfig8P csiRsControl8Ports=1,i11Restriction=FFFF
+lset NRCellDU=N37811 sibType2 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37811 sibType4 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37811 sibType5 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37811 sibType6 siBroadcastStatus=0,siPeriodicity=16
+lset NRCellDU=N37811 sibType7 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37811 sibType8 siBroadcastStatus=0,siPeriodicity=64
+
+crn GNBDUFunction=1,NRCellDU=N37812
+cellLocalId 2
+nRPCI 463
+nRTAC 10102
+pLMNIdList  mcc=730,mnc=01
+nRSectorCarrierRef GNBDUFunction=1,NRSectorCarrier=2
+subCarrierSpacing 30
+ssbSubCarrierSpacing 30
+tddUlDlPattern 1
+tddSpecialSlotPattern 3
+end
+
+lset NRCellDU=N37812 advancedDlSuMimoEnabled true
+lset NRCellDU=N37812 maxNoOfAdvancedDlMuMimoLayers 16
+lset NRCellDU=N37812 ailgDlPrbLoadLevel 0
+lset NRCellDU=N37812 ailgModType 0
+lset NRCellDU=N37812 ailgPdcchLoadLevel 0
+lset NRCellDU=N37812 bandListManual 78
+lset NRCellDU=N37812 cellBarred 1
+lset NRCellDU=N37812 cellLocalId 2
+lset NRCellDU=N37812 cellRange 7000
+lset NRCellDU=N37812 cellReservedForOperator 1
+lset NRCellDU=N37812 cellState 2
+lset NRCellDU=N37812 csiReportFormat 0
+lset NRCellDU=N37812 csiRsActivePortConfig 2 4
+lset NRCellDU=N37812 csiRsPeriodicity 40
+lset NRCellDU=N37812 csiRsShiftingPrimary 1
+lset NRCellDU=N37812 csiRsShiftingSecondary 1
+lset NRCellDU=N37812 dftSOfdmMsg3Enabled false
+lset NRCellDU=N37812 dftSOfdmPuschEnabled true
+lset NRCellDU=N37812 dftSOfdmPuschStartRsrpThresh -104
+lset NRCellDU=N37812 dl256QamEnabled true
+lset NRCellDU=N37812 dlMaxMuMimoLayers 8
+lset NRCellDU=N37812 dlRobustLaEnabled false
+lset NRCellDU=N37812 dlStartCrb 0
+lset NRCellDU=N37812 maxUeSpeed 2
+lset NRCellDU=N37812 nCI 2258010114
+lset NRCellDU=N37812 nRCellDUId N37812
+lset NRCellDU=N37812 nRPCI 463
+lset NRCellDU=N37812 nRTAC 10102
+lset NRCellDU=N37812 pdschAllowedInDmrsSym true
+lset NRCellDU=N37812 pMax 23
+lset NRCellDU=N37812 pZeroNomPucch -116
+lset NRCellDU=N37812 pZeroNomPuschGrant 1000
+lset NRCellDU=N37812 pZeroNomSrs -100
+lset NRCellDU=N37812 pZeroUePuschOffset256Qam 0
+lset NRCellDU=N37812 pdschStartPrbStrategy 3
+lset NRCellDU=N37812 puschStartPrbStrategy 3
+lset NRCellDU=N37812 pwsBroadcastOngoing false
+lset NRCellDU=N37812 qQualMin -34
+lset NRCellDU=N37812 qQualMinOffset 1
+lset NRCellDU=N37812 qRxLevMin -128
+lset NRCellDU=N37812 qRxLevMinOffset 2
+lset NRCellDU=N37812 rachPreambleFormat 0
+lset NRCellDU=N37812 rachPreambleRecTargetPower -110
+lset NRCellDU=N37812 rachPreambleTransMax 20
+lset NRCellDU=N37812 rachRootSequence 2
+lset NRCellDU=N37812 secondaryCellOnly false
+lset NRCellDU=N37812 siWindowLength 20
+lset NRCellDU=N37812 srsPeriodicity 40
+lset NRCellDU=N37812 ssbDuration 1
+lset NRCellDU=N37812 ssbFrequency 0
+lset NRCellDU=N37812 ssbFrequencyAutoSelected 620736
+lset NRCellDU=N37812 ssbOffset 0
+lset NRCellDU=N37812 ssbPeriodicity 20
+lset NRCellDU=N37812 ssbPowerBoost 2
+lset NRCellDU=N37812 tddUlDlPattern 1
+lset NRCellDU=N37812 trsPeriodicity 40
+lset NRCellDU=N37812 trsPowerBoosting 0
+lset NRCellDU=N37812 ul256QamEnabled true
+lset NRCellDU=N37812 ulMaxMuMimoLayers 4
+lset NRCellDU=N37812 ulRobustLaEnabled false
+lset NRCellDU=N37812 ulStartCrb 0
+lset NRCellDU=N37812 nrLteCoexistence false
+lset NRCellDU=N37812 userLabel GLA781
+lset NRCellDU=N37812 puschAllowedInDmrsSym false
+lset NRCellDU=N37812 srsHoppingBandwidth 0
+lset NRCellDU=N37812 sfnOffset 0
+lset NRCellDU=N37812 trsResourceShifting 1
+lset NRCellDU=N37812 pdcchLaSinrOffset -15
+lset NRCellDU=N37812 dlDmrsMuxSinrThresh -10
+lset NRCellDU=N37812 drxProfileEnabled true
+lset NRCellDU=N37812 drxProfileRef GNBDUFunction=1,UeCC=1,DrxProfile=Default
+lset NRCellDU=N37812 csiRsConfig16P csiRsControl16Ports=0
+lset NRCellDU=N37812 csiRsConfig2P aRestriction=3F,csiRsControl2Ports=1
+lset NRCellDU=N37812 csiRsConfig32P csiRsControl32Ports=1,i11Restriction=FFFFFFFF,i12Restriction=FF
+lset NRCellDU=N37812 csiRsConfig4P csiRsControl4Ports=1,i11Restriction=FF
+lset NRCellDU=N37812 csiRsConfig8P csiRsControl8Ports=1,i11Restriction=FFFF
+lset NRCellDU=N37812 sibType2 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37812 sibType4 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37812 sibType5 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37812 sibType6 siBroadcastStatus=0,siPeriodicity=16
+lset NRCellDU=N37812 sibType7 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37812 sibType8 siBroadcastStatus=0,siPeriodicity=64
+
+crn GNBDUFunction=1,NRCellDU=N37813
+cellLocalId 3
+nRPCI 464
+nRTAC 10102
+pLMNIdList  mcc=730,mnc=01
+nRSectorCarrierRef GNBDUFunction=1,NRSectorCarrier=3
+subCarrierSpacing 30
+ssbSubCarrierSpacing 30
+tddUlDlPattern 1
+tddSpecialSlotPattern 3
+end
+
+lset NRCellDU=N37813 advancedDlSuMimoEnabled true
+lset NRCellDU=N37813 maxNoOfAdvancedDlMuMimoLayers 16
+lset NRCellDU=N37813 ailgDlPrbLoadLevel 0
+lset NRCellDU=N37813 ailgModType 0
+lset NRCellDU=N37813 ailgPdcchLoadLevel 0
+lset NRCellDU=N37813 bandListManual 78
+lset NRCellDU=N37813 cellBarred 1
+lset NRCellDU=N37813 cellLocalId 3
+lset NRCellDU=N37813 cellRange 7000
+lset NRCellDU=N37813 cellReservedForOperator 1
+lset NRCellDU=N37813 cellState 2
+lset NRCellDU=N37813 csiReportFormat 0
+lset NRCellDU=N37813 csiRsActivePortConfig 2 4
+lset NRCellDU=N37813 csiRsPeriodicity 40
+lset NRCellDU=N37813 csiRsShiftingPrimary 1
+lset NRCellDU=N37813 csiRsShiftingSecondary 1
+lset NRCellDU=N37813 dftSOfdmMsg3Enabled false
+lset NRCellDU=N37813 dftSOfdmPuschEnabled true
+lset NRCellDU=N37813 dftSOfdmPuschStartRsrpThresh -104
+lset NRCellDU=N37813 dl256QamEnabled true
+lset NRCellDU=N37813 dlMaxMuMimoLayers 8
+lset NRCellDU=N37813 dlRobustLaEnabled false
+lset NRCellDU=N37813 dlStartCrb 0
+lset NRCellDU=N37813 maxUeSpeed 2
+lset NRCellDU=N37813 nCI 2258010115
+lset NRCellDU=N37813 nRCellDUId N37813
+lset NRCellDU=N37813 nRPCI 464
+lset NRCellDU=N37813 nRTAC 10102
+lset NRCellDU=N37813 pdschAllowedInDmrsSym true
+lset NRCellDU=N37813 pMax 23
+lset NRCellDU=N37813 pZeroNomPucch -116
+lset NRCellDU=N37813 pZeroNomPuschGrant 1000
+lset NRCellDU=N37813 pZeroNomSrs -100
+lset NRCellDU=N37813 pZeroUePuschOffset256Qam 0
+lset NRCellDU=N37813 pdschStartPrbStrategy 3
+lset NRCellDU=N37813 puschStartPrbStrategy 3
+lset NRCellDU=N37813 pwsBroadcastOngoing false
+lset NRCellDU=N37813 qQualMin -34
+lset NRCellDU=N37813 qQualMinOffset 1
+lset NRCellDU=N37813 qRxLevMin -128
+lset NRCellDU=N37813 qRxLevMinOffset 2
+lset NRCellDU=N37813 rachPreambleFormat 0
+lset NRCellDU=N37813 rachPreambleRecTargetPower -110
+lset NRCellDU=N37813 rachPreambleTransMax 20
+lset NRCellDU=N37813 rachRootSequence 4
+lset NRCellDU=N37813 secondaryCellOnly false
+lset NRCellDU=N37813 siWindowLength 20
+lset NRCellDU=N37813 srsPeriodicity 40
+lset NRCellDU=N37813 ssbDuration 1
+lset NRCellDU=N37813 ssbFrequency 0
+lset NRCellDU=N37813 ssbFrequencyAutoSelected 620736
+lset NRCellDU=N37813 ssbOffset 0
+lset NRCellDU=N37813 ssbPeriodicity 20
+lset NRCellDU=N37813 ssbPowerBoost 2
+lset NRCellDU=N37813 tddUlDlPattern 1
+lset NRCellDU=N37813 trsPeriodicity 40
+lset NRCellDU=N37813 trsPowerBoosting 0
+lset NRCellDU=N37813 ul256QamEnabled true
+lset NRCellDU=N37813 ulMaxMuMimoLayers 4
+lset NRCellDU=N37813 ulRobustLaEnabled false
+lset NRCellDU=N37813 ulStartCrb 0
+lset NRCellDU=N37813 nrLteCoexistence false
+lset NRCellDU=N37813 userLabel GLA781
+lset NRCellDU=N37813 puschAllowedInDmrsSym false
+lset NRCellDU=N37813 srsHoppingBandwidth 0
+lset NRCellDU=N37813 sfnOffset 0
+lset NRCellDU=N37813 trsResourceShifting 1
+lset NRCellDU=N37813 pdcchLaSinrOffset -15
+lset NRCellDU=N37813 dlDmrsMuxSinrThresh -10
+lset NRCellDU=N37813 drxProfileEnabled true
+lset NRCellDU=N37813 drxProfileRef GNBDUFunction=1,UeCC=1,DrxProfile=Default
+lset NRCellDU=N37813 csiRsConfig16P csiRsControl16Ports=0
+lset NRCellDU=N37813 csiRsConfig2P aRestriction=3F,csiRsControl2Ports=1
+lset NRCellDU=N37813 csiRsConfig32P csiRsControl32Ports=1,i11Restriction=FFFFFFFF,i12Restriction=FF
+lset NRCellDU=N37813 csiRsConfig4P csiRsControl4Ports=1,i11Restriction=FF
+lset NRCellDU=N37813 csiRsConfig8P csiRsControl8Ports=1,i11Restriction=FFFF
+lset NRCellDU=N37813 sibType2 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37813 sibType4 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37813 sibType5 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37813 sibType6 siBroadcastStatus=0,siPeriodicity=16
+lset NRCellDU=N37813 sibType7 siBroadcastStatus=0,siPeriodicity=64
+lset NRCellDU=N37813 sibType8 siBroadcastStatus=0,siPeriodicity=64
+
+################################################################
+## GNBCUCPFunction -> NRCellCU V2 
+################################################################
+cr GNBCUCPFunction=1,NRCellCU=N37811
+1
+set GNBCUCPFunction=1,NRCellCU=N37811 primaryPLMNId mcc=730,mnc=01
+lset NRCellCU=N37811 nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+lset NRCellCU=N37811 cellState 2
+lset NRCellCU=N37811 intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+lset NRCellCU=N37811 mcpcPSCellEnabled true
+lset NRCellCU=N37811 mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+lset NRCellCU=N37811 nCI 2258010113
+lset NRCellCU=N37811 nRCellCUId N37811
+lset NRCellCU=N37811 nRTAC 10102
+lset NRCellCU=N37811 pSCellCapable true
+lset NRCellCU=N37811 qHyst 4
+lset NRCellCU=N37811 sNonIntraSearchP 0
+lset NRCellCU=N37811 threshServingLowP 0
+lset NRCellCU=N37811 transmitSib2 false
+lset NRCellCU=N37811 transmitSib4 false
+lset NRCellCU=N37811 transmitSib5 false
+lset NRCellCU=N37811 userLabel GLA781
+
+cr GNBCUCPFunction=1,NRCellCU=N37812
+2
+set GNBCUCPFunction=1,NRCellCU=N37812 primaryPLMNId mcc=730,mnc=01
+lset NRCellCU=N37812 nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+lset NRCellCU=N37812 cellState 2
+lset NRCellCU=N37812 intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+lset NRCellCU=N37812 mcpcPSCellEnabled true
+lset NRCellCU=N37812 mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+lset NRCellCU=N37812 nCI 2258010114
+lset NRCellCU=N37812 nRCellCUId N37812
+lset NRCellCU=N37812 nRTAC 10102
+lset NRCellCU=N37812 pSCellCapable true
+lset NRCellCU=N37812 qHyst 4
+lset NRCellCU=N37812 sNonIntraSearchP 0
+lset NRCellCU=N37812 threshServingLowP 0
+lset NRCellCU=N37812 transmitSib2 false
+lset NRCellCU=N37812 transmitSib4 false
+lset NRCellCU=N37812 transmitSib5 false
+lset NRCellCU=N37812 userLabel GLA781
+
+cr GNBCUCPFunction=1,NRCellCU=N37813
+3
+set GNBCUCPFunction=1,NRCellCU=N37813 primaryPLMNId mcc=730,mnc=01
+lset NRCellCU=N37813 nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+lset NRCellCU=N37813 cellState 2
+lset NRCellCU=N37813 intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+lset NRCellCU=N37813 mcpcPSCellEnabled true
+lset NRCellCU=N37813 mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+lset NRCellCU=N37813 nCI 2258010115
+lset NRCellCU=N37813 nRCellCUId N37813
+lset NRCellCU=N37813 nRTAC 10102
+lset NRCellCU=N37813 pSCellCapable true
+lset NRCellCU=N37813 qHyst 4
+lset NRCellCU=N37813 sNonIntraSearchP 0
+lset NRCellCU=N37813 threshServingLowP 0
+lset NRCellCU=N37813 transmitSib2 false
+lset NRCellCU=N37813 transmitSib4 false
+lset NRCellCU=N37813 transmitSib5 false
+lset NRCellCU=N37813 userLabel GLA781
+
+
+gs-
+confb-
+cvms PD_Sector-HW_$nodename
+############################# FIN SCRIPT

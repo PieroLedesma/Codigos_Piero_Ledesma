@@ -1,0 +1,406 @@
+confb+
+gs+
+get Transport=1,EthernetPort= ethernetPortId > $eth
+
+############################################################
+# VLAN PORT / ROUTER LTE 
+############################################################
+cr Transport=1,VlanPort=LTE
+EthernetPort=$eth
+1400
+
+crn Transport=1,Router=LTE
+hopLimit 64
+pathMtuExpiresIPv6 86400
+routingPolicyLocal 
+routingPolicyLocalIPv6 
+ttl 64
+userLabel ROUTER_TRAFFIC
+end
+
+crn Transport=1,Router=LTE,InterfaceIPv4=1
+aclEgress 
+aclIngress 
+arpTimeout 300
+bfdProfile 
+bfdStaticRoutes 0
+egressQosMarking 
+encapsulation VlanPort=LTE
+ingressQosMarking 
+loopback false
+mtu 1500
+pcpArp 6
+routesHoldDownTimer 
+routingPolicyIngress 
+trackedInterface 
+userLabel IP TRAFFIC LTE
+end
+
+crn Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+address 10.71.110.34/26
+configurationMode 0
+dhcpClientIdentifier 
+dhcpClientIdentifierType 0
+primaryAddress true
+userLabel IP ADDRESS LTE TRAFICO
+end
+
+crn Transport=1,Router=LTE,RouteTableIPv4Static=1
+end
+
+crn Transport=1,Router=LTE,RouteTableIPv4Static=1,Dst=1
+dst 0.0.0.0/0
+end
+
+crn Transport=1,Router=LTE,RouteTableIPv4Static=1,Dst=1,NextHop=1
+address 10.71.110.1
+adminDistance 1
+bfdMonitoring true
+discard false
+reference 
+end
+
+crn Transport=1,Router=LTE,TwampResponder=Traffic
+ipAddress Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+udpPort 4002
+userLabel TwampResponder_Traffic
+end
+
+SET VlanPort=LTE    encapsulation     EthernetPort=$eth
+
+Cr Transport=1,sctpProfile=1
+
+crn Transport=1,SctpEndpoint=1
+localIpAddress Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+portNumber 36422
+sctpProfile Transport=1,sctpProfile=1
+userLabel 
+end
+
+
+set ENodeBFunction=1  sctpRef SctpEndpoint=1
+set ENodeBFunction=1  upIpAddressRef    Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+
+crn Transport=1,SctpEndpoint=1
+localIpAddress Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+portNumber 36422
+sctpProfile Transport=1,sctpProfile=1
+userLabel 
+end
+#############################################################
+### SctpProfile
+#############################################################
+crn Transport=1,SctpProfile=1
+alphaIndex 3
+assocMaxRtx 20
+betaIndex 2
+bundlingActivated false
+bundlingAdaptiveActivated false
+bundlingTimer 0
+cookieLife 60
+dscp 40
+hbMaxBurst 1
+heartbeatActivated false
+heartbeatInterval 2000
+incCookieLife 30
+initARWnd 16384
+initRto 200
+initialHeartbeatInterval 500
+maxActivateThr 65535
+maxBurst 4
+maxInStreams 2
+maxInitRt 8
+maxOutStreams 2
+maxRto 400
+maxSctpPduSize 1480
+maxShutdownRt 5
+minActivateThr 1
+minRto 100
+noSwitchback true
+pathMaxRtx 4
+primaryPathAvoidance false
+primaryPathMaxRtx 0
+sackTimer 10
+thrTransmitBuffer 48
+thrTransmitBufferCongCeased 85
+transmitBufferSize 64
+end
+
+#############################################################
+### SctpEndpoint (Creación estatica)                           
+#############################################################
+
+crn Transport=1,SctpEndpoint=1
+localIpAddress Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+portNumber 36422
+sctpProfile Transport=1,sctpProfile=1
+userLabel 
+end
+
+#############################################################
+### TimeSettings (Creación estatica)                           
+#############################################################
+
+ld NodeSupport=1,TimeSettings=1 #SystemCreated
+lset NodeSupport=1,TimeSettings=1$ timeOffset +00:00
+lset NodeSupport=1,TimeSettings=1$ daylightSavingTimeOffset 1:00
+lset NodeSupport=1,TimeSettings=1$ gpsToUtcLeapSeconds 0
+
+#############################################################
+### DscpPcpMap                        
+#############################################################
+crn Transport=1,QosProfiles=1,DscpPcpMap=1
+pcp0 0
+pcp1 12 14
+pcp2 18 20 22
+pcp3 26 28
+pcp4 34 36 38
+pcp5 40 42 44 46
+pcp6 48
+pcp7 56
+defaultPcp 0
+end
+
+#############################################################
+### egressQosMarking (Creación estatica)                           
+#############################################################
+
+ld Transport=1,Router=LTE,InterfaceIPv4=1
+lset Transport=1,Router=LTE,InterfaceIPv4=1$ egressQosMarking Transport=1,QosProfiles=1,DscpPcpMap=1
+ld Transport=1,Router=LTE_OAM,InterfaceIPv4=1
+lset Transport=1,Router=LTE_OAM,InterfaceIPv4=1$ egressQosMarking Transport=1,QosProfiles=1,DscpPcpMap=1
+
+#############################################################
+### RadioEquipmentClock Reference  (Creación estatica)         
+#############################################################
+crn Transport=1,Ptp=1
+end
+
+crn Transport=1,Ptp=1,BoundaryOrdinaryClock=1
+clockType 2
+domainNumber 24
+priority1 255
+priority2 255
+ptpProfile 2
+end
+
+crn Transport=1,Ptp=1,BoundaryOrdinaryClock=1,PtpBcOcPort=1
+administrativeState 1
+announceMessageInterval 1
+associatedGrandmaster
+asymmetryCompensation 0
+dscp 56
+durationField 300
+localPriority 128
+masterOnly false
+pBit 1
+ptpMulticastAddress 0
+ptpPathTimeError 1000
+syncMessageInterval -4
+transportInterface EthernetPort=$eth
+transportVlan
+end
+
+crn Transport=1,Synchronization=1,RadioEquipmentClock=1
+bfnOffset 0
+freqDeviationThreshold 5000
+minQualityLevel qualityLevelValueOptionI=2,qualityLevelValueOptionII=2,qualityLevelValueOptionIII=1
+selectionProcessMode 1
+end
+
+crn Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=PTP_FASE
+adminQualityLevel qualityLevelValueOptionI=2,qualityLevelValueOptionII=2,qualityLevelValueOptionIII=1
+administrativeState 1
+encapsulation Ptp=1,BoundaryOrdinaryClock=1
+holdOffTime 1000
+priority 1
+useQLFrom 1
+waitToRestoreTime 60
+end
+cr Synchronization=1,SyncEthInput=1
+EthernetPort=$eth
+cr Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=SyncE
+Synchronization=1,SyncEthInput=1
+5
+
+deb radioequip
+set CXC4040008 featurestate 1
+set CXC4040011 featurestate 1
+#############################################################
+### EnodebFunction                        
+#############################################################
+
+cr ENodeBFunction=1
+mcc=730,mnc=01,mncLength=2
+
+lset ENodeBFunction=1$ dnsLookupOnTai 1
+lset ENodeBFunction=1$ dnsLookupTimer 0
+lset ENodeBFunction=1$ dscpLabel 40
+lset ENodeBFunction=1$ eNBId 13781
+lset ENodeBFunction=1$ licCapDistrMethod 0
+lset ENodeBFunction=1$ maxRandc 255
+lset ENodeBFunction=1$ minRandc 1
+lset ENodeBFunction=1$ nnsfMode 1
+lset ENodeBFunction=1$ randUpdateInterval 200
+lset ENodeBFunction=1$ rrcConnReestActive true
+lset ENodeBFunction=1$ s1HODirDataPathAvail true
+lset ENodeBFunction=1$ s1RetryTimer 30
+lset ENodeBFunction=1$ timePhaseMaxDeviation 100
+lset ENodeBFunction=1$ ulSchedulerDynamicBWAllocationEnabled true
+lset ENodeBFunction=1$ userLabel GLA781
+lset ENodeBFunction=1$ x2IpAddrViaS1Active true
+lset ENodeBFunction=1$ endcX2IpAddrViaS1Active true
+lset ENodeBFunction=1$ x2retryTimerMaxAuto 1440
+lset ENodeBFunction=1$ x2retryTimerStart 30
+lset ENodeBFunction=1$ x2SetupTwoWayRelations false
+lset ENodeBFunction=1$ pwsPersistentStorage 0
+lset ENodeBFunction=1 csfbMeasFromIdleMode true
+lset ENodeBFunction=1$ forcedSiTunnelingActive false
+lset ENodeBFunction=1$ initPreschedulingEnable true
+lset ENodeBFunction=1$ tOutgoingHoExecCdma1xRtt 5
+lset ENodeBFunction=1$ biasThpWifiMobility 10
+lset ENodeBFunction=1$ combCellSectorSelectThreshRx 300
+lset ENodeBFunction=1$ combCellSectorSelectThreshTx 300
+lset ENodeBFunction=1$ licConnectedUsersPercentileConf 90
+lset ENodeBFunction=1$ licDlBbPercentileConf 90
+lset ENodeBFunction=1$ licDlPrbPercentileConf 90
+lset ENodeBFunction=1$ licUlBbPercentileConf 90
+lset ENodeBFunction=1$ licUlPrbPercentileConf 90
+lset ENodeBFunction=1$ mtRreWithoutNeighborActive true
+lset ENodeBFunction=1$ releaseInactiveUesInactTime 1
+lset ENodeBFunction=1$ releaseInactiveUesMpLoadLevel 2
+lset ENodeBFunction=1$ timePhaseMaxDeviationCdma2000 100
+lset ENodeBFunction=1$ timePhaseMaxDeviationMbms 50
+lset ENodeBFunction=1$ timePhaseMaxDeviationOtdoa 9
+lset ENodeBFunction=1$ timePhaseMaxDeviationSib16 100
+lset ENodeBFunction=1$ timePhaseMaxDeviationTdd 15
+lset ENodeBFunction=1$ tS1HoCancelTimer 3
+lset ENodeBFunction=1 checkEmergencySoftLock false
+lset ENodeBFunction=1$ softLockRwRWaitTimerInternal 60
+lset ENodeBFunction=1$ softLockRwRWaitTimerOperator 60
+lset ENodeBFunction=1$ tddVoipDrxProfileId -1
+lset ENodeBFunction=1$ measuringEcgiWithAgActive false
+lset ENodeBFunction=1 enabledUlTrigMeas false
+lset ENodeBFunction=1$ ulMaxWaitingTimeGlobal 0
+lset ENodeBFunction=1$ dlMaxWaitingTimeGlobal 100
+lset ENodeBFunction=1$ alignTtiBundWUlTrigSinr 0
+lset ENodeBFunction=1 caAwareMfbiIntraCellHo false
+lset ENodeBFunction=1$ gtpuErrorIndicationDscp 40
+lset ENodeBFunction=1$ prioritizeAdditionalBands false
+lset ENodeBFunction=1$ s1GtpuEchoDscp 14
+lset ENodeBFunction=1$ s1GtpuEchoEnable 0
+lset ENodeBFunction=1$ s1GtpuEchoFailureAction 0
+lset ENodeBFunction=1$ tRelocOverall 5
+lset ENodeBFunction=1$ useBandPrioritiesInSCellEval false
+lset ENodeBFunction=1$ x2GtpuEchoDscp 14
+lset ENodeBFunction=1$ x2GtpuEchoEnable 0
+lset ENodeBFunction=1$ timePhaseMaxDeviationEdrx 10
+lset ENodeBFunction=1 endcX2IpAddrViaS1Active true
+lset ENodeBFunction=1$ endcS1OverlapMode true
+lset ENodeBFunction=1$ endcDataUsageReportEnabled true
+lset ENodeBFunction=1$ channelQualityMode 0
+lset ENodeBFunction=1$ endcOverheatingAssistance FALSE
+lset ENodeBFunction=1$ extendedBandN77TwoSupported FALSE
+lset ENodeBFunction=1$ hoSrvccToWcdmaMocnEnabled FALSE
+lset ENodeBFunction=1$ interEnbCaTunnelDscp 14
+lset ENodeBFunction=1$ interEnbUlCompTunnelDscp 14
+lset ENodeBFunction=1$ ipecPrbCycles 25
+lset ENodeBFunction=1$ mobilityBackToNrFreqDisabled 1
+lset ENodeBFunction=1$ moranOnSingleBbEnabled 0
+lset ENodeBFunction=1$ overheatingIndProhibitTimer 20
+lset ENodeBFunction=1$ relativePriorityBrOverride FALSE
+lset ENodeBFunction=1$ separateEnGnbForMoranEnabled FALSE
+lset ENodeBFunction=1$ voiceHoToNrEnabled FALSE
+lset ENodeBFunction=1$ zzzTemporary81 1
+lset ENodeBFunction=1$ zzzTemporary85 -2000000000
+lset ENodeBFunction=1$ zzzTemporary86 -2000000000
+lset ENodeBFunction=1 upIpAddressRef Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+#############################################################
+### TermPointToMme                        
+#############################################################
+crn ENodeBFunction=1,TermPointToMme=INDC_AMF01
+additionalCnRef 
+administrativeState 1
+dcnType 0
+domainName 
+ipAddress1 172.30.88.37
+ipAddress2 172.30.88.38
+ipv6Address1 ::
+ipv6Address2 ::
+mmeSupportLegacyLte true
+mmeSupportNbIoT true
+End
+
+crn ENodeBFunction=1,TermPointToMme=CDLV3C_AMF01
+additionalCnRef 
+administrativeState 1
+dcnType 0
+domainName 
+ipAddress1 172.16.212.33
+ipAddress2 172.16.212.34
+ipv6Address1 ::
+ipv6Address2 ::
+mmeSupportLegacyLte true
+mmeSupportNbIoT true
+End
+
+crn ENodeBFunction=1,TermPointToMme=CNTC_AMF01
+ipAddress1 172.24.220.213
+ipAddress2 172.24.220.214
+administrativestate 1
+mmeSupportNbIoT true
+mmeSupportLegacyLte true
+end
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+//mme no aplica\\
+
+
+#############################################################
+### Extras Script 1                        
+#############################################################
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=1
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=2
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=3
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=4
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=5
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=6
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=7
+cr Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=8
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=1 alarmslogan Corte de Energia AC
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=2 alarmslogan Falla rectificador
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=3 alarmslogan Temperatura
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=4 alarmslogan Puerta Abierta
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=5 alarmslogan Falla de GG
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=6 alarmslogan GG en vacío
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=7 alarmslogan GG con carga
+set Equipment=1,FieldReplaceableUnit=BB-1,AlarmPort=8 alarmslogan Bajo nivel de combustible
+deb AlarmPort
+accn Lm=1,IntegrationUnlock=1  activate  
+lt all 
+
+set ENodeBFunction=1  sctpRef SctpEndpoint=1
+set ENodeBFunction=1  upIpAddressRef    Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+gs-
+confb-
+cvms PD_Transport_LTE_$nodename 
+############################# FIN SCRIPT 
