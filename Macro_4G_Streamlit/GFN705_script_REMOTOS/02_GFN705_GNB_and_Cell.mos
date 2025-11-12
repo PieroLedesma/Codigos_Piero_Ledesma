@@ -1,0 +1,701 @@
+confb+
+gs+
+
+crn GNBDUFunction=1
+endpointResourceRef 
+gNBDUId 1
+gNBDUName GFN705
+gNBId 117058
+gNBIdLength 22
+pwsEtwsPrimaryInd 8
+userLabel GFN705
+end
+
+crn GNBDUFunction=1,EndpointResource=1
+userLabel 
+end
+
+crn GNBDUFunction=1,EndpointResource=1,LocalSctpEndpoint=1
+interfaceUsed 3
+sctpEndpointRef SctpEndpoint=F1_NRDU
+end
+
+crn GNBDUFunction=1,TermPointToGNBCUCP=1
+administrativeState 1
+ipv4Address 169.254.42.42
+ipv6Address ::
+end
+
+crn GNBDUFunction=1,QciProfileEndcConfig=1
+end
+
+set GNBDUFunction=1 endpointResourceRef GNBDUFunction=1,EndpointResource=1
+
+crn GNBCUUPFunction=1
+endcDataUsageReportEnabled true
+endcUlNrRetProhibTimer 3000
+endpointResourceRef 
+gNBId 117058
+gNBIdLength 22
+pLMNIdList mcc=730,mnc=01
+userLabel GFN705
+end
+
+crn GNBCUUPFunction=1,EndpointResource=1
+userLabel 
+end
+
+set GNBCUUPFunction=1 endpointResourceRef GNBCUUPFunction=1,EndpointResource=1
+
+crn GNBCUUPFunction=1,EndpointResource=1,LocalIpEndpoint=1
+addressRef Transport=1,Router=NR,InterfaceIPv4=1,AddressIPv4=1
+interfaceList 4,5,7,6
+end
+
+crn GNBCUCPFunction=1
+endpointResourceRef 
+gNBId 117058
+gNBIdLength 22
+maxCommonProcTime 30
+maxNgRetryTime 30
+nasInactivityTime 5
+ngcDedProcTime 5
+pLMNId mcc=730,mnc=01
+tDcOverall 7
+userLabel GFN705
+end
+
+crn GNBCUCPFunction=1,EndpointResource=1
+userLabel 
+end
+
+set GNBCUCPFunction=1 endpointResourceRef GNBCUCPFunction=1,EndpointResource=1
+
+crn GNBCUCPFunction=1,EndpointResource=1,LocalSctpEndpoint=1
+interfaceUsed 7
+sctpEndpointRef SctpEndpoint=2
+end
+
+crn GNBCUCPFunction=1,EndpointResource=1,LocalSctpEndpoint=2
+interfaceUsed 3
+sctpEndpointRef SctpEndpoint=F1_NRCUCP
+end
+
+crn GNBCUCPFunction=1,EUtraNetwork=1
+userLabel 
+end
+
+crn GNBCUCPFunction=1,Mcpc=1
+end
+
+crn GNBCUCPFunction=1,NRNetwork=1
+end
+
+lt all
+
+crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=620736-30
+arfcnValueNRDl 620736
+smtcDuration 1
+smtcOffset 0
+smtcPeriodicity 20
+smtcScs 30
+end
+
+crn GNBDUFunction=1,NRSectorCarrier=1
+administrativeState 1
+altitude 42
+arfcnDL 621668
+arfcnUL 621668
+bSChannelBwDL 50
+bSChannelBwUL 50
+configuredMaxTxPower 100000
+coverage 
+frameStartOffset 0
+latitude -33373583
+longitude -70832972
+nRMicroSleepTxEnabled true
+noOfRxAntennas 0
+noOfTxAntennas 0
+nullSteeringMode 0
+radioTransmitPerfMode 0
+rfBranchRxRef 
+rfBranchTxRef 
+sectorEquipmentFunctionRef SectorEquipmentFunction=75
+txDirection 0
+txPowerChangeRate 1
+txPowerPersistentLock false
+txPowerRatio 100
+end
+
+set  GNBDUFunction=1,NRSectorCarrier=1 coverage Bearing=340,OpeningAngle=650,Radius=1500
+
+crn GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1
+cbfMacroTaperType 0
+coverageShape  0
+customComBfwWideBeam 
+digitalPan 0
+digitalTilt 90
+end
+
+set GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1  digitalTilt 90
+set GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1  coverageShape  0
+
+crn GNBDUFunction=1,NRSectorCarrier=2
+administrativeState 1
+altitude 42
+arfcnDL 621668
+arfcnUL 621668
+bSChannelBwDL 50
+bSChannelBwUL 50
+configuredMaxTxPower 100000
+coverage 
+frameStartOffset 0
+latitude -33373583
+longitude -70832972
+nRMicroSleepTxEnabled true
+noOfRxAntennas 0
+noOfTxAntennas 0
+nullSteeringMode 0
+radioTransmitPerfMode 0
+rfBranchRxRef 
+rfBranchTxRef 
+sectorEquipmentFunctionRef SectorEquipmentFunction=76
+txDirection 0
+txPowerChangeRate 1
+txPowerPersistentLock false
+txPowerRatio 100
+end
+
+set  GNBDUFunction=1,NRSectorCarrier=2 coverage Bearing=95,OpeningAngle=650,Radius=1500
+
+crn GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1
+cbfMacroTaperType 0
+coverageShape  0
+customComBfwWideBeam 
+digitalPan 0
+digitalTilt 40
+end
+
+set GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1  digitalTilt 40
+set GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1  coverageShape  0
+
+crn GNBDUFunction=1,NRSectorCarrier=3
+administrativeState 1
+altitude 42
+arfcnDL 621668
+arfcnUL 621668
+bSChannelBwDL 50
+bSChannelBwUL 50
+configuredMaxTxPower 100000
+coverage 
+frameStartOffset 0
+latitude -33373583
+longitude -70832972
+nRMicroSleepTxEnabled true
+noOfRxAntennas 0
+noOfTxAntennas 0
+nullSteeringMode 0
+radioTransmitPerfMode 0
+rfBranchRxRef 
+rfBranchTxRef 
+sectorEquipmentFunctionRef SectorEquipmentFunction=77
+txDirection 0
+txPowerChangeRate 1
+txPowerPersistentLock false
+txPowerRatio 100
+end
+
+set  GNBDUFunction=1,NRSectorCarrier=3 coverage Bearing=245,OpeningAngle=650,Radius=1500
+
+crn GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1
+cbfMacroTaperType 0
+coverageShape  0
+customComBfwWideBeam 
+digitalPan 0
+digitalTilt 30
+end
+
+set GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1  digitalTilt 30
+set GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1  coverageShape  0
+
+crn GNBDUFunction=1,NRCellDU=N17051
+administrativeState 1
+advancedDlSuMimoEnabled true
+ailgDlPrbLoadLevel 0
+ailgModType 0
+ailgPdcchLoadLevel 0
+bandListManual 78
+cellBarred 1
+cellLocalId 1
+cellRange 7000
+cellReservedForOperator 1
+csiReportFormat 0
+csiRsConfig16P csiRsControl16Ports=0,i11Restriction=,i12Restriction=
+csiRsConfig2P aRestriction=3F,csiRsControl2Ports=1
+csiRsConfig32P csiRsControl32Ports=1,i11Restriction=FFFFFFFF,i12Restriction=FF
+csiRsConfig4P csiRsControl4Ports=1,i11Restriction=FF
+csiRsConfig8P csiRsControl8Ports=1,i11Restriction=FFFF,i12Restriction=
+csiRsPeriodicity 40
+csiRsShiftingPrimary 0
+csiRsShiftingSecondary 0
+dftSOfdmMsg3Enabled false
+dftSOfdmPuschEnabled true
+dftSOfdmPuschStartRsrpThresh -156
+dl256QamEnabled true
+dlMaxMuMimoLayers 4
+dlRobustLaEnabled false
+dlScSpillover 0
+dlStartCrb 0
+fixWideBeamsForPeriodicSr 0
+imsEmSupportEnabled false
+maxUeSpeed 2
+maxUsersRachSchedPusch 10
+nRPCI 9
+nRSectorCarrierRef GNBDUFunction=1,NRSectorCarrier=1
+nRTAC 13202
+nbIotCellDeployed false
+nrLteCoexistence true
+pdschAllowedInDmrsSym true
+pLMNIdList mcc=730,mnc=01
+pMax 23
+pZeroNomPucch -116
+pZeroNomPuschGrant -102
+pZeroNomSrs -100
+pZeroUePuschOffset256Qam 0
+pdschStartPrbStrategy 3
+puschStartPrbStrategy 3
+qQualMin -34
+qQualMinOffset 1
+qRxLevMin -128
+qRxLevMinOffset 2
+rachPreambleFormat 0
+rachPreambleRecTargetPower -110
+rachPreambleTransMax 20
+rachRootSequence 0
+secondaryCellOnly false
+sfnOffset 0
+siWindowLength 20
+sibType2 siBroadcastStatus=0,siPeriodicity=64
+sibType4 siBroadcastStatus=0,siPeriodicity=64
+sibType5 siBroadcastStatus=0,siPeriodicity=64
+sibType6 siBroadcastStatus=0,siPeriodicity=16
+sibType7 siBroadcastStatus=0,siPeriodicity=64
+sibType8 siBroadcastStatus=0,siPeriodicity=64
+srsPeriodicity 40
+ssbDuration 1
+ssbFrequency 0
+ssbOffset 0
+ssbPeriodicity 20
+ssbPowerBoost 0
+ssbSubCarrierSpacing 30
+subCarrierSpacing 30
+tddSpecialSlotPattern 3
+tddUlDlPattern 1
+trsPeriodicity 40
+trsPowerBoosting 0
+trsResourceShifting 0
+typeISinglePanelRiRestriction 15
+ul256QamEnabled true
+ulMaxMuMimoLayers 4
+ulRobustLaEnabled false
+ulScSpillover 0
+ulStartCrb 0
+userLabel GFN705
+end
+
+bl  GNBDUFunction=1,NRCellDU=N17051
+
+crn GNBDUFunction=1,NRCellDU=N17052
+administrativeState 1
+advancedDlSuMimoEnabled true
+ailgDlPrbLoadLevel 0
+ailgModType 0
+ailgPdcchLoadLevel 0
+bandListManual 78
+cellBarred 1
+cellLocalId 2
+cellRange 7000
+cellReservedForOperator 1
+csiReportFormat 0
+csiRsConfig16P csiRsControl16Ports=0,i11Restriction=,i12Restriction=
+csiRsConfig2P aRestriction=3F,csiRsControl2Ports=1
+csiRsConfig32P csiRsControl32Ports=1,i11Restriction=FFFFFFFF,i12Restriction=FF
+csiRsConfig4P csiRsControl4Ports=1,i11Restriction=FF
+csiRsConfig8P csiRsControl8Ports=1,i11Restriction=FFFF,i12Restriction=
+csiRsPeriodicity 40
+csiRsShiftingPrimary 0
+csiRsShiftingSecondary 0
+dftSOfdmMsg3Enabled false
+dftSOfdmPuschEnabled true
+dftSOfdmPuschStartRsrpThresh -156
+dl256QamEnabled true
+dlMaxMuMimoLayers 4
+dlRobustLaEnabled false
+dlScSpillover 0
+dlStartCrb 0
+fixWideBeamsForPeriodicSr 0
+imsEmSupportEnabled false
+maxUeSpeed 2
+maxUsersRachSchedPusch 10
+nRPCI 10
+nRSectorCarrierRef GNBDUFunction=1,NRSectorCarrier=2
+nRTAC 13202
+nbIotCellDeployed false
+nrLteCoexistence true
+pdschAllowedInDmrsSym true
+pLMNIdList mcc=730,mnc=01
+pMax 23
+pZeroNomPucch -116
+pZeroNomPuschGrant -102
+pZeroNomSrs -100
+pZeroUePuschOffset256Qam 0
+pdschStartPrbStrategy 3
+puschStartPrbStrategy 3
+qQualMin -34
+qQualMinOffset 1
+qRxLevMin -128
+qRxLevMinOffset 2
+rachPreambleFormat 0
+rachPreambleRecTargetPower -110
+rachPreambleTransMax 20
+rachRootSequence 10
+secondaryCellOnly false
+sfnOffset 0
+siWindowLength 20
+sibType2 siBroadcastStatus=0,siPeriodicity=64
+sibType4 siBroadcastStatus=0,siPeriodicity=64
+sibType5 siBroadcastStatus=0,siPeriodicity=64
+sibType6 siBroadcastStatus=0,siPeriodicity=16
+sibType7 siBroadcastStatus=0,siPeriodicity=64
+sibType8 siBroadcastStatus=0,siPeriodicity=64
+srsPeriodicity 40
+ssbDuration 1
+ssbFrequency 0
+ssbOffset 0
+ssbPeriodicity 20
+ssbPowerBoost 0
+ssbSubCarrierSpacing 30
+subCarrierSpacing 30
+tddSpecialSlotPattern 3
+tddUlDlPattern 1
+trsPeriodicity 40
+trsPowerBoosting 0
+trsResourceShifting 0
+typeISinglePanelRiRestriction 15
+ul256QamEnabled true
+ulMaxMuMimoLayers 4
+ulRobustLaEnabled false
+ulScSpillover 0
+ulStartCrb 0
+userLabel GFN705
+end
+
+bl  GNBDUFunction=1,NRCellDU=N17052
+
+crn GNBDUFunction=1,NRCellDU=N17053
+administrativeState 1
+advancedDlSuMimoEnabled true
+ailgDlPrbLoadLevel 0
+ailgModType 0
+ailgPdcchLoadLevel 0
+bandListManual 78
+cellBarred 1
+cellLocalId 3
+cellRange 7000
+cellReservedForOperator 1
+csiReportFormat 0
+csiRsConfig16P csiRsControl16Ports=0,i11Restriction=,i12Restriction=
+csiRsConfig2P aRestriction=3F,csiRsControl2Ports=1
+csiRsConfig32P csiRsControl32Ports=1,i11Restriction=FFFFFFFF,i12Restriction=FF
+csiRsConfig4P csiRsControl4Ports=1,i11Restriction=FF
+csiRsConfig8P csiRsControl8Ports=1,i11Restriction=FFFF,i12Restriction=
+csiRsPeriodicity 40
+csiRsShiftingPrimary 0
+csiRsShiftingSecondary 0
+dftSOfdmMsg3Enabled false
+dftSOfdmPuschEnabled true
+dftSOfdmPuschStartRsrpThresh -156
+dl256QamEnabled true
+dlMaxMuMimoLayers 4
+dlRobustLaEnabled false
+dlScSpillover 0
+dlStartCrb 0
+fixWideBeamsForPeriodicSr 0
+imsEmSupportEnabled false
+maxUeSpeed 2
+maxUsersRachSchedPusch 10
+nRPCI 11
+nRSectorCarrierRef GNBDUFunction=1,NRSectorCarrier=3
+nRTAC 13202
+nbIotCellDeployed false
+nrLteCoexistence true
+pdschAllowedInDmrsSym true
+pLMNIdList mcc=730,mnc=01
+pMax 23
+pZeroNomPucch -116
+pZeroNomPuschGrant -102
+pZeroNomSrs -100
+pZeroUePuschOffset256Qam 0
+pdschStartPrbStrategy 3
+puschStartPrbStrategy 3
+qQualMin -34
+qQualMinOffset 1
+qRxLevMin -128
+qRxLevMinOffset 2
+rachPreambleFormat 0
+rachPreambleRecTargetPower -110
+rachPreambleTransMax 20
+rachRootSequence 20
+secondaryCellOnly false
+sfnOffset 0
+siWindowLength 20
+sibType2 siBroadcastStatus=0,siPeriodicity=64
+sibType4 siBroadcastStatus=0,siPeriodicity=64
+sibType5 siBroadcastStatus=0,siPeriodicity=64
+sibType6 siBroadcastStatus=0,siPeriodicity=16
+sibType7 siBroadcastStatus=0,siPeriodicity=64
+sibType8 siBroadcastStatus=0,siPeriodicity=64
+srsPeriodicity 40
+ssbDuration 1
+ssbFrequency 0
+ssbOffset 0
+ssbPeriodicity 20
+ssbPowerBoost 0
+ssbSubCarrierSpacing 30
+subCarrierSpacing 30
+tddSpecialSlotPattern 3
+tddUlDlPattern 1
+trsPeriodicity 40
+trsPowerBoosting 0
+trsResourceShifting 0
+typeISinglePanelRiRestriction 15
+ul256QamEnabled true
+ulMaxMuMimoLayers 4
+ulRobustLaEnabled false
+ulScSpillover 0
+ulStartCrb 0
+userLabel GFN705
+end
+
+bl  GNBDUFunction=1,NRCellDU=N17053
+
+crn GNBCUCPFunction=1,NRCellCU=N17051
+cellLocalId 1
+intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+mcpcPSCellEnabled true
+mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+pmUeIntraFreqCellProfileRef 
+pmUeIntraFreqEnabled false
+primaryPLMNId mcc=730,mnc=01
+qHyst 4
+sNonIntraSearchP 0
+threshServingLowP 0
+transmitSib2 false
+transmitSib4 false
+transmitSib5 false
+ueMCCellProfileRef 
+userLabel GFN705
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N17052
+cellLocalId 2
+intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+mcpcPSCellEnabled true
+mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+pmUeIntraFreqCellProfileRef 
+pmUeIntraFreqEnabled false
+primaryPLMNId mcc=730,mnc=01
+qHyst 4
+sNonIntraSearchP 0
+threshServingLowP 0
+transmitSib2 false
+transmitSib4 false
+transmitSib5 false
+ueMCCellProfileRef 
+userLabel GFN705
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N17053
+cellLocalId 3
+intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+mcpcPSCellEnabled true
+mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+pmUeIntraFreqCellProfileRef 
+pmUeIntraFreqEnabled false
+primaryPLMNId mcc=730,mnc=01
+qHyst 4
+sNonIntraSearchP 0
+threshServingLowP 0
+transmitSib2 false
+transmitSib4 false
+transmitSib5 false
+ueMCCellProfileRef 
+userLabel GFN705
+end
+
+crn GNBCUCPFunction=1,AnrFunction=1
+removeEnbTime 5
+removeFreqRelTime 1000
+removeGnbTime 2
+removeNrelTime 5
+end
+
+crn GNBCUCPFunction=1,AnrFunction=1,AnrFunctionNR=1
+anrAutoCreateXnForEndc false
+anrCgiMeasInterFreqMode 0
+anrCgiMeasIntraFreqEnabled false
+anrEndcX2Enabled true
+end
+
+lt all
+invrl
+
+set GNBDUFunction=1,Rrc=1  t301 400
+set GNBDUFunction=1,Rrc=1 n310 20
+set QciProfileEndcConfigExt=1 initialUplinkConf  1
+set QciProfileEndcConfigExt=1 ulDataSplitThreshold  25600
+set GNBDUFunction=1,RadioBearerTable=1,DataRadioBearer=1 ulPollPdu 
+set GNBDUFunction=1,RadioBearerTable=1,DataRadioBearer=1 tStatusProhibitUl 
+set Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true
+set Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCritical threshold=-122
+set Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchZone threshold=-112
+set IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell timeToTrigger=160
+set IntraFreqMC=1,IntraFreqMCCellProfile=Default  rsrpSCellCoverage threshold=-130
+set IntraFreqMC=1,IntraFreqMCCellProfile=Default  rsrqSCellCoverage threshold=-435
+set UeMC=1 ueMCCellProfileEnabled true
+set IntraFreqMC=1 intraFreqMCCellProfileUsage 1
+set GNBCUUPFunction=1,EndpointResource=1,LocalIpEndpoint=1  interfaceList 4 5 7 6
+set QciProfileEndcConfigExt=1                               ulDataSplitThresholdMcg -1
+set . bbPowerSavingsEnabled false
+
+set CXC4040008  featurestate 1
+set CXC4012375  featurestate 1
+set CXC4012347  featurestate 1
+set CXC4012273  featurestate 1
+set CXC4012272  featurestate 1
+set CXC4011823  featurestate 1
+set CXC4040018  featurestate 1
+set CXC4012492  featurestate 1
+set CXC4012510  featurestate 1
+set CXC4012373  featurestate 1
+set CXC4012330  featurestate 1
+set CXC4012589  featurestate 1
+set CXC4012558  featurestate 1
+set CXC4012500  featurestate 1
+set CXC4012218  featurestate 1
+set CXC4012123  featurestate 1
+set CXC4012015  featurestate 1
+set CXC4012590  featurestate 1
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1
+default5qiTable true
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=1
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 1
+rlcMode 1
+tPdcpDiscard 150
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=2
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 2
+rlcMode 1
+tPdcpDiscard 200
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=3
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 3
+rlcMode 0
+tPdcpDiscard 200
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=4
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 4
+rlcMode 0
+tPdcpDiscard 200
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=5
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 5
+rlcMode 0
+tPdcpDiscard 2147483646
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=6
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 6
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=7
+nrdcSnTerminationRef 
+pdcpSnSize 12
+profile5qi 7
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=8
+nrdcSnTerminationRef 
+pdcpSnSize 18
+profile5qi 8
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+crn1x GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=9
+nrdcSnTerminationRef 
+pdcpSnSize 18
+profile5qi 9
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel 
+end
+
+commit
+
+
+acc nunlock activate
+cvms GNB_and_Cell_Ekohle_PROATEL
+
+confb-
+gs-
+
