@@ -306,7 +306,12 @@ if script_selection == 'Script 4G':
             st.markdown(f"**00_{nemonico_display}_Hardware.mos**")
             st.code(
                 data['all_content']['00_HARDWARE_MOS'], 
-                language='text'                          
+                language='text')
+            
+            st.markdown(f"**01_{nemonico_display}_EUtranCellFDD.mos**")
+            st.code(
+            data['all_content']['01_EUtranCellFDD_MOS'], 
+            language='text'
             )
 
     elif st.session_state['generated_data'] and 'error' in st.session_state['generated_data']:

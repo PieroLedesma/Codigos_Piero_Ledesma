@@ -2,6 +2,7 @@ import datetime
 import pandas as pd
 from typing import Dict, Any, List, Union
 from io import BytesIO
+import re
 
 # ====================================================================
 # === DATOS ESTATICOS DE MME (IPs) ===
@@ -859,6 +860,9 @@ cr Equipment=1,AntennaUnitGroup={group_id},AntennaNearUnit={near_unit_id}
             
             # --- 5b.2 RfBranch ---
             if group_id in rf_branches:
+                # Determinar el nombre de RRU por defecto para este grupo (AUG=N -> RRU-N)
+                rru_name_for_group = f"RRU-{group_id}"
+                
                 sorted_rfb_ids = sorted([k for k in rf_branches[group_id].keys() if k.isdigit()], key=lambda x: int(x))
                 
                 for rfb_id in sorted_rfb_ids:
@@ -866,6 +870,42 @@ cr Equipment=1,AntennaUnitGroup={group_id},AntennaNearUnit={near_unit_id}
                     au_port_id = rfb_data['au_port_id']
                     rf_port_ref = rfb_data['rf_port_ref']
                     
+                    # --- CORRECCIÓN: Asegurar el formato completo para rfPortRef ---
+                    final_rf_port_ref = rf_port_ref
+                    
+                    # 1. Verificar si el valor ya es un MO Reference completo
+                    if not re.search(r'(FieldReplaceableUnit|FRU)=', final_rf_port_ref, re.IGNORECASE):
+                        # No es una referencia MO completa. Intentar reconstruir.
+                        
+                        # 1.1 Intentar parsear si hay coma (RRU-X,Y)
+                        if ',' in final_rf_port_ref:
+                            # Caso: 'RRU-3,D' o '3,D'
+                            parts = [p.strip() for p in final_rf_port_ref.split(',', 1)]
+                            
+                            rru_part = parts[0]
+                            port_id = parts[1]
+                            
+                            # Si la parte RRU es solo el número, usar ese número. Si ya es 'RRU-', usarlo.
+                            if rru_part.isdigit():
+                                rru_name_to_use = f"RRU-{rru_part}"
+                            elif rru_part.upper().startswith('RRU-'):
+                                rru_name_to_use = rru_part
+                            else:
+                                # Fallback al nombre de RRU por grupo
+                                rru_name_to_use = rru_name_for_group
+                                
+                            final_rf_port_ref = f"FieldReplaceableUnit={rru_name_to_use},RfPort={port_id}"
+                        
+                        # 1.2 Si es solo la letra del Puerto (A, B, C, D) o DATA_1
+                        elif final_rf_port_ref.upper() in ['A', 'B', 'C', 'D', 'R', 'DATA_1']:
+                            port_id = final_rf_port_ref
+                            final_rf_port_ref = f"FieldReplaceableUnit={rru_name_for_group},RfPort={port_id}"
+                        
+                        # Si no coincide con ningún patrón, se mantiene el valor original (caso de borde)
+                        
+                    # --- FIN CORRECCIÓN ---
+
+
                     # CR RfBranch
                     auport_script += f"\ncr Equipment=1,AntennaUnitGroup={group_id},RfBranch={rfb_id}"
                     
@@ -875,8 +915,8 @@ cr Equipment=1,AntennaUnitGroup={group_id},AntennaNearUnit={near_unit_id}
                     # SET auPortRef
                     auport_script += f"\nset Equipment=1,AntennaUnitGroup={group_id},RfBranch={rfb_id} auPortRef {auport_ref}"
                     
-                    # SET rfPortRef
-                    auport_script += f"\nset Equipment=1,AntennaUnitGroup={group_id},RfBranch={rfb_id} rfPortRef {rf_port_ref}"
+                    # SET rfPortRef (USANDO EL VALOR CORREGIDO)
+                    auport_script += f"\nset Equipment=1,AntennaUnitGroup={group_id},RfBranch={rfb_id} rfPortRef {final_rf_port_ref}"
                     auport_script += "\n" # Espacio entre Branches
 
     else:
