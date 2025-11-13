@@ -19,7 +19,8 @@ except ImportError:
 REGIONES_CHILE = [
     "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI"
 ]
-CONFIGURACIONES = [f"Configuración {i}" for i in range(1, 8)]
+# MODIFICACIÓN CLAVE: Se reemplaza la lista de opciones por la única opción fija
+CONFIGURACIONES = ["Configuración Básica A-B-C (Fija)"] 
 
 if 'generated_data' not in st.session_state:
     st.session_state['generated_data'] = None
@@ -201,6 +202,7 @@ if script_selection == 'Script 4G':
         with col2:
             st.subheader("Configuración y Región")
             region_select = st.selectbox("Región", REGIONES_CHILE, key='region_select_v4_4')
+            # Esta variable ya no influye en la lógica de RiLink, pero se mantiene para el control de UI
             configuracion_select = st.selectbox("Configuración", CONFIGURACIONES, key='configuracion_select_v4_4')
 
 
@@ -278,7 +280,7 @@ if script_selection == 'Script 4G':
         with st.expander("Ver Contenido XML/YAML/MOS Generado (Debug)"):
 
             # 1. Archivos de TERRENO
-            st.subheader(f"📁 00.{nemonico_display}_Terreno")
+            st.subheader(f"📁 00-{nemonico_display}_Terreno")
 
             st.markdown(f"**00_{nemonico_display}_RbsSummaryFile.xml**")
             st.code(data['all_content']['00_SUMMARY_XML'], language='xml')
@@ -290,7 +292,7 @@ if script_selection == 'Script 4G':
             st.code(data['all_content']['02_SITE_EQUIPMENT_XML'], language='xml')
 
             # 2. Archivos de ENROLLMENT
-            st.subheader(f"📁 02_Enrollment_{nemonico_display}")
+            st.subheader(f"📁 02-Enrollment_{nemonico_display}")
 
             st.markdown("**00_Create_Identity.xml**")
             st.code(data['all_content']['00_CREATE_IDENTITY_XML'], language='xml')
@@ -299,7 +301,7 @@ if script_selection == 'Script 4G':
             st.code(data['all_content']['01_LTE_ENM_XML'], language='text')
 
             # 3. Archivos de REMOTOS
-            st.subheader(f"📁 01_{nemonico_display}_Script_Remotos")
+            st.subheader(f"📁 01-{nemonico_display}_Script_Remotos")
 
             st.markdown(f"**00_{nemonico_display}_Hardware.mos**")
             st.code(

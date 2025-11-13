@@ -38,7 +38,7 @@ def generar_archivos_zip(nemonico: str, release: str, trama: str, region: str, w
     ip_oam = wsh_data.get('IP_OAM_LTE', '0.0.0.0')
 
     # --- Generación de Archivos de Terreno ---
-    folder_name_terreno = f"00.{nemonico_upper}_Terreno"
+    folder_name_terreno = f"00-{nemonico_upper}_Terreno"
     
     release_path = release + ("/" if not release.endswith("/") else "")
     summary_xml_filename = f"00_{nemonico_upper}_RbsSummaryFile.xml"
@@ -71,7 +71,7 @@ xsi:schemaLocation="http://www.ericsson.se/RbsSummaryFileSchemaSummaryFile.xsd">
 
     
     # --- Generación de Archivos de Remotos (MOS) ---
-    folder_name_remotos = f"{nemonico_upper}_Script_Remotos" 
+    folder_name_remotos = f"01-{nemonico_upper}_Script_Remotos" 
     
     # La macro unificada
     hardware_mos_content = generar_hardware_mos(
