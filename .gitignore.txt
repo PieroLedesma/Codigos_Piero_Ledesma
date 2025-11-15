@@ -1,0 +1,6 @@
+# Archivos de caché de Python
+*.pyc
+__pycache__/
+
+# Directorios de código duplicado o temporal
+Macro_4G_Streamlit/Codigos_Piero_Ledesma-main/

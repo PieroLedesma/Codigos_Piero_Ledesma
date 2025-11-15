@@ -1,0 +1,977 @@
+confb+
+gs+
+
+#############################################################
+### Create AntennaUnitGroup - AntennaUnit -  AntennaSubunit v2  
+#############################################################
+
+crn Equipment=1,AntennaUnitGroup=1
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1
+mechanicalAntennaTilt 0
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1
+azimuthHalfPowerBeamwidth 65 
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=2
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=3
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=4
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=5
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=2
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1
+mechanicalAntennaTilt 0
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1
+azimuthHalfPowerBeamwidth 65 
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=2
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=3
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=4
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=5
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=3
+end
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1
+mechanicalAntennaTilt 0
+end
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1
+azimuthHalfPowerBeamwidth 65 
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=2
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=3
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=4
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=5
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+##################################################################################
+#RRU-4 no aplica
+##################################################################################
+##################################################################################
+#RRU-5 no aplica
+##################################################################################
+##################################################################################
+#RRU-6 no aplica
+##################################################################################
+crn Equipment=1,AntennaUnitGroup=7
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1
+mechanicalAntennaTilt 0
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1
+azimuthHalfPowerBeamwidth 65 
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=2
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=3
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=4
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=5
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=8
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1
+mechanicalAntennaTilt 0
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1
+azimuthHalfPowerBeamwidth 65 
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=2
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=3
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=4
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=5
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=9
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1
+mechanicalAntennaTilt 0
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1
+azimuthHalfPowerBeamwidth 65 
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=2
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=3
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=4
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=5
+azimuthHalfPowerBeamwidth 65
+commonChBeamfrmPortMap 0
+customComChBeamfrmWtsAmplitude 0,0,0,0,0,0,0,0
+customComChBeamfrmWtsPhase 0,0,0,0,0,0,0,0
+retSubunitRef 
+end
+
+
+
+#############################################################
+### Mechanicalantennatilt  
+#############################################################
+
+set AntennaUnitGroup=1,AntennaUnit=1 mechanicalAntennaTilt 30
+
+set AntennaUnitGroup=2,AntennaUnit=1 mechanicalAntennaTilt 40
+
+set AntennaUnitGroup=3,AntennaUnit=1 mechanicalAntennaTilt 30
+
+#############################################################
+### Create AuPortRef        (RfBranch)
+#############################################################
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+userlabel LTE1900/3G1900
+end
+
+#############################################################
+### Create RRU  + Riport + RFport      (RRU)                        
+#############################################################
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=A
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=A administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=A vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=A vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=A userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=B
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=B administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=B vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=B vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=B userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=C
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=C administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=C vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=C vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=C userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=D
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=D administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=D vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=D vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=D userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=A
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=A administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=A vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=A vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=A userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=B
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=B administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=B vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=B vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=B userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=C
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=C administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=C vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=C vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=C userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=D
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=D administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=D vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=D vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=D userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=A
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=A administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=A vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=A vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=A userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=B
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=B administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=B vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=B vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=B userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=C
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=C administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=C vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=C vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=C userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=D
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=D administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=D vswrSupervisionActive false
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=D vswrSupervisionSensitivity -1
+set Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=D userLabel LTE2600
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=A
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=A administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=A vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=A vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=A userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=B
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=B administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=B vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=B vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=B userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=C
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=C administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=C vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=C vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=C userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=D
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=D administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=D vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=D vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=D userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=A
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=A administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=A vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=A vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=A userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=B
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=B administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=B vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=B vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=B userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=C
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=C administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=C vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=C vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=C userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=D
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=D administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=D vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=D vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=D userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=A
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=A administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=A vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=A vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=A userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=B
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=B administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=B vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=B vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=B userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=C
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=C administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=C vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=C vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=C userLabel LTE1900/3G1900
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_1
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Riport=DATA_2
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=D
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=D administrativeState 1
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=D vswrSupervisionActive true
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=D vswrSupervisionSensitivity 100
+set Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=D userLabel LTE1900/3G1900
+
+#############################################################
+### Create RfBranch        (RfBranch)                        
+#############################################################
+
+crn Equipment=1,AntennaUnitGroup=1,RfBranch=1
+auPortRef Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+rfPortRef FieldReplaceableUnit=RRU-1,RfPort=A
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=1,RfBranch=2
+auPortRef Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+rfPortRef FieldReplaceableUnit=RRU-1,RfPort=C
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=1,RfBranch=3
+auPortRef Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+rfPortRef FieldReplaceableUnit=RRU-1,RfPort=B
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=1,RfBranch=4
+auPortRef Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+rfPortRef FieldReplaceableUnit=RRU-1,RfPort=D
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,RfBranch=1
+auPortRef Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+rfPortRef FieldReplaceableUnit=RRU-2,RfPort=A
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,RfBranch=2
+auPortRef Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+rfPortRef FieldReplaceableUnit=RRU-2,RfPort=C
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,RfBranch=3
+auPortRef Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+rfPortRef FieldReplaceableUnit=RRU-2,RfPort=B
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=2,RfBranch=4
+auPortRef Equipment=1,AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+rfPortRef FieldReplaceableUnit=RRU-2,RfPort=D
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,RfBranch=1
+auPortRef Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+rfPortRef FieldReplaceableUnit=RRU-3,RfPort=A
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,RfBranch=2
+auPortRef Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+rfPortRef FieldReplaceableUnit=RRU-3,RfPort=C
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,RfBranch=3
+auPortRef Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+rfPortRef FieldReplaceableUnit=RRU-3,RfPort=B
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=3,RfBranch=4
+auPortRef Equipment=1,AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+rfPortRef FieldReplaceableUnit=RRU-3,RfPort=D
+userlabel LTE2600
+end
+
+crn Equipment=1,AntennaUnitGroup=7,RfBranch=1
+auPortRef Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+rfPortRef FieldReplaceableUnit=RRU-7,RfPort=A
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=7,RfBranch=2
+auPortRef Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+rfPortRef FieldReplaceableUnit=RRU-7,RfPort=C
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=7,RfBranch=3
+auPortRef Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+rfPortRef FieldReplaceableUnit=RRU-7,RfPort=B
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=7,RfBranch=4
+auPortRef Equipment=1,AntennaUnitGroup=7,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+rfPortRef FieldReplaceableUnit=RRU-7,RfPort=D
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,RfBranch=1
+auPortRef Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+rfPortRef FieldReplaceableUnit=RRU-8,RfPort=A
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,RfBranch=2
+auPortRef Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+rfPortRef FieldReplaceableUnit=RRU-8,RfPort=C
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,RfBranch=3
+auPortRef Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+rfPortRef FieldReplaceableUnit=RRU-8,RfPort=B
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=8,RfBranch=4
+auPortRef Equipment=1,AntennaUnitGroup=8,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+rfPortRef FieldReplaceableUnit=RRU-8,RfPort=D
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,RfBranch=1
+auPortRef Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=1
+rfPortRef FieldReplaceableUnit=RRU-9,RfPort=A
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,RfBranch=2
+auPortRef Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=3
+rfPortRef FieldReplaceableUnit=RRU-9,RfPort=C
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,RfBranch=3
+auPortRef Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=2
+rfPortRef FieldReplaceableUnit=RRU-9,RfPort=B
+userlabel LTE1900/3G1900
+end
+
+crn Equipment=1,AntennaUnitGroup=9,RfBranch=4
+auPortRef Equipment=1,AntennaUnitGroup=9,AntennaUnit=1,AntennaSubunit=1,AuPort=4
+rfPortRef FieldReplaceableUnit=RRU-9,RfPort=D
+userlabel LTE1900/3G1900
+end
+
+#############################################################
+### Setting RfBranch        (RfBranch)                        
+#############################################################
+
+bl sector
+
+lset SectorEquipmentFunction=1$ rfBranchRef Equipment=1,AntennaUnitGroup=1,RfBranch=1 Equipment=1,AntennaUnitGroup=1,RfBranch=2 Equipment=1,AntennaUnitGroup=1,RfBranch=3 Equipment=1,AntennaUnitGroup=1,RfBranch=4 
+
+lset SectorEquipmentFunction=2$ rfBranchRef Equipment=1,AntennaUnitGroup=2,RfBranch=1 Equipment=1,AntennaUnitGroup=2,RfBranch=2 Equipment=1,AntennaUnitGroup=2,RfBranch=3 Equipment=1,AntennaUnitGroup=2,RfBranch=4 
+
+lset SectorEquipmentFunction=3$ rfBranchRef Equipment=1,AntennaUnitGroup=3,RfBranch=1 Equipment=1,AntennaUnitGroup=3,RfBranch=2 Equipment=1,AntennaUnitGroup=3,RfBranch=3 Equipment=1,AntennaUnitGroup=3,RfBranch=4 
+
+lset SectorEquipmentFunction=7$ rfBranchRef Equipment=1,AntennaUnitGroup=7,RfBranch=1 Equipment=1,AntennaUnitGroup=7,RfBranch=2 Equipment=1,AntennaUnitGroup=7,RfBranch=3 Equipment=1,AntennaUnitGroup=7,RfBranch=4 
+
+lset SectorEquipmentFunction=8$ rfBranchRef Equipment=1,AntennaUnitGroup=8,RfBranch=1 Equipment=1,AntennaUnitGroup=8,RfBranch=2 Equipment=1,AntennaUnitGroup=8,RfBranch=3 Equipment=1,AntennaUnitGroup=8,RfBranch=4 
+
+lset SectorEquipmentFunction=9$ rfBranchRef Equipment=1,AntennaUnitGroup=9,RfBranch=1 Equipment=1,AntennaUnitGroup=9,RfBranch=2 Equipment=1,AntennaUnitGroup=9,RfBranch=3 Equipment=1,AntennaUnitGroup=9,RfBranch=4
+
+#############################################################
+### Create NearUnit  And RetNearUnit V3                      
+#############################################################
+
+### Create RRU PORT R 
+cr Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=R
+deb Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=R
+
+cr Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=R
+deb Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=R
+
+cr Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=R
+deb Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=R
+
+cr Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=R
+deb Equipment=1,FieldReplaceableUnit=RRU-7,Rfport=R
+
+cr Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=R
+deb Equipment=1,FieldReplaceableUnit=RRU-8,Rfport=R
+
+cr Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=R
+deb Equipment=1,FieldReplaceableUnit=RRU-9,Rfport=R
+
+### Create AntennaNearUnit 
+
+
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1 rfportref Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=R
+
+lset AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1 retsubunitref AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1 electricalAntennaTilt 40
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1 iuantAntennaBearing 0
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1 userLabel LTE2600
+
+
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=2
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=2,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=2 rfportref Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=R
+
+lset AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=2 retsubunitref AntennaUnitGroup=1,AntennaNearUnit=2,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=2,RetSubUnit=1 electricalAntennaTilt 60
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=2,RetSubUnit=1 iuantAntennaBearing 0
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=2,RetSubUnit=1 userLabel LTE1900/3G1900
+
+
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=3
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=3,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=3 rfportref Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=R
+
+lset AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=3 retsubunitref AntennaUnitGroup=1,AntennaNearUnit=3,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=3,RetSubUnit=1 electricalAntennaTilt 60
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=3,RetSubUnit=1 iuantAntennaBearing 0
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=3,RetSubUnit=1 userLabel LTE1900/3G1900
+
+
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=4
+cr Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=4,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=4 rfportref Equipment=1,FieldReplaceableUnit=RRU-1,Rfport=R
+
+lset AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=4 retsubunitref AntennaUnitGroup=1,AntennaNearUnit=4,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=4,RetSubUnit=1 electricalAntennaTilt 80
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=4,RetSubUnit=1 iuantAntennaBearing 0
+lset Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=4,RetSubUnit=1 userLabel 3G900
+
+
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1 rfportref Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=R
+
+lset AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=1 retsubunitref AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1 electricalAntennaTilt 60
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1 iuantAntennaBearing 1200
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1 userLabel LTE2600
+
+
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=2
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=2,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=2 rfportref Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=R
+
+lset AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=2 retsubunitref AntennaUnitGroup=2,AntennaNearUnit=2,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=2,RetSubUnit=1 electricalAntennaTilt 70
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=2,RetSubUnit=1 iuantAntennaBearing 1200
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=2,RetSubUnit=1 userLabel LTE1900/3G1900
+
+
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=3
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=3,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=3 rfportref Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=R
+
+lset AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=3 retsubunitref AntennaUnitGroup=2,AntennaNearUnit=3,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=3,RetSubUnit=1 electricalAntennaTilt 70
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=3,RetSubUnit=1 iuantAntennaBearing 1200
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=3,RetSubUnit=1 userLabel LTE1900/3G1900
+
+
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=4
+cr Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=4,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=4 rfportref Equipment=1,FieldReplaceableUnit=RRU-2,Rfport=R
+
+lset AntennaUnitGroup=2,AntennaUnit=1,AntennaSubunit=4 retsubunitref AntennaUnitGroup=2,AntennaNearUnit=4,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=4,RetSubUnit=1 electricalAntennaTilt 90
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=4,RetSubUnit=1 iuantAntennaBearing 1200
+lset Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=4,RetSubUnit=1 userLabel 3G900
+
+
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1 rfportref Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=R
+
+lset AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=1 retsubunitref AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1 electricalAntennaTilt 80
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1 iuantAntennaBearing 2500
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1 userLabel LTE2600
+
+
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=2
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=2,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=2 rfportref Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=R
+
+lset AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=2 retsubunitref AntennaUnitGroup=3,AntennaNearUnit=2,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=2,RetSubUnit=1 electricalAntennaTilt 80
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=2,RetSubUnit=1 iuantAntennaBearing 2500
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=2,RetSubUnit=1 userLabel LTE1900/3G1900
+
+
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=3
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=3,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=3 rfportref Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=R
+
+lset AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=3 retsubunitref AntennaUnitGroup=3,AntennaNearUnit=3,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=3,RetSubUnit=1 electricalAntennaTilt 80
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=3,RetSubUnit=1 iuantAntennaBearing 2500
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=3,RetSubUnit=1 userLabel LTE1900/3G1900
+
+
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=4
+cr Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=4,RetSubUnit=1
+set Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=4 rfportref Equipment=1,FieldReplaceableUnit=RRU-3,Rfport=R
+
+lset AntennaUnitGroup=3,AntennaUnit=1,AntennaSubunit=4 retsubunitref AntennaUnitGroup=3,AntennaNearUnit=4,RetSubUnit=1
+
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=4,RetSubUnit=1 electricalAntennaTilt 90
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=4,RetSubUnit=1 iuantAntennaBearing 2500
+lset Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=4,RetSubUnit=1 userLabel 3G900
+
+gs-
+confb-
+cvms PD_AntenaUnitGroup_$nodename 

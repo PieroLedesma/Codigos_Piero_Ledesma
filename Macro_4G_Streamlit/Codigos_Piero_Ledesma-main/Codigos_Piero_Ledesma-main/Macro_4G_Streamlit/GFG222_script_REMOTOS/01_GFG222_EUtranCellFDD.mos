@@ -1,0 +1,1320 @@
+confb+
+gs+
+
+crn ENodeBFunction=1,EUtranCellFDD=L02151
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 1
+dlChannelBandwidth 20000
+earfcndl 3100
+earfcnul 21100
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 0
+rachRootSequence 64
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=1
+tac 13125
+ulChannelBandwidth 20000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=L02151
+3100
+21100
+1
+13
+0
+13125
+ENodeBFunction=1,SectorCarrier=1
+20000
+20000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=L02151
+3100
+21100
+1
+13
+0
+13125
+d
+ENodeBFunction=1,SectorCarrier=1
+20000
+20000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=L02151 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=L02151 userlabel L02151
+set ENodeBFunction=1,EUtranCellFDD=L02151 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=L02151 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=L02151 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=L02151 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=L02151 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=L02151 qRxLevMin -126
+set ENodeBFunction=1,EUtranCellFDD=L02151 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=L02151 rachRootSequence 64
+set ENodeBFunction=1,EUtranCellFDD=L02151 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=L02151 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=L02151 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=L02151 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=L02151 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=L02151 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=L02151 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=L02151 cellSubscriptionCapacity 40000
+set ENodeBFunction=1,EUtranCellFDD=L02151 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=L02151 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=L02151 eutranCellCoverage posCellBearing=200
+set ENodeBFunction=1,EUtranCellFDD=L02151 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=L02151 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=L02151 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=L02151 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=L02151 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=L02151 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=L02151 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=L02151 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=L02151 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=L02151 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=L02151 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=L02151 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=L02151 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=L02151 systemInformationBlock3 sNonIntraSearch=8
+set ENodeBFunction=1,EUtranCellFDD=L02151 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=L02151 threshServingLow  8
+set ENodeBFunction=1,EUtranCellFDD=L02151 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=L02151 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=L02151 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=L02151 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=L02151 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=L02151 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=L02151 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=L02151 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=L02151 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=L02151 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=L02151 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=L02151 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=L02151 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=L02151 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=L02151 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=L02151 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=L02151 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=L02151 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=L02151 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=L02151 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=L02151 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=L02151 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=L02151 minInterfUlRegionSize 10
+set ENodeBFunction=1,EUtranCellFDD=L02151 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=L02151 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=L02151 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=L02151 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02151 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=L02151 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=L02151 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=L02151 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=L02151 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=L02151 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=L02151 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=L02152
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 2
+dlChannelBandwidth 20000
+earfcndl 3100
+earfcnul 21100
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 1
+rachRootSequence 79
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=2
+tac 13125
+ulChannelBandwidth 20000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=L02152
+3100
+21100
+2
+13
+1
+13125
+ENodeBFunction=1,SectorCarrier=2
+20000
+20000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=L02152
+3100
+21100
+2
+13
+1
+13125
+d
+ENodeBFunction=1,SectorCarrier=2
+20000
+20000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=L02152 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=L02152 userlabel L02152
+set ENodeBFunction=1,EUtranCellFDD=L02152 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=L02152 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=L02152 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=L02152 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=L02152 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=L02152 qRxLevMin -126
+set ENodeBFunction=1,EUtranCellFDD=L02152 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=L02152 rachRootSequence 79
+set ENodeBFunction=1,EUtranCellFDD=L02152 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=L02152 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=L02152 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=L02152 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=L02152 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=L02152 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=L02152 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=L02152 cellSubscriptionCapacity 40000
+set ENodeBFunction=1,EUtranCellFDD=L02152 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=L02152 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=L02152 eutranCellCoverage posCellBearing=900
+set ENodeBFunction=1,EUtranCellFDD=L02152 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=L02152 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=L02152 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=L02152 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=L02152 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=L02152 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=L02152 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=L02152 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=L02152 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=L02152 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=L02152 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=L02152 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=L02152 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=L02152 systemInformationBlock3 sNonIntraSearch=8
+set ENodeBFunction=1,EUtranCellFDD=L02152 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=L02152 threshServingLow  8
+set ENodeBFunction=1,EUtranCellFDD=L02152 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=L02152 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=L02152 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=L02152 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=L02152 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=L02152 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=L02152 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=L02152 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=L02152 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=L02152 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=L02152 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=L02152 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=L02152 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=L02152 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=L02152 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=L02152 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=L02152 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=L02152 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=L02152 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=L02152 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=L02152 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=L02152 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=L02152 minInterfUlRegionSize 10
+set ENodeBFunction=1,EUtranCellFDD=L02152 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=L02152 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=L02152 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=L02152 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02152 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=L02152 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=L02152 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=L02152 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=L02152 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=L02152 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=L02152 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=L02153
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 3
+dlChannelBandwidth 20000
+earfcndl 3100
+earfcnul 21100
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 2
+rachRootSequence 94
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=3
+tac 13125
+ulChannelBandwidth 20000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=L02153
+3100
+21100
+3
+13
+2
+13125
+ENodeBFunction=1,SectorCarrier=3
+20000
+20000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=L02153
+3100
+21100
+3
+13
+2
+13125
+d
+ENodeBFunction=1,SectorCarrier=3
+20000
+20000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=L02153 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=L02153 userlabel L02153
+set ENodeBFunction=1,EUtranCellFDD=L02153 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=L02153 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=L02153 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=L02153 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=L02153 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=L02153 qRxLevMin -126
+set ENodeBFunction=1,EUtranCellFDD=L02153 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=L02153 rachRootSequence 94
+set ENodeBFunction=1,EUtranCellFDD=L02153 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=L02153 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=L02153 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=L02153 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=L02153 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=L02153 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=L02153 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=L02153 cellSubscriptionCapacity 40000
+set ENodeBFunction=1,EUtranCellFDD=L02153 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=L02153 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=L02153 eutranCellCoverage posCellBearing=1600
+set ENodeBFunction=1,EUtranCellFDD=L02153 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=L02153 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=L02153 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=L02153 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=L02153 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=L02153 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=L02153 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=L02153 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=L02153 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=L02153 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=L02153 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=L02153 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=L02153 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=L02153 systemInformationBlock3 sNonIntraSearch=8
+set ENodeBFunction=1,EUtranCellFDD=L02153 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=L02153 threshServingLow  8
+set ENodeBFunction=1,EUtranCellFDD=L02153 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=L02153 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=L02153 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=L02153 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=L02153 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=L02153 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=L02153 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=L02153 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=L02153 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=L02153 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=L02153 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=L02153 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=L02153 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=L02153 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=L02153 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=L02153 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=L02153 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=L02153 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=L02153 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=L02153 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=L02153 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=L02153 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=L02153 minInterfUlRegionSize 10
+set ENodeBFunction=1,EUtranCellFDD=L02153 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=L02153 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=L02153 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=L02153 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=L02153 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=L02153 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=L02153 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=L02153 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=L02153 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=L02153 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=L02153 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=P02151
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 7
+dlChannelBandwidth 15000
+earfcndl 1125
+earfcnul 19125
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 0
+rachRootSequence 64
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=7
+tac 13125
+ulChannelBandwidth 15000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=P02151
+1125
+19125
+7
+13
+0
+13125
+ENodeBFunction=1,SectorCarrier=7
+15000
+15000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=P02151
+1125
+19125
+7
+13
+0
+13125
+d
+ENodeBFunction=1,SectorCarrier=7
+15000
+15000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=P02151 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=P02151 userlabel P02151
+set ENodeBFunction=1,EUtranCellFDD=P02151 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=P02151 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=P02151 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=P02151 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=P02151 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=P02151 qRxLevMin -122
+set ENodeBFunction=1,EUtranCellFDD=P02151 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=P02151 rachRootSequence 64
+set ENodeBFunction=1,EUtranCellFDD=P02151 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=P02151 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=P02151 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=P02151 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=P02151 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=P02151 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=P02151 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=P02151 cellSubscriptionCapacity 30000
+set ENodeBFunction=1,EUtranCellFDD=P02151 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=P02151 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=P02151 eutranCellCoverage posCellBearing=200
+set ENodeBFunction=1,EUtranCellFDD=P02151 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=P02151 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=P02151 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=P02151 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=P02151 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=P02151 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=P02151 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=P02151 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=P02151 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=P02151 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=P02151 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=P02151 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=P02151 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=P02151 systemInformationBlock3 sNonIntraSearch=4
+set ENodeBFunction=1,EUtranCellFDD=P02151 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=P02151 threshServingLow  4
+set ENodeBFunction=1,EUtranCellFDD=P02151 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=P02151 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=P02151 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=P02151 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=P02151 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=P02151 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=P02151 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=P02151 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=P02151 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=P02151 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=P02151 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=P02151 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=P02151 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=P02151 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=P02151 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=P02151 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=P02151 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=P02151 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=P02151 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=P02151 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=P02151 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=P02151 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=P02151 minInterfUlRegionSize 10
+set ENodeBFunction=1,EUtranCellFDD=P02151 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=P02151 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=P02151 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=P02151 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02151 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=P02151 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=P02151 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=P02151 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=P02151 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=P02151 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=P02151 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=P02152
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 8
+dlChannelBandwidth 15000
+earfcndl 1125
+earfcnul 19125
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 1
+rachRootSequence 79
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=8
+tac 13125
+ulChannelBandwidth 15000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=P02152
+1125
+19125
+8
+13
+1
+13125
+ENodeBFunction=1,SectorCarrier=8
+15000
+15000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=P02152
+1125
+19125
+8
+13
+1
+13125
+d
+ENodeBFunction=1,SectorCarrier=8
+15000
+15000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=P02152 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=P02152 userlabel P02152
+set ENodeBFunction=1,EUtranCellFDD=P02152 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=P02152 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=P02152 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=P02152 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=P02152 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=P02152 qRxLevMin -122
+set ENodeBFunction=1,EUtranCellFDD=P02152 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=P02152 rachRootSequence 79
+set ENodeBFunction=1,EUtranCellFDD=P02152 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=P02152 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=P02152 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=P02152 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=P02152 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=P02152 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=P02152 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=P02152 cellSubscriptionCapacity 30000
+set ENodeBFunction=1,EUtranCellFDD=P02152 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=P02152 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=P02152 eutranCellCoverage posCellBearing=900
+set ENodeBFunction=1,EUtranCellFDD=P02152 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=P02152 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=P02152 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=P02152 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=P02152 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=P02152 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=P02152 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=P02152 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=P02152 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=P02152 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=P02152 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=P02152 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=P02152 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=P02152 systemInformationBlock3 sNonIntraSearch=4
+set ENodeBFunction=1,EUtranCellFDD=P02152 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=P02152 threshServingLow  4
+set ENodeBFunction=1,EUtranCellFDD=P02152 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=P02152 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=P02152 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=P02152 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=P02152 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=P02152 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=P02152 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=P02152 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=P02152 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=P02152 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=P02152 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=P02152 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=P02152 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=P02152 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=P02152 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=P02152 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=P02152 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=P02152 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=P02152 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=P02152 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=P02152 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=P02152 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=P02152 minInterfUlRegionSize 10
+set ENodeBFunction=1,EUtranCellFDD=P02152 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=P02152 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=P02152 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=P02152 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02152 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=P02152 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=P02152 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=P02152 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=P02152 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=P02152 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=P02152 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=P02153
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 9
+dlChannelBandwidth 15000
+earfcndl 1125
+earfcnul 19125
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 2
+rachRootSequence 94
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=9
+tac 13125
+ulChannelBandwidth 15000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=P02153
+1125
+19125
+9
+13
+2
+13125
+ENodeBFunction=1,SectorCarrier=9
+15000
+15000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=P02153
+1125
+19125
+9
+13
+2
+13125
+d
+ENodeBFunction=1,SectorCarrier=9
+15000
+15000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=P02153 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=P02153 userlabel P02153
+set ENodeBFunction=1,EUtranCellFDD=P02153 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=P02153 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=P02153 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=P02153 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=P02153 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=P02153 qRxLevMin -122
+set ENodeBFunction=1,EUtranCellFDD=P02153 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=P02153 rachRootSequence 94
+set ENodeBFunction=1,EUtranCellFDD=P02153 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=P02153 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=P02153 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=P02153 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=P02153 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=P02153 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=P02153 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=P02153 cellSubscriptionCapacity 30000
+set ENodeBFunction=1,EUtranCellFDD=P02153 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=P02153 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=P02153 eutranCellCoverage posCellBearing=1600
+set ENodeBFunction=1,EUtranCellFDD=P02153 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=P02153 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=P02153 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=P02153 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=P02153 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=P02153 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=P02153 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=P02153 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=P02153 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=P02153 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=P02153 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=P02153 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=P02153 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=P02153 systemInformationBlock3 sNonIntraSearch=4
+set ENodeBFunction=1,EUtranCellFDD=P02153 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=P02153 threshServingLow  4
+set ENodeBFunction=1,EUtranCellFDD=P02153 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=P02153 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=P02153 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=P02153 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=P02153 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=P02153 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=P02153 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=P02153 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=P02153 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=P02153 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=P02153 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=P02153 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=P02153 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=P02153 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=P02153 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=P02153 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=P02153 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=P02153 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=P02153 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=P02153 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=P02153 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=P02153 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=P02153 minInterfUlRegionSize 10
+set ENodeBFunction=1,EUtranCellFDD=P02153 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=P02153 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=P02153 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=P02153 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=P02153 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=P02153 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=P02153 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=P02153 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=P02153 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=P02153 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=P02153 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=Q02151
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 17
+dlChannelBandwidth 10000
+earfcndl 693
+earfcnul 18693
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 0
+rachRootSequence 64
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=17
+tac 13125
+ulChannelBandwidth 10000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=Q02151
+693
+18693
+17
+13
+0
+13125
+ENodeBFunction=1,SectorCarrier=17
+10000
+10000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=Q02151
+693
+18693
+17
+13
+0
+13125
+d
+ENodeBFunction=1,SectorCarrier=17
+10000
+10000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=Q02151 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=Q02151 userlabel Q02151
+set ENodeBFunction=1,EUtranCellFDD=Q02151 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=Q02151 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=Q02151 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=Q02151 qRxLevMin -122
+set ENodeBFunction=1,EUtranCellFDD=Q02151 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=Q02151 rachRootSequence 64
+set ENodeBFunction=1,EUtranCellFDD=Q02151 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=Q02151 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=Q02151 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=Q02151 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cellSubscriptionCapacity 20000
+set ENodeBFunction=1,EUtranCellFDD=Q02151 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 eutranCellCoverage posCellBearing=200
+set ENodeBFunction=1,EUtranCellFDD=Q02151 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=Q02151 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=Q02151 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=Q02151 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=Q02151 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=Q02151 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=Q02151 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=Q02151 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=Q02151 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=Q02151 systemInformationBlock3 sNonIntraSearch=4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 threshServingLow  4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=Q02151 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=Q02151 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=Q02151 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=Q02151 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=Q02151 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=Q02151 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=Q02151 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=Q02151 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=Q02151 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=Q02151 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=Q02151 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=Q02151 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=Q02151 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=Q02151 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=Q02151 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=Q02151 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=Q02151 minInterfUlRegionSize 5
+set ENodeBFunction=1,EUtranCellFDD=Q02151 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=Q02151 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=Q02151 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=Q02151 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=Q02151 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=Q02151 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=Q02151 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=Q02151 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=Q02151 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=Q02152
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 18
+dlChannelBandwidth 10000
+earfcndl 693
+earfcnul 18693
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 1
+rachRootSequence 79
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=18
+tac 13125
+ulChannelBandwidth 10000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=Q02152
+693
+18693
+18
+13
+1
+13125
+ENodeBFunction=1,SectorCarrier=18
+10000
+10000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=Q02152
+693
+18693
+18
+13
+1
+13125
+d
+ENodeBFunction=1,SectorCarrier=18
+10000
+10000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=Q02152 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=Q02152 userlabel Q02152
+set ENodeBFunction=1,EUtranCellFDD=Q02152 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=Q02152 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=Q02152 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=Q02152 qRxLevMin -122
+set ENodeBFunction=1,EUtranCellFDD=Q02152 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=Q02152 rachRootSequence 79
+set ENodeBFunction=1,EUtranCellFDD=Q02152 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=Q02152 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=Q02152 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=Q02152 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cellSubscriptionCapacity 20000
+set ENodeBFunction=1,EUtranCellFDD=Q02152 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 eutranCellCoverage posCellBearing=900
+set ENodeBFunction=1,EUtranCellFDD=Q02152 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=Q02152 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=Q02152 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=Q02152 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=Q02152 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=Q02152 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=Q02152 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=Q02152 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=Q02152 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=Q02152 systemInformationBlock3 sNonIntraSearch=4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 threshServingLow  4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=Q02152 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=Q02152 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=Q02152 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=Q02152 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=Q02152 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=Q02152 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=Q02152 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=Q02152 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=Q02152 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=Q02152 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=Q02152 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=Q02152 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=Q02152 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=Q02152 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=Q02152 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=Q02152 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=Q02152 minInterfUlRegionSize 5
+set ENodeBFunction=1,EUtranCellFDD=Q02152 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=Q02152 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=Q02152 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=Q02152 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=Q02152 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=Q02152 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=Q02152 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=Q02152 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=Q02152 lbTpRankThreshMin 0
+
+crn ENodeBFunction=1,EUtranCellFDD=Q02153
+
+additionalPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+additionalPlmnReservedList false,false,false,false,false
+cellId 19
+dlChannelBandwidth 10000
+earfcndl 693
+earfcnul 18693
+physicalLayerCellIdGroup 13
+physicalLayerSubCellId 2
+rachRootSequence 94
+sectorCarrierRef ENodeBFunction=1,SectorCarrier=19
+tac 13125
+ulChannelBandwidth 10000
+cellDefinedPrimaryPlmnId 
+prsPeriod 3
+noConsecutiveSubframes 2
+transmissionMode 4
+
+end
+
+cr ENodeBFunction=1,EUtranCellFDD=Q02153
+693
+18693
+19
+13
+2
+13125
+ENodeBFunction=1,SectorCarrier=19
+10000
+10000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+cr ENodeBFunction=1,EUtranCellFDD=Q02153
+693
+18693
+19
+13
+2
+13125
+d
+ENodeBFunction=1,SectorCarrier=19
+10000
+10000
+mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+false,false,false,false,false
+
+set ENodeBFunction=1,EUtranCellFDD=Q02153 noOfPucchCqiUsers 400
+set ENodeBFunction=1,EUtranCellFDD=Q02153 userlabel Q02153
+set ENodeBFunction=1,EUtranCellFDD=Q02153 altitude 1200
+set ENodeBFunction=1,EUtranCellFDD=Q02153 latitude -33423534
+set ENodeBFunction=1,EUtranCellFDD=Q02153 longitude -70655466
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pMaxServingCell 23
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pZeroNominalPucch -120
+set ENodeBFunction=1,EUtranCellFDD=Q02153 qRxLevMin -122
+set ENodeBFunction=1,EUtranCellFDD=Q02153 qRxLevMinOffset 1000
+set ENodeBFunction=1,EUtranCellFDD=Q02153 rachRootSequence 94
+set ENodeBFunction=1,EUtranCellFDD=Q02153 changeNotification changeNotificationSIB1:b=true,changeNotificationSIB2:b=true,changeNotificationSIB3:b=true,changeNotificationSIB4:b=true,changeNotificationSIB15:b=true,changeNotificationSIB5:b=true,changeNotificationSIB6:b=true,changeNotificationSIB16:b=true,changeNotificationSIB7:b=true,changeNotificationSIB8:b=true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 mappingInfo mappingInfoSIB3:i=1,mappingInfoSIB4:i=2,mappingInfoSIB5:i=3,mappingInfoSIB6:i=4,mappingInfoSIB7:i=0,mappingInfoSIB10:i=1,mappingInfoSIB8:i=0,mappingInfoSIB11:i=7,mappingInfoSIB12:i=8
+set ENodeBFunction=1,EUtranCellFDD=Q02153 covTriggerdBlindHoAllowed  false
+set ENodeBFunction=1,EUtranCellFDD=Q02153 crsGain  300
+set ENodeBFunction=1,EUtranCellFDD=Q02153 maxSentCrsAssistCells  8
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cellCapMaxCellSubCap 60000
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cellCapMinCellSubCap 20000
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cellSubscriptionCapacity 20000
+set ENodeBFunction=1,EUtranCellFDD=Q02153 dlInterferenceManagementActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 drxActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 eutranCellCoverage posCellBearing=1600
+set ENodeBFunction=1,EUtranCellFDD=Q02153 eutranCellCoverage posCellOpeningAngle=650
+set ENodeBFunction=1,EUtranCellFDD=Q02153 eutranCellCoverage posCellRadius=1500
+set ENodeBFunction=1,EUtranCellFDD=Q02153 eutranCellPolygon  cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0;cornerLatitude=0,cornerLongitude=0
+set ENodeBFunction=1,EUtranCellFDD=Q02153 mobCtrlAtPoorCovActive true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 noConsecutiveSubframes 2
+set ENodeBFunction=1,EUtranCellFDD=Q02153 qciTableRef QciTable=default
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdschTypeBGain 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 outOfCoverageThreshold 10
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pciConflict 0,0,0,0,0
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchCfiMode 5
+set ENodeBFunction=1,EUtranCellFDD=Q02153 emergencyAreaId -1 -1 -1 -1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 primaryPlmnReserved false
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchOuterLoopInitialAdj -10
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchOuterLoopUpStep 4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 prsPeriod 3
+set ENodeBFunction=1,EUtranCellFDD=Q02153 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=Q02153 systemInformationBlock3 sIntraSearch=46
+set ENodeBFunction=1,EUtranCellFDD=Q02153 systemInformationBlock3 sIntraSearchP=46
+set ENodeBFunction=1,EUtranCellFDD=Q02153 systemInformationBlock3 sNonIntraSearch=4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 systemInformationBlock3 sNonIntraSearchP=4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 threshServingLow  4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 ulSrsEnable Falso
+set ENodeBFunction=1,EUtranCellFDD=Q02153 zzzTemporary14 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 servOrPrioTriggeredErabAction 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 zzzTemporary26 320
+set ENodeBFunction=1,EUtranCellFDD=Q02153 zzzTemporary27 20
+set ENodeBFunction=1,EUtranCellFDD=Q02153 zzzTemporary38 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cellCapMinMaxWriProt true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 zzzTemporary36 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 zzzTemporary37 4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 qQualMin -34
+set ENodeBFunction=1,EUtranCellFDD=Q02153 noOfPucchSrUsers 250
+set ENodeBFunction=1,EUtranCellFDD=Q02153 transmissionMode 4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchPowerBoostMax 3
+set ENodeBFunction=1,EUtranCellFDD=Q02153 tTimeAlignmentTimer 1920
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cioLowerLimitAdjBySon -5
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cioUpperLimitAdjBySon 5
+set ENodeBFunction=1,EUtranCellFDD=Q02153 puschPwrOffset64qam 4
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchTargetBler 20
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchTargetBlerPCell 12
+set ENodeBFunction=1,EUtranCellFDD=Q02153 lastModification 
+set ENodeBFunction=1,EUtranCellFDD=Q02153 ulBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 dynUeAdmCtrlEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 ttiBundlingAfterReest 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 ttiBundlingSwitchThres 70
+set ENodeBFunction=1,EUtranCellFDD=Q02153 ttiBundlingSwitchThresHyst 20
+set ENodeBFunction=1,EUtranCellFDD=Q02153 dynUlResourceAllocEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 enableServiceSpecificHARQ true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 srvccDelayTimer 6000
+set ENodeBFunction=1,EUtranCellFDD=Q02153 sCellHandlingAtVolteCall 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 filterUeDlThpVolThr 
+set ENodeBFunction=1,EUtranCellFDD=Q02153 loadBasedCaEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 optimizedPdcchCongestThres 20
+set ENodeBFunction=1,EUtranCellFDD=Q02153 optimizedPdcchDlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=Q02153 optimizedPdcchUlPrbThres 100
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchFlexibleBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 loadBasedCaMsrThr  cceUtilThreshHigh=20,cceUtilThreshLow=10,dlSeUtilThreshHigh=50,dlSeUtilThreshLow=30,ulPrbUtilThreshHigh=20,ulPrbUtilThreshLow=10,ulSeUtilThreshHigh=20,ulSeUtilThreshLow=15
+set ENodeBFunction=1,EUtranCellFDD=Q02153 maxNoClusteredPuschAlloc 3
+set ENodeBFunction=1,EUtranCellFDD=Q02153 minInterfUlRegionSize 5
+set ENodeBFunction=1,EUtranCellFDD=Q02153 minInterfSchedEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 cfraEnable true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 blerTargetConfigEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 dlBlerTargetEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 lastSchedLinkAdaptEnabled false
+set ENodeBFunction=1,EUtranCellFDD=Q02153 endcAllowedPlmnList mcc=730,mnc=01,mncLength=2
+set ENodeBFunction=1,EUtranCellFDD=Q02153 diffPdcchMaxTargetBlerEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchCongCtrlParamEnabled true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 upperLayerIndR15Usage true
+set ENodeBFunction=1,EUtranCellFDD=Q02153 diffPdcchMaxTargetBlerThres 10
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchMaxTargetBlerHigh 400
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchOutLoopInitAdjCong -5
+set ENodeBFunction=1,EUtranCellFDD=Q02153 pdcchOutLoopInitAdjPCellCong -30
+set ENodeBFunction=1,EUtranCellFDD=Q02153 primaryUpperLayerInd 1
+set ENodeBFunction=1,EUtranCellFDD=Q02153 endcB1MeasGapConfig 0
+set ENodeBFunction=1,EUtranCellFDD=Q02153 lbTpNonQualFraction 30
+set ENodeBFunction=1,EUtranCellFDD=Q02153 lbTpRankThreshMin 0
+
+confb-
+gs-
+

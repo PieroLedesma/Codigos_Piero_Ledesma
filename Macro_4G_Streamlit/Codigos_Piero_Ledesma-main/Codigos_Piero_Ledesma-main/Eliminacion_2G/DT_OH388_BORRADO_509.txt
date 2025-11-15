@@ -1,0 +1,259 @@
+@L+ OH388_BORRADO_BORRADO.log
+
+
+eaw RAB03;
+@GETTIME {HMM} HH:MM
+@GETDATE {DDMMYYYY} DD-MM-YYYY
+@COMMENT +------------------------------------------------+ ##
+@COMMENT | DATE:  {DDMMYYYY}                 TIME:  {HMM} | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT |               PRINTOUT BORRADO 2G              | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT | SITE CODE:  OH388                              | ##
+@COMMENT | SITE NAME:  BORRADO                     | ##
+@COMMENT | BSC:        RAB03                              | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT | GENERA:  ARIEL FUENTES                       | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT | F1 SERVICES & SOLUTIONS                        | ##
+@COMMENT |------------------------------------------------| ##
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |                    ALARMS                      | ##
+@COMMENT +------------------------------------------------+ ##
+ALLIP;
+ALLIP:ALCAT=EXT,ACL=A1;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |             HALTED OF CELLS IN TG              | ##
+@COMMENT +------------------------------------------------+ ##
+CACLP;
+RLSTC:CELL=23884,STATE=HALTED;
+
+RLSTC:CELL=23885,STATE=HALTED;
+
+RLSTC:CELL=23886,STATE=HALTED;
+
+
+RLSLE:CELL=23884,PERM;
+RLSLE:CELL=23885,PERM;
+RLSLE:CELL=23886,PERM;
+RLVLE:CHTYPE=TCH;
+RLVLE:CHTYPE=SDCCH;
+RLVLE:CELL=23884,CHTYPE=TCH;
+RLVLE:CELL=23884,CHTYPE=SDCCH;
+RLVLE:CELL=23885,CHTYPE=TCH;
+RLVLE:CELL=23885,CHTYPE=SDCCH;
+RLVLE:CELL=23886,CHTYPE=TCH;
+RLVLE:CELL=23886,CHTYPE=SDCCH;
+RLVLI:CHTYPE=TCH;
+RLVLI:CHTYPE=SDCCH;
+RLVLP;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |             BLOCKING AND OUTSERVICE            | ##
+@COMMENT +------------------------------------------------+ ##
+RXBLI:MO=RXOTG-509,SUBORD,FORCE;
+RXESE:MO=RXOTG-509,SUBORD;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |        TG TO CHANNEL GROUP DISCONNECTION       | ##
+@COMMENT +------------------------------------------------+ ##
+RXTCP:MO=RXOTG-509;
+RXTCE:MO=RXOTG-509,CELL=23884,CHGR=0;
+RXTCE:MO=RXOTG-509,CELL=23884,CHGR=1;
+RXTCE:MO=RXOTG-509,CELL=23885,CHGR=0;
+RXTCE:MO=RXOTG-509,CELL=23885,CHGR=1;
+RXTCE:MO=RXOTG-509,CELL=23886,CHGR=0;
+RXTCE:MO=RXOTG-509,CELL=23886,CHGR=1;
+RXTCP:MO=RXOTG-509;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |  DESDEFINITION OF EQUIPMENT FOR BTS SITE       | ##
+@COMMENT +------------------------------------------------+ ##
+RXMOE:MO=RXOTS-509-0-0&&-7;
+RXMOE:MO=RXOTX-509-0;
+RXMOE:MO=RXORX-509-0;
+RXMOE:MO=RXOTRX-509-0;
+
+RXMOE:MO=RXOTS-509-1-0&&-7;
+RXMOE:MO=RXOTX-509-1;
+RXMOE:MO=RXORX-509-1;
+RXMOE:MO=RXOTRX-509-1;
+
+RXMOE:MO=RXOTS-509-2-0&&-7;
+RXMOE:MO=RXOTX-509-2;
+RXMOE:MO=RXORX-509-2;
+RXMOE:MO=RXOTRX-509-2;
+
+RXMOE:MO=RXOTS-509-3-0&&-7;
+RXMOE:MO=RXOTX-509-3;
+RXMOE:MO=RXORX-509-3;
+RXMOE:MO=RXOTRX-509-3;
+
+RXMOE:MO=RXOTS-509-4-0&&-7;
+RXMOE:MO=RXOTX-509-4;
+RXMOE:MO=RXORX-509-4;
+RXMOE:MO=RXOTRX-509-4;
+
+RXMOE:MO=RXOTS-509-5-0&&-7;
+RXMOE:MO=RXOTX-509-5;
+RXMOE:MO=RXORX-509-5;
+RXMOE:MO=RXOTRX-509-5;
+
+RXMOE:MO=RXOTS-509-6-0&&-7;
+RXMOE:MO=RXOTX-509-6;
+RXMOE:MO=RXORX-509-6;
+RXMOE:MO=RXOTRX-509-6;
+
+RXMOE:MO=RXOTS-509-7-0&&-7;
+RXMOE:MO=RXOTX-509-7;
+RXMOE:MO=RXORX-509-7;
+RXMOE:MO=RXOTRX-509-7;
+
+RXMOE:MO=RXOTS-509-8-0&&-7;
+RXMOE:MO=RXOTX-509-8;
+RXMOE:MO=RXORX-509-8;
+RXMOE:MO=RXOTRX-509-8;
+
+RXMOE:MO=RXOTS-509-9-0&&-7;
+RXMOE:MO=RXOTX-509-9;
+RXMOE:MO=RXORX-509-9;
+RXMOE:MO=RXOTRX-509-9;
+
+RXMOE:MO=RXOMCTR-509-0;
+RXMOE:MO=RXOMCTR-509-1;
+RXMOE:MO=RXOMCTR-509-2;
+
+RXMOE:MO=RXOCON-509;
+RXMOE:MO=RXOTF-509;
+RXMOE:MO=RXOIS-509;
+RXMOE:MO=RXOCF-509;
+RXMSP:MO=RXOTG-509,SUBORD;
+
+DTBLI:DIP=0ODP509;
+DTDIE:DIP=0ODP509;
+RXMOP:MO=RXODP-509-0;
+RXMOE:MO=RXODP-509-0;
+
+RXMOE:MO=RXOTG-509;
+
+RRSCE:SCGR=509;
+RRSGE:SCGR=509;
+RRPTE:PSTU=STN_OH388-0;
+
+exit;
+@GETTIME {HMM} HH:MM
+@GETDATE {DDMMYYYY} DD-MM-YYYY
+@COMMENT +------------------------------------------------+ ##
+@COMMENT | DATE:  {DDMMYYYY}                 TIME:  {HMM} | ##
+@COMMENT +------------------------------------------------+ ##
+@L-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

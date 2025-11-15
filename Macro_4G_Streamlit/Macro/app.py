@@ -260,6 +260,7 @@ if script_selection == 'Script 4G':
     # 3.2 LÓGICA DE DESCARGA
     st.markdown("---")
 
+    # Esta es la sección donde se define 'data'. Todo el código que use 'data' debe ir dentro de este IF.
     if st.session_state['generated_data'] and 'zip_data' in st.session_state['generated_data']:
         data = st.session_state['generated_data']
         nemonico_display = st.session_state['nemonico_input_v4_4'].upper()
@@ -307,13 +308,20 @@ if script_selection == 'Script 4G':
             st.code(
                 data['all_content']['00_HARDWARE_MOS'], 
                 language='text')
-            
+                
             st.markdown(f"**01_{nemonico_display}_EUtranCellFDD.mos**")
             st.code(
             data['all_content']['01_EUtranCellFDD_MOS'], 
             language='text'
             )
 
+            # >>> SECCIÓN CORREGIDA: Ahora dentro del scope donde 'data' existe.
+            if "02_UtranRelation_MOS" in data['all_content']:
+                st.markdown(f"**02_{nemonico_display}_UtranRelation.mos**")
+                st.code(data['all_content']['02_UtranRelation_MOS'], language='text')
+            # <<< FIN SECCIÓN CORREGIDA
+
+    # El bloque elif para errores debe estar fuera del IF de éxito
     elif st.session_state['generated_data'] and 'error' in st.session_state['generated_data']:
         st.error(st.session_state['generated_data']['error'])
         st.session_state['generated_data'] = None

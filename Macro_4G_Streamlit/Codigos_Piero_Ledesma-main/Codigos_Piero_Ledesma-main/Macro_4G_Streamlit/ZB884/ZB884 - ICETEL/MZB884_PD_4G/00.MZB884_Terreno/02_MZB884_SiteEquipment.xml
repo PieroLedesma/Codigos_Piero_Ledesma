@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+       <capabilities>
+               <capability>urn:ietf:params:netconf:base:1.0</capability>
+               <capability>urn:com:ericsson:ebase:0.1.0</capability>
+               <capability>urn:com:ericsson:ebase:1.1.0</capability>
+       </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Create primary FieldReplaceableUnit with ports in the first rpc" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<edit-config>
+       <config>
+               <ManagedElement>
+                       <managedElementId>1</managedElementId>
+                       <Equipment>
+                               <equipmentId>1</equipmentId>
+                               <FieldReplaceableUnit>
+                                       <fieldReplaceableUnitId>BB-1</fieldReplaceableUnitId>
+                                       <administrativeState>UNLOCKED</administrativeState>
+                                       <RiPort>
+                                               <riPortId>A</riPortId>
+                                       </RiPort>
+                                       <RiPort>
+                                               <riPortId>B</riPortId>
+                                       </RiPort>
+                                       <RiPort>
+                                               <riPortId>C</riPortId>
+                                       </RiPort>
+                                       <TnPort>
+                                               <tnPortId>TN_B</tnPortId>
+                                       </TnPort>
+                                       <EcPort>
+                                               <ecPortId>1</ecPortId>
+                                               <hubPosition>X</hubPosition>
+                                       </EcPort>
+                                       <SyncPort>
+                                               <syncPortId>1</syncPortId>
+                                       </SyncPort>
+                               </FieldReplaceableUnit>
+                       </Equipment>
+                       <NodeSupport>
+                               <nodeSupportId>1</nodeSupportId>
+                               <MpClusterHandling>
+                                       <mpClusterHandlingId>1</mpClusterHandlingId>
+                                       <primaryCoreRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1</primaryCoreRef>
+                               </MpClusterHandling>
+                       </NodeSupport>
+               </ManagedElement>
+       </config>
+</edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Common Support System hardware configuration" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+        <edit-config>
+                <config>
+                       <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+                                <managedElementId>1</managedElementId>
+                                <Equipment>
+                                        <equipmentId>1</equipmentId>
+                                        <EcBus>
+                                                <ecBusId>1</ecBusId>
+                                                <ecBusConnectorRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1</ecBusConnectorRef>
+                                        </EcBus>
+                                        <FieldReplaceableUnit>
+                                                <fieldReplaceableUnitId>BB-1</fieldReplaceableUnitId>
+                                                <positionRef>ManagedElement=1,Equipment=1,Cabinet=1</positionRef>
+                                                <EcPort>
+                                                        <ecPortId>1</ecPortId>
+                                                        <hubPosition>X</hubPosition>
+                                                        <ecBusRef>ManagedElement=1,Equipment=1,EcBus=1</ecBusRef>
+                                                </EcPort>
+                                        </FieldReplaceableUnit>
+                                        <FieldReplaceableUnit>
+                                                <fieldReplaceableUnitId>SUP</fieldReplaceableUnitId>
+                                                <administrativeState>UNLOCKED</administrativeState>
+                                                <positionRef>ManagedElement=1,Equipment=1,Cabinet=1</positionRef>
+                                                <EcPort>
+                                                        <ecPortId>1</ecPortId>
+                                                        <cascadingOrder>0</cascadingOrder>
+                                                        <hubPosition>NA</hubPosition>
+                                                        <ecBusRef>ManagedElement=1,Equipment=1,EcBus=1</ecBusRef>
+                                                </EcPort>
+                                                <AlarmPort>
+                                                        <alarmPortId>1</alarmPortId>
+                                                        <administrativeState>UNLOCKED</administrativeState>
+                                                        <alarmSlogan>ExternalAlarmSAUAlarmPort1</alarmSlogan>
+                                                </AlarmPort>
+                                        </FieldReplaceableUnit>
+                                        <Cabinet>
+                                                <cabinetId>1</cabinetId>
+                                                <productData>
+                                                        <productionDate>20160229</productionDate>
+                                                        <productName>DUS 52 01</productName>
+                                                        <productNumber>KDU 137 925/31</productNumber>
+                                                        <productRevision>R1E</productRevision>
+                                                        <serialNumber>D16S393592</serialNumber>
+                                                </productData>
+                                        </Cabinet>
+                                </Equipment>
+                        </ManagedElement>
+                </config>
+        </edit-config>
+</rpc>
+]]>]]>
+
+<rpc message-id="Common Support System functional configuration" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+       <edit-config>
+                <config>
+                        <ManagedElement>
+                                <managedElementId>1</managedElementId>
+                                <EquipmentSupportFunction>
+                                        <equipmentSupportFunctionId>1</equipmentSupportFunctionId>
+                                        <supportSystemControl>true</supportSystemControl>
+                                        <Climate>
+                                                <climateId>1</climateId>
+                                                <climateControlMode>NORMAL</climateControlMode>
+                                                <controlDomainRef>ManagedElement=1,Equipment=1,Cabinet=1</controlDomainRef>
+                                        </Climate>
+                                </EquipmentSupportFunction>
+                        </ManagedElement>
+                </config>
+        </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Close session" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session />
+</rpc>
+]]>]]>
+

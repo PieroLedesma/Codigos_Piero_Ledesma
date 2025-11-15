@@ -1,0 +1,10 @@
+<summary:AutoIntegrationRbsSummaryFile
+xmlns:summary="http://www.ericsson.se/RbsSummaryFileSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.ericsson.se/RbsSummaryFileSchemaSummaryFile.xsd">
+<Format revision="F"/>
+<ConfigurationFiles
+    siteBasicFilePath="01_ULA781_SiteBasic.xml"
+    siteEquipmentFilePath="02_ULA781_SiteEquipment.xml"
+    upgradePackageFilePath="RadioNode_CXP9024418_15_R53M22_22.Q2/"/>
+</summary:AutoIntegrationRbsSummaryFile>

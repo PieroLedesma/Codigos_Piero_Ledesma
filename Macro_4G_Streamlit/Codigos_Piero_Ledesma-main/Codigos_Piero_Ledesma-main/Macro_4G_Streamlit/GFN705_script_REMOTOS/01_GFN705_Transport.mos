@@ -1,0 +1,562 @@
+
+confb+
+s+
+
+bl sectore
+
+cr FieldReplaceableUnit=BB-1,TnPort=TN_IDL_C
+cr  FieldReplaceableUnit=BB-1,TnPort=TN_IDL_D
+
+crn Transport=1,EthernetPort=TN_IDL_D
+admOperatingMode 9
+administrativeState 1
+autoNegEnable false
+egressQosClassification
+egressQosMarking
+egressQosQueueMap
+encapsulation FieldReplaceableUnit=BB-1,TnPort=TN_IDL_D
+holdDownTimer
+ingressQosMarking
+lldpTransmit 1
+supplicant
+userLabel ERAN_ULCOMP
+end
+
+crn Transport=1,EthernetPort=TN_IDL_C
+admOperatingMode 9
+administrativeState 1
+autoNegEnable false
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation FieldReplaceableUnit=BB-1,TnPort=TN_IDL_C
+holdDownTimer 
+ingressQosMarking 
+lldpTransmit 1
+supplicant 
+userLabel ERAN_ULCA
+end
+
+crn Transport=1,VlanPort=NR
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_IDL_B
+ingressQosMarking 
+isTagged true
+userLabel NR
+vlanId 3112
+end
+
+crn Transport=1,VlanPort=NR
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_A
+ingressQosMarking 
+isTagged true
+userLabel NR
+vlanId 3112
+end
+
+crn Transport=1,VlanPort=NR
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_B
+ingressQosMarking 
+isTagged true
+userLabel NR
+vlanId 3112
+end
+
+crn Transport=1,VlanPort=ERAN_ULCOMP
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_IDL_D
+ingressQosMarking 
+isTagged true
+userLabel ERAN_ULCOMP
+vlanId 3114
+end
+
+crn Transport=1,VlanPort=ERAN_E5_CA
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_IDL_C
+ingressQosMarking 
+isTagged true
+userLabel ERAN_E5_CA
+vlanId 3113
+end
+
+crn Transport=1,Router=Node_Internal_F1
+hopLimit 64
+pathMtuExpiresIPv6 86400
+routingPolicyLocal 
+ttl 64
+userLabel 
+end
+
+crn Transport=1,Router=Node_Internal_F1,InterfaceIPv4=NRCUCP
+aclEgress 
+aclIngress 
+arpTimeout 300
+bfdProfile 
+bfdStaticRoutes 0
+egressQosMarking 
+encapsulation 
+ingressQosMarking 
+loopback true
+mtu 1500
+pcpArp 6
+routesHoldDownTimer 
+routingPolicyIngress 
+userLabel 
+end
+
+crn Transport=1,Router=Node_Internal_F1,InterfaceIPv4=NRCUCP,AddressIPv4=1
+address 169.254.42.42/32
+configurationMode 0
+dhcpClientIdentifier 
+dhcpClientIdentifierType 0
+primaryAddress true
+userLabel 
+end
+
+crn Transport=1,Router=Node_Internal_F1,InterfaceIPv4=NRDU
+aclEgress 
+aclIngress 
+arpTimeout 300
+bfdProfile 
+bfdStaticRoutes 0
+egressQosMarking 
+encapsulation 
+ingressQosMarking 
+loopback true
+mtu 1500
+pcpArp 6
+routesHoldDownTimer 
+routingPolicyIngress 
+userLabel 
+end
+
+crn Transport=1,Router=Node_Internal_F1,InterfaceIPv4=NRDU,AddressIPv4=1
+address 169.254.42.43/32
+configurationMode 0
+dhcpClientIdentifier 
+dhcpClientIdentifierType 0
+primaryAddress true
+userLabel 
+end
+
+crn Transport=1,SctpProfile=Node_Internal_F1
+alphaIndex 3
+assocMaxRtx 20
+betaIndex 2
+bundlingActivated true
+bundlingAdaptiveActivated true
+bundlingTimer 0
+cookieLife 60
+dscp 40
+hbMaxBurst 1
+heartbeatActivated true
+heartbeatInterval 2000
+incCookieLife 30
+initARWnd 16384
+initRto 200
+initialHeartbeatInterval 500
+maxActivateThr 65535
+maxBurst 4
+maxInStreams 2
+maxInitRt 8
+maxOutStreams 2
+maxRto 400
+maxSctpPduSize 1480
+maxShutdownRt 5
+minActivateThr 1
+minRto 100
+noSwitchback true
+pathMaxRtx 10
+primaryPathAvoidance true
+primaryPathMaxRtx 0
+sackTimer 10
+thrTransmitBuffer 48
+thrTransmitBufferCongCeased 85
+transmitBufferSize 64
+userLabel 
+end
+
+crn Transport=1,SctpEndpoint=F1_NRDU
+dtlsNodeCredential 
+dtlsSctpSecurityMode 0
+dtlsTrustCategory 
+localIpAddress Transport=1,Router=Node_Internal_F1,InterfaceIPv4=NRDU,AddressIPv4=1
+portNumber 38472
+sctpProfile SctpProfile=Node_Internal_F1
+userLabel 
+end
+
+ld Transport=1,SctpEndpoint=F1_NRDU,SctpAssociation=38472-169.254.42.42 #SystemCreated
+
+crn Transport=1,SctpEndpoint=F1_NRCUCP
+dtlsNodeCredential 
+dtlsSctpSecurityMode 0
+dtlsTrustCategory 
+localIpAddress Transport=1,Router=Node_Internal_F1,InterfaceIPv4=NRCUCP,AddressIPv4=1
+portNumber 38472
+sctpProfile SctpProfile=Node_Internal_F1
+userLabel 
+end
+
+ld Transport=1,SctpEndpoint=F1_NRCUCP,SctpAssociation=38472-169.254.42.43 #SystemCreated
+
+crn Transport=1,Router=NR
+hopLimit 64
+pathMtuExpiresIPv6 86400
+routingPolicyLocal 
+ttl 64
+userLabel 
+end
+
+crn Transport=1,Router=NR,InterfaceIPv4=1
+aclEgress 
+aclIngress 
+arpTimeout 300
+bfdProfile 
+bfdStaticRoutes 0
+egressQosMarking QosProfiles=1,DscpPcpMap=1
+encapsulation VlanPort=NR
+ingressQosMarking 
+loopback false
+mtu 1500
+pcpArp 6
+routesHoldDownTimer 
+routingPolicyIngress 
+userLabel NR
+end
+
+crn Transport=1,Router=NR,InterfaceIPv4=1,AddressIPv4=1
+address 10.75.254.40/27
+configurationMode 0
+dhcpClientIdentifier 
+dhcpClientIdentifierType 0
+primaryAddress true
+userLabel NR
+end
+
+crn Transport=1,Router=NR,RouteTableIPv4Static=1
+end
+
+crn Transport=1,Router=NR,RouteTableIPv4Static=1,Dst=1
+dst 0.0.0.0/0
+end
+
+crn Transport=1,Router=NR,RouteTableIPv4Static=1,Dst=1,NextHop=1
+address 10.75.254.33
+adminDistance 1
+bfdMonitoring true
+discard false
+reference 
+end
+
+crn Transport=1,SctpProfile=2
+alphaIndex 3
+assocMaxRtx 20
+betaIndex 2
+bundlingActivated true
+bundlingAdaptiveActivated true
+bundlingTimer 0
+cookieLife 60
+dscp 40
+hbMaxBurst 1
+heartbeatActivated true
+heartbeatInterval 2000
+incCookieLife 30
+initARWnd 16384
+initRto 200
+initialHeartbeatInterval 500
+maxActivateThr 65535
+maxBurst 4
+maxInStreams 2
+maxInitRt 8
+maxOutStreams 2
+maxRto 400
+maxSctpPduSize 1480
+maxShutdownRt 5
+minActivateThr 1
+minRto 100
+noSwitchback true
+pathMaxRtx 10
+primaryPathAvoidance true
+primaryPathMaxRtx 0
+sackTimer 10
+thrTransmitBuffer 48
+thrTransmitBufferCongCeased 85
+transmitBufferSize 64
+userLabel 
+end
+
+crn Transport=1,SctpEndpoint=2
+dtlsNodeCredential 
+dtlsSctpSecurityMode 0
+dtlsTrustCategory 
+localIpAddress Transport=1,Router=NR,InterfaceIPv4=1,AddressIPv4=1
+portNumber 36422
+sctpProfile SctpProfile=2
+userLabel 
+end
+
+crn Transport=1,QosProfiles=1
+end
+
+crn Transport=1,QosProfiles=1,DscpPcpMap=1
+defaultPcp 0
+pcp0 0
+pcp1 12,14
+pcp2 18,20,22
+pcp3 26,28
+pcp4 34,36,38
+pcp5 40,42,44,46
+pcp6 48
+pcp7 56
+userLabel DSCP to PCP Mapping
+end
+
+crn Transport=1,Ptp=1
+end
+
+crn Transport=1,Ptp=1,BoundaryOrdinaryClock=1
+clockType 2
+domainNumber 24
+priority1 255
+priority2 255
+ptpProfile 2
+end
+
+crn Transport=1,Ptp=1,BoundaryOrdinaryClock=1,PtpBcOcPort=1
+administrativeState 1
+announceMessageInterval 1
+associatedGrandmaster 
+asymmetryCompensation 0
+dscp 56
+durationField 300
+localPriority 128
+masterOnly false
+pBit 1
+ptpMulticastAddress 0
+ptpPathTimeError 1000
+syncMessageInterval -4
+transportInterface EthernetPort=TN_IDL_B
+transportVlan 
+end
+
+crn Transport=1,Ptp=1,BoundaryOrdinaryClock=1,PtpBcOcPort=1
+administrativeState 1
+announceMessageInterval 1
+associatedGrandmaster 
+asymmetryCompensation 0
+dscp 56
+durationField 300
+localPriority 128
+masterOnly false
+pBit 1
+ptpMulticastAddress 0
+ptpPathTimeError 1000
+syncMessageInterval -4
+transportInterface EthernetPort=TN_B
+transportVlan 
+end
+
+crn Transport=1,Ptp=1,BoundaryOrdinaryClock=1,PtpBcOcPort=1
+administrativeState 1
+announceMessageInterval 1
+associatedGrandmaster 
+asymmetryCompensation 0
+dscp 56
+durationField 300
+localPriority 128
+masterOnly false
+pBit 1
+ptpMulticastAddress 0
+ptpPathTimeError 1000
+syncMessageInterval -4
+transportInterface EthernetPort=TN_A
+transportVlan 
+end
+
+crn Transport=1,Lldp=1
+userLabel 
+end
+
+crn Transport=1,Synchronization=1
+end
+
+crn Transport=1,Synchronization=1,RadioEquipmentClock=1
+bfnOffset 0
+freqDeviationThreshold 5000
+minQualityLevel qualityLevelValueOptionI=2,qualityLevelValueOptionII=2,qualityLevelValueOptionIII=1
+selectionProcessMode 1
+timeHoldoverAlarmConfig enable=false,filterTime=3
+end
+
+set  Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=SyncE priority 2
+
+crn Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=PTP
+adminQualityLevel qualityLevelValueOptionI=2,qualityLevelValueOptionII=2,qualityLevelValueOptionIII=1
+administrativeState 1
+encapsulation Ptp=1,BoundaryOrdinaryClock=1
+holdOffTime 1000
+priority 1
+useQLFrom 1
+waitToRestoreTime 60
+end
+
+set CXC4040008 featurestate 1
+
+crn NodeSupport=1,ServiceDiscoveryServer=1
+cluster host=localhost,hostIPs=,port=8301,serviceArea=NR_NSA
+localAddress Router=NR,InterfaceIPv4=1,AddressIPv4=1
+nodeCredential 
+trustCategory 
+end
+
+crn NodeSupport=1,ServiceDiscovery=1
+localAddress Router=NR,InterfaceIPv4=1,AddressIPv4=1
+nodeCredential 
+primaryGsds host=localhost,hostIPs=,port=8301,serviceArea=NR_NSA
+secondaryGsds 
+trustCategory 
+end
+
+cr Transport=1,SctpProfile=1
+cr Transport=1,SctpEndpoint=1
+Transport=1,Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+36422
+SctpProfile=1
+
+cr Transport=1,Synchronization=1,SyncEthInput=1
+EthernetPort=TN_IDL_B
+
+cr Transport=1,Synchronization=1,SyncEthInput=1
+EthernetPort=TN_B
+
+cr Transport=1,Synchronization=1,SyncEthInput=1
+EthernetPort=TN_A
+
+cr Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=SyncE
+Synchronization=1,SyncEthInput=1
+2
+
+deb Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=SyncE
+set CXC4040011 featurestate 1
+
+set R50F24 password password=1:cZIIuqBU8pvJW+OHgxHPUJKk7O0sc1EU
+set R50F24 uri sftp://mm-software@172.25.7.33:22/smrsroot/software/radionode/RadioNode_CXP2010174_1_R50F24_22.Q2
+
+set R53M22 password password=1:bE1zHW10DLOQfknP8SlwyEg9E9RuBUue
+set R53M22 uri sftp://mm-software@172.25.7.33:22/smrsroot/software/radionode/RadioNode_CXP9024418_15_R53M22_22.Q2
+
+set R50M23 password password=1:snDLNNcEfuvEbI3vbfubeKWzI7CHogY+
+set R50M23 uri sftp://mm-software@172.25.7.33:22/smrsroot/software/radionode/RadioNode_CXP2010174_1_R50M23_22.Q2
+
+set R71H14 password password=1:PLHjozC6j/uYKRzxkbvD37/tOQKiSK8F
+set R71H14 uri sftp://mm-software@172.25.7.33:22/smrsroot/software/radionode/RadioNode_CXP2010174_1_R71H14_23.Q2
+
+set R74H15 password password=1:6xznG7koRcigQO2PBgNmftyUE4B0YwPA
+set R74H15 uri sftp://mm-software@172.25.7.33:22/smrsroot/software/radionode/RadioNode_CXP9024418_15_R74H15_23.Q2
+
+set R16D43 password password=3:SOTSGYo8ncpY5QQcqi2blFL3gAsmTFal
+set R16D43 uri sftp://mm-software@172.23.81.30:22/smrsroot/software/radionode/RadioNode_CXP2010174_2_R16D43_24.Q3
+
+set R3D35 password password=3:1bLpTDb6NRT/RWWe3BQBhxaN+UW6WaUj
+set R3D35 uri sftp://mm-software@172.23.81.30:22/smrsroot/software/radionode/RadioNode_CXP9024418_16_R3D35_24.Q3
+
+cr Equipment=1,FieldReplaceableUnit=AAS-1
+
+cr Equipment=1,FieldReplaceableUnit=AAS-1,RiPort=DATA_1
+cr Equipment=1,FieldReplaceableUnit=AAS-1,RiPort=DATA_2
+cr Equipment=1,FieldReplaceableUnit=AAS-1,Transceiver=1
+
+cr Equipment=1,FieldReplaceableUnit=AAS-2
+
+cr Equipment=1,FieldReplaceableUnit=AAS-2,RiPort=DATA_1
+cr Equipment=1,FieldReplaceableUnit=AAS-2,RiPort=DATA_2
+cr Equipment=1,FieldReplaceableUnit=AAS-2,Transceiver=1
+
+cr Equipment=1,FieldReplaceableUnit=AAS-3
+
+cr Equipment=1,FieldReplaceableUnit=AAS-3,RiPort=DATA_1
+cr Equipment=1,FieldReplaceableUnit=AAS-3,RiPort=DATA_2
+cr Equipment=1,FieldReplaceableUnit=AAS-3,Transceiver=1
+
+
+crn NodeSupport=1,SectorEquipmentFunction=75
+rfBranchRef Equipment=1,FieldReplaceableUnit=AAS-1,Transceiver=1
+userLabel GFN705
+end
+
+set NodeSupport=1,SectorEquipmentFunction=75 userLabel GFN705
+
+crn NodeSupport=1,SectorEquipmentFunction=76
+rfBranchRef Equipment=1,FieldReplaceableUnit=AAS-2,Transceiver=1
+userLabel GFN705
+end
+
+set NodeSupport=1,SectorEquipmentFunction=76 userLabel GFN705
+
+crn NodeSupport=1,SectorEquipmentFunction=77
+rfBranchRef Equipment=1,FieldReplaceableUnit=AAS-3,Transceiver=1
+userLabel GFN705
+end
+
+set NodeSupport=1,SectorEquipmentFunction=77 userLabel GFN705
+
+deb SectorEquipmentFunction
+
+crn Equipment=1,RiLink=31
+riPortRef1 FieldReplaceableUnit=RRU-1,RiPort=DATA_1
+riPortRef2 FieldReplaceableUnit=BB-1,RiPort=A
+transportType 0
+end
+
+crn Equipment=1,RiLink=91
+riPortRef1 FieldReplaceableUnit=AAS-1,RiPort=DATA_1
+riPortRef2 FieldReplaceableUnit=BB-1,RiPort=A
+transportType 0
+end
+
+crn Equipment=1,RiLink=32
+riPortRef1 FieldReplaceableUnit=RRU-2,RiPort=DATA_1
+riPortRef2 FieldReplaceableUnit=BB-1,RiPort=B
+transportType 0
+end
+
+crn Equipment=1,RiLink=92
+riPortRef1 FieldReplaceableUnit=AAS-2,RiPort=DATA_1
+riPortRef2 FieldReplaceableUnit=BB-1,RiPort=B
+transportType 0
+end
+
+crn Equipment=1,RiLink=33
+riPortRef1 FieldReplaceableUnit=RRU-3,RiPort=DATA_1
+riPortRef2 FieldReplaceableUnit=BB-1,RiPort=C
+transportType 0
+end
+
+crn Equipment=1,RiLink=93
+riPortRef1 FieldReplaceableUnit=AAS-3,RiPort=DATA_1
+riPortRef2 FieldReplaceableUnit=BB-1,RiPort=C
+transportType 0
+end
+
+ldeb FieldReplaceableUnit=AAS
+deb FieldReplaceableUnit=RRU
+
+cvms HW_and_Transport_Ekohle_PROATEL
+
+confb-
+s-
+

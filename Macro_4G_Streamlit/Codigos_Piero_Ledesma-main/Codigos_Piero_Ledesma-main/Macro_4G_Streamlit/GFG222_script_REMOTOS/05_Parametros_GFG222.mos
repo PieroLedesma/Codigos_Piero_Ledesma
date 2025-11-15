@@ -1,0 +1,1642 @@
+confb+
+gs+
+
+lt all
+
+set ENodeBFunction=1,AnrFunction=1,AnrFunctionNR=1          anrStateNR        1 (ACTIVATED)
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+
+cr ENodeBFunction=1,EndcProfile=1
+set EndcProfile=1                                           meNbS1TermReqArpLev 1
+set EndcProfile=1                                           splitNotAllowedUeArpLev 1
+
+cr ENodeBFunction=1,EndcProfile=2
+set EndcProfile=2                                           meNbS1TermReqArpLev 15
+set EndcProfile=2                                           splitNotAllowedUeArpLev 0
+
+
+cr ENodeBFunction=1,pmFlexCounterFilter=Endc0To99
+set ENodeBFunction=1,pmFlexCounterFilter=Endc0To99                                           endcFilterEnabled True
+set ENodeBFunction=1,pmFlexCounterFilter=Endc0To99                                           endcFilterMin 0
+
+cr ENodeBFunction=1,pmFlexCounterFilter=Endc1To99
+set ENodeBFunction=1,pmFlexCounterFilter=Endc1To99                                           endcFilterEnabled True
+set ENodeBFunction=1,pmFlexCounterFilter=Endc1To99                                           endcFilterMin 1
+
+cr ENodeBFunction=1,pmFlexCounterFilter=Endc2To99
+set ENodeBFunction=1,pmFlexCounterFilter=Endc2To99                                           endcFilterEnabled True
+set ENodeBFunction=1,pmFlexCounterFilter=Endc2To99                                           endcFilterMin 2
+
+
+cr McpcPSCellProfileUeCfg= 
+set McpcPSCellProfileUeCfg=  rsrpCritical  
+
+crn ENodeBFunction=1,SubscriberGroupProfile=0
+dlAiLaDeltaSinrMax 30
+dlDynBlerTargetAlg 0
+dlDynBlerTargetMax -1
+dlDynBlerTargetMin 1
+dlHarqBlerTarget 5
+profilePriority 10
+selectionProbability 100
+pdcchFlexibleBlerMode 2
+end
+
+crn ENodeBFunction=1,SubscriberGroupProfile=1
+dlAiLaDeltaSinrMax 30
+dlDynBlerTargetAlg 0
+dlDynBlerTargetMax 50
+dlDynBlerTargetMin 10
+dlHarqBlerTarget 10
+profilePriority 1
+selectionProbability 100
+pdcchFlexibleBlerMode 2
+end
+
+
+crn QciTable=default,QciProfileOperatorDefined=qci254
+absPrioOverride 0
+aqmMode 1
+bitRateRecommendationEnabled false
+counterActiveMode false
+caOffloadingEnabled True
+dataFwdPerQciEnabled true
+dlMaxHARQTxQci 5
+dlMaxWaitingTime 0
+dlMinBitRate 0
+dlResourceAllocationStrategy 0
+drxPriority 0
+drxProfileRef ENodeBFunction=1,DrxProfile=0
+dscp 18
+dscpArpMap dscpArp1=-1,dscpArp10=-1,dscpArp11=-1,dscpArp12=-1,dscpArp13=-1,dscpArp14=-1,dscpArp15=-1,dscpArp2=-1,dscpArp3=-1,dscpArp4=-1,dscpArp5=-1,dscpArp6=-1,dscpArp7=-1,dscpArp8=-1,dscpArp9=-1
+endcProfileRef 
+essResourceAllocationMode 0
+harqPriority 0
+inactivityTimerOffset 0
+laaSupported false
+lessMaxDelayThreshold 0
+logicalChannelGroupRef QciTable=default,LogicalChannelGroup=1
+measReportConfigParams a1ThresholdRsrpPrimOffset=0,a1ThresholdRsrpSecOffset=0,a1ThresholdRsrqPrimOffset=0,a1ThresholdRsrqSecOffset=0,a2ThresholdRsrpPrimOffset=0,a2ThresholdRsrpSecOffset=0,a2ThresholdRsrqPrimOffset=0,a2ThresholdRsrqSecOffset=0,a3InterOffsetAdjustmentRsrp=0,a3InterOffsetAdjustmentRsrq=0,a3IntraOffsetAdjustmentRsrp=0,a3IntraOffsetAdjustmentRsrq=0,a5Threshold1RsrpOffset=0,a5Threshold1RsrqOffset=0,a5Threshold2RsrpOffset=0,a5Threshold2RsrqOffset=0,b2Threshold1RsrpCdma2000Offset=0,b2Threshold1RsrpGeranOffset=0,b2Threshold1RsrpUtraOffset=0,b2Threshold1RsrqCdma2000Offset=0,b2Threshold1RsrqGeranOffset=0,b2Threshold1RsrqUtraOffset=0,b2Threshold2Cdma2000Offset=0,b2Threshold2EcNoUtraOffset=0,b2Threshold2GeranOffset=0,b2Threshold2RscpUtraOffset=0,offsetPerQciPrio=0,timeToTriggerInterA3=-1,timeToTriggerInterA3Rsrq=-1,timeToTriggerIntraA3=-1
+paPartitionOverride false
+pdb 300
+pdbOffset 0
+pdcpSNLength 12
+priority 10
+priorityFraction 0
+qci 254
+qciACTuning 1000
+qciSubscriptionQuanta 150
+relativePriority 100
+relativePriorityBr 4
+resourceAllocationStrategy 0
+resourceType 0
+rlcMode 0
+rlcSNLength 10
+rlfPriority 0
+rlfProfileRef RlfProfile=0
+rohcEnabled false
+rohcForUlDataEnabled false
+schedulingAlgorithm 4
+serviceType 0
+srsAllocationStrategy 0
+tReorderingDl 35
+tReorderingUl 35
+timerPriority 0
+timerProfileRef 
+ulMaxHARQTxQci 5
+ulMaxWaitingTime 0
+ulMinBitRate 0
+userLabel BaFi_Legacy
+zzzTemporary1 
+zzzTemporary2 
+zzzTemporary3 -2000000000
+zzzTemporary4 -2000000000
+zzzTemporary5 -2000000000
+end
+
+set AdmissionControl=1 dlTransNwBandwidth 1000
+set AdmissionControl=1 ulTransNwBandwidth 1000
+set AdmissionControl=1 arpBasedPreEmptionState 1
+set AdmissionControl=1 zzzTemporary1  1
+set AnrFunction removeNrelTime  5
+set AnrFunction removeNcellTime  1
+set AnrFunction removeNenbTime  1
+set AnrFunction removeNgnbTime  2
+set AnrFunction zzzTemporary1  1
+set AnrFunction cellRelHoAttRateThreshold  60
+set AnrFunction=1,AnrFunctionUtran anrStateUtran 1
+set AnrFunction=1,AnrFunctionUtran cellAddEcNoThresholdUtranDelta 10
+set AnrFunction=1,AnrFunctionUtran rimIntegrationEnabled true
+set AnrFunction=1 maxNoPciReportsEvent 50
+set AnrFunction=1 problematicCellPolicy 2
+set AnrFunction=1 probCellDetectMedHoSuccThres 60
+set AnrFunction=1 probCellDetectMedHoSuccTime 1
+set AnrFunction=1 probCellDetectLowHoSuccThres 30
+set AnrFunction=1 probCellDetectLowHoSuccTime 2
+set AnrFunction=1,AnrFunctionEUtran=1 anrUesEUtraIntraFMax  20
+set ENodeBFunction=1 userLabel GFG222
+set ENodeBFunction=1 x2SetupTwoWayRelations false
+set AnrFunctionEUtran anrInterFreqState  1
+set AnrFunctionEUtran anrUesEUtraIntraFIncrAnr  10
+set AnrFunctionEUtran anrUesEUtraIntraFMin  1
+set AnrFunctionEUtran anrUesThreshInterFMax  20
+set AnrFunctionEUtran anrUesThreshInterFMin  1
+set AnrFunctionEUtran cellAddRsrpThresholdEutran  -950
+set AnrFunctionEUtran cellAddRsrqThresholdEutran  -300
+set AnrFunctionUtran srvccPolicy  1
+set AutoCellCapEstFunction useEstimatedCellCap  false
+set CarrierAggregationFunction sCellActProhibitTimer  10
+set CarrierAggregationFunction caOffloadingMode  4
+set CarrierAggregationFunction sCellSelectionMode 2
+set CarrierAggregationFunction sCellPdcchOutLoopMarginCong 30
+set CarrierAggregationFunction caUsageLimit 300
+set CarrierAggregationFunction enhancedSelectionOfMimoAndCa 0
+set CarrierAggregationFunction dynamicSCellSelectionMethod 1
+set CarrierAggregationFunction caPreemptionThreshold 52
+set CarrierAggregationFunction sCellScheduleSinrThres 0
+set CarrierAggregationFunction caMaxSCellsPreemptionThres 80
+set CarrierAggregationFunction dcSCellDeactDelayTimer 100
+set CarrierAggregationFunction caUpswitchPreemptionThres 70
+set CarrierAggregationFunction maxNoInitSCells 1
+set DrxProfile=0 drxInactivityTimer 14
+set DrxProfile=0 drxRetransmissionTimer 1
+set DrxProfile=0 longDrxCycle 7
+set DrxProfile=0 longDrxCycleOnly 7
+set DrxProfile=0 onDurationTimer 7
+set DrxProfile=0 shortDrxCycle 5
+set DrxProfile=0 shortDrxCycleTimer 4
+set DrxProfile=1 drxInactivityTimer 3
+set DrxProfile=1 drxRetransmissionTimer 1
+set DrxProfile=1 longDrxCycle 3
+set DrxProfile=1 longDrxCycleOnly 3
+set DrxProfile=1 onDurationTimer 3
+set DrxProfile=1 shortDrxCycle 7
+set DrxProfile=1 shortDrxCycleTimer 0
+set DrxProfile=2 drxInactivityTimer 4
+set DrxProfile=2 drxRetransmissionTimer 1
+set DrxProfile=2 longDrxCycle 3
+set DrxProfile=2 longDrxCycleOnly 3
+set DrxProfile=2 onDurationTimer 4
+set DrxProfile=2 shortDrxCycle 7
+set DrxProfile=2 shortDrxCycleTimer 0
+set DrxProfile=3 drxInactivityTimer 14
+set DrxProfile=3 drxRetransmissionTimer 1
+set DrxProfile=3 longDrxCycle 7
+set DrxProfile=3 longDrxCycleOnly 7
+set DrxProfile=3 onDurationTimer 7
+set DrxProfile=3 shortDrxCycle 7
+set DrxProfile=3 shortDrxCycleTimer 4
+set DrxProfile=4 drxInactivityTimer 14
+set DrxProfile=4 drxRetransmissionTimer 1
+set DrxProfile=4 longDrxCycle 7
+set DrxProfile=4 longDrxCycleOnly 7
+set DrxProfile=4 onDurationTimer 7
+set DrxProfile=4 shortDrxCycle 7
+set DrxProfile=4 shortDrxCycleTimer 4
+set DrxProfile=5 drxInactivityTimer 14
+set DrxProfile=5 drxRetransmissionTimer 1
+set DrxProfile=5 longDrxCycle 7
+set DrxProfile=5 longDrxCycleOnly 7
+set DrxProfile=5 onDurationTimer 7
+set DrxProfile=5 shortDrxCycle 7
+set DrxProfile=5 shortDrxCycleTimer 4
+set DrxProfile=6 drxInactivityTimer 14
+set DrxProfile=6 drxRetransmissionTimer 1
+set DrxProfile=6 longDrxCycle 7
+set DrxProfile=6 longDrxCycleOnly 7
+set DrxProfile=6 onDurationTimer 7
+set DrxProfile=6 shortDrxCycle 7
+set DrxProfile=6 shortDrxCycleTimer 4
+set DrxProfile=7 drxInactivityTimer 14
+set DrxProfile=7 drxRetransmissionTimer 1
+set DrxProfile=7 longDrxCycle 7
+set DrxProfile=7 longDrxCycleOnly 7
+set DrxProfile=7 onDurationTimer 7
+set DrxProfile=7 shortDrxCycle 7
+set DrxProfile=7 shortDrxCycleTimer 4
+set DrxProfile=8 drxInactivityTimer 14
+set DrxProfile=8 drxRetransmissionTimer 1
+set DrxProfile=8 longDrxCycle 7
+set DrxProfile=8 longDrxCycleOnly 7
+set DrxProfile=8 onDurationTimer 7
+set DrxProfile=8 shortDrxCycle 7
+set DrxProfile=8 shortDrxCycleTimer 4
+set DrxProfile=9 drxInactivityTimer 14
+set DrxProfile=9 drxRetransmissionTimer 1
+set DrxProfile=9 longDrxCycle 7
+set DrxProfile=9 longDrxCycleOnly 7
+set DrxProfile=9 onDurationTimer 7
+set DrxProfile=9 shortDrxCycle 7
+set DrxProfile=9 shortDrxCycleTimer 4
+set DrxProfile=10 drxInactivityTimer 14
+set DrxProfile=10 drxRetransmissionTimer 1
+set DrxProfile=10 longDrxCycle 7
+set DrxProfile=10 longDrxCycleOnly 7
+set DrxProfile=10 onDurationTimer 7
+set DrxProfile=10 shortDrxCycle 7
+set DrxProfile=10 shortDrxCycleTimer 4
+set DrxProfile=11 drxInactivityTimer 14
+set DrxProfile=11 drxRetransmissionTimer 1
+set DrxProfile=11 longDrxCycle 7
+set DrxProfile=11 longDrxCycleOnly 7
+set DrxProfile=11 onDurationTimer 7
+set DrxProfile=11 shortDrxCycle 7
+set DrxProfile=11 shortDrxCycleTimer 4
+set DrxProfile=12 drxInactivityTimer 14
+set DrxProfile=12 drxRetransmissionTimer 1
+set DrxProfile=12 longDrxCycle 7
+set DrxProfile=12 longDrxCycleOnly 7
+set DrxProfile=12 onDurationTimer 7
+set DrxProfile=12 shortDrxCycle 7
+set DrxProfile=12 shortDrxCycleTimer 4
+set DrxProfile=13 drxInactivityTimer 14
+set DrxProfile=13 drxRetransmissionTimer 1
+set DrxProfile=13 longDrxCycle 7
+set DrxProfile=13 longDrxCycleOnly 7
+set DrxProfile=13 onDurationTimer 7
+set DrxProfile=13 shortDrxCycle 7
+set DrxProfile=13 shortDrxCycleTimer 4
+set DrxProfile=14 drxInactivityTimer 14
+set DrxProfile=14 drxRetransmissionTimer 1
+set DrxProfile=14 longDrxCycle 7
+set DrxProfile=14 longDrxCycleOnly 7
+set DrxProfile=14 onDurationTimer 7
+set DrxProfile=14 shortDrxCycle 7
+set DrxProfile=14 shortDrxCycleTimer 4
+set DrxProfile=15 drxInactivityTimer 14
+set DrxProfile=15 drxRetransmissionTimer 1
+set DrxProfile=15 longDrxCycle 7
+set DrxProfile=15 longDrxCycleOnly 7
+set DrxProfile=15 onDurationTimer 7
+set DrxProfile=15 shortDrxCycle 7
+set DrxProfile=15 shortDrxCycleTimer 4
+set DrxProfile=16 drxInactivityTimer 14
+set DrxProfile=16 drxRetransmissionTimer 1
+set DrxProfile=16 longDrxCycle 7
+set DrxProfile=16 longDrxCycleOnly 7
+set DrxProfile=16 onDurationTimer 7
+set DrxProfile=16 shortDrxCycle 7
+set DrxProfile=16 shortDrxCycleTimer 4
+set DrxProfile=17 drxInactivityTimer 14
+set DrxProfile=17 drxRetransmissionTimer 1
+set DrxProfile=17 longDrxCycle 7
+set DrxProfile=17 longDrxCycleOnly 7
+set DrxProfile=17 onDurationTimer 7
+set DrxProfile=17 shortDrxCycle 7
+set DrxProfile=17 shortDrxCycleTimer 4
+set DrxProfile=18 drxInactivityTimer 14
+set DrxProfile=18 drxRetransmissionTimer 1
+set DrxProfile=18 longDrxCycle 7
+set DrxProfile=18 longDrxCycleOnly 7
+set DrxProfile=18 onDurationTimer 7
+set DrxProfile=18 shortDrxCycle 7
+set DrxProfile=18 shortDrxCycleTimer 4
+set DataRadioBearer  tPollRetransmitUl 160
+set ENodeBFunction rrcConnReestActive  true
+set ENodeBFunction  dscpLabel 40
+set ENodeBFunction  endcX2IpAddrViaS1Active false
+set ENodeBFunction  endcS1OverlapMode true
+set ENodeBFunction  endcDataUsageReportEnabled true
+set ENodeBFunction  dlMaxWaitingTimeGlobal 100
+set ENodeBFunction  ulMaxWaitingTimeGlobal 0
+set ENodeBFunction  s1HODirDataPathAvail true
+set Paging maxNoOfPagingRecords  16
+set Paging nb   2
+set Paging nbbr   1
+set Paging nBNbIot   6
+set Paging defaultPagingCycle   32
+set PmService maxNoOfCounters  100000
+set QciTable=default,QciProfilePredefined=default$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=default$ aqmMode 1
+set QciTable=default,QciProfilePredefined=default$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=default$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=default$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=default$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=default$ drxPriority 1
+set QciTable=default,QciProfilePredefined=default$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=default$ dscp 0
+set QciTable=default,QciProfilePredefined=default$ pdb 0
+set QciTable=default,QciProfilePredefined=default$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=default$ priority 10
+set QciTable=default,QciProfilePredefined=default$ qci 0
+set QciTable=default,QciProfilePredefined=default$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=default$ qciSubscriptionQuanta 150
+set QciTable=default,QciProfilePredefined=default$ relativePriority 1
+set QciTable=default,QciProfilePredefined=default$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=default$ resourceType 0
+set QciTable=default,QciProfilePredefined=default$ rlcMode 0
+set QciTable=default,QciProfilePredefined=default$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=default$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=default$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=default$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=default$ serviceType 0
+set QciTable=default,QciProfilePredefined=default$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=default$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=default$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=default$ userLabel Vacio
+set QciTable=default,QciProfilePredefined=default$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=default$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=default$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=default$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=default$ timerPriority 0
+set QciTable=default,QciProfilePredefined=default$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=default$ caOffloadingEnabled false
+set QciTable=default,QciProfilePredefined=default$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=default$ endcProfileRef vacio
+set QciTable=default,QciProfilePredefined=default$ harqPriority 0
+set QciTable=default,QciProfilePredefined=default$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=default$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=default$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=default$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=1
+set QciTable=default,QciProfilePredefined=default$ rohcForUlDataEnabled false
+set QciTable=default,QciProfilePredefined=qci1$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci1$ aqmMode 2
+set QciTable=default,QciProfilePredefined=qci1$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci1$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci1$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci1$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci1$ drxPriority 99
+set QciTable=default,QciProfilePredefined=qci1$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=1
+set QciTable=default,QciProfilePredefined=qci1$ dscp 42
+set QciTable=default,QciProfilePredefined=qci1$ pdb 100
+set QciTable=default,QciProfilePredefined=qci1$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci1$ priority 1
+set QciTable=default,QciProfilePredefined=qci1$ qci 1
+set QciTable=default,QciProfilePredefined=qci1$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci1$ qciSubscriptionQuanta 10
+set QciTable=default,QciProfilePredefined=qci1$ relativePriority 1000
+set QciTable=default,QciProfilePredefined=qci1$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci1$ resourceType 1
+set QciTable=default,QciProfilePredefined=qci1$ rlcMode 1
+set QciTable=default,QciProfilePredefined=qci1$ rlcSNLength 5
+set QciTable=default,QciProfilePredefined=qci1$ rlfPriority 10
+set QciTable=default,QciProfilePredefined=qci1$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=1
+set QciTable=default,QciProfilePredefined=qci1$ rohcEnabled true
+set QciTable=default,QciProfilePredefined=qci1$ serviceType 1
+set QciTable=default,QciProfilePredefined=qci1$ schedulingAlgorithm 6
+set QciTable=default,QciProfilePredefined=qci1$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci1$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci1$ userLabel Vacio
+set QciTable=default,QciProfilePredefined=qci1$ inactivityTimerOffset 35
+set QciTable=default,QciProfilePredefined=qci1$ pdbOffset 50
+set QciTable=default,QciProfilePredefined=qci1$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci1$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci1$ timerPriority 1
+set QciTable=default,QciProfilePredefined=qci1$ tReorderingUl 55
+set QciTable=default,QciProfilePredefined=qci1$ caOffloadingEnabled false
+set QciTable=default,QciProfilePredefined=qci1$ dlMaxHARQTxQci 7
+set QciTable=default,QciProfilePredefined=qci1$ endcProfileRef vacio
+set QciTable=default,QciProfilePredefined=qci1$ harqPriority 3
+set QciTable=default,QciProfilePredefined=qci1$ tReorderingDl 55
+set QciTable=default,QciProfilePredefined=qci1$ ulMaxHARQTxQci 7
+set QciTable=default,QciProfilePredefined=qci1$ timerProfileRef ENodeBFunction=1,TimerProfile_1
+set QciTable=default,QciProfilePredefined=qci1$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=1
+set QciTable=default,QciProfilePredefined=qci1$ rohcForUlDataEnabled false
+set QciTable=default,QciProfilePredefined=qci2$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci2$ aqmMode 2
+set QciTable=default,QciProfilePredefined=qci2$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci2$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci2$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci2$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci2$ drxPriority 100
+set QciTable=default,QciProfilePredefined=qci2$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=2
+set QciTable=default,QciProfilePredefined=qci2$ dscp 38
+set QciTable=default,QciProfilePredefined=qci2$ pdb 150
+set QciTable=default,QciProfilePredefined=qci2$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci2$ priority 4
+set QciTable=default,QciProfilePredefined=qci2$ qci 2
+set QciTable=default,QciProfilePredefined=qci2$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci2$ qciSubscriptionQuanta 10
+set QciTable=default,QciProfilePredefined=qci2$ relativePriority 1000
+set QciTable=default,QciProfilePredefined=qci2$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci2$ resourceType 1
+set QciTable=default,QciProfilePredefined=qci2$ rlcMode 1
+set QciTable=default,QciProfilePredefined=qci2$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci2$ rlfPriority 10
+set QciTable=default,QciProfilePredefined=qci2$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=1
+set QciTable=default,QciProfilePredefined=qci2$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci2$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci2$ schedulingAlgorithm 3
+set QciTable=default,QciProfilePredefined=qci2$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci2$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci2$ userLabel Vacio
+set QciTable=default,QciProfilePredefined=qci2$ inactivityTimerOffset 15
+set QciTable=default,QciProfilePredefined=qci2$ pdbOffset 50
+set QciTable=default,QciProfilePredefined=qci2$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci2$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci2$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci2$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci2$ caOffloadingEnabled false
+set QciTable=default,QciProfilePredefined=qci2$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci2$ endcProfileRef vacio
+set QciTable=default,QciProfilePredefined=qci2$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci2$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci2$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci2$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci2$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=2
+set QciTable=default,QciProfilePredefined=qci2$ rohcForUlDataEnabled false
+set QciTable=default,QciProfilePredefined=qci3$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci3$ aqmMode 1
+set QciTable=default,QciProfilePredefined=qci3$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci3$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci3$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci3$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci3$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci3$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci3$ dscp 36
+set QciTable=default,QciProfilePredefined=qci3$ pdb 0
+set QciTable=default,QciProfilePredefined=qci3$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci3$ priority 3
+set QciTable=default,QciProfilePredefined=qci3$ qci 3
+set QciTable=default,QciProfilePredefined=qci3$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci3$ qciSubscriptionQuanta 10
+set QciTable=default,QciProfilePredefined=qci3$ relativePriority 1000
+set QciTable=default,QciProfilePredefined=qci3$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci3$ resourceType 1
+set QciTable=default,QciProfilePredefined=qci3$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci3$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci3$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=qci3$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=qci3$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci3$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci3$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=qci3$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci3$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci3$ userLabel Vacio
+set QciTable=default,QciProfilePredefined=qci3$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci3$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci3$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci3$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci3$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci3$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci3$ caOffloadingEnabled false
+set QciTable=default,QciProfilePredefined=qci3$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci3$ endcProfileRef vacio
+set QciTable=default,QciProfilePredefined=qci3$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci3$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci3$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci3$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci3$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=3
+set QciTable=default,QciProfilePredefined=qci3$ rohcForUlDataEnabled false
+set QciTable=default,QciProfilePredefined=qci4$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci4$ aqmMode 1
+set QciTable=default,QciProfilePredefined=qci4$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci4$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci4$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci4$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci4$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci4$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci4$ dscp 34
+set QciTable=default,QciProfilePredefined=qci4$ pdb 0
+set QciTable=default,QciProfilePredefined=qci4$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci4$ priority 5
+set QciTable=default,QciProfilePredefined=qci4$ qci 4
+set QciTable=default,QciProfilePredefined=qci4$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci4$ qciSubscriptionQuanta 10
+set QciTable=default,QciProfilePredefined=qci4$ relativePriority 1000
+set QciTable=default,QciProfilePredefined=qci4$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci4$ resourceType 1
+set QciTable=default,QciProfilePredefined=qci4$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci4$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci4$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=qci4$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=qci4$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci4$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci4$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=qci4$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci4$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci4$ userLabel Vacio
+set QciTable=default,QciProfilePredefined=qci4$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci4$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci4$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci4$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci4$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci4$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci4$ caOffloadingEnabled false
+set QciTable=default,QciProfilePredefined=qci4$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci4$ endcProfileRef vacio
+set QciTable=default,QciProfilePredefined=qci4$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci4$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci4$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci4$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci4$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=3
+set QciTable=default,QciProfilePredefined=qci4$ rohcForUlDataEnabled false
+set QciTable=default,QciProfilePredefined=qci5$ absPrioOverride 1
+set QciTable=default,QciProfilePredefined=qci5$ aqmMode 0
+set QciTable=default,QciProfilePredefined=qci5$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci5$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci5$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci5$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci5$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci5$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci5$ dscp 40
+set QciTable=default,QciProfilePredefined=qci5$ pdb 100
+set QciTable=default,QciProfilePredefined=qci5$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci5$ priority 2
+set QciTable=default,QciProfilePredefined=qci5$ qci 5
+set QciTable=default,QciProfilePredefined=qci5$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci5$ qciSubscriptionQuanta 10
+set QciTable=default,QciProfilePredefined=qci5$ relativePriority 1000
+set QciTable=default,QciProfilePredefined=qci5$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci5$ resourceType 0
+set QciTable=default,QciProfilePredefined=qci5$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci5$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci5$ rlfPriority 10
+set QciTable=default,QciProfilePredefined=qci5$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=1
+set QciTable=default,QciProfilePredefined=qci5$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci5$ serviceType 2
+set QciTable=default,QciProfilePredefined=qci5$ schedulingAlgorithm 0
+set QciTable=default,QciProfilePredefined=qci5$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci5$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci5$ userLabel Vacio
+set QciTable=default,QciProfilePredefined=qci5$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci5$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci5$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci5$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci5$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci5$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci5$ caOffloadingEnabled false
+set QciTable=default,QciProfilePredefined=qci5$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci5$ endcProfileRef EndcProfile=2
+set QciTable=default,QciProfilePredefined=qci5$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci5$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci5$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci5$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci5$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=1
+set QciTable=default,QciProfilePredefined=qci5$ rohcForUlDataEnabled false
+set QciTable=default,QciProfilePredefined=qci6$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci6$ aqmMode 1
+set QciTable=default,QciProfilePredefined=qci6$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci6$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci6$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci6$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci6$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci6$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci6$ dscp 20
+set QciTable=default,QciProfilePredefined=qci6$ pdb 300
+set QciTable=default,QciProfilePredefined=qci6$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci6$ priority 6
+set QciTable=default,QciProfilePredefined=qci6$ qci 6
+set QciTable=default,QciProfilePredefined=qci6$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci6$ qciSubscriptionQuanta 150
+set QciTable=default,QciProfilePredefined=qci6$ relativePriority 1000
+set QciTable=default,QciProfilePredefined=qci6$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci6$ resourceType 0
+set QciTable=default,QciProfilePredefined=qci6$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci6$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci6$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=qci6$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=qci6$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci6$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci6$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=qci6$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci6$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci6$ userLabel IM
+set QciTable=default,QciProfilePredefined=qci6$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci6$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci6$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci6$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci6$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci6$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci6$ caOffloadingEnabled true
+set QciTable=default,QciProfilePredefined=qci6$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci6$ endcProfileRef EndcProfile=1
+set QciTable=default,QciProfilePredefined=qci6$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci6$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci6$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci6$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci6$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=3
+set QciTable=default,QciProfilePredefined=qci6$ rohcForUlDataEnabled true
+set QciTable=default,QciProfilePredefined=qci7$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci7$ aqmMode 1
+set QciTable=default,QciProfilePredefined=qci7$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci7$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci7$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci7$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci7$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci7$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci7$ dscp 12
+set QciTable=default,QciProfilePredefined=qci7$ pdb 300
+set QciTable=default,QciProfilePredefined=qci7$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci7$ priority 7
+set QciTable=default,QciProfilePredefined=qci7$ qci 7
+set QciTable=default,QciProfilePredefined=qci7$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci7$ qciSubscriptionQuanta 150
+set QciTable=default,QciProfilePredefined=qci7$ relativePriority 10
+set QciTable=default,QciProfilePredefined=qci7$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci7$ resourceType 0
+set QciTable=default,QciProfilePredefined=qci7$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci7$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci7$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=qci7$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=qci7$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci7$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci7$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=qci7$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci7$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci7$ userLabel Abusivos
+set QciTable=default,QciProfilePredefined=qci7$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci7$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci7$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci7$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci7$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci7$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci7$ caOffloadingEnabled true
+set QciTable=default,QciProfilePredefined=qci7$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci7$ endcProfileRef EndcProfilePredefined=1
+set QciTable=default,QciProfilePredefined=qci7$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci7$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci7$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci7$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci7$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=3
+set QciTable=default,QciProfilePredefined=qci7$ rohcForUlDataEnabled true
+set QciTable=default,QciProfilePredefined=qci8$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci8$ aqmMode 1
+set QciTable=default,QciProfilePredefined=qci8$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci8$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci8$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci8$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci8$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci8$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci8$ dscp 14
+set QciTable=default,QciProfilePredefined=qci8$ pdb 300
+set QciTable=default,QciProfilePredefined=qci8$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci8$ priority 8
+set QciTable=default,QciProfilePredefined=qci8$ qci 8
+set QciTable=default,QciProfilePredefined=qci8$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci8$ qciSubscriptionQuanta 150
+set QciTable=default,QciProfilePredefined=qci8$ relativePriority 100
+set QciTable=default,QciProfilePredefined=qci8$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci8$ resourceType 0
+set QciTable=default,QciProfilePredefined=qci8$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci8$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci8$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=qci8$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=qci8$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci8$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci8$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=qci8$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci8$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci8$ userLabel Principalmente_Roaming
+set QciTable=default,QciProfilePredefined=qci8$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci8$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci8$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci8$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci8$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci8$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci8$ caOffloadingEnabled true
+set QciTable=default,QciProfilePredefined=qci8$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci8$ endcProfileRef EndcProfilePredefined=1
+set QciTable=default,QciProfilePredefined=qci8$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci8$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci8$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci8$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci8$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=3
+set QciTable=default,QciProfilePredefined=qci8$ rohcForUlDataEnabled true
+set QciTable=default,QciProfilePredefined=qci9$ absPrioOverride 0
+set QciTable=default,QciProfilePredefined=qci9$ aqmMode 1
+set QciTable=default,QciProfilePredefined=qci9$ counterActiveMode false
+set QciTable=default,QciProfilePredefined=qci9$ dataFwdPerQciEnabled true
+set QciTable=default,QciProfilePredefined=qci9$ dlMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci9$ dlResourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci9$ drxPriority 1
+set QciTable=default,QciProfilePredefined=qci9$ drxProfileRef enodebfunction=1,SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,DrxProfile=0
+set QciTable=default,QciProfilePredefined=qci9$ dscp 18
+set QciTable=default,QciProfilePredefined=qci9$ pdb 300
+set QciTable=default,QciProfilePredefined=qci9$ pdcpSNLength 12
+set QciTable=default,QciProfilePredefined=qci9$ priority 9
+set QciTable=default,QciProfilePredefined=qci9$ qci 9
+set QciTable=default,QciProfilePredefined=qci9$ qciACTuning 1000
+set QciTable=default,QciProfilePredefined=qci9$ qciSubscriptionQuanta 150
+set QciTable=default,QciProfilePredefined=qci9$ relativePriority 100
+set QciTable=default,QciProfilePredefined=qci9$ resourceAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci9$ resourceType 0
+set QciTable=default,QciProfilePredefined=qci9$ rlcMode 0
+set QciTable=default,QciProfilePredefined=qci9$ rlcSNLength 10
+set QciTable=default,QciProfilePredefined=qci9$ rlfPriority 0
+set QciTable=default,QciProfilePredefined=qci9$ rlfProfileRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,RlfProfile=0
+set QciTable=default,QciProfilePredefined=qci9$ rohcEnabled false
+set QciTable=default,QciProfilePredefined=qci9$ serviceType 0
+set QciTable=default,QciProfilePredefined=qci9$ schedulingAlgorithm 4
+set QciTable=default,QciProfilePredefined=qci9$ srsAllocationStrategy 1
+set QciTable=default,QciProfilePredefined=qci9$ ulMinBitRate 0
+set QciTable=default,QciProfilePredefined=qci9$ userLabel Bafi
+set QciTable=default,QciProfilePredefined=qci9$ inactivityTimerOffset 0
+set QciTable=default,QciProfilePredefined=qci9$ pdbOffset 0
+set QciTable=default,QciProfilePredefined=qci9$ dlMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci9$ ulMaxWaitingTime 0
+set QciTable=default,QciProfilePredefined=qci9$ timerPriority 0
+set QciTable=default,QciProfilePredefined=qci9$ tReorderingUl 35
+set QciTable=default,QciProfilePredefined=qci9$ caOffloadingEnabled true
+set QciTable=default,QciProfilePredefined=qci9$ dlMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci9$ endcProfileRef EndcProfilePredefined=1
+set QciTable=default,QciProfilePredefined=qci9$ harqPriority 0
+set QciTable=default,QciProfilePredefined=qci9$ tReorderingDl 35
+set QciTable=default,QciProfilePredefined=qci9$ ulMaxHARQTxQci 5
+set QciTable=default,QciProfilePredefined=qci9$ timerProfileRef ENodeBFunction=1,Vacio
+set QciTable=default,QciProfilePredefined=qci9$ logicalChannelGroupRef SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_RM,MeContext=MFG222,ManagedElement=MFG222,ENodeBFunction=1,QciTable=default,LogicalChannelGroup=3
+set QciTable=default,QciProfilePredefined=qci9$ rohcForUlDataEnabled true
+set SignalingRadioBearer  tPollRetransmitUl 160
+set LoadBalancingFunction=1 lbCeiling 100
+set LoadBalancingFunction=1 lbThreshold 50
+set LoadBalancingFunction=1 lbHitRateUtranMeasUeThreshold 10
+set LoadBalancingFunction=1 lbHitRateUtranMeasUeIntensity 10
+set RlfProfile=1$ n310 20
+set RlfProfile=1$ n311 1
+set RlfProfile=1$ t301 600
+set RlfProfile=1$ t310 2000
+set RlfProfile=1$ t311 5000
+set Rrc t304 2000
+set Rrc t301 400
+set Sctp heartbeatMaxBurst 0
+set Sctp initialAdRecWin 32768
+set Sctp mBuffer 256
+set Sctp nThreshold 192
+set SecurityHandling cipheringAlgoPrio 2 1 0
+set Rcs tInactivityTimer$ 10
+set Rcs tInactivityTimerBr 10
+set PreschedulingProfile=initial preschedulingDataSize 110
+set PreschedulingProfile=initial preschedulingDuration 45
+set PreschedulingProfile=initial initPreschedulingControl 2 (PATHLOSS)
+set PreschedulingProfile=initial initPreschedulingPathlossThr 130
+set PreschedulingProfile=initial initPreschedulingSinrThr 1
+set PreschedulingProfile=initial initPreschedulingPeriod 
+set ENodeBFunction=1,RadioBearerTable=default,MACConfiguration=1 ulTtiBundlingMaxHARQTx 6
+set LoadBalancingFunction=1 lbDiffCaOffset 300
+set LoadBalancingFunction=1 lbCaThreshold 3200
+
+set EUtranCellFDD=L02151,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=L02151,CellSleepFunction=1 capCellDlPrbSleepThreshold 10
+set EUtranCellFDD=L02151,CellSleepFunction=1 capCellRrcConnSleepThreshold 5
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 25
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 30
+set EUtranCellFDD=L02151,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=L02151,CellSleepFunction=1 sleepMode 0
+set EUtranCellFDD=L02151,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=L02151,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=L02151,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=L02151,CellSleepFunction=1 capCellSleepProhibitInterval 24
+set EUtranCellFDD=L02151,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 35
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 60
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=L02151,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 0
+set EUtranCellFDD=L02151,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=L02151,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=L02151,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=L02151,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=L02151,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=L02152,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=L02152,CellSleepFunction=1 capCellDlPrbSleepThreshold 10
+set EUtranCellFDD=L02152,CellSleepFunction=1 capCellRrcConnSleepThreshold 5
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 25
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 30
+set EUtranCellFDD=L02152,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=L02152,CellSleepFunction=1 sleepMode 0
+set EUtranCellFDD=L02152,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=L02152,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=L02152,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=L02152,CellSleepFunction=1 capCellSleepProhibitInterval 24
+set EUtranCellFDD=L02152,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 35
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 60
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=L02152,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 0
+set EUtranCellFDD=L02152,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=L02152,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=L02152,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=L02152,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=L02152,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=L02153,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=L02153,CellSleepFunction=1 capCellDlPrbSleepThreshold 10
+set EUtranCellFDD=L02153,CellSleepFunction=1 capCellRrcConnSleepThreshold 5
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 25
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 30
+set EUtranCellFDD=L02153,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=L02153,CellSleepFunction=1 sleepMode 0
+set EUtranCellFDD=L02153,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=L02153,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=L02153,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=L02153,CellSleepFunction=1 capCellSleepProhibitInterval 24
+set EUtranCellFDD=L02153,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 35
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 60
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=L02153,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 0
+set EUtranCellFDD=L02153,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=L02153,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=L02153,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=L02153,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=L02153,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=P02151,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=P02151,CellSleepFunction=1 capCellDlPrbSleepThreshold 10
+set EUtranCellFDD=P02151,CellSleepFunction=1 capCellRrcConnSleepThreshold 5
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 25
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 30
+set EUtranCellFDD=P02151,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=P02151,CellSleepFunction=1 sleepMode 0
+set EUtranCellFDD=P02151,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=P02151,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=P02151,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=P02151,CellSleepFunction=1 capCellSleepProhibitInterval 24
+set EUtranCellFDD=P02151,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 35
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 60
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=P02151,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 0
+set EUtranCellFDD=P02151,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=P02151,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=P02151,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=P02151,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=P02151,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=P02152,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=P02152,CellSleepFunction=1 capCellDlPrbSleepThreshold 10
+set EUtranCellFDD=P02152,CellSleepFunction=1 capCellRrcConnSleepThreshold 5
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 25
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 30
+set EUtranCellFDD=P02152,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=P02152,CellSleepFunction=1 sleepMode 0
+set EUtranCellFDD=P02152,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=P02152,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=P02152,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=P02152,CellSleepFunction=1 capCellSleepProhibitInterval 24
+set EUtranCellFDD=P02152,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 35
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 60
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=P02152,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 0
+set EUtranCellFDD=P02152,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=P02152,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=P02152,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=P02152,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=P02152,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=P02153,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=P02153,CellSleepFunction=1 capCellDlPrbSleepThreshold 10
+set EUtranCellFDD=P02153,CellSleepFunction=1 capCellRrcConnSleepThreshold 5
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 25
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 30
+set EUtranCellFDD=P02153,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=P02153,CellSleepFunction=1 sleepMode 0
+set EUtranCellFDD=P02153,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=P02153,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=P02153,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=P02153,CellSleepFunction=1 capCellSleepProhibitInterval 24
+set EUtranCellFDD=P02153,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 35
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 60
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=P02153,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 0
+set EUtranCellFDD=P02153,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=P02153,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=P02153,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=P02153,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=P02153,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=Q02151,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=Q02151,CellSleepFunction=1 capCellDlPrbSleepThreshold 20
+set EUtranCellFDD=Q02151,CellSleepFunction=1 capCellRrcConnSleepThreshold 30
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 40
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 45
+set EUtranCellFDD=Q02151,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=Q02151,CellSleepFunction=1 sleepMode 1
+set EUtranCellFDD=Q02151,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=Q02151,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=Q02151,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=Q02151,CellSleepFunction=1 capCellSleepProhibitInterval 0
+set EUtranCellFDD=Q02151,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 50
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 50
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=Q02151,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 5
+set EUtranCellFDD=Q02151,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=Q02151,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=Q02151,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=Q02151,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=Q02151,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=Q02152,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=Q02152,CellSleepFunction=1 capCellDlPrbSleepThreshold 20
+set EUtranCellFDD=Q02152,CellSleepFunction=1 capCellRrcConnSleepThreshold 30
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 40
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 45
+set EUtranCellFDD=Q02152,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=Q02152,CellSleepFunction=1 sleepMode 1
+set EUtranCellFDD=Q02152,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=Q02152,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=Q02152,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=Q02152,CellSleepFunction=1 capCellSleepProhibitInterval 0
+set EUtranCellFDD=Q02152,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 50
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 50
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=Q02152,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 5
+set EUtranCellFDD=Q02152,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=Q02152,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=Q02152,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=Q02152,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=Q02152,CellSleepFunction=1 wakeUpWaitTimer 0
+set EUtranCellFDD=Q02153,CellSleepFunction=1 capCellSleepMonitorDurTimer 15
+set EUtranCellFDD=Q02153,CellSleepFunction=1 capCellDlPrbSleepThreshold 20
+set EUtranCellFDD=Q02153,CellSleepFunction=1 capCellRrcConnSleepThreshold 30
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellWakeUpMonitorDurTimer 15
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellDlPrbWakeUpThreshold 40
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellRrcConnWakeUpThreshold 45
+set EUtranCellFDD=Q02153,CellSleepFunction=1 coverageCellDiscovery false
+set EUtranCellFDD=Q02153,CellSleepFunction=1 sleepMode 1
+set EUtranCellFDD=Q02153,CellSleepFunction=1 sleepStartTime 04:00
+set EUtranCellFDD=Q02153,CellSleepFunction=1 sleepEndTime 11:00
+set EUtranCellFDD=Q02153,CellSleepFunction=1 capCellMobReasNotSleepThr -1
+set EUtranCellFDD=Q02153,CellSleepFunction=1 capCellSleepProhibitInterval 0
+set EUtranCellFDD=Q02153,CellSleepFunction=1 CellSleepFunctionId 1
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellDlPrbWakeUpThresHigh 50
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellLatestStatsAdaRatio 60
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellRrcConnEstAttMin 200
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellRrcConnWakeUpThresHigh 50
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellRrcReestWakeUpThr 100
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellUeCtxtRelMin 200
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellUeLostWakeUpThr 100
+set EUtranCellFDD=Q02153,CellSleepFunction=1 covCellWakeUpMonitorDurTHigh 5
+set EUtranCellFDD=Q02153,CellSleepFunction=1 isAllowedMsmOnCovCell 
+set EUtranCellFDD=Q02153,CellSleepFunction=1 isCleanupHitRateTable 
+set EUtranCellFDD=Q02153,CellSleepFunction=1 movingAvgPeriod 5
+set EUtranCellFDD=Q02153,CellSleepFunction=1 wakeUpLastHoTime 2
+set EUtranCellFDD=Q02153,CellSleepFunction=1 wakeUpWaitTimer 0
+
+
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigA5=1 a5Threshold1Rsrp -112
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigA5=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 a1a2SearchThresholdRsrp -112
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 a1a2UlSearchThreshold 10
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 a2UlCriticalThreshold -130
+
+
+set ReportConfigA1Prim a1ThresholdRsrpPrim -116
+set timeToTriggerA5 timeToTriggerA5 80
+set ReportConfigA5Anr timeToTriggerA5 80
+set ReportConfigA5SoftLock a5Threshold2Rsrp -140
+set ReportConfigA5UlTrig a5Threshold2Rsrp -108
+set ReportConfigA5UlTrig timeToTriggerA5 64
+set ReportConfigB2Utra b2Threshold1Rsrp -118
+set ReportConfigB2Utra b2Threshold2EcNoUtra -130
+set ReportConfigB2Utra b2Threshold2RscpUtra -113
+set ReportConfigB2Utra hysteresisB2 10
+set ReportConfigB2UtraUlTrig b2Threshold2EcNoUtra -130
+set ReportConfigB2UtraUlTrig b2Threshold2RscpUtra -83
+set ReportConfigB2UtraUlTrig hysteresisB2 10
+set ReportConfigCsfbUtra thresholdEcNo -240
+set ReportConfigEUtraBadCovPrim a2ThresholdRsrpPrim -118
+set ReportConfigEUtraBadCovPrim timeToTriggerA2Prim 512
+set ReportConfigEUtraBadCovSec timeToTriggerA2Sec 512
+set ReportConfigEUtraBadCovSec triggerQuantityA2Sec 0
+set ReportConfigEUtraBestCell timeToTriggerA3  256
+set ReportConfigEUtraBestCellAnr timeToTriggerA3 80
+set ReportConfigEUtraInterFreqLb a5Threshold1Rsrp -90
+set ReportConfigEUtraInterFreqLb a5Threshold2Rsrp -108
+set ReportConfigEUtraInterFreqLb hysteresisA5 10
+set ReportConfigSearch a1a2SearchThresholdRsrq -195
+set ReportConfigSearch a2CriticalThresholdRsrp -120
+set ReportConfigSearch hysteresisA1A2SearchRsrp 10
+set ReportConfigSearch hysteresisA1A2SearchRsrq   0
+set ReportConfigSearch hysteresisA2CriticalRsrp 10
+set ReportConfigSearch hysteresisA2CriticalRsrq 0
+set ReportConfigSearch inhibitA2SearchConfig 1
+set ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -8
+set ReportConfigSearch=1 hysteresisA2OuterSearchRsrp 10
+set ReportConfigSCellA1A2 hysteresisA1A2Rsrp 10
+set ReportConfigSCellA1A2 a1a2ThresholdRsrp -124
+set ReportConfigSCellA1A2 a1a2ThresholdRsrpBidir -122
+set PowerSaving bbPowerSavingsEnabled false
+set EUtranCellFDD=L02151,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=L02151,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=L02151,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=L02151,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=L02151,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=L02151,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=L02151,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=L02151,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=L02151,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=L02151,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=L02151,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=L02151,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=L02151,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -124
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -126
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -14
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -111
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=L02151,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=L02152,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=L02152,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=L02152,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=L02152,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=L02152,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=L02152,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=L02152,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=L02152,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=L02152,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=L02152,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=L02152,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=L02152,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=L02152,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -124
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -126
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -14
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -111
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=L02152,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=L02153,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=L02153,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=L02153,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=L02153,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=L02153,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=L02153,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=L02153,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=L02153,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=L02153,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=L02153,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=L02153,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=L02153,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=L02153,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -124
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -126
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -14
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -111
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=L02153,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=P02151,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=P02151,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=P02151,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=P02151,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=P02151,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=P02151,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=P02151,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=P02151,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=P02151,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=P02151,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=P02151,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=P02151,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=P02151,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -120
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -122
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -10
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -109
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=P02151,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=P02152,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=P02152,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=P02152,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=P02152,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=P02152,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=P02152,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=P02152,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=P02152,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=P02152,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=P02152,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=P02152,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=P02152,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=P02152,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -120
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -122
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -10
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -109
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=P02152,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=P02153,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=P02153,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=P02153,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=P02153,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=P02153,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=P02153,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=P02153,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=P02153,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=P02153,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=P02153,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=P02153,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=P02153,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=P02153,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -120
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -122
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -10
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -109
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=P02153,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=Q02151,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=Q02151,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=Q02151,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=Q02151,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=Q02151,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=Q02151,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=Q02151,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=Q02151,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=Q02151,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=Q02151,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=Q02151,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=Q02151,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=Q02151,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -120
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -122
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -10
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -109
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=Q02151,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=Q02152,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=Q02152,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=Q02152,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=Q02152,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=Q02152,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=Q02152,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=Q02152,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=Q02152,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=Q02152,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=Q02152,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=Q02152,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=Q02152,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=Q02152,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -120
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -122
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -10
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -109
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=Q02152,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+set EUtranCellFDD=Q02153,UeMeasControl=1  a5B2MobilityTimer 6000
+set EUtranCellFDD=Q02153,UeMeasControl=1 bothB2RscpEcnoCheck  true
+set EUtranCellFDD=Q02153,UeMeasControl=1 filterCoefficientEUtraRsrp 9
+set EUtranCellFDD=Q02153,UeMeasControl=1 maxMeasInterFreqEUtra 6
+set EUtranCellFDD=Q02153,UeMeasControl=1 measQuantityUtraFDD 1
+set EUtranCellFDD=Q02153,UeMeasControl=1 ueMeasurementsActive true
+set EUtranCellFDD=Q02153,UeMeasControl=1 ueMeasurementsActiveGERAN false
+set EUtranCellFDD=Q02153,UeMeasControl=1 zzzTemporary3 1
+set EUtranCellFDD=Q02153,UeMeasControl=1 ueMeasurementsActiveCDMA20001xRtt false
+set EUtranCellFDD=Q02153,UeMeasControl=1 inhibitB2RsrqConfig true
+set EUtranCellFDD=Q02153,UeMeasControl=1 csfbHoTargetSearchTimer 1000
+set EUtranCellFDD=Q02153,UeMeasControl=1 lowPrioMeasThresh 2
+set EUtranCellFDD=Q02153,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigB2Utra=1 b2Threshold1Rsrp -120
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 a2CriticalThresholdRsrp -122
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 a2OuterSearchThrRsrpOffset -10
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold1Rsrp -109
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigA5EndcHo=1 a5Threshold2Rsrp -108
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigA5EndcHo=1 reportQuantityA5 0
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 qciA1A2ThrOffsets a1a2ThrRsrpQciOffset=3,a1a2ThrRsrqQciOffset=0,qciProfileRef=ENodeBFunction=1,QciTable=default,QciProfilePredefined=qci1
+set EUtranCellFDD=Q02153,UeMeasControl=1,ReportConfigSearch=1 hysteresisA1A2UlSearch 10
+
+
+set EUtranCellFDD=L02151,MimoSleepFunction=1                switchDownPrbThreshold  30
+set EUtranCellFDD=L02151,MimoSleepFunction=1                switchUpPrbThreshold  35
+set EUtranCellFDD=L02151,MimoSleepFunction=1                switchUpRrcConnThreshold  40
+set EUtranCellFDD=L02151,MimoSleepFunction=1                switchDownRrcConnThreshold  30
+set EUtranCellFDD=L02151,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=L02151,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=L02151,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=L02151,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=L02151,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=L02152,MimoSleepFunction=1                switchDownPrbThreshold  30
+set EUtranCellFDD=L02152,MimoSleepFunction=1                switchUpPrbThreshold  35
+set EUtranCellFDD=L02152,MimoSleepFunction=1                switchUpRrcConnThreshold  40
+set EUtranCellFDD=L02152,MimoSleepFunction=1                switchDownRrcConnThreshold  30
+set EUtranCellFDD=L02152,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=L02152,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=L02152,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=L02152,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=L02152,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=L02153,MimoSleepFunction=1                switchDownPrbThreshold  30
+set EUtranCellFDD=L02153,MimoSleepFunction=1                switchUpPrbThreshold  35
+set EUtranCellFDD=L02153,MimoSleepFunction=1                switchUpRrcConnThreshold  40
+set EUtranCellFDD=L02153,MimoSleepFunction=1                switchDownRrcConnThreshold  30
+set EUtranCellFDD=L02153,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=L02153,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=L02153,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=L02153,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=L02153,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=P02151,MimoSleepFunction=1                switchDownPrbThreshold  20
+set EUtranCellFDD=P02151,MimoSleepFunction=1                switchUpPrbThreshold  25
+set EUtranCellFDD=P02151,MimoSleepFunction=1                switchUpRrcConnThreshold  20
+set EUtranCellFDD=P02151,MimoSleepFunction=1                switchDownRrcConnThreshold  15
+set EUtranCellFDD=P02151,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=P02151,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=P02151,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=P02151,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=P02151,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=P02152,MimoSleepFunction=1                switchDownPrbThreshold  20
+set EUtranCellFDD=P02152,MimoSleepFunction=1                switchUpPrbThreshold  25
+set EUtranCellFDD=P02152,MimoSleepFunction=1                switchUpRrcConnThreshold  20
+set EUtranCellFDD=P02152,MimoSleepFunction=1                switchDownRrcConnThreshold  15
+set EUtranCellFDD=P02152,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=P02152,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=P02152,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=P02152,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=P02152,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=P02153,MimoSleepFunction=1                switchDownPrbThreshold  20
+set EUtranCellFDD=P02153,MimoSleepFunction=1                switchUpPrbThreshold  25
+set EUtranCellFDD=P02153,MimoSleepFunction=1                switchUpRrcConnThreshold  20
+set EUtranCellFDD=P02153,MimoSleepFunction=1                switchDownRrcConnThreshold  15
+set EUtranCellFDD=P02153,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=P02153,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=P02153,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=P02153,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=P02153,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                switchDownPrbThreshold  15
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                switchUpPrbThreshold  18
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                switchUpRrcConnThreshold  15
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                switchDownRrcConnThreshold  10
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=Q02151,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                switchDownPrbThreshold  15
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                switchUpPrbThreshold  18
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                switchUpRrcConnThreshold  15
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                switchDownRrcConnThreshold  10
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=Q02152,MimoSleepFunction=1                sleepMode  4
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                switchDownPrbThreshold  15
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                switchUpPrbThreshold  18
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                switchUpRrcConnThreshold  15
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                switchDownRrcConnThreshold  10
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                switchDownMonitorDurTimer  5
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                switchUpMonitorDurTimer  5
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                sleepStartTime  04:00
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                sleepEndTime  10:00
+set EUtranCellFDD=Q02153,MimoSleepFunction=1                sleepMode  4
+
+
+cr Transport=1,Ntp=1,NtpFrequencySync=1
+Router=LTE,InterfaceIPv4=1,AddressIPv4=1
+d
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp0 0
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp1 12 14
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp2 18 20 22
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp3 26 28
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp4 34 36 38
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp5 40 42 44 46
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp6 48
+set Transport=1,QosProfiles=1,DscpPcpMap=1 pcp7 56
+set Transport=1,Router=LTE_OAM,InterfaceIPv4=1 egressQosMarking                     QosProfiles=1,DscpPcpMap=1
+set Transport=1,Router=OAM,InterfaceIPv4=1 egressQosMarking                     QosProfiles=1,DscpPcpMap=1
+set Transport=1,Router=LTE,InterfaceIPv4=1 egressQosMarking                     QosProfiles=1,DscpPcpMap=1
+set Transport=1,Router=LTE_OAM,DnsClient=1 dscp 40
+set Transport=1,Router=OAM,DnsClient=1 dscp 40
+set Transport=1,Ntp=1,NtpFrequencySync=1 dscp 46
+set SystemFunctions=1,SysM=1,OamTrafficClass=1 dscp 22
+cr ENodeBFunction=1,SubscriberProfileID=1
+set ENodeBFunction=1,SubscriberProfileID=1 userLabel Bafi
+cr ENodeBFunction=1,SubscriberProfileID=1,RATFreqPrio=1
+set ENodeBFunction=1,SubscriberProfileID=1,RATFreqPrio=1 freqPrioListEUTRA   arfcnValueEUtranDl=3100,arpPrio=0,atoAllowed=false,cellReselectionPriority=5,connectedModeMobilityPrio=5,loadBalancingAllowed=false,offloadAllowed=false,voicePrio=-1000; arfcnValueEUtranDl=9485,arpPrio=0,atoAllowed=false,cellReselectionPriority=3,connectedModeMobilityPrio=3,loadBalancingAllowed=false,offloadAllowed=false,voicePrio=-1000; arfcnValueEUtranDl=1125,arpPrio=0,atoAllowed=false,cellReselectionPriority=4,connectedModeMobilityPrio=4,loadBalancingAllowed=false,offloadAllowed=false,voicePrio=-1000; arfcnValueEUtranDl=693,arpPrio=0,atoAllowed=false,cellReselectionPriority=4,connectedModeMobilityPrio=4,loadBalancingAllowed=true,offloadAllowed=false,voicePrio=-1000; arfcnValueEUtranDl=41665,arpPrio=0,atoAllowed=false,cellReselectionPriority=6,connectedModeMobilityPrio=6,loadBalancingAllowed=true,offloadAllowed=false,voicePrio=-1000
+set ENodeBFunction=1,SubscriberProfileID=1,RATFreqPrio=1 userLabel Bafi
+set ENodeBFunction=1,SubscriberProfileID=1,RATFreqPrio=1 t320 30
+set ENodeBFunction=1,SubscriberProfileID=1,RATFreqPrio=1 spidList 1
+
+acc nunlock activate
+bl fdd
+set EUtranCellFDD=L02151 administrativeState 1
+set EUtranCellFDD=L02152 administrativeState 1
+set EUtranCellFDD=L02153 administrativeState 1
+set EUtranCellFDD=P02151 administrativeState 1
+set EUtranCellFDD=P02152 administrativeState 1
+set EUtranCellFDD=P02153 administrativeState 1
+set EUtranCellFDD=Q02151 administrativeState 1
+set EUtranCellFDD=Q02152 administrativeState 1
+set EUtranCellFDD=Q02153 administrativeState 1
+
+ldeb xmu
+
+set SystemFunctions=1,SysM=1,Snmp=1 nodeCredential
+set SystemFunctions=1,SysM=1,Snmp=1 trustCategory
+
+cr ENodeBFunction=1,TimerProfile=1
+6
+6
+1
+10
+set  ENodeBFunction=1,TimerProfile=1 tRelocOverall 10
+
+crn ENodeBFunction=1,NbIotCell=O02151
+cellId 37
+eutranCellRef EUtranCellFDD=P02151
+physicalLayerCellId 39
+nbIotCellType 2
+tac 33125
+ulAnchPrbIndex -1
+dlAnchPrbIndex -1
+plmnIdList mcc=730,mnc=1,mncLength=2
+End
+set ENodeBFunction=1,NbIotCell=O02151 administrativeState 1
+set ENodeBFunction=1,NbIotCell=O02151 cellRange 15
+set ENodeBFunction=1,NbIotCell=O02151 nprachAllocConfig 
+set ENodeBFunction=1,NbIotCell=O02151 pZeroNominalNPusch  -103
+set ENodeBFunction=1,NbIotCell=O02151 intraFrequencyInfo  qQualMin=-34
+set ENodeBFunction=1,NbIotCell=O02151 intraFrequencyInfo  qRxLevMin=-140
+set ENodeBFunction=1,NbIotCell=O02151 ulAnchPrbIndex -1
+set ENodeBFunction=1,NbIotCell=O02151 dlAnchPrbIndex -1
+set ENodeBFunction=1,NbIotCell=O02151 qHyst 2
+set ENodeBFunction=1,NbIotCell=O02151 preambleIniRecTargetPower -110
+set ENodeBFunction=1,NbIotCell=O02151 nprachAllocConfig 1
+
+crn ENodeBFunction=1,NbIotCell=O02152
+cellId 38
+eutranCellRef EUtranCellFDD=P02152
+physicalLayerCellId 40
+nbIotCellType 2
+tac 33125
+ulAnchPrbIndex -1
+dlAnchPrbIndex -1
+plmnIdList mcc=730,mnc=1,mncLength=2
+End
+set ENodeBFunction=1,NbIotCell=O02152 administrativeState 1
+set ENodeBFunction=1,NbIotCell=O02152 cellRange 15
+set ENodeBFunction=1,NbIotCell=O02152 nprachAllocConfig 
+set ENodeBFunction=1,NbIotCell=O02152 pZeroNominalNPusch  -103
+set ENodeBFunction=1,NbIotCell=O02152 intraFrequencyInfo  qQualMin=-34
+set ENodeBFunction=1,NbIotCell=O02152 intraFrequencyInfo  qRxLevMin=-140
+set ENodeBFunction=1,NbIotCell=O02152 ulAnchPrbIndex -1
+set ENodeBFunction=1,NbIotCell=O02152 dlAnchPrbIndex -1
+set ENodeBFunction=1,NbIotCell=O02152 qHyst 2
+set ENodeBFunction=1,NbIotCell=O02152 preambleIniRecTargetPower -110
+set ENodeBFunction=1,NbIotCell=O02152 nprachAllocConfig 1
+
+crn ENodeBFunction=1,NbIotCell=O02153
+cellId 39
+eutranCellRef EUtranCellFDD=P02153
+physicalLayerCellId 41
+nbIotCellType 2
+tac 33125
+ulAnchPrbIndex -1
+dlAnchPrbIndex -1
+plmnIdList mcc=730,mnc=1,mncLength=2
+End
+set ENodeBFunction=1,NbIotCell=O02153 administrativeState 1
+set ENodeBFunction=1,NbIotCell=O02153 cellRange 15
+set ENodeBFunction=1,NbIotCell=O02153 nprachAllocConfig 
+set ENodeBFunction=1,NbIotCell=O02153 pZeroNominalNPusch  -103
+set ENodeBFunction=1,NbIotCell=O02153 intraFrequencyInfo  qQualMin=-34
+set ENodeBFunction=1,NbIotCell=O02153 intraFrequencyInfo  qRxLevMin=-140
+set ENodeBFunction=1,NbIotCell=O02153 ulAnchPrbIndex -1
+set ENodeBFunction=1,NbIotCell=O02153 dlAnchPrbIndex -1
+set ENodeBFunction=1,NbIotCell=O02153 qHyst 2
+set ENodeBFunction=1,NbIotCell=O02153 preambleIniRecTargetPower -110
+set ENodeBFunction=1,NbIotCell=O02153 nprachAllocConfig 1
+  
+  
+lt all
+  
+  
+set ENodeBFunction=1 eNBId  10215
+  
+set Lm=1,FeatureState=CXC4011803 featureState 
+  
+set CXC4010320  featurestate 1
+set CXC4010620  featurestate 1
+set CXC4011476  featurestate 1
+set CXC4011666  featurestate 1
+set CXC4011378  featurestate 1
+set CXC4011700  featurestate 1
+set CXC4010956  featurestate 1
+set CXC4011064  featurestate 1
+set CXC4011062  featurestate 1
+set CXC4011969  featurestate 1
+set CXC4011255  featurestate 1
+set CXC4010912  featurestate 1
+set CXC4010609  featurestate 1
+set CXC4011955  featurestate 1
+set CXC4011061  featurestate 1
+set CXC4011937  featurestate 1
+set CXC4011559  featurestate 1
+set CXC4011034  featurestate 1
+set CXC4011482  featurestate 1
+set CXC4011245  featurestate 1
+set CXC4010618  featurestate 1
+set CXC4011157  featurestate 1
+set CXC4011941  featurestate 1
+set CXC4010770  featurestate 1
+set CXC4011319  featurestate 1
+set CXC4010974  featurestate 1
+set CXC4010613  featurestate 1
+set CXC4010319  featurestate 1
+set CXC4011055  featurestate 1
+set CXC4010967  featurestate 1
+set CXC4011808  featurestate 1
+set CXC4011345  featurestate 1
+set CXC4010723  featurestate 1
+set CXC4011815  featurestate 1
+set CXC4011366  featurestate 1
+set CXC4011163  featurestate 1
+set CXC4011183  featurestate 1
+set CXC4011515  featurestate 1
+set CXC4011033  featurestate 1
+set CXC4011813  featurestate 1
+set CXC4010717  featurestate 1
+set CXC4011715  featurestate 1
+set CXC4011938  featurestate 1
+set CXC4011252  featurestate 1
+set CXC4010959  featurestate 1
+set CXC4011427  featurestate 1
+set CXC4011667  featurestate 1
+set CXC4011056  featurestate 1
+set CXC4010973  featurestate 1
+set CXC4011939  featurestate 1
+set CXC4010961  featurestate 1
+set CXC4010990  featurestate 1
+set CXC4011251  featurestate 1
+set CXC4011075  featurestate 1
+set CXC4011327  featurestate 1
+set CXC4011918  featurestate 1
+set CXC4011477  featurestate 1
+set CXC4011059  featurestate 1
+set CXC4011063  featurestate 1
+set CXC4011247  featurestate 1
+set CXC4011317  featurestate 1
+set CXC4011050  featurestate 1
+set CXC4011714  featurestate 1
+set CXC4011253  featurestate 1
+set CXC4010841  featurestate 1
+set CXC4011911  featurestate 1
+set CXC4011258  featurestate 1
+set CXC4011914  featurestate 1
+set CXC4011011  featurestate 1
+set CXC4010616  featurestate 1
+set CXC4011946  featurestate 1
+set CXC4012003  featurestate 1
+set CXC4011940  featurestate 1
+set CXC4012018  featurestate 1
+set CXC4011072  featurestate 1
+set CXC4012036  featurestate 0
+set CXC4012097  featurestate 1
+set CXC4012240  featurestate 1
+set CXC4012259  featurestate 1
+set CXC4012070  featurestate 1
+set CXC4012261  featurestate 1
+set CXC4012326  featurestate 1
+set CXC4011823  featurestate 1
+set CXC4012129  featurestate 1
+set CXC4012218  featurestate 1
+set CXC4012344  featurestate 1
+set CXC4012368  featurestate 1
+set CXC4012371  featurestate 1
+set CXC4012454  featurestate 1
+set CXC4012494  featurestate 0
+set CXC4040011  featurestate 1
+set CXC4012370  featurestate 1
+set CXC4012496  featurestate 1
+set CXC4012123  featurestate 1
+set CXC4012504  featurestate 1
+set CXC4012296  featurestate 1
+set CXC4012563  featurestate 1
+set CXC4011983  featurestate 1
+set CXC4011246  featurestate 0
+set CXC4011958  featurestate 1
+set CXC4012588  featurestate 1
+set CXC4011973  featurestate 1
+set CXC4011982  featurestate 1
+set CXC4012081  featurestate 1
+set CXC4012505  featurestate 1
+set CXC4011018  featurestate 0
+set CXC4012381  featurestate 1
+set CXC4012589  featurestate 1
+set CXC4012558  featurestate 1
+set CXC4012272  featurestate 1
+set CXC4012330  featurestate 1
+set CXC4012510  featurestate 1
+set CXC4012015  featurestate 1
+set CXC4040008  featurestate 1
+set CXC4012412  featurestate 1
+set CXC4012273  featurestate 1
+set CXC4012375  featurestate 1
+set CXC4011074  featurestate 1
+set CXC4011370  featurestate 1
+set CXC4011444  featurestate 1
+set CXC4012210  featurestate 1
+set CXC4012271  featurestate 1
+set CXC4012316  featurestate 1
+set CXC4012485  featurestate 1
+set CXC4010980  featurestate 1
+set CXC4012732  featurestate 1
+
+
+cvms Parametros_ekohle_PROATEL  
+
+confb-
+gs-

@@ -586,7 +586,7 @@ def generar_hardware_mos(nemonico: str, wsh_data: Dict[str, str], trama: str, rn
     # --- 1. FIRMA Y COMENTARIO INICIAL ---
     signature = f"""
 // ====================================================================
-// == ARCHIVO DE CONFIGURACIÓN REMOTA
+// == ARCHIVO PARA CONFIGURACIÓN DE TRASNPORT Y HW
 // ====================================================================
 // 
 // AUTOR: Piero Ledesma
