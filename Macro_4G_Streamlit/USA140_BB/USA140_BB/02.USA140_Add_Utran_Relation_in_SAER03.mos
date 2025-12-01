@@ -1,0 +1,7854 @@
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01401"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01402"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U01403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01401"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01402"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U01403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01401"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01402"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U01403"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21401"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21402"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U21403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01402"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21402"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01402"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21401"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21402"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U21403"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21402"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U21403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U26581"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U26581"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26581"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26581"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26581"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26581"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26581"
+exception none
+selectionPriority Integer 19
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U26582"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U26582"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26582"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26582"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26582"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26582"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U26582"
+exception none
+selectionPriority Integer 8
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U40302"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U40302"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40302"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40302"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40302"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40302"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40302"
+exception none
+selectionPriority Integer 24
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U40422"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U40422"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40422"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40422"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40422"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40422"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U40422"
+exception none
+selectionPriority Integer 11
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U54571"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U54571"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54571"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54571"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54571"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54571"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54571"
+exception none
+selectionPriority Integer 20
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U54572"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U54572"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54572"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54572"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54572"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54572"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U54572"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21401"
+identity "U57303"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U57303"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U57303"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U57303"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U57303"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U57303"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21401,UtranRelation=U57303"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21401"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U21403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U38720"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U38720"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U38720"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U38720"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U38720"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U38720"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U38720"
+exception none
+selectionPriority Integer 21
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U53081"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U53081"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53081"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53081"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53081"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53081"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53081"
+exception none
+selectionPriority Integer 7
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U53082"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U53082"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53082"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53082"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53082"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53082"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53082"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U53083"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U53083"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53083"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53083"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53083"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53083"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U53083"
+exception none
+selectionPriority Integer 4
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21402"
+identity "U54572"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U54572"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U54572"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U54572"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U54572"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U54572"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21402,UtranRelation=U54572"
+exception none
+selectionPriority Integer 9
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21401"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U21402"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U26581"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U26581"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26581"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26581"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26581"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26581"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26581"
+exception none
+selectionPriority Integer 15
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U26582"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U26582"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26582"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26582"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26582"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26582"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U26582"
+exception none
+selectionPriority Integer 6
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U40282"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U40282"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40282"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40282"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40282"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40282"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40282"
+exception none
+selectionPriority Integer 20
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U40311"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U40311"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40311"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40311"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40311"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40311"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40311"
+exception none
+selectionPriority Integer 17
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U40312"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U40312"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40312"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40312"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40312"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40312"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U40312"
+exception none
+selectionPriority Integer 16
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U53082"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U53082"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53082"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53082"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53082"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53082"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53082"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U53083"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U53083"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53083"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53083"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53083"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53083"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U53083"
+exception none
+selectionPriority Integer 6
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U54571"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U54571"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54571"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54571"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54571"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54571"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54571"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U54572"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U54572"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54572"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54572"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54572"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54572"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U54572"
+exception none
+selectionPriority Integer 4
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U21403"
+identity "U57302"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U57302"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U57302"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U57302"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U57302"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U57302"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U21403,UtranRelation=U57302"
+exception none
+selectionPriority Integer 9
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U26581"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26581,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26581,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26581,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26581,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26581,UtranRelation=U21403"
+exception none
+selectionPriority Integer 19
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U26582"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21401"
+exception none
+selectionPriority Integer 29
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U26582"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U26582,UtranRelation=U21403"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U38720"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U38720,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U38720,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U38720,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U38720,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U38720,UtranRelation=U21402"
+exception none
+selectionPriority Integer 12
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40282"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40282,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40282,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40282,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40282,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40282,UtranRelation=U21403"
+exception none
+selectionPriority Integer 20
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40301"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21402"
+exception none
+selectionPriority Integer 7
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40301"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40301,UtranRelation=U21403"
+exception none
+selectionPriority Integer 25
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40302"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21401"
+exception none
+selectionPriority Integer 21
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40302"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21402"
+exception none
+selectionPriority Integer 5
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40302"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40302,UtranRelation=U21403"
+exception none
+selectionPriority Integer 18
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40303"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21401"
+exception none
+selectionPriority Integer 5
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40303"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21402"
+exception none
+selectionPriority Integer 12
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40303"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40303,UtranRelation=U21403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40311"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40311,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40311,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40311,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40311,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40311,UtranRelation=U21403"
+exception none
+selectionPriority Integer 29
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40312"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21402"
+exception none
+selectionPriority Integer 9
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U40312"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U40312,UtranRelation=U21403"
+exception none
+selectionPriority Integer 21
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U51020"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U51020,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U51020,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U51020,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U51020,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U51020,UtranRelation=U21401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U53081"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53081,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53081,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53081,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53081,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53081,UtranRelation=U21402"
+exception none
+selectionPriority Integer 9
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U53082"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21402"
+exception none
+selectionPriority Integer 14
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U53082"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53082,UtranRelation=U21403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U53083"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21402"
+exception none
+selectionPriority Integer 4
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U53083"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U53083,UtranRelation=U21403"
+exception none
+selectionPriority Integer 7
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U54571"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21401"
+exception none
+selectionPriority Integer 19
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U54571"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54571,UtranRelation=U21403"
+exception none
+selectionPriority Integer 16
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U54572"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21401"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U54572"
+identity "U21402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21402"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21402"
+exception none
+selectionPriority Integer 11
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U54572"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54572,UtranRelation=U21403"
+exception none
+selectionPriority Integer 4
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U54573"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54573,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54573,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54573,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54573,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U54573,UtranRelation=U21403"
+exception none
+selectionPriority Integer 17
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U57302"
+identity "U21403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57302,UtranRelation=U21403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57302,UtranRelation=U21403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57302,UtranRelation=U21403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57302,UtranRelation=U21403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57302,UtranRelation=U21403"
+exception none
+selectionPriority Integer 19
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U62110"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U62110,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U62110,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U62110,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U62110,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U62110,UtranRelation=U21401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U01391"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01391"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01391"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01391"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01391"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01391"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01391"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U01392"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01392"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01392"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01392"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01392"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01392"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01392"
+exception none
+selectionPriority Integer 11
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U01393"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01393"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01393"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01393"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01393"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01393"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01393"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01402"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U01403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U03052"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U03052"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03052"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03052"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03052"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03052"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03052"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U03782"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U03782"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03782"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03782"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03782"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03782"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U03782"
+exception none
+selectionPriority Integer 12
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U05961"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U05961"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05961"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05961"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05961"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05961"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05961"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U05962"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U05962"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05962"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05962"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05962"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05962"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U05962"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U06192"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U06192"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06192"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06192"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06192"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06192"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06192"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U06193"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U06193"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06193"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06193"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06193"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06193"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U06193"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U07892"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U07892"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07892"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07892"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07892"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07892"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07892"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U07893"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U07893"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07893"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07893"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07893"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07893"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U07893"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U28412"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U28412"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U28412"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U28412"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U28412"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U28412"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U28412"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U58582"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U58582"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58582"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58582"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58582"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58582"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58582"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01401"
+identity "U58583"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U58583"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58583"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58583"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58583"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58583"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01401,UtranRelation=U58583"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01402"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01401"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01402"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U01403"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01402"
+identity "U21401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U21401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01402,UtranRelation=U21401"
+exception none
+selectionPriority Integer 1
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01401"
+exception none
+selectionPriority Integer 2
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01402"
+exception none
+selectionPriority Integer 3
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U01532"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01532"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01532"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01532"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01532"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01532"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U01532"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U03782"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U03782"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U03782"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U03782"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U03782"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U03782"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U03782"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U05961"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U05961"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05961"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05961"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05961"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05961"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05961"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U05962"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U05962"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05962"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05962"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05962"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05962"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U05962"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U06192"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U06192"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06192"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06192"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06192"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06192"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06192"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U06193"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U06193"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06193"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06193"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06193"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06193"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U06193"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U09581"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U09581"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U09581"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U09581"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U09581"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U09581"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U09581"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U34817"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U34817"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34817"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34817"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34817"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34817"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34817"
+exception none
+selectionPriority Integer 17
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U34818"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U34818"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34818"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34818"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34818"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34818"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34818"
+exception none
+selectionPriority Integer 16
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01403"
+identity "U34819"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U34819"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34819"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34819"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34819"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34819"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01403,UtranRelation=U34819"
+exception none
+selectionPriority Integer 18
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U00212"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00212,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00212,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00212,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00212,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00212,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U00948"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00948,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00948,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00948,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00948,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00948,UtranRelation=U01401"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U00949"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00949,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00949,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00949,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00949,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U00949,UtranRelation=U01401"
+exception none
+selectionPriority Integer 19
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01392"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01392,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01392,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01392,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01392,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01392,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U01393"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01393,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01393,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01393,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01393,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U01393,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U03052"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03052,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03052,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03052,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03052,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03052,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U03782"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U03782"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U03782"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U03782,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U05961"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01401"
+exception none
+selectionPriority Integer 11
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U05961"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01402"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U05961"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05961,UtranRelation=U01403"
+exception none
+selectionPriority Integer 12
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U05962"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U05962"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U05962,UtranRelation=U01403"
+exception none
+selectionPriority Integer 7
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U06192"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U06192"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U06192"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06192,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U06193"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U06193"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U06193,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U07212"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07212,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07212,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07212,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07212,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 2
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07212,UtranRelation=U01403"
+exception none
+selectionPriority Integer 13
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U07232"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U07232"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07232,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U07892"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07892,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07892,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07892,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07892,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07892,UtranRelation=U01401"
+exception none
+selectionPriority Integer 41
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U07893"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07893,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07893,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07893,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07893,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U07893,UtranRelation=U01401"
+exception none
+selectionPriority Integer 15
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24382"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24382,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24382,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24382,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24382,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24382,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24711"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24711"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24711,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24712"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24712"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24712,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24713"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U24713"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U24713,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U28412"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U28412,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U28412,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U28412,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U28412,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U28412,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34817"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34817"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34817"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34817,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34818"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34818"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34818"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34818,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34819"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34819"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U34819"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U34819,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U52073"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U52073,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U52073,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U52073,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U52073,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U52073,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U55201"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U55201"
+identity "U01403"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01403"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01403"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01403"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01403"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01403"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U55201,UtranRelation=U01403"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U57263"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57263,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57263,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57263,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57263,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U57263,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U58582"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U58582"
+identity "U01402"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01402"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01402"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01402"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01402"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01402"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58582,UtranRelation=U01402"
+exception none
+selectionPriority Integer 10
+)
+
+CREATE
+(
+parent"ManagedElement=1,RncFunction=1,UtranCell=U58583"
+identity "U01401"
+moType UtranRelation
+exception none
+nrOfAttributes 1
+utranCellRef Ref "ManagedElement=1,RncFunction=1,UtranCell=U01401"
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58583,UtranRelation=U01401"
+exception none
+hcsSib11Config Struct
+nrOfElements 5
+hcsPrio Integer 0
+qHcs Integer 0
+penaltyTime Integer 0
+temporaryOffset1 Integer 0
+temporaryOffset2 Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58583,UtranRelation=U01401"
+exception none
+loadSharingCandidate Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58583,UtranRelation=U01401"
+exception none
+qOffset1sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58583,UtranRelation=U01401"
+exception none
+qOffset2sn Integer 0
+)
+
+SET
+(
+mo "ManagedElement=1,RncFunction=1,UtranCell=U58583,UtranRelation=U01401"
+exception none
+selectionPriority Integer 10
+)
+

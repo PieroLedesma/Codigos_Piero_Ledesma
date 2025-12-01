@@ -1,0 +1,783 @@
+ confb+          
+ gs+         
+
+lt all
+             
+ cr  ENodeBFunction=1,UtraNetwork=1      
+             
+             
+ cr  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_412
+412 #arfcnValueUtranDl      
+ set    ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_412$ userLabel  3G1900
+             
+ cr  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_3073
+3073 #arfcnValueUtranDl      
+ set    ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_3073$ userLabel  3G900
+             
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 userLabel  LTE2600
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 userLabel  LTE2600
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 csFallbackPrio 2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 csFallbackPrioEC   2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 userLabel  LTE2600
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 userLabel  LTE2600
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 userLabel  LTE2600
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 csFallbackPrio 2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 csFallbackPrioEC   2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 userLabel  LTE2600
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 userLabel  LTE700
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 csFallbackPrio 2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 csFallbackPrioEC   2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 userLabel  LTE700
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 userLabel  LTE700
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 userLabel  LTE700
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 csFallbackPrio 2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 csFallbackPrioEC   2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 userLabel  LTE700
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 userLabel  LTE700
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 userLabel  LTE1900
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 userLabel  LTE1900
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02151,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 csFallbackPrio 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 csFallbackPrioEC   2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 userLabel  LTE1900
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 userLabel  LTE1900
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02152,UtranFreqRelation=_3073 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412
+ UtraNetwork=1,UtranFrequency=_412   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 connectedModeMobilityPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 csFallbackPrio 3
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 csFallbackPrioEC   3
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 threshXLow  16
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 userLabel  LTE1900
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 voicePrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 altCsfbTargetPrio  2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 altCsfbTargetPrioEc    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_412 atoAllowed false
+     
+ cr  ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073
+ UtraNetwork=1,UtranFrequency=_3073   #utranFrequencyRef      
+2   #cellReselectionPriority        
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 anrMeasOn  true
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 cellReselectionPriority    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 connectedModeMobilityPrio  1
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 csFallbackPrio 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 csFallbackPrioEC   2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 lbBnrPolicy    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 mobilityAction 2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 mobilityActionCsfb 1
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 pMaxUtra   23
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 qOffsetFreq    0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 qQualMin   -16
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 qRxLevMin  -119
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 threshXHigh    4
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 threshXHighQ   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 threshXLow  20
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 threshXLowQ    2
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 userLabel  LTE1900
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 utranFreqToQciProfileRelation  
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 voicePrio  1
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 altCsfbTargetPrio  3
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 altCsfbTargetPrioEc    3
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 b2Thr1RsrpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 b2Thr1RsrqUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 b2Thr2EcNoUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 b2Thr2RscpUtraFreqOffset   0
+ set ENodeBFunction=1,EUtranCellFDD=Q02153,UtranFreqRelation=_3073 atoAllowed false
+     
+crn  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+cellIdentity cId=26211,rncId=1323
+isRemoveAllowed false
+lac 13509
+lbUtranCellOffloadCapacity 1000
+masterUtranCellId 
+physicalCellIdentity 292
+plmnIdentity mcc=730,mnc=1,mncLength=2
+rac 131
+rimCapable 0
+srvccCapability 1
+userLabel 
+end
+
+     
+crn  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26212
+cellIdentity cId=26212,rncId=1323
+isRemoveAllowed false
+lac 13509
+lbUtranCellOffloadCapacity 1000
+masterUtranCellId 
+physicalCellIdentity 83
+plmnIdentity mcc=730,mnc=1,mncLength=2
+rac 131
+rimCapable 0
+srvccCapability 1
+userLabel 
+end
+
+     
+crn  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26213
+cellIdentity cId=26213,rncId=1323
+isRemoveAllowed false
+lac 13509
+lbUtranCellOffloadCapacity 1000
+masterUtranCellId 
+physicalCellIdentity 87
+plmnIdentity mcc=730,mnc=1,mncLength=2
+rac 131
+rimCapable 0
+srvccCapability 1
+userLabel 
+end
+
+     
+crn  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+cellIdentity cId=65101,rncId=1323
+isRemoveAllowed false
+lac 13509
+lbUtranCellOffloadCapacity 1000
+masterUtranCellId 
+physicalCellIdentity 292
+plmnIdentity mcc=730,mnc=1,mncLength=2
+rac 131
+rimCapable 0
+srvccCapability 1
+userLabel 
+end
+
+     
+crn  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65102
+cellIdentity cId=65102,rncId=1323
+isRemoveAllowed false
+lac 13509
+lbUtranCellOffloadCapacity 1000
+masterUtranCellId 
+physicalCellIdentity 284
+plmnIdentity mcc=730,mnc=1,mncLength=2
+rac 131
+rimCapable 0
+srvccCapability 1
+userLabel 
+end
+
+     
+crn  ENodeBFunction=1,UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65103
+cellIdentity cId=65103,rncId=1323
+isRemoveAllowed false
+lac 13509
+lbUtranCellOffloadCapacity 1000
+masterUtranCellId 
+physicalCellIdentity 278
+plmnIdentity mcc=730,mnc=1,mncLength=2
+rac 131
+rimCapable 0
+srvccCapability 1
+userLabel 
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_412,UtranCellRelation=7301-1323-26211
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_412,UtranCellRelation=7301-1323-26211
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_412,UtranCellRelation=7301-1323-26211
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_412,UtranCellRelation=7301-1323-26211
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_412,UtranCellRelation=7301-1323-26211
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_412,UtranCellRelation=7301-1323-26211
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_412,ExternalUtranCellFDD=7301-1323-26211
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=L02151,UtranFreqRelation=_3073,UtranCellRelation=7301-1323-65101
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=L02152,UtranFreqRelation=_3073,UtranCellRelation=7301-1323-65101
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=L02153,UtranFreqRelation=_3073,UtranCellRelation=7301-1323-65101
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=P02151,UtranFreqRelation=_3073,UtranCellRelation=7301-1323-65101
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=P02152,UtranFreqRelation=_3073,UtranCellRelation=7301-1323-65101
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+crn  ENodeBFunction=1,EUtranCellFDD=P02153,UtranFreqRelation=_3073,UtranCellRelation=7301-1323-65101
+coverageIndicator 0
+externalUtranCellFDDRef UtraNetwork=1,UtranFrequency=_3073,ExternalUtranCellFDD=7301-1323-65101
+isHoAllowed true
+isRemoveAllowed true
+lbBnrAllowed true
+lbCovIndicated false
+loadBalancing 0
+end
+
+     
+set ,UtranFreqRelation= allowedPlmnList mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2;mcc=1,mnc=1,mncLength=2
+     
+ confb-
+ gs-

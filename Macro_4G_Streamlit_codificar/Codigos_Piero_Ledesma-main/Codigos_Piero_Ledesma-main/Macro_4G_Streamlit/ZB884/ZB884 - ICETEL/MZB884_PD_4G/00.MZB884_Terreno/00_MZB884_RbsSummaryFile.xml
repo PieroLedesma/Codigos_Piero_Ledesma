@@ -1,0 +1,10 @@
+<summary:AutoIntegrationRbsSummaryFile
+xmlns:summary="http://www.ericsson.se/RbsSummaryFileSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.ericsson.se/RbsSummaryFileSchemaSummaryFile.xsd">
+<Format revision="F"/>
+<ConfigurationFiles
+    siteBasicFilePath="01_MZB884_SiteBasic.xml"
+    siteEquipmentFilePath="02_MZB884_SiteEquipment.xml"
+    upgradePackageFilePath="RadioNode_CXP9024418_15-R37E15/"/>
+</summary:AutoIntegrationRbsSummaryFile>

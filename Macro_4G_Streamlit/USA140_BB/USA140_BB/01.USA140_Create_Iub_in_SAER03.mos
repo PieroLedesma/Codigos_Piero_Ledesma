@@ -1,0 +1,211 @@
+////////////////////////////////////////////////////////////
+//  Creacion Iub SAER03_USA140
+////////////////////////////////////////////////////////////
+CREATE
+(
+     parent "ManagedElement=1,RncFunction=1"
+     identity "Iub_USA140"
+     moType IubLink
+     exception none
+     nrOfAttributes 5
+     rbsId Integer 12140
+     userPlaneTransportOption Struct
+         nrOfElements 2
+             atm Integer 0
+             ipv4 Integer 1
+     controlPlaneTransportOption Struct
+         nrOfElements 2
+             atm Integer 0
+             ipv4 Integer 1
+     userPlaneIpResourceRef Ref "ManagedElement=1,IpSystem=1,IpAccessHostPool=Iub"
+     atmUserPlaneTermSubrackRef Ref ""
+)
+
+
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     remoteCpIpAddress1 String "10.31.156.178"
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     remoteCpIpAddress2 String ""
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     administrativeState Integer 1
+)
+SET
+(
+     mo  "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     dlHwAdm Integer 90
+)
+SET
+(
+     mo  "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     l2EstReqRetryTimeNbapC Integer 5
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     l2EstReqRetryTimeNbapD Integer 5
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     softCongThreshGbrBwDl Integer 100
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     softCongThreshGbrBwUl Integer 100
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     spare Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     spareA Array Integer 10
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+        0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     ulHwAdm Integer 90
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     userLabel String "Iub_USA140"
+)
+ SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     userPlaneGbrAdmBandwidthDl Integer 10000
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     userPlaneGbrAdmBandwidthUl Integer 10000
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     userPlaneGbrAdmEnabled Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     userPlaneGbrAdmMarginDl Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     exception none
+     userPlaneGbrAdmMarginUl Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     fixedWindowSizeInit Integer 12
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     fixedWindowSizeSup Integer 10
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     maxAllowedIubRtt Integer 500
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     phaseDiffThreshold Integer 100
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     sampleIntervalInit Integer 100
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     sampleIntervalSup Integer 10
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     slidingWindowSize Integer 100
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     transportDelayMeasDiscRatio Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,NodeSynch=1"
+     exception none
+     userLabel String ""
+)
+CREATE
+(
+     parent "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140"
+     identity "1"
+     moType IubEdch
+     exception none
+     nrOfAttributes 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,IubEdch=1"
+     exception none
+     edchDataFrameDelayThreshold Integer 60
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IubLink=Iub_USA140,IubEdch=1"
+     exception none
+     userLabel String "IubEdch_USA140"
+)
+

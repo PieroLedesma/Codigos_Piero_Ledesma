@@ -1,0 +1,45 @@
+ confb+
+ gs+
+
+lt all
+crn GNBCUCPFunction=1,NRCellCU=N17051,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N17052,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N17053,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+set GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1  coverageShape  0
+cvms GNBRelation_Ekohle_PROATEL
+
+ confb-
+ gs-

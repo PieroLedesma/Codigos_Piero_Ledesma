@@ -1,0 +1,736 @@
+lt all
+
+confb+
+gs+
+
+cvms Previo_Carga_Anchor_FN705_Ekohle_Proatel
+
+cr ENodeBFunction=1,GUtraNetwork=1
+false 
+
+crn ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+arfcn 620736
+band 78
+smtcDuration 1
+smtcOffset 1
+smtcPeriodicity 20
+smtcScs 30
+userLabel 
+end
+
+crn ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction=7301-0000000000117058
+gNodeBId 117058
+gNodeBIdLength 22
+gNodeBPlmnId mcc=730,mnc=1,mncLength=2
+userLabel GFN705
+end
+
+crn ENodeBFunction=1,GUtraNetwork=1,ExternalGNodeBFunction=7301-0000000000117058,TermPointToGNB=7301-0000000000117058
+administrativeState 1
+domainName 
+ipAddress 10.75.254.40
+end
+
+crn ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=L17051,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=L17052,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=L17053,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=M17051,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=M17052,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=M17053,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=P17051,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=P17052,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=P17053,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=Q17051,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=Q17052,GUtranFreqRelation=620736 threshXLowQ 0
+
+crn ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736
+allowedPlmnList 
+anrMeasOn true
+b1ThrRsrpFreqOffset 0
+b1ThrRsrqFreqOffset 0
+cellReselectionPriority 7
+connectedModeMobilityPrio 7
+deriveSsbIndexFromCell false
+endcB1MeasPriority 6
+gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+pMaxNR 26
+qOffsetFreq 0
+qQualMin 0
+qRxLevMin -128
+threshXHigh 20
+threshXHighQ 0
+threshXLow 0
+threshXLowQ 0
+end
+
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 anrMeasOn True
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 b1ThrRsrpFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 b1ThrRsrqFreqOffset 0
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 cellReselectionPriority 6
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 connectedModeMobilityPrio 6
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 deriveSsbIndexFromCell False
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 endcB1MeasPriority 6
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 gUtranSyncSignalFrequencyRef ENodeBFunction=1,GUtraNetwork=1,GUtranSyncSignalFrequency=620736-30
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 pMaxNR 26
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 qOffsetFreq 0
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 qQualMin 0
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 qRxLevMin -128
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 threshXHigh 20
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 threshXHighQ 0
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 threshXLow 0
+set ENodeBFunction=1,EUtranCellFDD=Q17053,GUtranFreqRelation=620736 threshXLowQ 0
+
+
+cr ENodeBFunction=1,EndcProfile=1
+set EndcProfile=1                                           meNbS1TermReqArpLev 1
+set EndcProfile=1                                           splitNotAllowedUeArpLev 1
+
+cr ENodeBFunction=1,EndcProfile=2
+set EndcProfile=2                                           meNbS1TermReqArpLev 15
+set EndcProfile=2                                           splitNotAllowedUeArpLev 0
+
+set ENodeBFunction=1                                        endcS1OverlapMode True
+set ENodeBFunction=1                                        endcDataUsageReportEnabled True
+
+set ^EUtranCellFDD=L17051                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=L17051                                    dl256QamEnabled True
+set ^EUtranCellFDD=L17051                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=L17051                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=L17052                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=L17052                                    dl256QamEnabled True
+set ^EUtranCellFDD=L17052                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=L17052                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=L17053                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=L17053                                    dl256QamEnabled True
+set ^EUtranCellFDD=L17053                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=L17053                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=M17051                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=M17051                                    dl256QamEnabled True
+set ^EUtranCellFDD=M17051                                    upperLayerIndR15Usage False
+set ^EUtranCellFDD=M17051                                    primaryUpperLayerInd 0
+set ^EUtranCellFDD=M17052                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=M17052                                    dl256QamEnabled True
+set ^EUtranCellFDD=M17052                                    upperLayerIndR15Usage False
+set ^EUtranCellFDD=M17052                                    primaryUpperLayerInd 0
+set ^EUtranCellFDD=M17053                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=M17053                                    dl256QamEnabled True
+set ^EUtranCellFDD=M17053                                    upperLayerIndR15Usage False
+set ^EUtranCellFDD=M17053                                    primaryUpperLayerInd 0
+set ^EUtranCellFDD=P17051                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=P17051                                    dl256QamEnabled True
+set ^EUtranCellFDD=P17051                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=P17051                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=P17052                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=P17052                                    dl256QamEnabled True
+set ^EUtranCellFDD=P17052                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=P17052                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=P17053                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=P17053                                    dl256QamEnabled True
+set ^EUtranCellFDD=P17053                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=P17053                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=Q17051                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=Q17051                                    dl256QamEnabled True
+set ^EUtranCellFDD=Q17051                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=Q17051                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=Q17052                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=Q17052                                    dl256QamEnabled True
+set ^EUtranCellFDD=Q17052                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=Q17052                                    primaryUpperLayerInd 1
+set ^EUtranCellFDD=Q17053                                    additionalUpperLayerIndList 0, 0, 0, 
+set ^EUtranCellFDD=Q17053                                    dl256QamEnabled True
+set ^EUtranCellFDD=Q17053                                    upperLayerIndR15Usage True
+set ^EUtranCellFDD=Q17053                                    primaryUpperLayerInd 1
+
+set QciTable=default,QciProfilePredefined=default$              endcProfileRef    vacio
+set QciTable=default,QciProfilePredefined=default$              rlcMode           0
+set QciTable=default,QciProfilePredefined=default$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=default$              rohcForUlDataEnabled False
+set QciTable=default,QciProfilePredefined=qci1$              endcProfileRef    vacio
+set QciTable=default,QciProfilePredefined=qci1$              rlcMode           1
+set QciTable=default,QciProfilePredefined=qci1$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci1$              rohcForUlDataEnabled False
+set QciTable=default,QciProfilePredefined=qci2$              endcProfileRef    vacio
+set QciTable=default,QciProfilePredefined=qci2$              rlcMode           1
+set QciTable=default,QciProfilePredefined=qci2$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci2$              rohcForUlDataEnabled False
+set QciTable=default,QciProfilePredefined=qci3$              endcProfileRef    vacio
+set QciTable=default,QciProfilePredefined=qci3$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci3$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci3$              rohcForUlDataEnabled False
+set QciTable=default,QciProfilePredefined=qci4$              endcProfileRef    vacio
+set QciTable=default,QciProfilePredefined=qci4$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci4$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci4$              rohcForUlDataEnabled False
+set QciTable=default,QciProfilePredefined=qci5$              endcProfileRef    EndcProfile=2
+set QciTable=default,QciProfilePredefined=qci5$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci5$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci5$              rohcForUlDataEnabled False
+set QciTable=default,QciProfilePredefined=qci6$              endcProfileRef    EndcProfile=1
+set QciTable=default,QciProfilePredefined=qci6$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci6$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci6$              rohcForUlDataEnabled True
+set QciTable=default,QciProfilePredefined=qci7$              endcProfileRef    EndcProfilePredefined=1
+set QciTable=default,QciProfilePredefined=qci7$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci7$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci7$              rohcForUlDataEnabled True
+set QciTable=default,QciProfilePredefined=qci8$              endcProfileRef    EndcProfilePredefined=1
+set QciTable=default,QciProfilePredefined=qci8$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci8$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci8$              rohcForUlDataEnabled True
+set QciTable=default,QciProfilePredefined=qci9$              endcProfileRef    EndcProfilePredefined=1
+set QciTable=default,QciProfilePredefined=qci9$              rlcMode           0
+set QciTable=default,QciProfilePredefined=qci9$              pdcpSNLength      12
+set QciTable=default,QciProfilePredefined=qci9$              rohcForUlDataEnabled True
+
+cr ENodeBFunction=1,pmFlexCounterFilter=Endc0To99
+set ENodeBFunction=1,pmFlexCounterFilter=Endc0To99                                           endcFilterEnabled True
+set ENodeBFunction=1,pmFlexCounterFilter=Endc0To99                                           endcFilterMin 0
+
+cr ENodeBFunction=1,pmFlexCounterFilter=Endc1To99
+set ENodeBFunction=1,pmFlexCounterFilter=Endc1To99                                           endcFilterEnabled True
+set ENodeBFunction=1,pmFlexCounterFilter=Endc1To99                                           endcFilterMin 1
+
+cr ENodeBFunction=1,pmFlexCounterFilter=Endc2To99
+set ENodeBFunction=1,pmFlexCounterFilter=Endc2To99                                           endcFilterEnabled True
+set ENodeBFunction=1,pmFlexCounterFilter=Endc2To99                                           endcFilterMin 2
+
+
+set CarrierAggregationFunction=1                            endcCaPolicy 1
+set CarrierAggregationFunction=1                            dcSCellActDeactDataThres 30
+set CarrierAggregationFunction=1                            dcSCellActDeactDataThresHyst 30
+set CarrierAggregationFunction=1                            dcSCellDeactDelayTimer 100
+
+set CXC4010320 FeatureState 1
+set CXC4010620 FeatureState 1
+set CXC4011476 FeatureState 1
+set CXC4011666 FeatureState 1
+set CXC4011378 FeatureState 1
+set CXC4011700 FeatureState 1
+set CXC4010956 FeatureState 1
+set CXC4011064 FeatureState 1
+set CXC4011062 FeatureState 1
+set CXC4011969 FeatureState 1
+set CXC4011255 FeatureState 1
+set CXC4010912 FeatureState 1
+set CXC4010609 FeatureState 1
+set CXC4011955 FeatureState 1
+set CXC4011061 FeatureState 1
+set CXC4011937 FeatureState 1
+set CXC4011559 FeatureState 1
+set CXC4011034 FeatureState 1
+set CXC4011482 FeatureState 1
+set CXC4011245 FeatureState 1
+set CXC4010618 FeatureState 1
+set CXC4011157 FeatureState 1
+set CXC4011941 FeatureState 1
+set CXC4010770 FeatureState 1
+set CXC4011319 FeatureState 1
+set CXC4010974 FeatureState 1
+set CXC4010613 FeatureState 1
+set CXC4010319 FeatureState 1
+set CXC4011055 FeatureState 1
+set CXC4010967 FeatureState 1
+set CXC4011808 FeatureState 1
+set CXC4011345 FeatureState 1
+set CXC4010723 FeatureState 1
+set CXC4011815 FeatureState 1
+set CXC4011366 FeatureState 1
+set CXC4011163 FeatureState 1
+set CXC4011183 FeatureState 1
+set CXC4011515 FeatureState 1
+set CXC4011033 FeatureState 1
+set CXC4011813 FeatureState 1
+set CXC4010717 FeatureState 1
+set CXC4011715 FeatureState 1
+set CXC4011938 FeatureState 1
+set CXC4011252 FeatureState 1
+set CXC4010959 FeatureState 1
+set CXC4011427 FeatureState 1
+set CXC4011667 FeatureState 1
+set CXC4011056 FeatureState 1
+set CXC4010973 FeatureState 1
+set CXC4011939 FeatureState 1
+set CXC4010961 FeatureState 1
+set CXC4010990 FeatureState 1
+set CXC4011251 FeatureState 1
+set CXC4011075 FeatureState 1
+set CXC4011327 FeatureState 1
+set CXC4011918 FeatureState 1
+set CXC4011477 FeatureState 1
+set CXC4011059 FeatureState 1
+set CXC4011063 FeatureState 1
+set CXC4011247 FeatureState 1
+set CXC4011317 FeatureState 1
+set CXC4011050 FeatureState 1
+
+set ENodeBFunction=1,AnrFunction=1,AnrFunctionNR=1          anrStateNR        1
+set ENodeBFunction=1,AnrFunction=1,AnrFunctionNR=1          gNodebIdLength        22
+
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 b1ThresholdRsrp   -110
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 hysteresisB1   2
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1GUtra=1 timeToTriggerB1   40
+
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+set EUtranCellFDD=L.....,UeMeasControl=1,ReportConfigB1NR=1 triggerQuantityB1NR   0
+
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+set EUtranCellFDD=L.....,UeMeasControl=1 endcMeasRestartTime 8000
+
+set ENodeBFunction=1                                        timeAndPhaseSynchAlignment true
+set ENodeBFunction=1                                        timeAndPhaseSynchCritical true
+
+
+
+cvms Final_Carga_Anchor_GFN705_Ekohle_Proatel
+
+confb- 
+gs-  
+

@@ -1,0 +1,24 @@
+confb+
+gs+
+
+lt all
+
+set AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1 electricalAntennaTilt  100
+set AntennaUnitGroup=1,AntennaNearUnit=2,RetSubUnit=1 electricalAntennaTilt  120
+set AntennaUnitGroup=1,AntennaNearUnit=3,RetSubUnit=1 electricalAntennaTilt  20
+set AntennaUnitGroup=1,AntennaNearUnit=4,RetSubUnit=1 electricalAntennaTilt  120
+set AntennaUnitGroup=1,AntennaNearUnit=5,RetSubUnit=1 electricalAntennaTilt  100
+set AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=2,AntennaNearUnit=2,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=2,AntennaNearUnit=3,RetSubUnit=1 electricalAntennaTilt  20
+set AntennaUnitGroup=2,AntennaNearUnit=4,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=2,AntennaNearUnit=5,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=3,AntennaNearUnit=2,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=3,AntennaNearUnit=3,RetSubUnit=1 electricalAntennaTilt  20
+set AntennaUnitGroup=3,AntennaNearUnit=4,RetSubUnit=1 electricalAntennaTilt  40
+set AntennaUnitGroup=3,AntennaNearUnit=5,RetSubUnit=1 electricalAntennaTilt  40
+
+
+confb-
+gs-

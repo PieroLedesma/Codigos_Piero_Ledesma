@@ -1,0 +1,11 @@
+ cmedit create NetworkElement=ULA781 networkElementId=ULA781,neType=RadioNode,ossModelIdentity="22.Q2-R53A03",ossPrefix="SubNetwork=ONRM_ROOT_MO,SubNetwork=PMER01,MeContext=ULA781",userlabel="ULA781",timeZone="Etc/GMT" -ns=OSS_NE_DEF -v=2.0.0
+ cmedit create NetworkElement=ULA781,ComConnectivityInformation=1 ComConnectivityInformationId=1,fileTransferProtocol=SFTP,ftpTlsServerPort=1636,ipAddress="10.32.102.28",port=6513,snmpAgentPort=161,snmpReadCommunity="public",snmpSecurityLevel="NO_AUTH_NO_PRIV",snmpVersion="SNMP_V2C",snmpWriteCommunity="public",transportProtocol="TLS" -ns=COM_MED -version=1.1.0 
+ cmedit set NetworkElement=ULA781 controllingRnc="NetworkElement=PMER01"
+ secadm credentials create --secureusername rbs --secureuserpassword "rbs" --ldapuser disable -n ULA781
+ cmedit set NetworkElement=ULA781,CmNodeHeartbeatSupervision=1 active=true 
+ cmedit set NetworkElement=ULA781,InventorySupervision=1 active=true
+ cmedit set NetworkElement=ULA781,PmFunction=1 pmEnabled=true --force
+ cmedit set NetworkElement=ULA781,FmFunction=1 subscriptionState=ENABLED
+ cmedit action NetworkElement=ULA781,CmFunction=1 sync
+ cmedit get ULA781 CmFunction.syncstatus
+ cmedit set NetworkElement=ULA781, CmNodeHeartbeatSupervision=1 active=true

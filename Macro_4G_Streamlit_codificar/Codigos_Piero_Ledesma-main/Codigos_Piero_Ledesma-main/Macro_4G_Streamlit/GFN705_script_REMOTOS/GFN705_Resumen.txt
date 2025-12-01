@@ -1,0 +1,34 @@
+
+###   GFN705  ###
+
+
+pkiadm etm -c -xf file:04_GFN705_OneNodeEntity.xml
+
+cmedit action NetworkElement=GFN705,CmFunction=1 sync
+
+cmedit get GFN705 CmFunction.syncStatus
+
+
+# Parametros para crear Graficamente # 
+
+IP :   10.84.36.72
+
+LATITUD :   -33,37358
+
+LONGITUD :   -70,83297
+
+Ftp TLS Server Port : 1636
+
+SNMP Read Community  : public
+
+SNMP Security Level  : NO_AUTH_NO_PRIV
+
+SNMP Write Community  : public
+
+Algorithm and Key Size  : RSA_2048
+
+Enrollment Mode  : CMPv2_VC
+
+
+
+

@@ -1,0 +1,155 @@
+///////////////////-P-duarte-///////////////////////////////////////
+gs+
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1
+default5qiTable true
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=1
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 1
+rlcMode 1
+tPdcpDiscard 150
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=2
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 2
+rlcMode 1
+tPdcpDiscard 200
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=3
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 3
+rlcMode 0
+tPdcpDiscard 200
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=4
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 4
+rlcMode 0
+tPdcpDiscard 200
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=5
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 5
+rlcMode 0
+tPdcpDiscard 2147483646
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=6
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 6
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=7
+nrdcSnTerminationRef
+pdcpSnSize 12
+profile5qi 7
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=8
+nrdcSnTerminationRef
+pdcpSnSize 18
+profile5qi 8
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUCPFunction=1,CUCP5qiTable=1,CUCP5qi=9
+nrdcSnTerminationRef
+pdcpSnSize 18
+profile5qi 9
+rlcMode 0
+tPdcpDiscard 1500
+tReorderingDl 200
+tReorderingUl 40
+userLabel
+end
+
+crn GNBCUUPFunction=1,CUUP5qiTable=1
+default5qiTable true
+end
+
+CRN GNBCUUPFunction=1,CUUP5qiTable=1,CUUP5qi=6
+counterActiveMode false
+drbRef GNBCUUPFunction=1,UeCC=1,Drb=Default_other
+dscp 20
+profile5qi 6
+userLabel
+end
+
+CRN GNBCUUPFunction=1,CUUP5qiTable=1,CUUP5qi=7
+counterActiveMode false
+drbRef GNBCUUPFunction=1,UeCC=1,Drb=Default_other
+dscp 12
+profile5qi 7
+userLabel
+end
+
+CRN GNBCUUPFunction=1,CUUP5qiTable=1,CUUP5qi=8
+counterActiveMode false
+drbRef GNBCUUPFunction=1,UeCC=1,Drb=Default_other
+dscp 14
+profile5qi 8
+userLabel
+end
+
+CRN GNBCUUPFunction=1,CUUP5qiTable=1,CUUP5qi=9
+counterActiveMode false
+drbRef GNBCUUPFunction=1,UeCC=1,Drb=Default_other
+dscp 18
+profile5qi 9
+userLabel
+end
+
+gs-
+confb-
+cvms PD_CUCP5qi_$nodename
+//////////-PDUARTE-//////////
+//////#_______________///////
+//////#|        (__)  |//////
+//////#|        (oo)  |//////
+//////#|  /______\/   |//////
+//////#| / |    ||    |//////
+//////#|*  /\---/\    |//////
+//////#|   ~~   ~~    |//////
+//////#|__p_o_y_o_y_o_|//////
+#############################FIN SCRIPT#############################

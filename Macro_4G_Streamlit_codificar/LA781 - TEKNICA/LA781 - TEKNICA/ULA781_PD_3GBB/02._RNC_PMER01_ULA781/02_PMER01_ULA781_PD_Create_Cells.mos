@@ -1,0 +1,1620 @@
+//////////////////////-PDUARTE-///////////////////////////////
+//
+// SCRIPT     : CREATE_CELLS
+// NEMONICO   : PMER01
+// NEMONICO   : ULA781
+// HORA       : 9:25:21
+// FECHA      : 05-11-2025
+//
+/////////////////////////////////////////////////////////////
+
+confb+
+gs+
+lt all
+
+#############################################################
+### ServiceAreas PMER01
+#############################################################
+
+crn RncFunction=1,LocationArea=10513,ServiceArea=37811
+sac 37811
+userLabel SAC_37811
+end
+
+crn RncFunction=1,LocationArea=10513,ServiceArea=37812
+sac 37812
+userLabel SAC_37812
+end
+
+crn RncFunction=1,LocationArea=10513,ServiceArea=37813
+sac 37813
+userLabel SAC_37813
+end
+
+crn RncFunction=1,LocationArea=10513,ServiceArea=07814
+sac 07814
+userLabel SAC_07814
+end
+
+crn RncFunction=1,LocationArea=10513,ServiceArea=07815
+sac 07815
+userLabel SAC_07815
+end
+
+crn RncFunction=1,LocationArea=10513,ServiceArea=07816
+sac 07816
+userLabel SAC_07816
+end
+
+#############################################################
+### Cells PMER01
+#############################################################
+
+cr RncFunction=1,UtranCell=U37811
+37811 #localCellId
+37811 #cId
+2 #tCell
+12 #uarfcnUl
+412 #uarfcnDl
+179 #primaryScramblingCode
+1 #sib1PlmnScopeValueTag
+LocationArea=10513 #locationAreaRef
+LocationArea=10513,ServiceArea=37811 #serviceAreaRef
+IubLink=Iub_ULA781 #iubLinkRef
+MocnCellProfile=73001 #mocnCellProfileRef
+
+set RncFunction=1,UtranCell=U37811 administrativeState 1
+set RncFunction=1,UtranCell=U37811 accessClassesBarredCs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37811 accessClassesBarredPs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37811 accessClassNBarred 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37811 agpsEnabled 1
+set RncFunction=1,UtranCell=U37811 amrNbSelector 0
+set RncFunction=1,UtranCell=U37811 amrWbRateDlMax 12650
+set RncFunction=1,UtranCell=U37811 amrWbRateUlMax 12650
+set RncFunction=1,UtranCell=U37811 anrBlackList 
+set RncFunction=1,UtranCell=U37811 aseDlAdm 500
+set RncFunction=1,UtranCell=U37811 aseUlAdm 500
+set RncFunction=1,UtranCell=U37811 bchPower -31
+set RncFunction=1,UtranCell=U37811 cbsSchedulePeriodLength 8
+set RncFunction=1,UtranCell=U37811 cellBroadcastSac 37811
+set RncFunction=1,UtranCell=U37811 cellReserved 1
+set RncFunction=1,UtranCell=U37811 codeLoadThresholdDlSf128 100
+set RncFunction=1,UtranCell=U37811 compModeAdm 15
+set RncFunction=1,UtranCell=U37811 cpcSupport 
+set RncFunction=1,UtranCell=U37811 ctchAdmMargin 0
+set RncFunction=1,UtranCell=U37811 ctchOccasionPeriod 255
+set RncFunction=1,UtranCell=U37811 dchIflsMarginCode 0
+set RncFunction=1,UtranCell=U37811 dchIflsMarginPower 0
+set RncFunction=1,UtranCell=U37811 dchIflsThreshCode 0
+set RncFunction=1,UtranCell=U37811 dchIflsThreshPower 0
+set RncFunction=1,UtranCell=U37811 dlCodeAdm 100
+set RncFunction=1,UtranCell=U37811 dlCodeOffloadLimit 100
+set RncFunction=1,UtranCell=U37811 dlPowerOffloadLimit 100
+set RncFunction=1,UtranCell=U37811 dmcrEnabled 1
+set RncFunction=1,UtranCell=U37811 dnclEnabled 0
+set RncFunction=1,UtranCell=U37811 downswitchTimer -1
+set RncFunction=1,UtranCell=U37811 eulNonServingCellUsersAdm 100
+set RncFunction=1,UtranCell=U37811 eulServingCellUsersAdm 96
+set RncFunction=1,UtranCell=U37811 eulServingCellUsersAdmTti2 24
+set RncFunction=1,UtranCell=U37811 fachMeasOccaCycLenCoeff 4
+set RncFunction=1,UtranCell=U37811 fdpchSupport 
+set RncFunction=1,UtranCell=U37811 ganHoEnabled 0
+set RncFunction=1,UtranCell=U37811 hardIfhoCorr 3
+set RncFunction=1,UtranCell=U37811 hoType 0
+set RncFunction=1,UtranCell=U37811 hsdpaUsersAdm 96
+set RncFunction=1,UtranCell=U37811 hsdpaUsersOffloadLimit 100
+set RncFunction=1,UtranCell=U37811 hsdschInactivityTimer 2
+set RncFunction=1,UtranCell=U37811 hsdschInactivityTimerCpc 20
+set RncFunction=1,UtranCell=U37811 hsIflsHighLoadThresh 100
+set RncFunction=1,UtranCell=U37811 hsIflsMarginUsers 0
+set RncFunction=1,UtranCell=U37811 hsIflsPowerLoadThresh 0
+set RncFunction=1,UtranCell=U37811 hsIflsRedirectLoadLimit 0
+set RncFunction=1,UtranCell=U37811 hsIflsSpeechMultiRabTrigg 0
+set RncFunction=1,UtranCell=U37811 hsIflsThreshUsers 10
+set RncFunction=1,UtranCell=U37811 iFCong 621
+set RncFunction=1,UtranCell=U37811 iFHyst 6000
+set RncFunction=1,UtranCell=U37811 iflsCpichEcnoThresh -24
+set RncFunction=1,UtranCell=U37811 iflsMode 2
+set RncFunction=1,UtranCell=U37811 iflsRedirectUarfcn 0
+set RncFunction=1,UtranCell=U37811 inactivityTimeMultiPsInteractive -1
+set RncFunction=1,UtranCell=U37811 inactivityTimer 5
+set RncFunction=1,UtranCell=U37811 inactivityTimerEnhUeDrx -1
+set RncFunction=1,UtranCell=U37811 inactivityTimerPch -1
+set RncFunction=1,UtranCell=U37811 individualOffset 0
+set RncFunction=1,UtranCell=U37811 interFreqFddMeasIndicator 0
+set RncFunction=1,UtranCell=U37811 interPwrMax 30
+set RncFunction=1,UtranCell=U37811 interRate 845
+set RncFunction=1,UtranCell=U37811 loadBasedHoSupport 0
+set RncFunction=1,UtranCell=U37811 loadBasedHoType 0
+set RncFunction=1,UtranCell=U37811 loadSharingGsmFraction 100
+set RncFunction=1,UtranCell=U37811 loadSharingGsmThreshold 85
+set RncFunction=1,UtranCell=U37811 loadSharingMargin 0
+set RncFunction=1,UtranCell=U37811 localCellId 37811
+set RncFunction=1,UtranCell=U37811 maximumTransmissionPower 419
+set RncFunction=1,UtranCell=U37811 maxPwrMax 30
+set RncFunction=1,UtranCell=U37811 maxRate 40690
+set RncFunction=1,UtranCell=U37811 maxTxPowerUl 24
+set RncFunction=1,UtranCell=U37811 minimumRate 370
+set RncFunction=1,UtranCell=U37811 minPwrMax -15
+set RncFunction=1,UtranCell=U37811 minPwrRl -120
+set RncFunction=1,UtranCell=U37811 nOutSyncInd 10
+set RncFunction=1,UtranCell=U37811 pathlossThreshold 120
+set RncFunction=1,UtranCell=U37811 primaryCpichPower 319
+set RncFunction=1,UtranCell=U37811 primarySchPower -18
+set RncFunction=1,UtranCell=U37811 primaryScramblingCode 179
+set RncFunction=1,UtranCell=U37811 pwrAdm 60
+set RncFunction=1,UtranCell=U37811 qHyst1 4
+set RncFunction=1,UtranCell=U37811 qHyst2 2
+set RncFunction=1,UtranCell=U37811 qQualMin -20
+set RncFunction=1,UtranCell=U37811 qRxLevMin -115
+set RncFunction=1,UtranCell=U37811 qualMeasQuantity 2
+set RncFunction=1,UtranCell=U37811 rac 111
+set RncFunction=1,UtranCell=U37811 redirectUarfcn 0
+set RncFunction=1,UtranCell=U37811 releaseRedirect 3
+set RncFunction=1,UtranCell=U37811 releaseRedirectHsIfls 1
+set RncFunction=1,UtranCell=U37811 reportingRange1a 6
+set RncFunction=1,UtranCell=U37811 reportingRange1b 11
+set RncFunction=1,UtranCell=U37811 rlFailureT 10
+set RncFunction=1,UtranCell=U37811 rrcLcEnabled 1
+set RncFunction=1,UtranCell=U37811 sac 37811
+set RncFunction=1,UtranCell=U37811 secondaryCpichPower -3
+set RncFunction=1,UtranCell=U37811 secondarySchPower -35
+set RncFunction=1,UtranCell=U37811 servDiffRrcAdmHighPrioProfile 2
+set RncFunction=1,UtranCell=U37811 sf128Adm 128
+set RncFunction=1,UtranCell=U37811 sf16Adm 0
+set RncFunction=1,UtranCell=U37811 sf16AdmUl 16
+set RncFunction=1,UtranCell=U37811 sf16gAdm 0
+set RncFunction=1,UtranCell=U37811 sf32Adm 32
+set RncFunction=1,UtranCell=U37811 sf4AdmUl 0
+set RncFunction=1,UtranCell=U37811 sf64AdmUl 100
+set RncFunction=1,UtranCell=U37811 sf8Adm 0
+set RncFunction=1,UtranCell=U37811 sf8AdmUl 0
+set RncFunction=1,UtranCell=U37811 sf8gAdmUl 0
+set RncFunction=1,UtranCell=U37811 sHcsRat -1
+set RncFunction=1,UtranCell=U37811 sib1PlmnScopeValueTag 1
+set RncFunction=1,UtranCell=U37811 sInterSearch 20
+set RncFunction=1,UtranCell=U37811 sIntraSearch 23
+set RncFunction=1,UtranCell=U37811 spare 0
+set RncFunction=1,UtranCell=U37811 spareA 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37811 sRatSearch 0
+set RncFunction=1,UtranCell=U37811 srbAdmExempt 0
+set RncFunction=1,UtranCell=U37811 standAloneSrbSelector 1
+set RncFunction=1,UtranCell=U37811 tCell 2
+set RncFunction=1,UtranCell=U37811 timeToTrigger1a -1
+set RncFunction=1,UtranCell=U37811 timeToTrigger1b -1
+set RncFunction=1,UtranCell=U37811 transmissionScheme 0
+set RncFunction=1,UtranCell=U37811 treSelection 2
+set RncFunction=1,UtranCell=U37811 uarfcnDl 412
+set RncFunction=1,UtranCell=U37811 uarfcnUl 12
+set RncFunction=1,UtranCell=U37811 usedFreqThresh2dEcno -18
+set RncFunction=1,UtranCell=U37811 usedFreqThresh2dRscp -109
+set RncFunction=1,UtranCell=U37811 dlCodePowerCmEnabled 0
+set RncFunction=1,UtranCell=U37811 eulMcServingCellUsersAdmTti2 3
+set RncFunction=1,UtranCell=U37811 primaryTpsCell 0
+set RncFunction=1,UtranCell=U37811 rwrEutraCc 1
+set RncFunction=1,UtranCell=U37811 rachOverloadProtect 1
+set RncFunction=1,UtranCell=U37811 ifIratHoPsIntHsEnabled 1
+set RncFunction=1,UtranCell=U37811 cellUpdateConfirmCsInitRepeat 3
+set RncFunction=1,UtranCell=U37811 cellUpdateConfirmPsInitRepeat 2
+set RncFunction=1,UtranCell=U37811 userLabel U37811
+set RncFunction=1,UtranCell=U37811 lteMeasEnabled 1
+set RncFunction=1,UtranCell=U37811 psHoToLteEnabled 0
+set RncFunction=1,UtranCell=U37811 mocnCellProfileRef MocnCellProfile=73001
+set RncFunction=1,UtranCell=U37811 absPrioCellRes cellReselectionPriority=2,sPrioritySearch1=58,sPrioritySearch2=0,threshServingLow=16,measIndFach=1
+set RncFunction=1,UtranCell=U37811 admBlockRedirection gsmRrc=0,rrc=0,speech=0
+set RncFunction=1,UtranCell=U37811 anrIafUtranCellConfig anrEnabled=1,relationAddEnabled=0
+set RncFunction=1,UtranCell=U37811 antennaPosition latitude=3863931,latitudeSign=1,longitude=-3400257
+set RncFunction=1,UtranCell=U37811 aseLoadThresholdUlSpeech ,amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U37811 cyclicAcb acbEnabled=0,rotationGroupSize=5
+set RncFunction=1,UtranCell=U37811 hcsSib3Config hcsPrio=0,qHcs=0,sSearchHcs=-105
+set RncFunction=1,UtranCell=U37811 hcsUsage connectedMode=0,idleMode=0
+set RncFunction=1,UtranCell=U37811 hsIflsDownswitchTrigg fastDormancy=0,toFach=0,toUra=0
+set RncFunction=1,UtranCell=U37811 hsIflsTrigger fromFach=1,fromUra=1
+set RncFunction=1,UtranCell=U37811 pagingPermAccessCtrl locRegAcb=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,locRegRestr=0,pagingRespRestr=0
+set RncFunction=1,UtranCell=U37811 pwrLoadThresholdDlSpeech amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U37811 rateSelectionPsInteractive channelType=0,dlPrefRate=16,ulPrefRate=16
+set RncFunction=1,UtranCell=U37811 releaseRedirectEutraTriggers csFallbackCsRelease=1,csFallbackDchToFach=1,dchToFach=1,fachToUra=0,fastDormancy=1,normalRelease=1
+set RncFunction=1,UtranCell=U37811 serviceRestrictions csVideoCalls=0
+set RncFunction=1,UtranCell=U37811 tpsCellThresholds tpsCellThreshEnabled=0,tpsLockThreshold=5,tpsUnlockThreshold=5
+set RncFunction=1,UtranCell=U37811 routingAreaRef  LocationArea=10513,RoutingArea=111
+set RncFunction=1,UtranCell=U37811 uraref ura=10014 10015
+
+cr RncFunction=1,UtranCell=U37812
+37812 #localCellId
+37812 #cId
+6 #tCell
+12 #uarfcnUl
+412 #uarfcnDl
+187 #primaryScramblingCode
+1 #sib1PlmnScopeValueTag
+LocationArea=10513 #locationAreaRef
+LocationArea=10513,ServiceArea=37812 #serviceAreaRef
+IubLink=Iub_ULA781 #iubLinkRef
+MocnCellProfile=73001 #mocnCellProfileRef
+
+set RncFunction=1,UtranCell=U37812 administrativeState 1
+set RncFunction=1,UtranCell=U37812 accessClassesBarredCs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37812 accessClassesBarredPs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37812 accessClassNBarred 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37812 agpsEnabled 1
+set RncFunction=1,UtranCell=U37812 amrNbSelector 0
+set RncFunction=1,UtranCell=U37812 amrWbRateDlMax 12650
+set RncFunction=1,UtranCell=U37812 amrWbRateUlMax 12650
+set RncFunction=1,UtranCell=U37812 anrBlackList 
+set RncFunction=1,UtranCell=U37812 aseDlAdm 500
+set RncFunction=1,UtranCell=U37812 aseUlAdm 500
+set RncFunction=1,UtranCell=U37812 bchPower -31
+set RncFunction=1,UtranCell=U37812 cbsSchedulePeriodLength 8
+set RncFunction=1,UtranCell=U37812 cellBroadcastSac 37812
+set RncFunction=1,UtranCell=U37812 cellReserved 1
+set RncFunction=1,UtranCell=U37812 codeLoadThresholdDlSf128 100
+set RncFunction=1,UtranCell=U37812 compModeAdm 15
+set RncFunction=1,UtranCell=U37812 cpcSupport 
+set RncFunction=1,UtranCell=U37812 ctchAdmMargin 0
+set RncFunction=1,UtranCell=U37812 ctchOccasionPeriod 255
+set RncFunction=1,UtranCell=U37812 dchIflsMarginCode 0
+set RncFunction=1,UtranCell=U37812 dchIflsMarginPower 0
+set RncFunction=1,UtranCell=U37812 dchIflsThreshCode 0
+set RncFunction=1,UtranCell=U37812 dchIflsThreshPower 0
+set RncFunction=1,UtranCell=U37812 dlCodeAdm 100
+set RncFunction=1,UtranCell=U37812 dlCodeOffloadLimit 100
+set RncFunction=1,UtranCell=U37812 dlPowerOffloadLimit 100
+set RncFunction=1,UtranCell=U37812 dmcrEnabled 1
+set RncFunction=1,UtranCell=U37812 dnclEnabled 0
+set RncFunction=1,UtranCell=U37812 downswitchTimer -1
+set RncFunction=1,UtranCell=U37812 eulNonServingCellUsersAdm 100
+set RncFunction=1,UtranCell=U37812 eulServingCellUsersAdm 96
+set RncFunction=1,UtranCell=U37812 eulServingCellUsersAdmTti2 24
+set RncFunction=1,UtranCell=U37812 fachMeasOccaCycLenCoeff 4
+set RncFunction=1,UtranCell=U37812 fdpchSupport 
+set RncFunction=1,UtranCell=U37812 ganHoEnabled 0
+set RncFunction=1,UtranCell=U37812 hardIfhoCorr 3
+set RncFunction=1,UtranCell=U37812 hoType 0
+set RncFunction=1,UtranCell=U37812 hsdpaUsersAdm 96
+set RncFunction=1,UtranCell=U37812 hsdpaUsersOffloadLimit 100
+set RncFunction=1,UtranCell=U37812 hsdschInactivityTimer 2
+set RncFunction=1,UtranCell=U37812 hsdschInactivityTimerCpc 20
+set RncFunction=1,UtranCell=U37812 hsIflsHighLoadThresh 100
+set RncFunction=1,UtranCell=U37812 hsIflsMarginUsers 0
+set RncFunction=1,UtranCell=U37812 hsIflsPowerLoadThresh 0
+set RncFunction=1,UtranCell=U37812 hsIflsRedirectLoadLimit 0
+set RncFunction=1,UtranCell=U37812 hsIflsSpeechMultiRabTrigg 0
+set RncFunction=1,UtranCell=U37812 hsIflsThreshUsers 10
+set RncFunction=1,UtranCell=U37812 iFCong 621
+set RncFunction=1,UtranCell=U37812 iFHyst 6000
+set RncFunction=1,UtranCell=U37812 iflsCpichEcnoThresh -24
+set RncFunction=1,UtranCell=U37812 iflsMode 2
+set RncFunction=1,UtranCell=U37812 iflsRedirectUarfcn 0
+set RncFunction=1,UtranCell=U37812 inactivityTimeMultiPsInteractive -1
+set RncFunction=1,UtranCell=U37812 inactivityTimer 5
+set RncFunction=1,UtranCell=U37812 inactivityTimerEnhUeDrx -1
+set RncFunction=1,UtranCell=U37812 inactivityTimerPch -1
+set RncFunction=1,UtranCell=U37812 individualOffset 0
+set RncFunction=1,UtranCell=U37812 interFreqFddMeasIndicator 0
+set RncFunction=1,UtranCell=U37812 interPwrMax 30
+set RncFunction=1,UtranCell=U37812 interRate 845
+set RncFunction=1,UtranCell=U37812 loadBasedHoSupport 0
+set RncFunction=1,UtranCell=U37812 loadBasedHoType 0
+set RncFunction=1,UtranCell=U37812 loadSharingGsmFraction 100
+set RncFunction=1,UtranCell=U37812 loadSharingGsmThreshold 85
+set RncFunction=1,UtranCell=U37812 loadSharingMargin 0
+set RncFunction=1,UtranCell=U37812 localCellId 37812
+set RncFunction=1,UtranCell=U37812 maximumTransmissionPower 419
+set RncFunction=1,UtranCell=U37812 maxPwrMax 30
+set RncFunction=1,UtranCell=U37812 maxRate 40690
+set RncFunction=1,UtranCell=U37812 maxTxPowerUl 24
+set RncFunction=1,UtranCell=U37812 minimumRate 370
+set RncFunction=1,UtranCell=U37812 minPwrMax -15
+set RncFunction=1,UtranCell=U37812 minPwrRl -120
+set RncFunction=1,UtranCell=U37812 nOutSyncInd 10
+set RncFunction=1,UtranCell=U37812 pathlossThreshold 120
+set RncFunction=1,UtranCell=U37812 primaryCpichPower 319
+set RncFunction=1,UtranCell=U37812 primarySchPower -18
+set RncFunction=1,UtranCell=U37812 primaryScramblingCode 187
+set RncFunction=1,UtranCell=U37812 pwrAdm 60
+set RncFunction=1,UtranCell=U37812 qHyst1 4
+set RncFunction=1,UtranCell=U37812 qHyst2 2
+set RncFunction=1,UtranCell=U37812 qQualMin -20
+set RncFunction=1,UtranCell=U37812 qRxLevMin -115
+set RncFunction=1,UtranCell=U37812 qualMeasQuantity 2
+set RncFunction=1,UtranCell=U37812 rac 111
+set RncFunction=1,UtranCell=U37812 redirectUarfcn 0
+set RncFunction=1,UtranCell=U37812 releaseRedirect 3
+set RncFunction=1,UtranCell=U37812 releaseRedirectHsIfls 1
+set RncFunction=1,UtranCell=U37812 reportingRange1a 6
+set RncFunction=1,UtranCell=U37812 reportingRange1b 11
+set RncFunction=1,UtranCell=U37812 rlFailureT 10
+set RncFunction=1,UtranCell=U37812 rrcLcEnabled 1
+set RncFunction=1,UtranCell=U37812 sac 37812
+set RncFunction=1,UtranCell=U37812 secondaryCpichPower -3
+set RncFunction=1,UtranCell=U37812 secondarySchPower -35
+set RncFunction=1,UtranCell=U37812 servDiffRrcAdmHighPrioProfile 2
+set RncFunction=1,UtranCell=U37812 sf128Adm 128
+set RncFunction=1,UtranCell=U37812 sf16Adm 0
+set RncFunction=1,UtranCell=U37812 sf16AdmUl 16
+set RncFunction=1,UtranCell=U37812 sf16gAdm 0
+set RncFunction=1,UtranCell=U37812 sf32Adm 32
+set RncFunction=1,UtranCell=U37812 sf4AdmUl 0
+set RncFunction=1,UtranCell=U37812 sf64AdmUl 100
+set RncFunction=1,UtranCell=U37812 sf8Adm 0
+set RncFunction=1,UtranCell=U37812 sf8AdmUl 0
+set RncFunction=1,UtranCell=U37812 sf8gAdmUl 0
+set RncFunction=1,UtranCell=U37812 sHcsRat -1
+set RncFunction=1,UtranCell=U37812 sib1PlmnScopeValueTag 1
+set RncFunction=1,UtranCell=U37812 sInterSearch 20
+set RncFunction=1,UtranCell=U37812 sIntraSearch 23
+set RncFunction=1,UtranCell=U37812 spare 0
+set RncFunction=1,UtranCell=U37812 spareA 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37812 sRatSearch 0
+set RncFunction=1,UtranCell=U37812 srbAdmExempt 0
+set RncFunction=1,UtranCell=U37812 standAloneSrbSelector 1
+set RncFunction=1,UtranCell=U37812 tCell 6
+set RncFunction=1,UtranCell=U37812 timeToTrigger1a -1
+set RncFunction=1,UtranCell=U37812 timeToTrigger1b -1
+set RncFunction=1,UtranCell=U37812 transmissionScheme 0
+set RncFunction=1,UtranCell=U37812 treSelection 2
+set RncFunction=1,UtranCell=U37812 uarfcnDl 412
+set RncFunction=1,UtranCell=U37812 uarfcnUl 12
+set RncFunction=1,UtranCell=U37812 usedFreqThresh2dEcno -18
+set RncFunction=1,UtranCell=U37812 usedFreqThresh2dRscp -109
+set RncFunction=1,UtranCell=U37812 dlCodePowerCmEnabled 0
+set RncFunction=1,UtranCell=U37812 eulMcServingCellUsersAdmTti2 3
+set RncFunction=1,UtranCell=U37812 primaryTpsCell 0
+set RncFunction=1,UtranCell=U37812 rwrEutraCc 1
+set RncFunction=1,UtranCell=U37812 rachOverloadProtect 1
+set RncFunction=1,UtranCell=U37812 ifIratHoPsIntHsEnabled 1
+set RncFunction=1,UtranCell=U37812 cellUpdateConfirmCsInitRepeat 3
+set RncFunction=1,UtranCell=U37812 cellUpdateConfirmPsInitRepeat 2
+set RncFunction=1,UtranCell=U37812 userLabel U37812
+set RncFunction=1,UtranCell=U37812 lteMeasEnabled 1
+set RncFunction=1,UtranCell=U37812 psHoToLteEnabled 0
+set RncFunction=1,UtranCell=U37812 mocnCellProfileRef MocnCellProfile=73001
+set RncFunction=1,UtranCell=U37812 absPrioCellRes cellReselectionPriority=2,sPrioritySearch1=58,sPrioritySearch2=0,threshServingLow=16,measIndFach=1
+set RncFunction=1,UtranCell=U37812 admBlockRedirection gsmRrc=0,rrc=0,speech=0
+set RncFunction=1,UtranCell=U37812 anrIafUtranCellConfig anrEnabled=1,relationAddEnabled=0
+set RncFunction=1,UtranCell=U37812 antennaPosition latitude=3863931,latitudeSign=1,longitude=-3400257
+set RncFunction=1,UtranCell=U37812 aseLoadThresholdUlSpeech ,amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U37812 cyclicAcb acbEnabled=0,rotationGroupSize=5
+set RncFunction=1,UtranCell=U37812 hcsSib3Config hcsPrio=0,qHcs=0,sSearchHcs=-105
+set RncFunction=1,UtranCell=U37812 hcsUsage connectedMode=0,idleMode=0
+set RncFunction=1,UtranCell=U37812 hsIflsDownswitchTrigg fastDormancy=0,toFach=0,toUra=0
+set RncFunction=1,UtranCell=U37812 hsIflsTrigger fromFach=1,fromUra=1
+set RncFunction=1,UtranCell=U37812 pagingPermAccessCtrl locRegAcb=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,locRegRestr=0,pagingRespRestr=0
+set RncFunction=1,UtranCell=U37812 pwrLoadThresholdDlSpeech amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U37812 rateSelectionPsInteractive channelType=0,dlPrefRate=16,ulPrefRate=16
+set RncFunction=1,UtranCell=U37812 releaseRedirectEutraTriggers csFallbackCsRelease=1,csFallbackDchToFach=1,dchToFach=1,fachToUra=0,fastDormancy=1,normalRelease=1
+set RncFunction=1,UtranCell=U37812 serviceRestrictions csVideoCalls=0
+set RncFunction=1,UtranCell=U37812 tpsCellThresholds tpsCellThreshEnabled=0,tpsLockThreshold=5,tpsUnlockThreshold=5
+set RncFunction=1,UtranCell=U37812 routingAreaRef  LocationArea=10513,RoutingArea=111
+set RncFunction=1,UtranCell=U37812 uraref ura=10014 10015
+
+cr RncFunction=1,UtranCell=U37813
+37813 #localCellId
+37813 #cId
+8 #tCell
+12 #uarfcnUl
+412 #uarfcnDl
+195 #primaryScramblingCode
+1 #sib1PlmnScopeValueTag
+LocationArea=10513 #locationAreaRef
+LocationArea=10513,ServiceArea=37813 #serviceAreaRef
+IubLink=Iub_ULA781 #iubLinkRef
+MocnCellProfile=73001 #mocnCellProfileRef
+
+set RncFunction=1,UtranCell=U37813 administrativeState 1
+set RncFunction=1,UtranCell=U37813 accessClassesBarredCs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37813 accessClassesBarredPs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37813 accessClassNBarred 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37813 agpsEnabled 1
+set RncFunction=1,UtranCell=U37813 amrNbSelector 0
+set RncFunction=1,UtranCell=U37813 amrWbRateDlMax 12650
+set RncFunction=1,UtranCell=U37813 amrWbRateUlMax 12650
+set RncFunction=1,UtranCell=U37813 anrBlackList 
+set RncFunction=1,UtranCell=U37813 aseDlAdm 500
+set RncFunction=1,UtranCell=U37813 aseUlAdm 500
+set RncFunction=1,UtranCell=U37813 bchPower -31
+set RncFunction=1,UtranCell=U37813 cbsSchedulePeriodLength 8
+set RncFunction=1,UtranCell=U37813 cellBroadcastSac 37813
+set RncFunction=1,UtranCell=U37813 cellReserved 1
+set RncFunction=1,UtranCell=U37813 codeLoadThresholdDlSf128 100
+set RncFunction=1,UtranCell=U37813 compModeAdm 15
+set RncFunction=1,UtranCell=U37813 cpcSupport 
+set RncFunction=1,UtranCell=U37813 ctchAdmMargin 0
+set RncFunction=1,UtranCell=U37813 ctchOccasionPeriod 255
+set RncFunction=1,UtranCell=U37813 dchIflsMarginCode 0
+set RncFunction=1,UtranCell=U37813 dchIflsMarginPower 0
+set RncFunction=1,UtranCell=U37813 dchIflsThreshCode 0
+set RncFunction=1,UtranCell=U37813 dchIflsThreshPower 0
+set RncFunction=1,UtranCell=U37813 dlCodeAdm 100
+set RncFunction=1,UtranCell=U37813 dlCodeOffloadLimit 100
+set RncFunction=1,UtranCell=U37813 dlPowerOffloadLimit 100
+set RncFunction=1,UtranCell=U37813 dmcrEnabled 1
+set RncFunction=1,UtranCell=U37813 dnclEnabled 0
+set RncFunction=1,UtranCell=U37813 downswitchTimer -1
+set RncFunction=1,UtranCell=U37813 eulNonServingCellUsersAdm 100
+set RncFunction=1,UtranCell=U37813 eulServingCellUsersAdm 96
+set RncFunction=1,UtranCell=U37813 eulServingCellUsersAdmTti2 24
+set RncFunction=1,UtranCell=U37813 fachMeasOccaCycLenCoeff 4
+set RncFunction=1,UtranCell=U37813 fdpchSupport 
+set RncFunction=1,UtranCell=U37813 ganHoEnabled 0
+set RncFunction=1,UtranCell=U37813 hardIfhoCorr 3
+set RncFunction=1,UtranCell=U37813 hoType 0
+set RncFunction=1,UtranCell=U37813 hsdpaUsersAdm 96
+set RncFunction=1,UtranCell=U37813 hsdpaUsersOffloadLimit 100
+set RncFunction=1,UtranCell=U37813 hsdschInactivityTimer 2
+set RncFunction=1,UtranCell=U37813 hsdschInactivityTimerCpc 20
+set RncFunction=1,UtranCell=U37813 hsIflsHighLoadThresh 100
+set RncFunction=1,UtranCell=U37813 hsIflsMarginUsers 0
+set RncFunction=1,UtranCell=U37813 hsIflsPowerLoadThresh 0
+set RncFunction=1,UtranCell=U37813 hsIflsRedirectLoadLimit 0
+set RncFunction=1,UtranCell=U37813 hsIflsSpeechMultiRabTrigg 0
+set RncFunction=1,UtranCell=U37813 hsIflsThreshUsers 10
+set RncFunction=1,UtranCell=U37813 iFCong 621
+set RncFunction=1,UtranCell=U37813 iFHyst 6000
+set RncFunction=1,UtranCell=U37813 iflsCpichEcnoThresh -24
+set RncFunction=1,UtranCell=U37813 iflsMode 2
+set RncFunction=1,UtranCell=U37813 iflsRedirectUarfcn 0
+set RncFunction=1,UtranCell=U37813 inactivityTimeMultiPsInteractive -1
+set RncFunction=1,UtranCell=U37813 inactivityTimer 5
+set RncFunction=1,UtranCell=U37813 inactivityTimerEnhUeDrx -1
+set RncFunction=1,UtranCell=U37813 inactivityTimerPch -1
+set RncFunction=1,UtranCell=U37813 individualOffset 0
+set RncFunction=1,UtranCell=U37813 interFreqFddMeasIndicator 0
+set RncFunction=1,UtranCell=U37813 interPwrMax 30
+set RncFunction=1,UtranCell=U37813 interRate 845
+set RncFunction=1,UtranCell=U37813 loadBasedHoSupport 0
+set RncFunction=1,UtranCell=U37813 loadBasedHoType 0
+set RncFunction=1,UtranCell=U37813 loadSharingGsmFraction 100
+set RncFunction=1,UtranCell=U37813 loadSharingGsmThreshold 85
+set RncFunction=1,UtranCell=U37813 loadSharingMargin 0
+set RncFunction=1,UtranCell=U37813 localCellId 37813
+set RncFunction=1,UtranCell=U37813 maximumTransmissionPower 419
+set RncFunction=1,UtranCell=U37813 maxPwrMax 30
+set RncFunction=1,UtranCell=U37813 maxRate 40690
+set RncFunction=1,UtranCell=U37813 maxTxPowerUl 24
+set RncFunction=1,UtranCell=U37813 minimumRate 370
+set RncFunction=1,UtranCell=U37813 minPwrMax -15
+set RncFunction=1,UtranCell=U37813 minPwrRl -120
+set RncFunction=1,UtranCell=U37813 nOutSyncInd 10
+set RncFunction=1,UtranCell=U37813 pathlossThreshold 120
+set RncFunction=1,UtranCell=U37813 primaryCpichPower 319
+set RncFunction=1,UtranCell=U37813 primarySchPower -18
+set RncFunction=1,UtranCell=U37813 primaryScramblingCode 195
+set RncFunction=1,UtranCell=U37813 pwrAdm 60
+set RncFunction=1,UtranCell=U37813 qHyst1 4
+set RncFunction=1,UtranCell=U37813 qHyst2 2
+set RncFunction=1,UtranCell=U37813 qQualMin -20
+set RncFunction=1,UtranCell=U37813 qRxLevMin -115
+set RncFunction=1,UtranCell=U37813 qualMeasQuantity 2
+set RncFunction=1,UtranCell=U37813 rac 111
+set RncFunction=1,UtranCell=U37813 redirectUarfcn 0
+set RncFunction=1,UtranCell=U37813 releaseRedirect 3
+set RncFunction=1,UtranCell=U37813 releaseRedirectHsIfls 1
+set RncFunction=1,UtranCell=U37813 reportingRange1a 6
+set RncFunction=1,UtranCell=U37813 reportingRange1b 11
+set RncFunction=1,UtranCell=U37813 rlFailureT 10
+set RncFunction=1,UtranCell=U37813 rrcLcEnabled 1
+set RncFunction=1,UtranCell=U37813 sac 37813
+set RncFunction=1,UtranCell=U37813 secondaryCpichPower -3
+set RncFunction=1,UtranCell=U37813 secondarySchPower -35
+set RncFunction=1,UtranCell=U37813 servDiffRrcAdmHighPrioProfile 2
+set RncFunction=1,UtranCell=U37813 sf128Adm 128
+set RncFunction=1,UtranCell=U37813 sf16Adm 0
+set RncFunction=1,UtranCell=U37813 sf16AdmUl 16
+set RncFunction=1,UtranCell=U37813 sf16gAdm 0
+set RncFunction=1,UtranCell=U37813 sf32Adm 32
+set RncFunction=1,UtranCell=U37813 sf4AdmUl 0
+set RncFunction=1,UtranCell=U37813 sf64AdmUl 100
+set RncFunction=1,UtranCell=U37813 sf8Adm 0
+set RncFunction=1,UtranCell=U37813 sf8AdmUl 0
+set RncFunction=1,UtranCell=U37813 sf8gAdmUl 0
+set RncFunction=1,UtranCell=U37813 sHcsRat -1
+set RncFunction=1,UtranCell=U37813 sib1PlmnScopeValueTag 1
+set RncFunction=1,UtranCell=U37813 sInterSearch 20
+set RncFunction=1,UtranCell=U37813 sIntraSearch 23
+set RncFunction=1,UtranCell=U37813 spare 0
+set RncFunction=1,UtranCell=U37813 spareA 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U37813 sRatSearch 0
+set RncFunction=1,UtranCell=U37813 srbAdmExempt 0
+set RncFunction=1,UtranCell=U37813 standAloneSrbSelector 1
+set RncFunction=1,UtranCell=U37813 tCell 8
+set RncFunction=1,UtranCell=U37813 timeToTrigger1a -1
+set RncFunction=1,UtranCell=U37813 timeToTrigger1b -1
+set RncFunction=1,UtranCell=U37813 transmissionScheme 0
+set RncFunction=1,UtranCell=U37813 treSelection 2
+set RncFunction=1,UtranCell=U37813 uarfcnDl 412
+set RncFunction=1,UtranCell=U37813 uarfcnUl 12
+set RncFunction=1,UtranCell=U37813 usedFreqThresh2dEcno -18
+set RncFunction=1,UtranCell=U37813 usedFreqThresh2dRscp -109
+set RncFunction=1,UtranCell=U37813 dlCodePowerCmEnabled 0
+set RncFunction=1,UtranCell=U37813 eulMcServingCellUsersAdmTti2 3
+set RncFunction=1,UtranCell=U37813 primaryTpsCell 0
+set RncFunction=1,UtranCell=U37813 rwrEutraCc 1
+set RncFunction=1,UtranCell=U37813 rachOverloadProtect 1
+set RncFunction=1,UtranCell=U37813 ifIratHoPsIntHsEnabled 1
+set RncFunction=1,UtranCell=U37813 cellUpdateConfirmCsInitRepeat 3
+set RncFunction=1,UtranCell=U37813 cellUpdateConfirmPsInitRepeat 2
+set RncFunction=1,UtranCell=U37813 userLabel U37813
+set RncFunction=1,UtranCell=U37813 lteMeasEnabled 1
+set RncFunction=1,UtranCell=U37813 psHoToLteEnabled 0
+set RncFunction=1,UtranCell=U37813 mocnCellProfileRef MocnCellProfile=73001
+set RncFunction=1,UtranCell=U37813 absPrioCellRes cellReselectionPriority=2,sPrioritySearch1=58,sPrioritySearch2=0,threshServingLow=16,measIndFach=1
+set RncFunction=1,UtranCell=U37813 admBlockRedirection gsmRrc=0,rrc=0,speech=0
+set RncFunction=1,UtranCell=U37813 anrIafUtranCellConfig anrEnabled=1,relationAddEnabled=0
+set RncFunction=1,UtranCell=U37813 antennaPosition latitude=3863931,latitudeSign=1,longitude=-3400257
+set RncFunction=1,UtranCell=U37813 aseLoadThresholdUlSpeech ,amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U37813 cyclicAcb acbEnabled=0,rotationGroupSize=5
+set RncFunction=1,UtranCell=U37813 hcsSib3Config hcsPrio=0,qHcs=0,sSearchHcs=-105
+set RncFunction=1,UtranCell=U37813 hcsUsage connectedMode=0,idleMode=0
+set RncFunction=1,UtranCell=U37813 hsIflsDownswitchTrigg fastDormancy=0,toFach=0,toUra=0
+set RncFunction=1,UtranCell=U37813 hsIflsTrigger fromFach=1,fromUra=1
+set RncFunction=1,UtranCell=U37813 pagingPermAccessCtrl locRegAcb=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,locRegRestr=0,pagingRespRestr=0
+set RncFunction=1,UtranCell=U37813 pwrLoadThresholdDlSpeech amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U37813 rateSelectionPsInteractive channelType=0,dlPrefRate=16,ulPrefRate=16
+set RncFunction=1,UtranCell=U37813 releaseRedirectEutraTriggers csFallbackCsRelease=1,csFallbackDchToFach=1,dchToFach=1,fachToUra=0,fastDormancy=1,normalRelease=1
+set RncFunction=1,UtranCell=U37813 serviceRestrictions csVideoCalls=0
+set RncFunction=1,UtranCell=U37813 tpsCellThresholds tpsCellThreshEnabled=0,tpsLockThreshold=5,tpsUnlockThreshold=5
+set RncFunction=1,UtranCell=U37813 routingAreaRef  LocationArea=10513,RoutingArea=111
+set RncFunction=1,UtranCell=U37813 uraref ura=10014 10015
+
+cr RncFunction=1,UtranCell=U07814
+07814 #localCellId
+07814 #cId
+2 #tCell
+2848 #uarfcnUl
+3073 #uarfcnDl
+179 #primaryScramblingCode
+1 #sib1PlmnScopeValueTag
+LocationArea=10513 #locationAreaRef
+LocationArea=10513,ServiceArea=07814 #serviceAreaRef
+IubLink=Iub_ULA781 #iubLinkRef
+MocnCellProfile=73001 #mocnCellProfileRef
+
+set RncFunction=1,UtranCell=U07814 administrativeState 1
+set RncFunction=1,UtranCell=U07814 accessClassesBarredCs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07814 accessClassesBarredPs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07814 accessClassNBarred 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07814 agpsEnabled 1
+set RncFunction=1,UtranCell=U07814 amrNbSelector 0
+set RncFunction=1,UtranCell=U07814 amrWbRateDlMax 12650
+set RncFunction=1,UtranCell=U07814 amrWbRateUlMax 12650
+set RncFunction=1,UtranCell=U07814 anrBlackList 
+set RncFunction=1,UtranCell=U07814 aseDlAdm 500
+set RncFunction=1,UtranCell=U07814 aseUlAdm 500
+set RncFunction=1,UtranCell=U07814 bchPower -31
+set RncFunction=1,UtranCell=U07814 cbsSchedulePeriodLength 8
+set RncFunction=1,UtranCell=U07814 cellBroadcastSac 07814
+set RncFunction=1,UtranCell=U07814 cellReserved 1
+set RncFunction=1,UtranCell=U07814 codeLoadThresholdDlSf128 100
+set RncFunction=1,UtranCell=U07814 compModeAdm 15
+set RncFunction=1,UtranCell=U07814 cpcSupport 
+set RncFunction=1,UtranCell=U07814 ctchAdmMargin 0
+set RncFunction=1,UtranCell=U07814 ctchOccasionPeriod 255
+set RncFunction=1,UtranCell=U07814 dchIflsMarginCode 0
+set RncFunction=1,UtranCell=U07814 dchIflsMarginPower 0
+set RncFunction=1,UtranCell=U07814 dchIflsThreshCode 0
+set RncFunction=1,UtranCell=U07814 dchIflsThreshPower 0
+set RncFunction=1,UtranCell=U07814 dlCodeAdm 100
+set RncFunction=1,UtranCell=U07814 dlCodeOffloadLimit 100
+set RncFunction=1,UtranCell=U07814 dlPowerOffloadLimit 100
+set RncFunction=1,UtranCell=U07814 dmcrEnabled 1
+set RncFunction=1,UtranCell=U07814 dnclEnabled 0
+set RncFunction=1,UtranCell=U07814 downswitchTimer -1
+set RncFunction=1,UtranCell=U07814 eulNonServingCellUsersAdm 100
+set RncFunction=1,UtranCell=U07814 eulServingCellUsersAdm 96
+set RncFunction=1,UtranCell=U07814 eulServingCellUsersAdmTti2 24
+set RncFunction=1,UtranCell=U07814 fachMeasOccaCycLenCoeff 4
+set RncFunction=1,UtranCell=U07814 fdpchSupport 
+set RncFunction=1,UtranCell=U07814 ganHoEnabled 0
+set RncFunction=1,UtranCell=U07814 hardIfhoCorr 3
+set RncFunction=1,UtranCell=U07814 hoType 0
+set RncFunction=1,UtranCell=U07814 hsdpaUsersAdm 96
+set RncFunction=1,UtranCell=U07814 hsdpaUsersOffloadLimit 100
+set RncFunction=1,UtranCell=U07814 hsdschInactivityTimer 2
+set RncFunction=1,UtranCell=U07814 hsdschInactivityTimerCpc 20
+set RncFunction=1,UtranCell=U07814 hsIflsHighLoadThresh 100
+set RncFunction=1,UtranCell=U07814 hsIflsMarginUsers 0
+set RncFunction=1,UtranCell=U07814 hsIflsPowerLoadThresh 0
+set RncFunction=1,UtranCell=U07814 hsIflsRedirectLoadLimit 0
+set RncFunction=1,UtranCell=U07814 hsIflsSpeechMultiRabTrigg 0
+set RncFunction=1,UtranCell=U07814 hsIflsThreshUsers 10
+set RncFunction=1,UtranCell=U07814 iFCong 621
+set RncFunction=1,UtranCell=U07814 iFHyst 6000
+set RncFunction=1,UtranCell=U07814 iflsCpichEcnoThresh -24
+set RncFunction=1,UtranCell=U07814 iflsMode 2
+set RncFunction=1,UtranCell=U07814 iflsRedirectUarfcn 0
+set RncFunction=1,UtranCell=U07814 inactivityTimeMultiPsInteractive -1
+set RncFunction=1,UtranCell=U07814 inactivityTimer 5
+set RncFunction=1,UtranCell=U07814 inactivityTimerEnhUeDrx -1
+set RncFunction=1,UtranCell=U07814 inactivityTimerPch -1
+set RncFunction=1,UtranCell=U07814 individualOffset 0
+set RncFunction=1,UtranCell=U07814 interFreqFddMeasIndicator 0
+set RncFunction=1,UtranCell=U07814 interPwrMax 30
+set RncFunction=1,UtranCell=U07814 interRate 845
+set RncFunction=1,UtranCell=U07814 loadBasedHoSupport 0
+set RncFunction=1,UtranCell=U07814 loadBasedHoType 0
+set RncFunction=1,UtranCell=U07814 loadSharingGsmFraction 100
+set RncFunction=1,UtranCell=U07814 loadSharingGsmThreshold 85
+set RncFunction=1,UtranCell=U07814 loadSharingMargin 0
+set RncFunction=1,UtranCell=U07814 localCellId 07814
+set RncFunction=1,UtranCell=U07814 maximumTransmissionPower 427
+set RncFunction=1,UtranCell=U07814 maxPwrMax 30
+set RncFunction=1,UtranCell=U07814 maxRate 40690
+set RncFunction=1,UtranCell=U07814 maxTxPowerUl 24
+set RncFunction=1,UtranCell=U07814 minimumRate 370
+set RncFunction=1,UtranCell=U07814 minPwrMax -15
+set RncFunction=1,UtranCell=U07814 minPwrRl -120
+set RncFunction=1,UtranCell=U07814 nOutSyncInd 10
+set RncFunction=1,UtranCell=U07814 pathlossThreshold 120
+set RncFunction=1,UtranCell=U07814 primaryCpichPower 297
+set RncFunction=1,UtranCell=U07814 primarySchPower -18
+set RncFunction=1,UtranCell=U07814 primaryScramblingCode 179
+set RncFunction=1,UtranCell=U07814 pwrAdm 60
+set RncFunction=1,UtranCell=U07814 qHyst1 4
+set RncFunction=1,UtranCell=U07814 qHyst2 2
+set RncFunction=1,UtranCell=U07814 qQualMin -24
+set RncFunction=1,UtranCell=U07814 qRxLevMin -119
+set RncFunction=1,UtranCell=U07814 qualMeasQuantity 2
+set RncFunction=1,UtranCell=U07814 rac 111
+set RncFunction=1,UtranCell=U07814 redirectUarfcn 0
+set RncFunction=1,UtranCell=U07814 releaseRedirect 3
+set RncFunction=1,UtranCell=U07814 releaseRedirectHsIfls 1
+set RncFunction=1,UtranCell=U07814 reportingRange1a 6
+set RncFunction=1,UtranCell=U07814 reportingRange1b 11
+set RncFunction=1,UtranCell=U07814 rlFailureT 10
+set RncFunction=1,UtranCell=U07814 rrcLcEnabled 1
+set RncFunction=1,UtranCell=U07814 sac 07814
+set RncFunction=1,UtranCell=U07814 secondaryCpichPower -3
+set RncFunction=1,UtranCell=U07814 secondarySchPower -35
+set RncFunction=1,UtranCell=U07814 servDiffRrcAdmHighPrioProfile 2
+set RncFunction=1,UtranCell=U07814 sf128Adm 128
+set RncFunction=1,UtranCell=U07814 sf16Adm 0
+set RncFunction=1,UtranCell=U07814 sf16AdmUl 16
+set RncFunction=1,UtranCell=U07814 sf16gAdm 0
+set RncFunction=1,UtranCell=U07814 sf32Adm 32
+set RncFunction=1,UtranCell=U07814 sf4AdmUl 0
+set RncFunction=1,UtranCell=U07814 sf64AdmUl 100
+set RncFunction=1,UtranCell=U07814 sf8Adm 0
+set RncFunction=1,UtranCell=U07814 sf8AdmUl 0
+set RncFunction=1,UtranCell=U07814 sf8gAdmUl 0
+set RncFunction=1,UtranCell=U07814 sHcsRat -1
+set RncFunction=1,UtranCell=U07814 sib1PlmnScopeValueTag 1
+set RncFunction=1,UtranCell=U07814 sInterSearch 23
+set RncFunction=1,UtranCell=U07814 sIntraSearch 26
+set RncFunction=1,UtranCell=U07814 spare 0
+set RncFunction=1,UtranCell=U07814 spareA 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07814 sRatSearch 0
+set RncFunction=1,UtranCell=U07814 srbAdmExempt 0
+set RncFunction=1,UtranCell=U07814 standAloneSrbSelector 1
+set RncFunction=1,UtranCell=U07814 tCell 2
+set RncFunction=1,UtranCell=U07814 timeToTrigger1a -1
+set RncFunction=1,UtranCell=U07814 timeToTrigger1b -1
+set RncFunction=1,UtranCell=U07814 transmissionScheme 0
+set RncFunction=1,UtranCell=U07814 treSelection 2
+set RncFunction=1,UtranCell=U07814 uarfcnDl 3073
+set RncFunction=1,UtranCell=U07814 uarfcnUl 2848
+set RncFunction=1,UtranCell=U07814 usedFreqThresh2dEcno -18
+set RncFunction=1,UtranCell=U07814 usedFreqThresh2dRscp -109
+set RncFunction=1,UtranCell=U07814 dlCodePowerCmEnabled 0
+set RncFunction=1,UtranCell=U07814 eulMcServingCellUsersAdmTti2 3
+set RncFunction=1,UtranCell=U07814 primaryTpsCell 1
+set RncFunction=1,UtranCell=U07814 rwrEutraCc 1
+set RncFunction=1,UtranCell=U07814 rachOverloadProtect 1
+set RncFunction=1,UtranCell=U07814 ifIratHoPsIntHsEnabled 1
+set RncFunction=1,UtranCell=U07814 cellUpdateConfirmCsInitRepeat 3
+set RncFunction=1,UtranCell=U07814 cellUpdateConfirmPsInitRepeat 2
+set RncFunction=1,UtranCell=U07814 userLabel U07814
+set RncFunction=1,UtranCell=U07814 lteMeasEnabled 1
+set RncFunction=1,UtranCell=U07814 psHoToLteEnabled 0
+set RncFunction=1,UtranCell=U07814 mocnCellProfileRef MocnCellProfile=73001
+set RncFunction=1,UtranCell=U07814 absPrioCellRes cellReselectionPriority=2,sPrioritySearch1=62,sPrioritySearch2=6,threshServingLow=16,measIndFach=1
+set RncFunction=1,UtranCell=U07814 admBlockRedirection gsmRrc=0,rrc=0,speech=0
+set RncFunction=1,UtranCell=U07814 anrIafUtranCellConfig anrEnabled=1,relationAddEnabled=0
+set RncFunction=1,UtranCell=U07814 antennaPosition latitude=3863931,latitudeSign=1,longitude=-3400257
+set RncFunction=1,UtranCell=U07814 aseLoadThresholdUlSpeech ,amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U07814 cyclicAcb acbEnabled=0,rotationGroupSize=5
+set RncFunction=1,UtranCell=U07814 hcsSib3Config hcsPrio=0,qHcs=0,sSearchHcs=-105
+set RncFunction=1,UtranCell=U07814 hcsUsage connectedMode=0,idleMode=0
+set RncFunction=1,UtranCell=U07814 hsIflsDownswitchTrigg fastDormancy=0,toFach=0,toUra=0
+set RncFunction=1,UtranCell=U07814 hsIflsTrigger fromFach=1,fromUra=1
+set RncFunction=1,UtranCell=U07814 pagingPermAccessCtrl locRegAcb=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,locRegRestr=0,pagingRespRestr=0
+set RncFunction=1,UtranCell=U07814 pwrLoadThresholdDlSpeech amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U07814 rateSelectionPsInteractive channelType=0,dlPrefRate=16,ulPrefRate=16
+set RncFunction=1,UtranCell=U07814 releaseRedirectEutraTriggers csFallbackCsRelease=1,csFallbackDchToFach=1,dchToFach=1,fachToUra=0,fastDormancy=1,normalRelease=1
+set RncFunction=1,UtranCell=U07814 serviceRestrictions csVideoCalls=0
+set RncFunction=1,UtranCell=U07814 tpsCellThresholds tpsCellThreshEnabled=1,tpsLockThreshold=5,tpsUnlockThreshold=5
+set RncFunction=1,UtranCell=U07814 routingAreaRef  LocationArea=10513,RoutingArea=111
+set RncFunction=1,UtranCell=U07814 uraref ura=10014 10015
+
+cr RncFunction=1,UtranCell=U07815
+07815 #localCellId
+07815 #cId
+6 #tCell
+2848 #uarfcnUl
+3073 #uarfcnDl
+187 #primaryScramblingCode
+1 #sib1PlmnScopeValueTag
+LocationArea=10513 #locationAreaRef
+LocationArea=10513,ServiceArea=07815 #serviceAreaRef
+IubLink=Iub_ULA781 #iubLinkRef
+MocnCellProfile=73001 #mocnCellProfileRef
+
+set RncFunction=1,UtranCell=U07815 administrativeState 1
+set RncFunction=1,UtranCell=U07815 accessClassesBarredCs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07815 accessClassesBarredPs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07815 accessClassNBarred 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07815 agpsEnabled 1
+set RncFunction=1,UtranCell=U07815 amrNbSelector 0
+set RncFunction=1,UtranCell=U07815 amrWbRateDlMax 12650
+set RncFunction=1,UtranCell=U07815 amrWbRateUlMax 12650
+set RncFunction=1,UtranCell=U07815 anrBlackList 
+set RncFunction=1,UtranCell=U07815 aseDlAdm 500
+set RncFunction=1,UtranCell=U07815 aseUlAdm 500
+set RncFunction=1,UtranCell=U07815 bchPower -31
+set RncFunction=1,UtranCell=U07815 cbsSchedulePeriodLength 8
+set RncFunction=1,UtranCell=U07815 cellBroadcastSac 07815
+set RncFunction=1,UtranCell=U07815 cellReserved 1
+set RncFunction=1,UtranCell=U07815 codeLoadThresholdDlSf128 100
+set RncFunction=1,UtranCell=U07815 compModeAdm 15
+set RncFunction=1,UtranCell=U07815 cpcSupport 
+set RncFunction=1,UtranCell=U07815 ctchAdmMargin 0
+set RncFunction=1,UtranCell=U07815 ctchOccasionPeriod 255
+set RncFunction=1,UtranCell=U07815 dchIflsMarginCode 0
+set RncFunction=1,UtranCell=U07815 dchIflsMarginPower 0
+set RncFunction=1,UtranCell=U07815 dchIflsThreshCode 0
+set RncFunction=1,UtranCell=U07815 dchIflsThreshPower 0
+set RncFunction=1,UtranCell=U07815 dlCodeAdm 100
+set RncFunction=1,UtranCell=U07815 dlCodeOffloadLimit 100
+set RncFunction=1,UtranCell=U07815 dlPowerOffloadLimit 100
+set RncFunction=1,UtranCell=U07815 dmcrEnabled 1
+set RncFunction=1,UtranCell=U07815 dnclEnabled 0
+set RncFunction=1,UtranCell=U07815 downswitchTimer -1
+set RncFunction=1,UtranCell=U07815 eulNonServingCellUsersAdm 100
+set RncFunction=1,UtranCell=U07815 eulServingCellUsersAdm 96
+set RncFunction=1,UtranCell=U07815 eulServingCellUsersAdmTti2 24
+set RncFunction=1,UtranCell=U07815 fachMeasOccaCycLenCoeff 4
+set RncFunction=1,UtranCell=U07815 fdpchSupport 
+set RncFunction=1,UtranCell=U07815 ganHoEnabled 0
+set RncFunction=1,UtranCell=U07815 hardIfhoCorr 3
+set RncFunction=1,UtranCell=U07815 hoType 0
+set RncFunction=1,UtranCell=U07815 hsdpaUsersAdm 96
+set RncFunction=1,UtranCell=U07815 hsdpaUsersOffloadLimit 100
+set RncFunction=1,UtranCell=U07815 hsdschInactivityTimer 2
+set RncFunction=1,UtranCell=U07815 hsdschInactivityTimerCpc 20
+set RncFunction=1,UtranCell=U07815 hsIflsHighLoadThresh 100
+set RncFunction=1,UtranCell=U07815 hsIflsMarginUsers 0
+set RncFunction=1,UtranCell=U07815 hsIflsPowerLoadThresh 0
+set RncFunction=1,UtranCell=U07815 hsIflsRedirectLoadLimit 0
+set RncFunction=1,UtranCell=U07815 hsIflsSpeechMultiRabTrigg 0
+set RncFunction=1,UtranCell=U07815 hsIflsThreshUsers 10
+set RncFunction=1,UtranCell=U07815 iFCong 621
+set RncFunction=1,UtranCell=U07815 iFHyst 6000
+set RncFunction=1,UtranCell=U07815 iflsCpichEcnoThresh -24
+set RncFunction=1,UtranCell=U07815 iflsMode 2
+set RncFunction=1,UtranCell=U07815 iflsRedirectUarfcn 0
+set RncFunction=1,UtranCell=U07815 inactivityTimeMultiPsInteractive -1
+set RncFunction=1,UtranCell=U07815 inactivityTimer 5
+set RncFunction=1,UtranCell=U07815 inactivityTimerEnhUeDrx -1
+set RncFunction=1,UtranCell=U07815 inactivityTimerPch -1
+set RncFunction=1,UtranCell=U07815 individualOffset 0
+set RncFunction=1,UtranCell=U07815 interFreqFddMeasIndicator 0
+set RncFunction=1,UtranCell=U07815 interPwrMax 30
+set RncFunction=1,UtranCell=U07815 interRate 845
+set RncFunction=1,UtranCell=U07815 loadBasedHoSupport 0
+set RncFunction=1,UtranCell=U07815 loadBasedHoType 0
+set RncFunction=1,UtranCell=U07815 loadSharingGsmFraction 100
+set RncFunction=1,UtranCell=U07815 loadSharingGsmThreshold 85
+set RncFunction=1,UtranCell=U07815 loadSharingMargin 0
+set RncFunction=1,UtranCell=U07815 localCellId 07815
+set RncFunction=1,UtranCell=U07815 maximumTransmissionPower 420
+set RncFunction=1,UtranCell=U07815 maxPwrMax 30
+set RncFunction=1,UtranCell=U07815 maxRate 40690
+set RncFunction=1,UtranCell=U07815 maxTxPowerUl 24
+set RncFunction=1,UtranCell=U07815 minimumRate 370
+set RncFunction=1,UtranCell=U07815 minPwrMax -15
+set RncFunction=1,UtranCell=U07815 minPwrRl -120
+set RncFunction=1,UtranCell=U07815 nOutSyncInd 10
+set RncFunction=1,UtranCell=U07815 pathlossThreshold 120
+set RncFunction=1,UtranCell=U07815 primaryCpichPower 290
+set RncFunction=1,UtranCell=U07815 primarySchPower -18
+set RncFunction=1,UtranCell=U07815 primaryScramblingCode 187
+set RncFunction=1,UtranCell=U07815 pwrAdm 60
+set RncFunction=1,UtranCell=U07815 qHyst1 4
+set RncFunction=1,UtranCell=U07815 qHyst2 2
+set RncFunction=1,UtranCell=U07815 qQualMin -24
+set RncFunction=1,UtranCell=U07815 qRxLevMin -119
+set RncFunction=1,UtranCell=U07815 qualMeasQuantity 2
+set RncFunction=1,UtranCell=U07815 rac 111
+set RncFunction=1,UtranCell=U07815 redirectUarfcn 0
+set RncFunction=1,UtranCell=U07815 releaseRedirect 3
+set RncFunction=1,UtranCell=U07815 releaseRedirectHsIfls 1
+set RncFunction=1,UtranCell=U07815 reportingRange1a 6
+set RncFunction=1,UtranCell=U07815 reportingRange1b 11
+set RncFunction=1,UtranCell=U07815 rlFailureT 10
+set RncFunction=1,UtranCell=U07815 rrcLcEnabled 1
+set RncFunction=1,UtranCell=U07815 sac 07815
+set RncFunction=1,UtranCell=U07815 secondaryCpichPower -3
+set RncFunction=1,UtranCell=U07815 secondarySchPower -35
+set RncFunction=1,UtranCell=U07815 servDiffRrcAdmHighPrioProfile 2
+set RncFunction=1,UtranCell=U07815 sf128Adm 128
+set RncFunction=1,UtranCell=U07815 sf16Adm 0
+set RncFunction=1,UtranCell=U07815 sf16AdmUl 16
+set RncFunction=1,UtranCell=U07815 sf16gAdm 0
+set RncFunction=1,UtranCell=U07815 sf32Adm 32
+set RncFunction=1,UtranCell=U07815 sf4AdmUl 0
+set RncFunction=1,UtranCell=U07815 sf64AdmUl 100
+set RncFunction=1,UtranCell=U07815 sf8Adm 0
+set RncFunction=1,UtranCell=U07815 sf8AdmUl 0
+set RncFunction=1,UtranCell=U07815 sf8gAdmUl 0
+set RncFunction=1,UtranCell=U07815 sHcsRat -1
+set RncFunction=1,UtranCell=U07815 sib1PlmnScopeValueTag 1
+set RncFunction=1,UtranCell=U07815 sInterSearch 23
+set RncFunction=1,UtranCell=U07815 sIntraSearch 26
+set RncFunction=1,UtranCell=U07815 spare 0
+set RncFunction=1,UtranCell=U07815 spareA 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07815 sRatSearch 0
+set RncFunction=1,UtranCell=U07815 srbAdmExempt 0
+set RncFunction=1,UtranCell=U07815 standAloneSrbSelector 1
+set RncFunction=1,UtranCell=U07815 tCell 6
+set RncFunction=1,UtranCell=U07815 timeToTrigger1a -1
+set RncFunction=1,UtranCell=U07815 timeToTrigger1b -1
+set RncFunction=1,UtranCell=U07815 transmissionScheme 0
+set RncFunction=1,UtranCell=U07815 treSelection 2
+set RncFunction=1,UtranCell=U07815 uarfcnDl 3073
+set RncFunction=1,UtranCell=U07815 uarfcnUl 2848
+set RncFunction=1,UtranCell=U07815 usedFreqThresh2dEcno -18
+set RncFunction=1,UtranCell=U07815 usedFreqThresh2dRscp -109
+set RncFunction=1,UtranCell=U07815 dlCodePowerCmEnabled 0
+set RncFunction=1,UtranCell=U07815 eulMcServingCellUsersAdmTti2 3
+set RncFunction=1,UtranCell=U07815 primaryTpsCell 1
+set RncFunction=1,UtranCell=U07815 rwrEutraCc 1
+set RncFunction=1,UtranCell=U07815 rachOverloadProtect 1
+set RncFunction=1,UtranCell=U07815 ifIratHoPsIntHsEnabled 1
+set RncFunction=1,UtranCell=U07815 cellUpdateConfirmCsInitRepeat 3
+set RncFunction=1,UtranCell=U07815 cellUpdateConfirmPsInitRepeat 2
+set RncFunction=1,UtranCell=U07815 userLabel U07815
+set RncFunction=1,UtranCell=U07815 lteMeasEnabled 1
+set RncFunction=1,UtranCell=U07815 psHoToLteEnabled 0
+set RncFunction=1,UtranCell=U07815 mocnCellProfileRef MocnCellProfile=73001
+set RncFunction=1,UtranCell=U07815 absPrioCellRes cellReselectionPriority=2,sPrioritySearch1=62,sPrioritySearch2=6,threshServingLow=16,measIndFach=1
+set RncFunction=1,UtranCell=U07815 admBlockRedirection gsmRrc=0,rrc=0,speech=0
+set RncFunction=1,UtranCell=U07815 anrIafUtranCellConfig anrEnabled=1,relationAddEnabled=0
+set RncFunction=1,UtranCell=U07815 antennaPosition latitude=3863931,latitudeSign=1,longitude=-3400257
+set RncFunction=1,UtranCell=U07815 aseLoadThresholdUlSpeech ,amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U07815 cyclicAcb acbEnabled=0,rotationGroupSize=5
+set RncFunction=1,UtranCell=U07815 hcsSib3Config hcsPrio=0,qHcs=0,sSearchHcs=-105
+set RncFunction=1,UtranCell=U07815 hcsUsage connectedMode=0,idleMode=0
+set RncFunction=1,UtranCell=U07815 hsIflsDownswitchTrigg fastDormancy=0,toFach=0,toUra=0
+set RncFunction=1,UtranCell=U07815 hsIflsTrigger fromFach=1,fromUra=1
+set RncFunction=1,UtranCell=U07815 pagingPermAccessCtrl locRegAcb=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,locRegRestr=0,pagingRespRestr=0
+set RncFunction=1,UtranCell=U07815 pwrLoadThresholdDlSpeech amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U07815 rateSelectionPsInteractive channelType=0,dlPrefRate=16,ulPrefRate=16
+set RncFunction=1,UtranCell=U07815 releaseRedirectEutraTriggers csFallbackCsRelease=1,csFallbackDchToFach=1,dchToFach=1,fachToUra=0,fastDormancy=1,normalRelease=1
+set RncFunction=1,UtranCell=U07815 serviceRestrictions csVideoCalls=0
+set RncFunction=1,UtranCell=U07815 tpsCellThresholds tpsCellThreshEnabled=1,tpsLockThreshold=5,tpsUnlockThreshold=5
+set RncFunction=1,UtranCell=U07815 routingAreaRef  LocationArea=10513,RoutingArea=111
+set RncFunction=1,UtranCell=U07815 uraref ura=10014 10015
+
+cr RncFunction=1,UtranCell=U07816
+07816 #localCellId
+07816 #cId
+8 #tCell
+2848 #uarfcnUl
+3073 #uarfcnDl
+195 #primaryScramblingCode
+1 #sib1PlmnScopeValueTag
+LocationArea=10513 #locationAreaRef
+LocationArea=10513,ServiceArea=07816 #serviceAreaRef
+IubLink=Iub_ULA781 #iubLinkRef
+MocnCellProfile=73001 #mocnCellProfileRef
+
+set RncFunction=1,UtranCell=U07816 administrativeState 1
+set RncFunction=1,UtranCell=U07816 accessClassesBarredCs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07816 accessClassesBarredPs 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07816 accessClassNBarred 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07816 agpsEnabled 1
+set RncFunction=1,UtranCell=U07816 amrNbSelector 0
+set RncFunction=1,UtranCell=U07816 amrWbRateDlMax 12650
+set RncFunction=1,UtranCell=U07816 amrWbRateUlMax 12650
+set RncFunction=1,UtranCell=U07816 anrBlackList 
+set RncFunction=1,UtranCell=U07816 aseDlAdm 500
+set RncFunction=1,UtranCell=U07816 aseUlAdm 500
+set RncFunction=1,UtranCell=U07816 bchPower -31
+set RncFunction=1,UtranCell=U07816 cbsSchedulePeriodLength 8
+set RncFunction=1,UtranCell=U07816 cellBroadcastSac 07816
+set RncFunction=1,UtranCell=U07816 cellReserved 1
+set RncFunction=1,UtranCell=U07816 codeLoadThresholdDlSf128 100
+set RncFunction=1,UtranCell=U07816 compModeAdm 15
+set RncFunction=1,UtranCell=U07816 cpcSupport 
+set RncFunction=1,UtranCell=U07816 ctchAdmMargin 0
+set RncFunction=1,UtranCell=U07816 ctchOccasionPeriod 255
+set RncFunction=1,UtranCell=U07816 dchIflsMarginCode 0
+set RncFunction=1,UtranCell=U07816 dchIflsMarginPower 0
+set RncFunction=1,UtranCell=U07816 dchIflsThreshCode 0
+set RncFunction=1,UtranCell=U07816 dchIflsThreshPower 0
+set RncFunction=1,UtranCell=U07816 dlCodeAdm 100
+set RncFunction=1,UtranCell=U07816 dlCodeOffloadLimit 100
+set RncFunction=1,UtranCell=U07816 dlPowerOffloadLimit 100
+set RncFunction=1,UtranCell=U07816 dmcrEnabled 1
+set RncFunction=1,UtranCell=U07816 dnclEnabled 0
+set RncFunction=1,UtranCell=U07816 downswitchTimer -1
+set RncFunction=1,UtranCell=U07816 eulNonServingCellUsersAdm 100
+set RncFunction=1,UtranCell=U07816 eulServingCellUsersAdm 96
+set RncFunction=1,UtranCell=U07816 eulServingCellUsersAdmTti2 24
+set RncFunction=1,UtranCell=U07816 fachMeasOccaCycLenCoeff 4
+set RncFunction=1,UtranCell=U07816 fdpchSupport 
+set RncFunction=1,UtranCell=U07816 ganHoEnabled 0
+set RncFunction=1,UtranCell=U07816 hardIfhoCorr 3
+set RncFunction=1,UtranCell=U07816 hoType 0
+set RncFunction=1,UtranCell=U07816 hsdpaUsersAdm 96
+set RncFunction=1,UtranCell=U07816 hsdpaUsersOffloadLimit 100
+set RncFunction=1,UtranCell=U07816 hsdschInactivityTimer 2
+set RncFunction=1,UtranCell=U07816 hsdschInactivityTimerCpc 20
+set RncFunction=1,UtranCell=U07816 hsIflsHighLoadThresh 100
+set RncFunction=1,UtranCell=U07816 hsIflsMarginUsers 0
+set RncFunction=1,UtranCell=U07816 hsIflsPowerLoadThresh 0
+set RncFunction=1,UtranCell=U07816 hsIflsRedirectLoadLimit 0
+set RncFunction=1,UtranCell=U07816 hsIflsSpeechMultiRabTrigg 0
+set RncFunction=1,UtranCell=U07816 hsIflsThreshUsers 10
+set RncFunction=1,UtranCell=U07816 iFCong 621
+set RncFunction=1,UtranCell=U07816 iFHyst 6000
+set RncFunction=1,UtranCell=U07816 iflsCpichEcnoThresh -24
+set RncFunction=1,UtranCell=U07816 iflsMode 2
+set RncFunction=1,UtranCell=U07816 iflsRedirectUarfcn 0
+set RncFunction=1,UtranCell=U07816 inactivityTimeMultiPsInteractive -1
+set RncFunction=1,UtranCell=U07816 inactivityTimer 5
+set RncFunction=1,UtranCell=U07816 inactivityTimerEnhUeDrx -1
+set RncFunction=1,UtranCell=U07816 inactivityTimerPch -1
+set RncFunction=1,UtranCell=U07816 individualOffset 0
+set RncFunction=1,UtranCell=U07816 interFreqFddMeasIndicator 0
+set RncFunction=1,UtranCell=U07816 interPwrMax 30
+set RncFunction=1,UtranCell=U07816 interRate 845
+set RncFunction=1,UtranCell=U07816 loadBasedHoSupport 0
+set RncFunction=1,UtranCell=U07816 loadBasedHoType 0
+set RncFunction=1,UtranCell=U07816 loadSharingGsmFraction 100
+set RncFunction=1,UtranCell=U07816 loadSharingGsmThreshold 85
+set RncFunction=1,UtranCell=U07816 loadSharingMargin 0
+set RncFunction=1,UtranCell=U07816 localCellId 07816
+set RncFunction=1,UtranCell=U07816 maximumTransmissionPower 420
+set RncFunction=1,UtranCell=U07816 maxPwrMax 30
+set RncFunction=1,UtranCell=U07816 maxRate 40690
+set RncFunction=1,UtranCell=U07816 maxTxPowerUl 24
+set RncFunction=1,UtranCell=U07816 minimumRate 370
+set RncFunction=1,UtranCell=U07816 minPwrMax -15
+set RncFunction=1,UtranCell=U07816 minPwrRl -120
+set RncFunction=1,UtranCell=U07816 nOutSyncInd 10
+set RncFunction=1,UtranCell=U07816 pathlossThreshold 120
+set RncFunction=1,UtranCell=U07816 primaryCpichPower 290
+set RncFunction=1,UtranCell=U07816 primarySchPower -18
+set RncFunction=1,UtranCell=U07816 primaryScramblingCode 195
+set RncFunction=1,UtranCell=U07816 pwrAdm 60
+set RncFunction=1,UtranCell=U07816 qHyst1 4
+set RncFunction=1,UtranCell=U07816 qHyst2 2
+set RncFunction=1,UtranCell=U07816 qQualMin -24
+set RncFunction=1,UtranCell=U07816 qRxLevMin -119
+set RncFunction=1,UtranCell=U07816 qualMeasQuantity 2
+set RncFunction=1,UtranCell=U07816 rac 111
+set RncFunction=1,UtranCell=U07816 redirectUarfcn 0
+set RncFunction=1,UtranCell=U07816 releaseRedirect 3
+set RncFunction=1,UtranCell=U07816 releaseRedirectHsIfls 1
+set RncFunction=1,UtranCell=U07816 reportingRange1a 6
+set RncFunction=1,UtranCell=U07816 reportingRange1b 11
+set RncFunction=1,UtranCell=U07816 rlFailureT 10
+set RncFunction=1,UtranCell=U07816 rrcLcEnabled 1
+set RncFunction=1,UtranCell=U07816 sac 07816
+set RncFunction=1,UtranCell=U07816 secondaryCpichPower -3
+set RncFunction=1,UtranCell=U07816 secondarySchPower -35
+set RncFunction=1,UtranCell=U07816 servDiffRrcAdmHighPrioProfile 2
+set RncFunction=1,UtranCell=U07816 sf128Adm 128
+set RncFunction=1,UtranCell=U07816 sf16Adm 0
+set RncFunction=1,UtranCell=U07816 sf16AdmUl 16
+set RncFunction=1,UtranCell=U07816 sf16gAdm 0
+set RncFunction=1,UtranCell=U07816 sf32Adm 32
+set RncFunction=1,UtranCell=U07816 sf4AdmUl 0
+set RncFunction=1,UtranCell=U07816 sf64AdmUl 100
+set RncFunction=1,UtranCell=U07816 sf8Adm 0
+set RncFunction=1,UtranCell=U07816 sf8AdmUl 0
+set RncFunction=1,UtranCell=U07816 sf8gAdmUl 0
+set RncFunction=1,UtranCell=U07816 sHcsRat -1
+set RncFunction=1,UtranCell=U07816 sib1PlmnScopeValueTag 1
+set RncFunction=1,UtranCell=U07816 sInterSearch 23
+set RncFunction=1,UtranCell=U07816 sIntraSearch 26
+set RncFunction=1,UtranCell=U07816 spare 0
+set RncFunction=1,UtranCell=U07816 spareA 0 0 0 0 0 0 0 0 0 0
+set RncFunction=1,UtranCell=U07816 sRatSearch 0
+set RncFunction=1,UtranCell=U07816 srbAdmExempt 0
+set RncFunction=1,UtranCell=U07816 standAloneSrbSelector 1
+set RncFunction=1,UtranCell=U07816 tCell 8
+set RncFunction=1,UtranCell=U07816 timeToTrigger1a -1
+set RncFunction=1,UtranCell=U07816 timeToTrigger1b -1
+set RncFunction=1,UtranCell=U07816 transmissionScheme 0
+set RncFunction=1,UtranCell=U07816 treSelection 2
+set RncFunction=1,UtranCell=U07816 uarfcnDl 3073
+set RncFunction=1,UtranCell=U07816 uarfcnUl 2848
+set RncFunction=1,UtranCell=U07816 usedFreqThresh2dEcno -18
+set RncFunction=1,UtranCell=U07816 usedFreqThresh2dRscp -109
+set RncFunction=1,UtranCell=U07816 dlCodePowerCmEnabled 0
+set RncFunction=1,UtranCell=U07816 eulMcServingCellUsersAdmTti2 3
+set RncFunction=1,UtranCell=U07816 primaryTpsCell 1
+set RncFunction=1,UtranCell=U07816 rwrEutraCc 1
+set RncFunction=1,UtranCell=U07816 rachOverloadProtect 1
+set RncFunction=1,UtranCell=U07816 ifIratHoPsIntHsEnabled 1
+set RncFunction=1,UtranCell=U07816 cellUpdateConfirmCsInitRepeat 3
+set RncFunction=1,UtranCell=U07816 cellUpdateConfirmPsInitRepeat 2
+set RncFunction=1,UtranCell=U07816 userLabel U07816
+set RncFunction=1,UtranCell=U07816 lteMeasEnabled 1
+set RncFunction=1,UtranCell=U07816 psHoToLteEnabled 0
+set RncFunction=1,UtranCell=U07816 mocnCellProfileRef MocnCellProfile=73001
+set RncFunction=1,UtranCell=U07816 absPrioCellRes cellReselectionPriority=2,sPrioritySearch1=62,sPrioritySearch2=6,threshServingLow=16,measIndFach=1
+set RncFunction=1,UtranCell=U07816 admBlockRedirection gsmRrc=0,rrc=0,speech=0
+set RncFunction=1,UtranCell=U07816 anrIafUtranCellConfig anrEnabled=1,relationAddEnabled=0
+set RncFunction=1,UtranCell=U07816 antennaPosition latitude=3863931,latitudeSign=1,longitude=-3400257
+set RncFunction=1,UtranCell=U07816 aseLoadThresholdUlSpeech ,amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U07816 cyclicAcb acbEnabled=0,rotationGroupSize=5
+set RncFunction=1,UtranCell=U07816 hcsSib3Config hcsPrio=0,qHcs=0,sSearchHcs=-105
+set RncFunction=1,UtranCell=U07816 hcsUsage connectedMode=0,idleMode=0
+set RncFunction=1,UtranCell=U07816 hsIflsDownswitchTrigg fastDormancy=0,toFach=0,toUra=0
+set RncFunction=1,UtranCell=U07816 hsIflsTrigger fromFach=1,fromUra=1
+set RncFunction=1,UtranCell=U07816 pagingPermAccessCtrl locRegAcb=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,locRegRestr=0,pagingRespRestr=0
+set RncFunction=1,UtranCell=U07816 pwrLoadThresholdDlSpeech amr12200=100,amr5900=100,amr7950=100,amrWb12650=100,amrWb8850=100
+set RncFunction=1,UtranCell=U07816 rateSelectionPsInteractive channelType=0,dlPrefRate=16,ulPrefRate=16
+set RncFunction=1,UtranCell=U07816 releaseRedirectEutraTriggers csFallbackCsRelease=1,csFallbackDchToFach=1,dchToFach=1,fachToUra=0,fastDormancy=1,normalRelease=1
+set RncFunction=1,UtranCell=U07816 serviceRestrictions csVideoCalls=0
+set RncFunction=1,UtranCell=U07816 tpsCellThresholds tpsCellThreshEnabled=1,tpsLockThreshold=5,tpsUnlockThreshold=5
+set RncFunction=1,UtranCell=U07816 routingAreaRef  LocationArea=10513,RoutingArea=111
+set RncFunction=1,UtranCell=U07816 uraref ura=10014 10015
+
+#############################################################
+### Rach PMER01
+#############################################################
+
+crn RncFunction=1,UtranCell=U37811,Rach=1
+administrativestate 1
+aichPower -2
+aichTransmissionTiming 4
+constantValueCprach -19
+increasedRachCoverageEnabled 0
+maxPreambleCycle 4
+nb01Max 0
+nb01Min 0
+powerOffsetP0 3
+powerOffsetPpm -4
+preambleRetransMax 8
+preambleSignatures 65535
+scramblingCodeWordNo 0
+spreadingFactor 32
+subChannelNo 4095
+userLabel Rach 1
+end
+
+crn RncFunction=1,UtranCell=U37812,Rach=1
+administrativestate 1
+aichPower -2
+aichTransmissionTiming 4
+constantValueCprach -19
+increasedRachCoverageEnabled 0
+maxPreambleCycle 4
+nb01Max 0
+nb01Min 0
+powerOffsetP0 3
+powerOffsetPpm -4
+preambleRetransMax 8
+preambleSignatures 65535
+scramblingCodeWordNo 0
+spreadingFactor 32
+subChannelNo 4095
+userLabel Rach 1
+end
+
+crn RncFunction=1,UtranCell=U37813,Rach=1
+administrativestate 1
+aichPower -2
+aichTransmissionTiming 4
+constantValueCprach -19
+increasedRachCoverageEnabled 0
+maxPreambleCycle 4
+nb01Max 0
+nb01Min 0
+powerOffsetP0 3
+powerOffsetPpm -4
+preambleRetransMax 8
+preambleSignatures 65535
+scramblingCodeWordNo 0
+spreadingFactor 32
+subChannelNo 4095
+userLabel Rach 1
+end
+
+crn RncFunction=1,UtranCell=U07814,Rach=1
+administrativestate 1
+aichPower -2
+aichTransmissionTiming 4
+constantValueCprach -19
+increasedRachCoverageEnabled 0
+maxPreambleCycle 4
+nb01Max 0
+nb01Min 0
+powerOffsetP0 3
+powerOffsetPpm -4
+preambleRetransMax 8
+preambleSignatures 65535
+scramblingCodeWordNo 0
+spreadingFactor 32
+subChannelNo 4095
+userLabel Rach 1
+end
+
+crn RncFunction=1,UtranCell=U07815,Rach=1
+administrativestate 1
+aichPower -2
+aichTransmissionTiming 4
+constantValueCprach -19
+increasedRachCoverageEnabled 0
+maxPreambleCycle 4
+nb01Max 0
+nb01Min 0
+powerOffsetP0 3
+powerOffsetPpm -4
+preambleRetransMax 8
+preambleSignatures 65535
+scramblingCodeWordNo 0
+spreadingFactor 32
+subChannelNo 4095
+userLabel Rach 1
+end
+
+crn RncFunction=1,UtranCell=U07816,Rach=1
+administrativestate 1
+aichPower -2
+aichTransmissionTiming 4
+constantValueCprach -19
+increasedRachCoverageEnabled 0
+maxPreambleCycle 4
+nb01Max 0
+nb01Min 0
+powerOffsetP0 3
+powerOffsetPpm -4
+preambleRetransMax 8
+preambleSignatures 65535
+scramblingCodeWordNo 0
+spreadingFactor 32
+subChannelNo 4095
+userLabel Rach 1
+end
+
+#############################################################
+### PCH PMER01
+#############################################################
+
+crn RncFunction=1,UtranCell=U37811,Pch=1
+administrativestate 1
+pchPower -4
+pichPower -7
+sccpchOffset 20
+userLabel Pch 1
+end
+
+crn RncFunction=1,UtranCell=U37812,Pch=1
+administrativestate 1
+pchPower -4
+pichPower -7
+sccpchOffset 20
+userLabel Pch 1
+end
+
+crn RncFunction=1,UtranCell=U37813,Pch=1
+administrativestate 1
+pchPower -4
+pichPower -7
+sccpchOffset 20
+userLabel Pch 1
+end
+
+crn RncFunction=1,UtranCell=U07814,Pch=1
+administrativestate 1
+pchPower -4
+pichPower -7
+sccpchOffset 20
+userLabel Pch 1
+end
+
+crn RncFunction=1,UtranCell=U07815,Pch=1
+administrativestate 1
+pchPower -4
+pichPower -7
+sccpchOffset 20
+userLabel Pch 1
+end
+
+crn RncFunction=1,UtranCell=U07816,Pch=1
+administrativestate 1
+pchPower -4
+pichPower -7
+sccpchOffset 20
+userLabel Pch 1
+end
+
+#############################################################
+### Hsdsch PMER01
+#############################################################
+
+crn RncFunction=1,UtranCell=U37811,Hsdsch=1
+administrativestate 1
+codeThresholdPdu656 6
+cqiFeedbackCycle 8
+deltaAck1 5
+deltaAck2 7
+deltaCqi1 4
+deltaCqi2 6
+deltaNack1 5
+deltaNack2 7
+hsMeasurementPowerOffset 100
+initialAckNackRepetitionFactor 1
+initialCqiRepetitionFactor 1
+numHsPdschCodes 10
+numHsScchCodes 3
+userLabel Hsdsch 1
+end
+
+crn RncFunction=1,UtranCell=U37812,Hsdsch=1
+administrativestate 1
+codeThresholdPdu656 6
+cqiFeedbackCycle 8
+deltaAck1 5
+deltaAck2 7
+deltaCqi1 4
+deltaCqi2 6
+deltaNack1 5
+deltaNack2 7
+hsMeasurementPowerOffset 100
+initialAckNackRepetitionFactor 1
+initialCqiRepetitionFactor 1
+numHsPdschCodes 10
+numHsScchCodes 3
+userLabel Hsdsch 1
+end
+
+crn RncFunction=1,UtranCell=U37813,Hsdsch=1
+administrativestate 1
+codeThresholdPdu656 6
+cqiFeedbackCycle 8
+deltaAck1 5
+deltaAck2 7
+deltaCqi1 4
+deltaCqi2 6
+deltaNack1 5
+deltaNack2 7
+hsMeasurementPowerOffset 100
+initialAckNackRepetitionFactor 1
+initialCqiRepetitionFactor 1
+numHsPdschCodes 10
+numHsScchCodes 3
+userLabel Hsdsch 1
+end
+
+crn RncFunction=1,UtranCell=U07814,Hsdsch=1
+administrativestate 1
+codeThresholdPdu656 6
+cqiFeedbackCycle 8
+deltaAck1 5
+deltaAck2 7
+deltaCqi1 4
+deltaCqi2 6
+deltaNack1 5
+deltaNack2 7
+hsMeasurementPowerOffset 100
+initialAckNackRepetitionFactor 1
+initialCqiRepetitionFactor 1
+numHsPdschCodes 10
+numHsScchCodes 3
+userLabel Hsdsch 1
+end
+
+crn RncFunction=1,UtranCell=U07815,Hsdsch=1
+administrativestate 1
+codeThresholdPdu656 6
+cqiFeedbackCycle 8
+deltaAck1 5
+deltaAck2 7
+deltaCqi1 4
+deltaCqi2 6
+deltaNack1 5
+deltaNack2 7
+hsMeasurementPowerOffset 100
+initialAckNackRepetitionFactor 1
+initialCqiRepetitionFactor 1
+numHsPdschCodes 10
+numHsScchCodes 3
+userLabel Hsdsch 1
+end
+
+crn RncFunction=1,UtranCell=U07816,Hsdsch=1
+administrativestate 1
+codeThresholdPdu656 6
+cqiFeedbackCycle 8
+deltaAck1 5
+deltaAck2 7
+deltaCqi1 4
+deltaCqi2 6
+deltaNack1 5
+deltaNack2 7
+hsMeasurementPowerOffset 100
+initialAckNackRepetitionFactor 1
+initialCqiRepetitionFactor 1
+numHsPdschCodes 10
+numHsScchCodes 3
+userLabel Hsdsch 1
+end
+
+#############################################################
+### Fach PMER01
+#############################################################
+
+crn RncFunction=1,UtranCell=U37811,Fach=1
+administrativestate 1
+maxFach1Power 18
+maxFach2Power 15
+pOffset1Fach 0
+pOffset3Fach 0
+sccpchOffset 0
+userLabel Fach 1
+end
+
+crn RncFunction=1,UtranCell=U37812,Fach=1
+administrativestate 1
+maxFach1Power 18
+maxFach2Power 15
+pOffset1Fach 0
+pOffset3Fach 0
+sccpchOffset 0
+userLabel Fach 1
+end
+
+crn RncFunction=1,UtranCell=U37813,Fach=1
+administrativestate 1
+maxFach1Power 18
+maxFach2Power 15
+pOffset1Fach 0
+pOffset3Fach 0
+sccpchOffset 0
+userLabel Fach 1
+end
+
+crn RncFunction=1,UtranCell=U07814,Fach=1
+administrativestate 1
+maxFach1Power 18
+maxFach2Power 15
+pOffset1Fach 0
+pOffset3Fach 0
+sccpchOffset 0
+userLabel Fach 1
+end
+
+crn RncFunction=1,UtranCell=U07815,Fach=1
+administrativestate 1
+maxFach1Power 18
+maxFach2Power 15
+pOffset1Fach 0
+pOffset3Fach 0
+sccpchOffset 0
+userLabel Fach 1
+end
+
+crn RncFunction=1,UtranCell=U07816,Fach=1
+administrativestate 1
+maxFach1Power 18
+maxFach2Power 15
+pOffset1Fach 0
+pOffset3Fach 0
+sccpchOffset 0
+userLabel Fach 1
+end
+
+#############################################################
+### Eul PMER01
+#############################################################
+
+crn RncFunction=1,UtranCell=U37811,Hsdsch=1,Eul=1
+administrativestate 1
+eulDchBalancingEnabled 1
+eulDchBalancingLoad 32
+eulDchBalancingOverload 0
+eulDchBalancingReportPeriod 200
+eulDchBalancingSuspendDownSw 0
+eulDchBalancingTimerNg 1000
+eulLoadTriggeredSoftCong 0
+eulMaxTargetRtwp -499
+numEagchCodes 4
+numEhichErgchCodes 4
+pathlossThresholdEulTti2 120
+releaseAseUlNg 3
+threshEulTti2Ecno -24
+userLabel Eul 1
+end
+ld RncFunction=1,UtranCell=U37811,Hsdsch=1,Eul=1,MultiCarrier=1 #SystemCreated
+
+crn RncFunction=1,UtranCell=U37812,Hsdsch=1,Eul=1
+administrativestate 1
+eulDchBalancingEnabled 1
+eulDchBalancingLoad 32
+eulDchBalancingOverload 0
+eulDchBalancingReportPeriod 200
+eulDchBalancingSuspendDownSw 0
+eulDchBalancingTimerNg 1000
+eulLoadTriggeredSoftCong 0
+eulMaxTargetRtwp -499
+numEagchCodes 4
+numEhichErgchCodes 4
+pathlossThresholdEulTti2 120
+releaseAseUlNg 3
+threshEulTti2Ecno -24
+userLabel Eul 1
+end
+ld RncFunction=1,UtranCell=U37812,Hsdsch=1,Eul=1,MultiCarrier=1 #SystemCreated
+
+crn RncFunction=1,UtranCell=U37813,Hsdsch=1,Eul=1
+administrativestate 1
+eulDchBalancingEnabled 1
+eulDchBalancingLoad 32
+eulDchBalancingOverload 0
+eulDchBalancingReportPeriod 200
+eulDchBalancingSuspendDownSw 0
+eulDchBalancingTimerNg 1000
+eulLoadTriggeredSoftCong 0
+eulMaxTargetRtwp -499
+numEagchCodes 4
+numEhichErgchCodes 4
+pathlossThresholdEulTti2 120
+releaseAseUlNg 3
+threshEulTti2Ecno -24
+userLabel Eul 1
+end
+ld RncFunction=1,UtranCell=U37813,Hsdsch=1,Eul=1,MultiCarrier=1 #SystemCreated
+
+crn RncFunction=1,UtranCell=U07814,Hsdsch=1,Eul=1
+administrativestate 1
+eulDchBalancingEnabled 1
+eulDchBalancingLoad 32
+eulDchBalancingOverload 0
+eulDchBalancingReportPeriod 200
+eulDchBalancingSuspendDownSw 0
+eulDchBalancingTimerNg 1000
+eulLoadTriggeredSoftCong 0
+eulMaxTargetRtwp -499
+numEagchCodes 4
+numEhichErgchCodes 4
+pathlossThresholdEulTti2 120
+releaseAseUlNg 3
+threshEulTti2Ecno -24
+userLabel Eul 1
+end
+ld RncFunction=1,UtranCell=U07814,Hsdsch=1,Eul=1,MultiCarrier=1 #SystemCreated
+
+crn RncFunction=1,UtranCell=U07815,Hsdsch=1,Eul=1
+administrativestate 1
+eulDchBalancingEnabled 1
+eulDchBalancingLoad 32
+eulDchBalancingOverload 0
+eulDchBalancingReportPeriod 200
+eulDchBalancingSuspendDownSw 0
+eulDchBalancingTimerNg 1000
+eulLoadTriggeredSoftCong 0
+eulMaxTargetRtwp -499
+numEagchCodes 4
+numEhichErgchCodes 4
+pathlossThresholdEulTti2 120
+releaseAseUlNg 3
+threshEulTti2Ecno -24
+userLabel Eul 1
+end
+ld RncFunction=1,UtranCell=U07815,Hsdsch=1,Eul=1,MultiCarrier=1 #SystemCreated
+
+crn RncFunction=1,UtranCell=U07816,Hsdsch=1,Eul=1
+administrativestate 1
+eulDchBalancingEnabled 1
+eulDchBalancingLoad 32
+eulDchBalancingOverload 0
+eulDchBalancingReportPeriod 200
+eulDchBalancingSuspendDownSw 0
+eulDchBalancingTimerNg 1000
+eulLoadTriggeredSoftCong 0
+eulMaxTargetRtwp -499
+numEagchCodes 4
+numEhichErgchCodes 4
+pathlossThresholdEulTti2 120
+releaseAseUlNg 3
+threshEulTti2Ecno -24
+userLabel Eul 1
+end
+ld RncFunction=1,UtranCell=U07816,Hsdsch=1,Eul=1,MultiCarrier=1 #SystemCreated
+
+#############################################################
+### EulFach PMER01
+#############################################################
+
+crn RncFunction=1,UtranCell=U37811,Hsdsch=1,Eul=1,EulFach=1
+administrativestate 1
+cEdchResourcesEai 8
+deltaCqi 4
+initDpcchPower 2
+initFdpchPower -30
+initInterferenceUl 0
+maxCcchTime 12
+maxCollisionResTime 8
+numPreambleSignatures 4
+ulSirTarget 30
+userLabel EulFach 1
+end
+
+crn RncFunction=1,UtranCell=U37812,Hsdsch=1,Eul=1,EulFach=1
+administrativestate 1
+cEdchResourcesEai 8
+deltaCqi 4
+initDpcchPower 2
+initFdpchPower -30
+initInterferenceUl 0
+maxCcchTime 12
+maxCollisionResTime 8
+numPreambleSignatures 4
+ulSirTarget 30
+userLabel EulFach 1
+end
+
+crn RncFunction=1,UtranCell=U37813,Hsdsch=1,Eul=1,EulFach=1
+administrativestate 1
+cEdchResourcesEai 8
+deltaCqi 4
+initDpcchPower 2
+initFdpchPower -30
+initInterferenceUl 0
+maxCcchTime 12
+maxCollisionResTime 8
+numPreambleSignatures 4
+ulSirTarget 30
+userLabel EulFach 1
+end
+
+crn RncFunction=1,UtranCell=U07814,Hsdsch=1,Eul=1,EulFach=1
+administrativestate 1
+cEdchResourcesEai 8
+deltaCqi 4
+initDpcchPower 2
+initFdpchPower -30
+initInterferenceUl 0
+maxCcchTime 12
+maxCollisionResTime 8
+numPreambleSignatures 4
+ulSirTarget 30
+userLabel EulFach 1
+end
+
+crn RncFunction=1,UtranCell=U07815,Hsdsch=1,Eul=1,EulFach=1
+administrativestate 1
+cEdchResourcesEai 8
+deltaCqi 4
+initDpcchPower 2
+initFdpchPower -30
+initInterferenceUl 0
+maxCcchTime 12
+maxCollisionResTime 8
+numPreambleSignatures 4
+ulSirTarget 30
+userLabel EulFach 1
+end
+
+crn RncFunction=1,UtranCell=U07816,Hsdsch=1,Eul=1,EulFach=1
+administrativestate 1
+cEdchResourcesEai 8
+deltaCqi 4
+initDpcchPower 2
+initFdpchPower -30
+initInterferenceUl 0
+maxCcchTime 12
+maxCollisionResTime 8
+numPreambleSignatures 4
+ulSirTarget 30
+userLabel EulFach 1
+end
+
+GET Iub_ULA781
+/////////////////////////fin script create cells \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

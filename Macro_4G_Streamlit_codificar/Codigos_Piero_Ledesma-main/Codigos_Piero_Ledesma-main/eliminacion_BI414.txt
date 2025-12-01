@@ -1,0 +1,1283 @@
+UPDATE REPORT FOR      : eliminacion_2G_BI414
+Update of Planned Area : expelede/dell_BI414_2G
+Update Concerns the whole area
+Started by             : expelede
+Started at             : Wed Jun 21 17:59:23 2023
+CNA version            : R33H03_EC09
+Consistency check      : NOT performed
+
+Comment: 
+
+Create Fallback Area        : No
+Halt Internal Cells         : One by one
+Action on Fault             : Continue
+Update of BA List           : Unconditional
+Job Queuing                 : Enabled
+Number of Retries           : 10
+Time Between Retries        : 180
+
+Reading objects from database,
+this may take a while : 
+
+This update job will automatically start
+one sub-job for the foreign cells and
+one sub-job for each MSC/BSC that is changed
+or contains planned objects.
+The sub-jobs are automatically deleted after that
+all sub-jobs have finished.
+
+The following sub-jobs are created:
+
+This process is sending to CNA job Regulations
+"eliminacion_2G_BI414.CHMBC01"
+This process is sending to CNA job Regulations
+"eliminacion_2G_BI414.IQMBC01"
+This process is sending to CNA job Regulations
+"eliminacion_2G_BI414.SAMBC01"
+This process is sending to CNA job Regulations
+"eliminacion_2G_BI414.SAMBC02"
+This process is sending to CNA job Regulations
+"eliminacion_2G_BI414.COB03"
+
+==================================================
+
+UPDATE REPORT FOR      : eliminacion_2G_BI414.CHMBC01
+Started at             : Wed Jun 21 17:59:30 2023
+
+-------------------------------------------------
+INNER: CHMBC01:34144
+DELETE
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: CHMBC01:34145
+DELETE
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: CHMBC01:34146
+DELETE
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: CHMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+MSC     : CHMBC01
+version : R13A
+MODIFY
+-------------------------------------------------
+Number of succeeded commands: 0
+Number of failed commands: 3
+Total time taken for node interaction is 0 microseconds
+--------------------
+
+Update failed.
+
+
+
+==================================================
+
+UPDATE REPORT FOR      : eliminacion_2G_BI414.IQMBC01
+Started at             : Wed Jun 21 17:59:33 2023
+
+-------------------------------------------------
+INNER: IQMBC01:34144
+DELETE
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: IQMBC01:34145
+DELETE
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: IQMBC01:34146
+DELETE
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: IQMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+MSC     : IQMBC01
+version : R14.1
+MODIFY
+-------------------------------------------------
+Number of succeeded commands: 0
+Number of failed commands: 3
+Total time taken for node interaction is 0 microseconds
+--------------------
+
+Update failed.
+
+
+
+==================================================
+
+UPDATE REPORT FOR      : eliminacion_2G_BI414.SAMBC01
+Started at             : Wed Jun 21 17:59:38 2023
+
+-------------------------------------------------
+INNER: SAMBC01:34144
+DELETE
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: SAMBC01:34145
+DELETE
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: SAMBC01:34146
+DELETE
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC01.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+MSC     : SAMBC01
+version : R14.1
+MODIFY
+-------------------------------------------------
+Number of succeeded commands: 0
+Number of failed commands: 3
+Total time taken for node interaction is 0 microseconds
+--------------------
+
+Update failed.
+
+
+
+==================================================
+
+UPDATE REPORT FOR      : eliminacion_2G_BI414.SAMBC02
+Started at             : Wed Jun 21 17:59:41 2023
+
+-------------------------------------------------
+INNER: SAMBC02:34144
+DELETE
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: SAMBC02:34145
+DELETE
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+INNER: SAMBC02:34146
+DELETE
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+A new attempt will be made in 60 seconds.
+Could not connect to: SAMBC02.
+*** Command "MGCEE" failed for object
+
+-------------------------------------------------
+MSC     : SAMBC02
+version : R14.1
+MODIFY
+-------------------------------------------------
+Number of succeeded commands: 0
+Number of failed commands: 3
+Total time taken for node interaction is 0 microseconds
+--------------------
+
+Update failed.
+
+
+
+==================================================
+
+UPDATE REPORT FOR      : eliminacion_2G_BI414.COB03
+Started at             : Wed Jun 21 17:59:44 2023
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U30253
+DELETE
+RLNRE:CELL=34144,CELLR=U30253;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U30253
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U34141
+DELETE
+RLNRE:CELL=34144,CELLR=U34141;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U34141
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U34142
+DELETE
+RLNRE:CELL=34144,CELLR=U34142;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U34142
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U34143
+DELETE
+RLNRE:CELL=34144,CELLR=U34143;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U34143
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U46492
+DELETE
+RLNRE:CELL=34144,CELLR=U46492;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U46492
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U48431
+DELETE
+RLNRE:CELL=34144,CELLR=U48431;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U48431
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34144:U48433
+DELETE
+RLNRE:CELL=34144,CELLR=U48433;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34144     U48433
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U12209
+DELETE
+RLNRE:CELL=34145,CELLR=U12209;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U12209
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U34141
+DELETE
+RLNRE:CELL=34145,CELLR=U34141;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U34141
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U34142
+DELETE
+RLNRE:CELL=34145,CELLR=U34142;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U34142
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U34143
+DELETE
+RLNRE:CELL=34145,CELLR=U34143;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U34143
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U34151
+DELETE
+RLNRE:CELL=34145,CELLR=U34151;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U34151
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U34153
+DELETE
+RLNRE:CELL=34145,CELLR=U34153;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U34153
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U37882
+DELETE
+RLNRE:CELL=34145,CELLR=U37882;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U37882
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34145:U37883
+DELETE
+RLNRE:CELL=34145,CELLR=U37883;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34145     U37883
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34146:U34141
+DELETE
+RLNRE:CELL=34146,CELLR=U34141;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34146     U34141
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34146:U34142
+DELETE
+RLNRE:CELL=34146,CELLR=U34142;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34146     U34142
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34146:U34143
+DELETE
+RLNRE:CELL=34146,CELLR=U34143;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34146     U34143
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34146:U37852
+DELETE
+RLNRE:CELL=34146,CELLR=U37852;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34146     U37852
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34146:U46493
+DELETE
+RLNRE:CELL=34146,CELLR=U46493;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34146     U46493
+END
+
+
+-------------------------------------------------
+UTRAN NREL: COB03:34146:U61858
+DELETE
+RLNRE:CELL=34146,CELLR=U61858;
+Command answer:
+ORDERED
+
+NEIGHBOUR RELATION DELETED
+
+CELL      CELLR
+34146     U61858
+END
+
+
+-------------------------------------------------
+UTRAN_EXTERNAL: COB03:U48433
+DELETE
+RLDEE:CELL=U48433;
+Command answer:
+ORDERED
+
+CELL DELETED
+END
+
+
+-------------------------------------------------
+CHGR: COB03:34144:0
+DELETE
+RLSTC:CELL=34144,CHGR=0,STATE=HALTED;
+Command answer:NOT ACCEPTED
+FAULT CODE 25
+CHANGING TO EXISTING STATE
+(0)CHGR=0
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RXTCE:MO=RXOTG-22,CELL=34144,CHGR=0;
+Command answer:NOT ACCEPTED
+UNREASONABLE VALUE
+(0)MO=RXOTG-22
+
+
+*** Command "RXTCE" failed for object
+
+-------------------------------------------------
+CHGR: COB03:34144:1
+DELETE
+RLSTC:CELL=34144,CHGR=1,STATE=HALTED;
+Command answer:NOT ACCEPTED
+FAULT CODE 25
+CHANGING TO EXISTING STATE
+(0)CHGR=1
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RXTCE:MO=RXOTG-22,CELL=34144,CHGR=1;
+Command answer:NOT ACCEPTED
+UNREASONABLE VALUE
+(0)MO=RXOTG-22
+
+
+*** Command "RXTCE" failed for object
+
+-------------------------------------------------
+CHGR: COB03:34145:0
+DELETE
+RLSTC:CELL=34145,CHGR=0,STATE=HALTED;
+Command answer:NOT ACCEPTED
+FAULT CODE 25
+CHANGING TO EXISTING STATE
+(0)CHGR=0
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RXTCE:MO=RXOTG-22,CELL=34145,CHGR=0;
+Command answer:NOT ACCEPTED
+UNREASONABLE VALUE
+(0)MO=RXOTG-22
+
+
+*** Command "RXTCE" failed for object
+
+-------------------------------------------------
+CHGR: COB03:34145:1
+DELETE
+RLSTC:CELL=34145,CHGR=1,STATE=HALTED;
+Command answer:NOT ACCEPTED
+FAULT CODE 25
+CHANGING TO EXISTING STATE
+(0)CHGR=1
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RXTCE:MO=RXOTG-22,CELL=34145,CHGR=1;
+Command answer:NOT ACCEPTED
+UNREASONABLE VALUE
+(0)MO=RXOTG-22
+
+
+*** Command "RXTCE" failed for object
+
+-------------------------------------------------
+CHGR: COB03:34146:0
+DELETE
+RLSTC:CELL=34146,CHGR=0,STATE=HALTED;
+Command answer:NOT ACCEPTED
+FAULT CODE 25
+CHANGING TO EXISTING STATE
+(0)CHGR=0
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RXTCE:MO=RXOTG-22,CELL=34146,CHGR=0;
+Command answer:NOT ACCEPTED
+UNREASONABLE VALUE
+(0)MO=RXOTG-22
+
+
+*** Command "RXTCE" failed for object
+
+-------------------------------------------------
+CHGR: COB03:34146:1
+DELETE
+RLSTC:CELL=34146,CHGR=1,STATE=HALTED;
+Command answer:NOT ACCEPTED
+FAULT CODE 25
+CHANGING TO EXISTING STATE
+(0)CHGR=1
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RXTCE:MO=RXOTG-22,CELL=34146,CHGR=1;
+Command answer:NOT ACCEPTED
+UNREASONABLE VALUE
+(0)MO=RXOTG-22
+
+
+*** Command "RXTCE" failed for object
+
+-------------------------------------------------
+INTERNAL: COB03:34144
+DELETE
+RLVAR:CHTYPE=SDCCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 84
+NO ALARM GIVEN
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLE:CHTYPE=SDCCH;
+Command answer:EXECUTED
+
+
+RLVLE:CELL=34144,CHTYPE=SDCCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 62
+SUPERVISION IS ALREADY DISCONNECTED
+(0)CELL=34144
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLI:CHTYPE=SDCCH;
+Command answer:EXECUTED
+
+
+RLVAR:CHTYPE=TCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 84
+NO ALARM GIVEN
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLE:CHTYPE=TCH;
+Command answer:EXECUTED
+
+
+RLVLE:CELL=34144,CHTYPE=TCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 62
+SUPERVISION IS ALREADY DISCONNECTED
+(0)CELL=34144
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLI:CHTYPE=TCH;
+Command answer:EXECUTED
+
+
+RLSLE:CELL=34144,PERM;
+Command answer:NOT ACCEPTED
+FAULT CODE 63
+SUPERVISION IS ALREADY PERMANENTLY DISCONNECTED
+(0)CELL=34144
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLDEE:CELL=34144;
+Command answer:
+ORDERED
+
+CELL DELETED
+END
+
+
+-------------------------------------------------
+INTERNAL: COB03:34145
+DELETE
+RLVAR:CHTYPE=SDCCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 84
+NO ALARM GIVEN
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLE:CHTYPE=SDCCH;
+Command answer:EXECUTED
+
+
+RLVLE:CELL=34145,CHTYPE=SDCCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 62
+SUPERVISION IS ALREADY DISCONNECTED
+(0)CELL=34145
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLI:CHTYPE=SDCCH;
+Command answer:EXECUTED
+
+
+RLVAR:CHTYPE=TCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 84
+NO ALARM GIVEN
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLE:CHTYPE=TCH;
+Command answer:EXECUTED
+
+
+RLVLE:CELL=34145,CHTYPE=TCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 62
+SUPERVISION IS ALREADY DISCONNECTED
+(0)CELL=34145
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLI:CHTYPE=TCH;
+Command answer:EXECUTED
+
+
+RLSLE:CELL=34145,PERM;
+Command answer:NOT ACCEPTED
+FAULT CODE 63
+SUPERVISION IS ALREADY PERMANENTLY DISCONNECTED
+(0)CELL=34145
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLDEE:CELL=34145;
+Command answer:
+ORDERED
+
+CELL DELETED
+END
+
+
+-------------------------------------------------
+INTERNAL: COB03:34146
+DELETE
+RLVAR:CHTYPE=SDCCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 84
+NO ALARM GIVEN
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLE:CHTYPE=SDCCH;
+Command answer:EXECUTED
+
+
+RLVLE:CELL=34146,CHTYPE=SDCCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 62
+SUPERVISION IS ALREADY DISCONNECTED
+(0)CELL=34146
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLI:CHTYPE=SDCCH;
+Command answer:EXECUTED
+
+
+RLVAR:CHTYPE=TCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 84
+NO ALARM GIVEN
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLE:CHTYPE=TCH;
+Command answer:EXECUTED
+
+
+RLVLE:CELL=34146,CHTYPE=TCH;
+Command answer:NOT ACCEPTED
+FAULT CODE 62
+SUPERVISION IS ALREADY DISCONNECTED
+(0)CELL=34146
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLVLI:CHTYPE=TCH;
+Command answer:EXECUTED
+
+
+RLSLE:CELL=34146,PERM;
+Command answer:NOT ACCEPTED
+FAULT CODE 63
+SUPERVISION IS ALREADY PERMANENTLY DISCONNECTED
+(0)CELL=34146
+
+
+
+Command failure accepted, the failure does not affect the update session.
+
+
+
+RLDEE:CELL=34146;
+Command answer:
+ORDERED
+
+CELL DELETED
+END
+
+
+-------------------------------------------------
+BSC     : COB03
+version : G13B
+MODIFY
+-------------------------------------------------
+INTERNAL: COB03:00191
+MODIFY
+RLSSC:CELL=00191,NCCPERM=1&2&3&5&7;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=00191,MBCCHNO=809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:30255
+MODIFY
+RLMFE:CELL=30255,MBCCHNO=585,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:30256
+MODIFY
+RLMFE:CELL=30256,MBCCHNO=585,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:32624
+MODIFY
+RLSSC:CELL=32624,NCCPERM=1&3&5;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=32624,MBCCHNO=585&809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:32625
+MODIFY
+RLSSC:CELL=32625,NCCPERM=4&5;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:34154
+MODIFY
+RLSSC:CELL=34154,NCCPERM=1&3&4&5&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:34155
+MODIFY
+RLSSC:CELL=34155,NCCPERM=0&1&3&4&5&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:34156
+MODIFY
+RLSSC:CELL=34156,NCCPERM=0&1&3&4&5&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:34745
+MODIFY
+RLSSC:CELL=34745,NCCPERM=0&1&3&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37854
+MODIFY
+RLSSC:CELL=37854,NCCPERM=0&1&3&4&7;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=37854,MBCCHNO=585&809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37855
+MODIFY
+RLSSC:CELL=37855,NCCPERM=3&6&7;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=37855,MBCCHNO=585&809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37856
+MODIFY
+RLSSC:CELL=37856,NCCPERM=0&1&2&4&5&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37864
+MODIFY
+RLMFE:CELL=37864,MBCCHNO=809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37866
+MODIFY
+RLMFE:CELL=37866,MBCCHNO=809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37885
+MODIFY
+RLSSC:CELL=37885,NCCPERM=0&1&3&4&5&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37886
+MODIFY
+RLSSC:CELL=37886,NCCPERM=0&1&3&4&7;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=37886,MBCCHNO=737,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37905
+MODIFY
+RLSSC:CELL=37905,NCCPERM=0&1&3&4&7;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=37905,MBCCHNO=585,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:37906
+MODIFY
+RLSSC:CELL=37906,NCCPERM=0&1&3&5&7;
+Command answer:EXECUTED
+
+
+RLMFE:CELL=37906,MBCCHNO=585&809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:39756
+MODIFY
+RLMFE:CELL=39756,MBCCHNO=809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:46478
+MODIFY
+RLSSC:CELL=46478,NCCPERM=0&1&2&5&7;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:46497
+MODIFY
+RLMFE:CELL=46497,MBCCHNO=809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:46498
+MODIFY
+RLMFE:CELL=46498,MBCCHNO=809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:46499
+MODIFY
+RLMFE:CELL=46499,MBCCHNO=585&809,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:46517
+MODIFY
+RLMFE:CELL=46517,MBCCHNO=585,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+INTERNAL: COB03:46577
+MODIFY
+RLMFE:CELL=46577,MBCCHNO=585,MRNIC;
+Command answer:EXECUTED
+
+
+-------------------------------------------------
+NREL: COB03:00191:34144
+-------------------------------------------------
+NREL: COB03:30255:34146
+-------------------------------------------------
+NREL: COB03:30256:34146
+-------------------------------------------------
+NREL: COB03:32624:34144
+-------------------------------------------------
+NREL: COB03:32624:34146
+-------------------------------------------------
+NREL: COB03:32625:34144
+-------------------------------------------------
+NREL: COB03:34144:34145
+-------------------------------------------------
+NREL: COB03:34144:34146
+-------------------------------------------------
+NREL: COB03:34144:37854
+-------------------------------------------------
+NREL: COB03:34144:37855
+-------------------------------------------------
+NREL: COB03:34144:37856
+-------------------------------------------------
+NREL: COB03:34144:37864
+-------------------------------------------------
+NREL: COB03:34144:37866
+-------------------------------------------------
+NREL: COB03:34144:37906
+-------------------------------------------------
+NREL: COB03:34144:39756
+-------------------------------------------------
+NREL: COB03:34144:46478
+-------------------------------------------------
+NREL: COB03:34144:46497
+-------------------------------------------------
+NREL: COB03:34144:46498
+-------------------------------------------------
+NREL: COB03:34144:46499
+-------------------------------------------------
+NREL: COB03:34144:46577
+-------------------------------------------------
+NREL: COB03:34145:34146
+-------------------------------------------------
+NREL: COB03:34145:34154
+-------------------------------------------------
+NREL: COB03:34145:34155
+-------------------------------------------------
+NREL: COB03:34145:34156
+-------------------------------------------------
+NREL: COB03:34145:37885
+-------------------------------------------------
+NREL: COB03:34145:37886
+-------------------------------------------------
+NREL: COB03:34145:37906
+-------------------------------------------------
+NREL: COB03:34146:34745
+-------------------------------------------------
+NREL: COB03:34146:37854
+-------------------------------------------------
+NREL: COB03:34146:37855
+-------------------------------------------------
+NREL: COB03:34146:37905
+-------------------------------------------------
+NREL: COB03:34146:37906
+-------------------------------------------------
+NREL: COB03:34146:46499
+-------------------------------------------------
+NREL: COB03:34146:46517
+-------------------------------------------------
+NREL: COB03:34146:46577
+-------------------------------------------------
+BSC     : COB03
+version : G13B
+APLOC;
+Command answer:Microsoft Windows [Version 5.2.3790]
+(C) Copyright 1985-2003 Microsoft Corp.
+
+
+stmttu && echo EXECUTED
+
+Command answer:EXECUTED
+
+exit
+
+Command answer:
+-------------------------------------------------
+Number of succeeded commands: 93
+Number of failed commands: 6
+Total time taken for node interaction is 43073367 microseconds
+--------------------
+
+Update failed.
+
+
+
+==================================================
+
+Summary:
+
+Number of created sub_jobs: 5
+Number of failed sub_jobs:  5
+RAH files are created in 8 seconds
+-------------------------------------------------
+Number of succeeded commands: 93
+Number of failed commands: 18
+Total time taken for node interaction is 0 microseconds
+One or more internal failures have occured in update.
+Please look in the PMS for further information.
+--------------------
+
+Update failed.
+

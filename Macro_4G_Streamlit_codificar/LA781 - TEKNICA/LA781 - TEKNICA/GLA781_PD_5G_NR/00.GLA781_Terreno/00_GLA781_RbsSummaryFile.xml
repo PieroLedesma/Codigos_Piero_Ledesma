@@ -1,0 +1,10 @@
+<summary:AutoIntegrationRbsSummaryFile
+    xmlns:summary="http://www.ericsson.se/RbsSummaryFileSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.ericsson.se/RbsSummaryFileSchemaSummaryFile.xsd">
+<Format revision="F"/>
+<ConfigurationFiles
+    siteBasicFilePath="01_GLA781_SiteBasic.xml"
+    siteEquipmentFilePath="02_GLA781_SiteEquipment.xml"
+    upgradePackageFilePath="RadioNode_CXP2010174_1_R40H08_21.Q4/"/>
+</summary:AutoIntegrationRbsSummaryFile>

@@ -1,0 +1,9 @@
+cmedit create NetworkElement=GLA781 networkElementId=GLA781, neType="RadioNode",ossPrefix="SubNetwork=ONRM_ROOT_MO,SubNetwork=NR_Region_X,MeContext=GLA781",userlabel="GLA781", ossModelIdentity="22.Q2-R53A03", timeZone="UTC" -ns=OSS_NE_DEF -v=2.0.0 
+cmedit create NetworkElement=GLA781,ComConnectivityInformation=1 ComConnectivityInformationId=1,fileTransferProtocol=SFTP,ftpTlsServerPort=1636,ipAddress="10.84.20.176",port=6513,snmpAgentPort=161,snmpReadCommunity="public",snmpSecurityLevel="NO_AUTH_NO_PRIV",snmpVersion="SNMP_V2C",snmpWriteCommunity="public",transportProtocol="TLS" -ns=COM_MED -version=1.1.0 
+secadm credentials create --secureusername rbs --secureuserpassword "rbs" --ldapuser disable -n GLA781
+cmedit set NetworkElement=GLA781,CmNodeHeartbeatSupervision=1 active=true 
+cmedit set NetworkElement=GLA781,InventorySupervision=1 active=true
+cmedit set NetworkElement=GLA781,PmFunction=1 pmEnabled=true --force
+cmedit set NetworkElement=GLA781,FmFunction=1 subscriptionState=ENABLED
+cmedit action NetworkElement=GLA781,CmFunction=1 sync
+cmedit set NetworkElement=GLA781,CmNodeHeartbeatSupervision=1 active=true

@@ -1,0 +1,4 @@
+# Contenido de requirements.txt
+streamlit
+pandas
+openpyxl  # Necesario para que pandas lea archivos .xlsx

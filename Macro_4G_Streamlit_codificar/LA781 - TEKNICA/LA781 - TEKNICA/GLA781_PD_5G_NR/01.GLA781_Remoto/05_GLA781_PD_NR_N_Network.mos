@@ -1,0 +1,423 @@
+///////////////////-P-duarte-///////////////////////////////////////
+confb+
+gs+
+get Transport=1,EthernetPort= ethernetPortId > TN_IDL_B
+
+
+confb+
+gs+
+cr GNBCUCPFunction=1,NRNetwork=1
+
+################################################################
+## NRFrequency  V3 
+################################################################
+crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=620736-30
+arfcnValueNRDl 620736
+smtcDuration 1
+smtcOffset 0
+smtcPeriodicity 20
+smtcScs 30
+end
+
+
+bl nrcell|sector 
+################################################################
+## NRFreqRelation  V2 
+################################################################
+
+crn GNBCUCPFunction=1,NRCellCU=N37811,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N37812,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N37813,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+bl nrcell|sector
+################################################################
+## features  V4
+################################################################
+BL AAS|SECTOR|CELL
+set CXC4040008 featurestate 1
+set CXC4012375 featurestate 1
+set CXC4012347 featurestate 1
+set CXC4012273 featurestate 1
+set CXC4012272 featurestate 1
+set CXC4011823 featurestate 1
+set CXC4040018 featurestate 1
+set CXC4012492 featurestate 1
+set CXC4012510 featurestate 1
+set CXC4012373 featurestate 1
+set CXC4012330 featurestate 1
+set CXC4012589 featurestate 1
+set CXC4012558 featurestate 1
+set CXC4012500 featurestate 1
+set CXC4012218 featurestate 1
+set CXC4012123 featurestate 1
+set CXC4012015 featurestate 1
+set CXC4012590 featurestate 1
+set CXC4012406 featurestate 1
+set CXC4012673 featurestate 1
+
+################################################################
+## GNBDUFunction -> SignalingRadioBearer V2 
+################################################################
+set GNBDUFunction=1,RadioBearerTable=1,SignalingRadioBearer=1 tReassemblyDl 35
+set GNBDUFunction=1,RadioBearerTable=1,SignalingRadioBearer=1 tReassemblyUl 35
+
+################################################################
+## GNBDUFunction -> DrxProfileUeCfg V2 
+################################################################
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxEnable true
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxInactivityTimer 15
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxLongCycle 10
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxOnDurationTimer 39
+
+################################################################
+## GNBCUCPFunction -> IntraFreqMC V2 
+################################################################
+ld GNBCUCPFunction=1,IntraFreqMC=1
+cr GNBCUCPFunction=1,IntraFreqMC=1
+################################################################
+## GNBCUCPFunction -> McpcPSCellProfileUeCfg V2 
+################################################################
+ld GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base
+cr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base
+
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base lowHighFreqPrioClassification 7
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base mcpcQuantityList 0
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCandidateA5 timeToTrigger=640
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCandidateA5 threshold1=-156
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCandidateA5 threshold2=-156
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCandidateA5 hysteresis=10
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCritical timeToTrigger=160
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCritical threshold=-122
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCritical hysteresis=10
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchTimeRestriction -1
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchZone timeToTrigger=160
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchZone threshold=-112
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchZone timeToTriggerA1=-1
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchZone hysteresis=10
+
+################################################################
+## GNBCUCPFunction -> InactivityProfileUeCfg V2 
+################################################################
+
+ld GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base
+cr GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base
+
+set GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base
+set GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base tInactivityTimer 10
+set GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base tInactivityTimerEndcSn 5
+set GNBCUCPFunction=1,UeCC=1,InactivityProfile=Default,InactivityProfileUeCfg=Base tInactivityTimerNrdcSn 10
+
+################################################################
+## GNBCUCPFunction -> UeMC V2 
+################################################################
+ld GNBCUCPFunction=GNBCUCPFunction=1,UeMC=,UeMC=1
+cr GNBCUCPFunction=GNBCUCPFunction=1,UeMC=,UeMC=1
+
+################################################################
+## OPT 
+################################################################
+
+cr GNBDUFunction=1,UeCC=1,PowerControl=1,PowerControlUeCfg=opt
+set GNBDUFunction=1,UeCC=1,PowerControl=1,PowerControlUeCfg=opt puschPowerControlModeFr1 1
+set GNBDUFunction=1,UeCC=1,PowerControl=1,PowerControlUeCfg=opt puschPowerControlModeFr2 1
+set GNBDUFunction=1,UeCC=1,PowerControl=1,PowerControlUeCfg=opt pZeroNomPuschOffset 0
+
+
+set  GNBDUFunction=1,UeCC=1,UeBb=1,UeBbProfile=Default,UeBbProfileUeCfg=Base powerControlUeCfgRef GNBDUFunction=1,UeCC=1,PowerControl=1,PowerControlUeCfg=opt
+
+################################################################
+## GNBDUFunction -> DrxProfileUeCfg V2 
+################################################################
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxEnable true
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxInactivityTimer 15
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxLongCycle 10
+set GNBDUFunction=1,UeCC=1,DrxProfile=Default,DrxProfileUeCfg=Base drxOnDurationTimer 39
+
+################################################################
+## GNBCUCPFunction -> IntraFreqMCCellProfileUeCfg V2 
+################################################################
+
+ld GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base
+cr GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base
+
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base betterSpCellTriggerQuantity 0
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base endcActionEvalFail 0
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell hysteresis=10
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell offset=30
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell timeToTrigger=160
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrqBetterSpCell hysteresis=10
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrqBetterSpCell offset=30
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrqBetterSpCell timeToTrigger=640
+
+################################################################
+## features  V4
+################################################################
+BL AAS|SECTOR|CELL
+set CXC4040008 featurestate 1
+set CXC4012375 featurestate 1
+set CXC4012347 featurestate 1
+set CXC4012273 featurestate 1
+set CXC4012272 featurestate 1
+set CXC4011823 featurestate 1
+set CXC4040018 featurestate 1
+set CXC4012492 featurestate 1
+set CXC4012510 featurestate 1
+set CXC4012373 featurestate 1
+set CXC4012330 featurestate 1
+set CXC4012589 featurestate 1
+set CXC4012558 featurestate 1
+set CXC4012500 featurestate 1
+set CXC4012218 featurestate 1
+set CXC4012123 featurestate 1
+set CXC4012015 featurestate 1
+set CXC4012590 featurestate 1
+set CXC4012406 featurestate 1
+set CXC4012673 featurestate 1
+
+################################################################
+## CORRECCIONES G 
+################################################################
+bl nrcell|sector
+set1x GNBDUFunction=1,NRCellDU=.* aperiodicSrsEnabled true
+set1x .*  mixedSrsModeEnabled true
+commit
+
+################################################################
+## GNBCUCPFunction -> IntraFreqMCCellProfileUeCfg V2 
+################################################################
+
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base betterSpCellTriggerQuantity 0
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base endcActionEvalFail 0
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell hysteresis=10
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell offset=30
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrpBetterSpCell timeToTrigger=160
+
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrqBetterSpCell hysteresis=10
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrqBetterSpCell offset=30
+set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=Default,IntraFreqMCCellProfileUeCfg=Base rsrqBetterSpCell timeToTrigger=640
+
+################################################################
+## GNBCUCPFunction -> McpcPSCellProfileUeCfg V2 
+################################################################
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpCritical threshold=-122
+set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base rsrpSearchZone threshold=-112
+
+##########################################################
+## Correcciones
+############################################################
+
+set FieldReplaceableUnit=AAS isSharedWithExternalMe false
+set . mcpcPSCellProfileRef Mcpc=1,McpcPSCellProfile=Default
+bl nrcell|sector
+bl nrcell|sector
+set .  dlMaxMuMimoLayers 4
+set .  pwsBroadcastStarted  0
+set .  mcpcPSCellEnabled  1
+set .  mcpcPSCellProfileRef  Mcpc=1,McpcPSCellProfile=Default
+hget nrcell latitude|longitude
+set NRCellCU intraFreqMCCellProfileRef IntraFreqMC=1,IntraFreqMCCellProfile=Default
+set NRCell userlabel $nodename
+################################################################
+## CommonBeamforming V2 
+################################################################
+
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 cbfMacroTaperType 0
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 coverageShape 0
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 digitalTilt 30
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 usedDigitalTilt 30
+lset GNBDUFunction=1,NRSectorCarrier=1,CommonBeamforming=1 usedDigitalPan 0
+end 
+
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 cbfMacroTaperType 0
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 coverageShape 0
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 digitalTilt 50
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 usedDigitalTilt 50
+lset GNBDUFunction=1,NRSectorCarrier=2,CommonBeamforming=1 usedDigitalPan 0
+end 
+
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 cbfMacroTaperType 0
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 coverageShape 0
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 digitalTilt 60
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 usedDigitalTilt 60
+lset GNBDUFunction=1,NRSectorCarrier=3,CommonBeamforming=1 usedDigitalPan 0
+end 
+
+BL NRCELL
+SET CXC4012347|CXC4012500|CXC4012590|CXC4012590|CXC4012510|CXC4012373|CXC4012272|CXC4012558 FeatureState 1 
+DEB NRCELL
+##########################################
+### repaso de rechazos
+##################################################
+lset NRCellDU=N37811 maxNoOfAdvancedDlMuMimoLayers 16
+lset NRCellDU=N37812 maxNoOfAdvancedDlMuMimoLayers 16
+lset NRCellDU=N37813 maxNoOfAdvancedDlMuMimoLayers 16
+################################################################
+## Correcciones 
+################################################################
+lset NRCellDU=N37811 dlMaxMuMimoLayers 8
+
+lset NRCellDU=N37812 dlMaxMuMimoLayers 8
+
+lset NRCellDU=N37813 dlMaxMuMimoLayers 8
+
+################################################################
+## NRFreqRelation  V2 
+################################################################
+
+wait 3
+crn GNBCUCPFunction=1,NRCellCU=N37811,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+wait 3
+crn GNBCUCPFunction=1,NRCellCU=N37812,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+wait 3
+crn GNBCUCPFunction=1,NRCellCU=N37813,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+bl nrcell|sector
+################################################################
+## NRFreqRelation  V2 
+################################################################
+
+crn GNBCUCPFunction=1,NRCellCU=N37811,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N37812,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+crn GNBCUCPFunction=1,NRCellCU=N37813,NRFreqRelation=620736
+cellReselectionPriority 7
+nRFrequencyRef NRNetwork=1,NRFrequency=620736-30
+pMax 23
+qOffsetFreq 0
+qRxLevMin -140
+sIntraSearchP 62
+tReselectionNR 2
+threshXHighP 4
+threshXLowP 0
+end
+
+##########################################
+### CgSwitchCfg
+##################################################
+
+cr GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37811
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37811 dlCgSwitchMode 1
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37811 dlScgLowQualThresh 50
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37811 dlScgLowQualHyst 50
+
+cr GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37812
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37812 dlCgSwitchMode 1
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37812 dlScgLowQualThresh 50
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37812 dlScgLowQualHyst 50
+
+cr GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37813
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37813 dlCgSwitchMode 1
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37813 dlScgLowQualThresh 50
+Set GNBDUFunction=1,UeCC=1,CgSwitchCfg=N37813 dlScgLowQualHyst 50
+
+
+##########################################
+### mixedSrsModeEnabled
+##################################################
+
+bl nrcell
+set1x GNBDUFunction=1,NRCellDU=.* mixedSrsModeEnabled true
+set1x GNBDUFunction=1,NRCellDU=.* advancedDlSuMimoEnabled 
+set1x GNBDUFunction=1,NRCellDU=.* aperiodicSrsEnabled true
+commit
+
+##########################################
+### GNBCUUPFunction
+##################################################
+CR GNBCUUPFunction=1,GtpuSupervision=1
+SET GNBCUUPFunction=1,GtpuSupervision=1 gtpuErrorIndDscp 40
+SET GNBCUUPFunction=1,GtpuSupervision=1 gtpuSupervisionId 1
+bl nrcell|sector
+bl nrcell|sector
+gs-  
+confb-  
+cvms PD_Node_$nodename
+
+////////////////- fin -///////////////////////////////////////

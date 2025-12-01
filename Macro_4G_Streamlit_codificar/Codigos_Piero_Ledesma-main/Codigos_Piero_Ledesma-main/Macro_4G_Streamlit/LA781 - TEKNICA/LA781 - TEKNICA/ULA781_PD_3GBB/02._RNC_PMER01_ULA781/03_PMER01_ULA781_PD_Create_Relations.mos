@@ -1,0 +1,1390 @@
+//////////////////////-PDUARTE-///////////////////////////////
+//
+// SCRIPT     : CREATE_Relations
+// NEMONICO   : PMER01
+// NEMONICO   : ULA781
+// HORA       : 9:25:26
+// FECHA      : 05-11-2025
+//
+/////////////////////////////////////////////////////////////
+
+confb+
+gs+
+lt all
+
+#############################################################
+### UtranRelation PMER01
+#############################################################
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U37812 qOffset2sn 2
+set RncFunction=1,UtranCell=U37811,UtranRelation=U37812 selectionPriority 2
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U37813 qOffset2sn 2
+set RncFunction=1,UtranCell=U37811,UtranRelation=U37813 selectionPriority 3
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37811 qOffset2sn 2
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37811 selectionPriority 2
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37813 qOffset2sn 2
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37813 selectionPriority 3
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U37811 qOffset2sn 2
+set RncFunction=1,UtranCell=U37813,UtranRelation=U37811 selectionPriority 2
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U37812 qOffset2sn 2
+set RncFunction=1,UtranCell=U37813,UtranRelation=U37812 selectionPriority 3
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07815 qOffset2sn 2
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07815 selectionPriority 2
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07816 qOffset2sn 2
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07816 selectionPriority 3
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07814 qOffset2sn 2
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07814 selectionPriority 2
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07816 qOffset2sn 2
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07816 selectionPriority 3
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U07814 qOffset2sn 2
+set RncFunction=1,UtranCell=U07816,UtranRelation=U07814 selectionPriority 2
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U07815 qOffset2sn 2
+set RncFunction=1,UtranCell=U07816,UtranRelation=U07815 selectionPriority 3
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U49997
+UtranCell=U49997 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U49997 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U49997 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U49997 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U60358
+UtranCell=U60358 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U60358 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U60358 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U60358 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U60359
+UtranCell=U60359 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U60359 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U60359 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U60359 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U39062
+UtranCell=U39062 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U39062 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U39062 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U39062 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U43278
+UtranCell=U43278 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U43278 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U43278 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U43278 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U63271
+UtranCell=U63271 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U63271 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U63271 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U63271 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U07307
+UtranCell=U07307 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07307 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07307 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U07307 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37811,UtranRelation=U43279
+UtranCell=U43279 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37811,UtranRelation=U43279 qOffset1sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U43279 qOffset2sn 0
+set RncFunction=1,UtranCell=U37811,UtranRelation=U43279 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U49997
+UtranCell=U49997 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U49997 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U49997 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U49997 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U60358
+UtranCell=U60358 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U60358 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U60358 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U60358 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U60359
+UtranCell=U60359 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U60359 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U60359 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U60359 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U39062
+UtranCell=U39062 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U39062 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U39062 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U39062 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U43278
+UtranCell=U43278 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U43278 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U43278 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U43278 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U63271
+UtranCell=U63271 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U63271 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U63271 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U63271 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U07307
+UtranCell=U07307 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07307 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07307 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U07307 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07814,UtranRelation=U43279
+UtranCell=U43279 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07814,UtranRelation=U43279 qOffset1sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U43279 qOffset2sn 0
+set RncFunction=1,UtranCell=U07814,UtranRelation=U43279 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U60358
+UtranCell=U60358 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U60358 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U60358 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U60358 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U30543
+UtranCell=U30543 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U30543 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U30543 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U30543 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U63201
+UtranCell=U63201 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U63201 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U63201 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U63201 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U37041
+UtranCell=U37041 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37041 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37041 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37041 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U37043
+UtranCell=U37043 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37043 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37043 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U37043 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U07044
+UtranCell=U07044 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07044 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07044 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07044 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U07046
+UtranCell=U07046 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07046 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07046 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U07046 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37812,UtranRelation=U64774
+UtranCell=U64774 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37812,UtranRelation=U64774 qOffset1sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U64774 qOffset2sn 0
+set RncFunction=1,UtranCell=U37812,UtranRelation=U64774 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U60358
+UtranCell=U60358 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U60358 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U60358 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U60358 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U30543
+UtranCell=U30543 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U30543 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U30543 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U30543 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U63201
+UtranCell=U63201 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U63201 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U63201 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U63201 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U37041
+UtranCell=U37041 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37041 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37041 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37041 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U37043
+UtranCell=U37043 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37043 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37043 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U37043 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U07044
+UtranCell=U07044 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07044 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07044 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07044 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U07046
+UtranCell=U07046 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07046 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07046 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U07046 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07815,UtranRelation=U64774
+UtranCell=U64774 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07815,UtranRelation=U64774 qOffset1sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U64774 qOffset2sn 0
+set RncFunction=1,UtranCell=U07815,UtranRelation=U64774 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U49997
+UtranCell=U49997 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U49997 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U49997 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U49997 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U49998
+UtranCell=U49998 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U49998 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U49998 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U49998 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U63271
+UtranCell=U63271 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U63271 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U63271 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U63271 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U64774
+UtranCell=U64774 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U64774 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U64774 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U64774 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U39062
+UtranCell=U39062 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U39062 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U39062 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U39062 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U06004
+UtranCell=U06004 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U06004 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U06004 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U06004 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37813,UtranRelation=U36001
+UtranCell=U36001 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37813,UtranRelation=U36001 qOffset1sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U36001 qOffset2sn 0
+set RncFunction=1,UtranCell=U37813,UtranRelation=U36001 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U49997
+UtranCell=U49997 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U49997 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U49997 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U49997 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U49998
+UtranCell=U49998 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U49998 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U49998 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U49998 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U63271
+UtranCell=U63271 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U63271 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U63271 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U63271 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U64774
+UtranCell=U64774 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U64774 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U64774 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U64774 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U39062
+UtranCell=U39062 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U39062 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U39062 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U39062 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U06004
+UtranCell=U06004 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U06004 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U06004 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U06004 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07816,UtranRelation=U36001
+UtranCell=U36001 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07816,UtranRelation=U36001 qOffset1sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U36001 qOffset2sn 0
+set RncFunction=1,UtranCell=U07816,UtranRelation=U36001 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U49997,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U49997,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U60358,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U60358,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U60359,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U60359,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U60359,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U60359,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U39062,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U39062,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U43278,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U43278,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U43278,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U43278,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U63271,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U63271,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07307,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07307,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U07307,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U07307,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U43279,UtranRelation=U37811
+UtranCell=U37811 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U43279,UtranRelation=U37811 qOffset1sn 0
+set RncFunction=1,UtranCell=U43279,UtranRelation=U37811 qOffset2sn 0
+set RncFunction=1,UtranCell=U43279,UtranRelation=U37811 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U49997,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U49997,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U60358,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U60358,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U60359,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U60359,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U60359,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U60359,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U39062,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U39062,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U43278,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U43278,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U43278,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U43278,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U63271,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U63271,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07307,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07307,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U07307,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U07307,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U43279,UtranRelation=U07814
+UtranCell=U07814 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U43279,UtranRelation=U07814 qOffset1sn 0
+set RncFunction=1,UtranCell=U43279,UtranRelation=U07814 qOffset2sn 0
+set RncFunction=1,UtranCell=U43279,UtranRelation=U07814 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U60358,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U60358,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U30543,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U30543,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U30543,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U30543,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U63201,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U63201,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U63201,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U63201,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37041,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37041,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U37041,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U37041,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37043,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37043,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U37043,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U37043,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07044,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07044,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U07044,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U07044,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07046,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07046,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U07046,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U07046,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U64774,UtranRelation=U37812
+UtranCell=U37812 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U64774,UtranRelation=U37812 qOffset1sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U37812 qOffset2sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U37812 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U60358,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U60358,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U60358,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U30543,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U30543,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U30543,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U30543,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U63201,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U63201,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U63201,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U63201,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37041,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37041,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U37041,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U37041,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U37043,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U37043,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U37043,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U37043,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07044,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07044,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U07044,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U07044,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U07046,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U07046,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U07046,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U07046,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U64774,UtranRelation=U07815
+UtranCell=U07815 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U64774,UtranRelation=U07815 qOffset1sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U07815 qOffset2sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U07815 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U49997,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U49997,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U49998,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U49998,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U49998,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U49998,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U63271,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U63271,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U64774,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U64774,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U39062,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U39062,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U06004,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U06004,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U06004,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U06004,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U36001,UtranRelation=U37813
+UtranCell=U37813 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U36001,UtranRelation=U37813 qOffset1sn 0
+set RncFunction=1,UtranCell=U36001,UtranRelation=U37813 qOffset2sn 0
+set RncFunction=1,UtranCell=U36001,UtranRelation=U37813 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U49997,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U49997,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U49997,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U49998,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U49998,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U49998,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U49998,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U63271,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U63271,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U63271,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U64774,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U64774,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U64774,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U39062,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U39062,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U39062,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U06004,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U06004,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U06004,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U06004,UtranRelation=U07816 selectionPriority 0
+
+cr RncFunction=1,UtranCell=U36001,UtranRelation=U07816
+UtranCell=U07816 #UtranCell
+0  #mobilityRelationType
+set RncFunction=1,UtranCell=U36001,UtranRelation=U07816 qOffset1sn 0
+set RncFunction=1,UtranCell=U36001,UtranRelation=U07816 qOffset2sn 0
+set RncFunction=1,UtranCell=U36001,UtranRelation=U07816 selectionPriority 0
+
+#############################################################
+### EutranFreqRelation PMER01
+#############################################################
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100
+EutraNetwork=1,EutranFrequency=LTE3100 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 qRxLevMin -126
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 cellReselectionPriority 5
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 threshHigh 6
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 threshlow 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 redirectionOrder 1
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 eutranFrequency LTE3100
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100
+EutraNetwork=1,EutranFrequency=LTE3100 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 qRxLevMin -126
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 cellReselectionPriority 5
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 threshHigh 6
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 threshlow 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 redirectionOrder 1
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 eutranFrequency LTE3100
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100
+EutraNetwork=1,EutranFrequency=LTE3100 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 qRxLevMin -126
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 cellReselectionPriority 5
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 threshHigh 6
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 threshlow 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 redirectionOrder 1
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 eutranFrequency LTE3100
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100
+EutraNetwork=1,EutranFrequency=LTE3100 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 qRxLevMin -126
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 threshHigh 6
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 threshlow 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 redirectionOrder 3
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 eutranFrequency LTE3100
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100
+EutraNetwork=1,EutranFrequency=LTE3100 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 qRxLevMin -126
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 threshHigh 6
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 threshlow 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 redirectionOrder 3
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 eutranFrequency LTE3100
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100
+EutraNetwork=1,EutranFrequency=LTE3100 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 qRxLevMin -126
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 threshHigh 6
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 threshlow 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 redirectionOrder 3
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 eutranFrequency LTE3100
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485
+EutraNetwork=1,EutranFrequency=LTE9485 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 qRxLevMin -122
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 threshHigh 6
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 threshlow 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 redirectionOrder 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 eutranFrequency LTE9485
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 thresh2dRwr -120
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE9485 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485
+EutraNetwork=1,EutranFrequency=LTE9485 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 qRxLevMin -122
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 threshHigh 6
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 threshlow 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 redirectionOrder 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 eutranFrequency LTE9485
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 thresh2dRwr -120
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE9485 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485
+EutraNetwork=1,EutranFrequency=LTE9485 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 qRxLevMin -122
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 threshHigh 6
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 threshlow 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 redirectionOrder 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 eutranFrequency LTE9485
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 thresh2dRwr -120
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE9485 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485
+EutraNetwork=1,EutranFrequency=LTE9485 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 qRxLevMin -122
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 cellReselectionPriority 5
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 threshHigh 6
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 threshlow 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 redirectionOrder 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 eutranFrequency LTE9485
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 thresh2dRwr -120
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE9485 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485
+EutraNetwork=1,EutranFrequency=LTE9485 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 qRxLevMin -122
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 cellReselectionPriority 5
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 threshHigh 6
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 threshlow 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 redirectionOrder 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 eutranFrequency LTE9485
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 thresh2dRwr -120
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE9485 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485
+EutraNetwork=1,EutranFrequency=LTE9485 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 qRxLevMin -122
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 cellReselectionPriority 5
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 threshHigh 6
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 threshlow 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 redirectionOrder 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 eutranFrequency LTE9485
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 thresh2dRwr -120
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE9485 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125
+EutraNetwork=1,EutranFrequency=LTE1125 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 qRxLevMin -122
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 threshHigh 6
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 threshlow 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 redirectionOrder 2
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 eutranFrequency LTE1125
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125
+EutraNetwork=1,EutranFrequency=LTE1125 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 qRxLevMin -122
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 threshHigh 6
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 threshlow 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 redirectionOrder 2
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 eutranFrequency LTE1125
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125
+EutraNetwork=1,EutranFrequency=LTE1125 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 qRxLevMin -122
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 threshHigh 6
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 threshlow 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 redirectionOrder 2
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 eutranFrequency LTE1125
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125
+EutraNetwork=1,EutranFrequency=LTE1125 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 qRxLevMin -122
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 threshHigh 6
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 threshlow 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 redirectionOrder 2
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 eutranFrequency LTE1125
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125
+EutraNetwork=1,EutranFrequency=LTE1125 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 qRxLevMin -122
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 threshHigh 6
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 threshlow 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 redirectionOrder 2
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 eutranFrequency LTE1125
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125
+EutraNetwork=1,EutranFrequency=LTE1125 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 qRxLevMin -122
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 cellReselectionPriority 3
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 threshHigh 6
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 threshlow 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 redirectionOrder 2
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 eutranFrequency LTE1125
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693
+EutraNetwork=1,EutranFrequency=LTE693 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 qRxLevMin -122
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 cellReselectionPriority 4
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 threshHigh 6
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 threshlow 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 redirectionOrder 2
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 eutranFrequency LTE693
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE693 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693
+EutraNetwork=1,EutranFrequency=LTE693 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 qRxLevMin -122
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 cellReselectionPriority 4
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 threshHigh 6
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 threshlow 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 redirectionOrder 2
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 eutranFrequency LTE693
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE693 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693
+EutraNetwork=1,EutranFrequency=LTE693 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 qRxLevMin -122
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 cellReselectionPriority 4
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 threshHigh 6
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 threshlow 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 redirectionOrder 2
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 eutranFrequency LTE693
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 thresh2dRwr -93
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE693 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693
+EutraNetwork=1,EutranFrequency=LTE693 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 qRxLevMin -122
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 cellReselectionPriority 4
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 threshHigh 6
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 threshlow 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 redirectionOrder 2
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 eutranFrequency LTE693
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE693 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693
+EutraNetwork=1,EutranFrequency=LTE693 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 qRxLevMin -122
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 cellReselectionPriority 4
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 threshHigh 6
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 threshlow 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 redirectionOrder 2
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 eutranFrequency LTE693
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE693 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693
+EutraNetwork=1,EutranFrequency=LTE693 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 qRxLevMin -122
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 cellReselectionPriority 4
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 threshHigh 6
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 threshlow 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 redirectionOrder 2
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 eutranFrequency LTE693
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 thresh2dRwr -85
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE693 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175
+EutraNetwork=1,EutranFrequency=LTE1175 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 qRxLevMin -120
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 cellReselectionPriority 1
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 threshHigh 6
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 threshlow 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 redirectionOrder 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 eutranFrequency LTE1175
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 thresh2dRwr -90
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1175 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175
+EutraNetwork=1,EutranFrequency=LTE1175 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 qRxLevMin -120
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 cellReselectionPriority 1
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 threshHigh 6
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 threshlow 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 redirectionOrder 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 eutranFrequency LTE1175
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 thresh2dRwr -90
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1175 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175
+EutraNetwork=1,EutranFrequency=LTE1175 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 qRxLevMin -120
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 cellReselectionPriority 1
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 threshHigh 6
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 threshlow 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 redirectionOrder 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 eutranFrequency LTE1175
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 thresh2dRwr -90
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1175 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175
+EutraNetwork=1,EutranFrequency=LTE1175 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 qRxLevMin -120
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 cellReselectionPriority 1
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 threshHigh 6
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 threshlow 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 redirectionOrder 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 eutranFrequency LTE1175
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 thresh2dRwr -90
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1175 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175
+EutraNetwork=1,EutranFrequency=LTE1175 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 qRxLevMin -120
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 cellReselectionPriority 1
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 threshHigh 6
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 threshlow 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 redirectionOrder 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 eutranFrequency LTE1175
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 thresh2dRwr -90
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1175 coSitedCellAvailable 1
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175
+EutraNetwork=1,EutranFrequency=LTE1175 #eutranFrequencyRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 qRxLevMin -120
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 cellReselectionPriority 1
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 threshHigh 6
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 threshlow 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 redirectionOrder 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 eutranFrequency LTE1175
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 thresh2dRwr -90
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1175 coSitedCellAvailable 1
+
+#############################################################
+### ExternalEutranCell PMER01
+#############################################################
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811
+13781 #eNodeBId
+1 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 physicalCellIdentity 117
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812
+13781 #eNodeBId
+2 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 physicalCellIdentity 118
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813
+13781 #eNodeBId
+3 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 physicalCellIdentity 119
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37811
+13781 #eNodeBId
+7 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37811 physicalCellIdentity 117
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37812
+13781 #eNodeBId
+8 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37812 physicalCellIdentity 118
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37813
+13781 #eNodeBId
+9 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37813 physicalCellIdentity 119
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE693,ExternalEutranCell=Q37811
+13781 #eNodeBId
+17 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE693,ExternalEutranCell=Q37811 physicalCellIdentity 117
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE693,ExternalEutranCell=Q37812
+13781 #eNodeBId
+18 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE693,ExternalEutranCell=Q37812 physicalCellIdentity 118
+
+cr RncFunction=1,EutraNetwork=1,EutranFrequency=LTE693,ExternalEutranCell=Q37813
+13781 #eNodeBId
+19 #cellId
+10102 #tac
+set RncFunction=1,EutraNetwork=1,EutranFrequency=LTE693,ExternalEutranCell=Q37813 physicalCellIdentity 119
+
+#############################################################
+### EutranCellRelation PMER01
+#############################################################
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37811
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 coSited 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 userLabel 
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37811
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 coSited 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 userLabel 
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37811
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 coSited 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 userLabel 
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37812
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 coSited 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 userLabel 
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37812
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 coSited 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 userLabel 
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37812
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 coSited 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 userLabel 
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37813
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 coSited 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 userLabel 
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37813
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 coSited 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 userLabel 
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37813
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 coSited 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 userLabel 
+
+cr RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125,EutranCellRelation=P37811
+EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125,EutranCellRelation=P37811 coSited 0
+set RncFunction=1,UtranCell=U37811,EutranFreqRelation=LTE1125,EutranCellRelation=P37811 userLabel 
+
+cr RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125,EutranCellRelation=P37812
+EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125,EutranCellRelation=P37812 coSited 0
+set RncFunction=1,UtranCell=U37812,EutranFreqRelation=LTE1125,EutranCellRelation=P37812 userLabel 
+
+cr RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125,EutranCellRelation=P37813
+EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125,EutranCellRelation=P37813 coSited 0
+set RncFunction=1,UtranCell=U37813,EutranFreqRelation=LTE1125,EutranCellRelation=P37813 userLabel 
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37811
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 coSited 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 userLabel 
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37811
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 coSited 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 userLabel 
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37811
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 coSited 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37811 userLabel 
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37812
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 coSited 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 userLabel 
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37812
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 coSited 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 userLabel 
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37812
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 coSited 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37812 userLabel 
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37813
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 coSited 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 userLabel 
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37813
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 coSited 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 userLabel 
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37813
+EutraNetwork=1,EutranFrequency=LTE3100,ExternalEutranCell=L37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 coSited 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE3100,EutranCellRelation=L37813 userLabel 
+
+cr RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125,EutranCellRelation=P37811
+EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37811 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125,EutranCellRelation=P37811 coSited 0
+set RncFunction=1,UtranCell=U07814,EutranFreqRelation=LTE1125,EutranCellRelation=P37811 userLabel 
+
+cr RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125,EutranCellRelation=P37812
+EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37812 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125,EutranCellRelation=P37812 coSited 0
+set RncFunction=1,UtranCell=U07815,EutranFreqRelation=LTE1125,EutranCellRelation=P37812 userLabel 
+
+cr RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125,EutranCellRelation=P37813
+EutraNetwork=1,EutranFrequency=LTE1125,ExternalEutranCell=P37813 #externalEutranCellRef
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125,EutranCellRelation=P37813 coSited 0
+set RncFunction=1,UtranCell=U07816,EutranFreqRelation=LTE1125,EutranCellRelation=P37813 userLabel 
+
+
+/////////////////////////fin script create cells \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

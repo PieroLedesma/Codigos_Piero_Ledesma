@@ -1,0 +1,930 @@
+//////////////////////-PDUARTE-///////////////////////////////
+//
+// SCRIPT     : Parametros
+// NEMONICO   : ULA781
+// HORA       : 9:25:19
+// FECHA      : 05-11-2025
+//
+/////////////////////////////////////////////////////////////
+
+confb+
+gs+
+lt all
+lt all
+
+set  CXC4011018 featurestate 1
+set  CXC4012015 featurestate 1
+set  CXC4012016 featurestate 1
+set  CXC4020051 featurestate 1
+#############################################################
+### VLAN WCDMA                   
+#############################################################
+
+get Transport=1,EthernetPort= ethernetPortId > $eth
+
+cr Transport=1,VlanPort=WCDMA
+EthernetPort=$eth #encapsulation
+1300
+
+#############################################################
+### Router WCDMA
+#############################################################
+lt all
+
+cr Transport=1,Router=WCDMA
+lset Transport=1,Router=WCDMA$ hopLimit 64
+lset Transport=1,Router=WCDMA$ pathMtuExpiresIPv6 86400
+lset Transport=1,Router=WCDMA$ routingPolicyLocal
+lset Transport=1,Router=WCDMA$ ttl 64
+lset Transport=1,Router=WCDMA$ userLabel
+
+cr Transport=1,Router=WCDMA,InterfaceIPv4=1
+VlanPort=WCDMA #encapsulation
+false #loopback
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ aclEgress
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ aclIngress
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ arpTimeout 300
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ bfdProfile
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ bfdStaticRoutes 0
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ egressQosMarking
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ ingressQosMarking
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ mtu 1500
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ pcpArp 6
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ routesHoldDownTimer
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1$ routingPolicyIngress
+
+cr Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1
+10.31.102.54/26
+0 #configurationMode
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1$ dhcpClientIdentifier
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1$ dhcpClientIdentifierType 0
+lset Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1$ userLabel
+cr Transport=1,Router=WCDMA,RouteTableIPv4Static=1
+cr Transport=1,Router=WCDMA,RouteTableIPv4Static=1,Dst=1
+0.0.0.0/0 #dst
+
+cr Transport=1,Router=WCDMA,RouteTableIPv4Static=1,Dst=1,NextHop=1
+10.31.102.1
+false #discard
+
+1 #adminDistance
+lset Transport=1,Router=WCDMA,RouteTableIPv4Static=1,Dst=1,NextHop=1$ bfdMonitoring true
+
+#############################################################
+### SctpEndpoint NBAP WCDMA                   
+#############################################################
+lt all
+
+cr Transport=1,SctpEndpoint=NBAP-C
+Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1 #localIpAddress
+5113 #portNumber
+SctpProfile=1 #sctpProfile
+lset Transport=1,SctpEndpoint=NBAP-C userLabel
+
+cr Transport=1,SctpEndpoint=NBAP-D
+Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1 #localIpAddress
+5114 #portNumber
+SctpProfile=1 #sctpProfile
+lset Transport=1,SctpEndpoint=NBAP-D userLabel
+
+#############################################################
+### NodeBFunction WCDMA                    
+#############################################################
+lt all
+
+cr NodeBFunction=1
+set NodeBFunction=1 Site ULA781
+set NodeBFunction=1 eul2msFirstSchedStep 160
+set NodeBFunction=1 eulDchMaxAllowedSchRate 1600
+set NodeBFunction=1 eulInactivityHighRateTime 20
+set NodeBFunction=1 eulInactivityLowRateTime 
+set NodeBFunction=1 eulLowRate 64
+set NodeBFunction=1 eulLowUsageTime 400
+set NodeBFunction=1 eulMaxAllowedSchRate 5120
+set NodeBFunction=1 eulMaxShoRate 5760
+set NodeBFunction=1 eulMaxTotalProtectedRate 1280
+set NodeBFunction=1 eulNonServHwRate 1024
+set NodeBFunction=1 eulNoReschUsers 5
+set NodeBFunction=1 eulSchedulingWeight 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+set NodeBFunction=1 eulTargetRate 128
+set NodeBFunction=1 nbapDscp 40
+
+#############################################################
+### Iub WCDMA                     
+#############################################################
+lt all
+
+cr NodeBFunction=1,Iub=Iub_ULA781
+Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1 #ipv4Address
+13781 #rbsId
+set NodeBFunction=1,Iub=Iub_ULA781 Site ULA781
+set NodeBFunction=1,Iub=Iub_ULA781 Iub Iub_ULA781
+set NodeBFunction=1,Iub=Iub_ULA781 dlHwAdm 90
+set NodeBFunction=1,Iub=Iub_ULA781 rbsId 13781
+set NodeBFunction=1,Iub=Iub_ULA781 softCongThreshGbrBwDl 100
+set NodeBFunction=1,Iub=Iub_ULA781 softCongThreshGbrBwUl 100
+set NodeBFunction=1,Iub=Iub_ULA781 ulHwAdm 90
+
+cr NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 Iub Iub_ULA781
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 hsDataFrameDelayThreshold 60
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 hsRbrDiscardProbability 0
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 hsRbrWeight 100 100 50 100 200 100 100 100 100 100 100 100 100 100 100 100
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 maxHsRate 825
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 schHsFlowControlOnOff 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 UserLabel 3G1900/3G900
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 noOfCommonStreams 0
+set NodeBFunction=1,Iub=Iub_ULA781,IubDataStreams=1 noOfDedicatedStreams 0
+
+#############################################################
+### NbapCommon - NbapDedicated WCDMA                       
+#############################################################
+lt all
+
+cr NodeBFunction=1,Iub=Iub_ULA781,NbapCommon=1
+SctpEndpoint=NBAP-C #sctpEndpointRef
+lset NodeBFunction=1,Iub=Iub_ULA781,NbapCommon=1$ auditRetransmissionT 5
+lset NodeBFunction=1,Iub=Iub_ULA781,NbapCommon=1$ l3EstablishSupervisionT 302
+lset NodeBFunction=1,Iub=Iub_ULA781,NbapCommon=1$ userLabel
+
+cr NodeBFunction=1,Iub=Iub_ULA781,NbapDedicated=1
+SctpEndpoint=NBAP-D #sctpEndpointRef
+lset NodeBFunction=1,Iub=Iub_ULA781,NbapDedicated=1$ userLabel
+
+#############################################################
+### NodeBLocalCellGroup WCDMA                        
+#############################################################
+lt all
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1
+lset NodeBFunction=1,NodeBLocalCellGroup=1 administrativeState 1
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ multiCarrierPair1
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ multiCarrierPair2
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ multiCarrierPair3
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ multiCarrierPair4
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ multiCarrierPair5
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ multiCarrierPair6
+lset NodeBFunction=1,NodeBLocalCellGroup=1$ userLabel ULA781
+
+#############################################################
+### NodeBLocalCell WCDMA                        
+#############################################################
+lt all
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1
+37811 #localCellId
+2 #operatingBand
+412 #uarfcnDL
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 airRateTypeSelector 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 chQualOffset 14
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 cqiAdjustmentOn 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 cqiErrors 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 cqiErrorsAbsent 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 defaultCqiHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 eHichMinCodePower -220
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 eulMaxNoSchEDch 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 eulMcActivationDelayTime 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 eulMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 eulMinMarginCoverage 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 eulNoERgchGroups 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraCompHsFach 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraHsScchCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraHsScchCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraHsScchCompHsFach 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraHsScchPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 extraPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsdpaDbMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsdpaMcActivityBufferThreshold 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsdpaMcCapability 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsdpaMcInactivityTimer 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsdpaPowerSharingCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsPowerMargin 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsScchMaxCodePower -20
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 hsScchMinCodePower -150
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 localCellId 37811
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxDlPowerCapability 419
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxEAgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxEAgchPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxNumEulUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxNumHsdpaUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxNumHsPdschCodes 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxUserEHichERgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 maxUserEHichPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 minBitRate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 minBitRateMinCqi 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 minDlPowerCapability 179
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 minSpreadingFactor 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 powerSharingMaxTransmissionPower 530
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 qualityCheckPower 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 qualityCheckPowerEHich 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 queueSelectAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schCongThreshGbr 5
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schCongThreshNonGbr 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schMaxDelay 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schMinPowerNonGbrHsUsers 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schNoCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schNoCongThreshGbr 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schPowerDeltaCongGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schPrioForAbsResSharing 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 schWeight 1 10 200 300 450 900 1000 4000 1 1 1 1 1 1 1 10000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlEnhUeDrx 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlEnhancedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlEulMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlFDpchSrbOnHsdpa 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsdpaDbMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsdpaDynamicCodeAllocation 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsdpaIncrementalRedundancy 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsdpaMc 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsdpaMcInactCtrl 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlHsdpaPowerSharing 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlImprovedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 featCtrlNbir 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 uarfcnDL 412
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1 uarfcnUL 12
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1
+37812 #localCellId
+2 #operatingBand
+412 #uarfcnDL
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 airRateTypeSelector 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 chQualOffset 14
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 cqiAdjustmentOn 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 cqiErrors 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 cqiErrorsAbsent 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 defaultCqiHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 eHichMinCodePower -220
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 eulMaxNoSchEDch 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 eulMcActivationDelayTime 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 eulMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 eulMinMarginCoverage 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 eulNoERgchGroups 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraCompHsFach 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraHsScchCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraHsScchCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraHsScchCompHsFach 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraHsScchPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 extraPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsdpaDbMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsdpaMcActivityBufferThreshold 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsdpaMcCapability 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsdpaMcInactivityTimer 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsdpaPowerSharingCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsPowerMargin 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsScchMaxCodePower -20
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 hsScchMinCodePower -150
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 localCellId 37812
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxDlPowerCapability 419
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxEAgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxEAgchPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxNumEulUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxNumHsdpaUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxNumHsPdschCodes 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxUserEHichERgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 maxUserEHichPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 minBitRate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 minBitRateMinCqi 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 minDlPowerCapability 179
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 minSpreadingFactor 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 powerSharingMaxTransmissionPower 530
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 qualityCheckPower 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 qualityCheckPowerEHich 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 queueSelectAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schCongThreshGbr 5
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schCongThreshNonGbr 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schMaxDelay 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schMinPowerNonGbrHsUsers 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schNoCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schNoCongThreshGbr 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schPowerDeltaCongGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schPrioForAbsResSharing 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 schWeight 1 10 200 300 450 900 1000 4000 1 1 1 1 1 1 1 10000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlEnhUeDrx 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlEnhancedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlEulMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlFDpchSrbOnHsdpa 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsdpaDbMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsdpaDynamicCodeAllocation 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsdpaIncrementalRedundancy 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsdpaMc 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsdpaMcInactCtrl 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlHsdpaPowerSharing 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlImprovedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 featCtrlNbir 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 uarfcnDL 412
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1 uarfcnUL 12
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1
+37813 #localCellId
+2 #operatingBand
+412 #uarfcnDL
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 airRateTypeSelector 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 chQualOffset 14
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 cqiAdjustmentOn 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 cqiErrors 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 cqiErrorsAbsent 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 defaultCqiHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 eHichMinCodePower -220
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 eulMaxNoSchEDch 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 eulMcActivationDelayTime 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 eulMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 eulMinMarginCoverage 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 eulNoERgchGroups 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraCompHsFach 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraHsScchCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraHsScchCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraHsScchCompHsFach 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraHsScchPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 extraPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsdpaDbMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsdpaMcActivityBufferThreshold 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsdpaMcCapability 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsdpaMcInactivityTimer 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsdpaPowerSharingCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsPowerMargin 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsScchMaxCodePower -20
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 hsScchMinCodePower -150
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 localCellId 37813
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxDlPowerCapability 419
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxEAgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxEAgchPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxNumEulUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxNumHsdpaUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxNumHsPdschCodes 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxUserEHichERgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 maxUserEHichPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 minBitRate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 minBitRateMinCqi 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 minDlPowerCapability 179
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 minSpreadingFactor 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 powerSharingMaxTransmissionPower 530
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 qualityCheckPower 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 qualityCheckPowerEHich 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 queueSelectAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schCongThreshGbr 5
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schCongThreshNonGbr 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schMaxDelay 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schMinPowerNonGbrHsUsers 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schNoCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schNoCongThreshGbr 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schPowerDeltaCongGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schPrioForAbsResSharing 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 schWeight 1 10 200 300 450 900 1000 4000 1 1 1 1 1 1 1 10000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlEnhUeDrx 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlEnhancedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlEulMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlFDpchSrbOnHsdpa 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsdpaDbMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsdpaDynamicCodeAllocation 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsdpaIncrementalRedundancy 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsdpaMc 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsdpaMcInactCtrl 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlHsdpaPowerSharing 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlImprovedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 featCtrlNbir 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 uarfcnDL 412
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1 uarfcnUL 12
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1
+07814 #localCellId
+8 #operatingBand
+3073 #uarfcnDL
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 airRateTypeSelector 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 chQualOffset 14
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 cqiAdjustmentOn 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 cqiErrors 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 cqiErrorsAbsent 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 defaultCqiHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 eHichMinCodePower -220
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 eulMaxNoSchEDch 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 eulMcActivationDelayTime 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 eulMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 eulMinMarginCoverage 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 eulNoERgchGroups 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraCompHsFach 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraHsScchCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraHsScchCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraHsScchCompHsFach 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraHsScchPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 extraPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsdpaDbMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsdpaMcActivityBufferThreshold 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsdpaMcCapability 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsdpaMcInactivityTimer 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsdpaPowerSharingCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsPowerMargin 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsScchMaxCodePower -20
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 hsScchMinCodePower -150
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 localCellId 07814
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxDlPowerCapability 431
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxEAgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxEAgchPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxNumEulUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxNumHsdpaUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxNumHsPdschCodes 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxUserEHichERgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 maxUserEHichPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 minBitRate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 minBitRateMinCqi 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 minDlPowerCapability 191
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 minSpreadingFactor 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 powerSharingMaxTransmissionPower 530
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 qualityCheckPower 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 qualityCheckPowerEHich 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 queueSelectAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schCongThreshGbr 5
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schCongThreshNonGbr 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schMaxDelay 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schMinPowerNonGbrHsUsers 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schNoCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schNoCongThreshGbr 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schPowerDeltaCongGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schPrioForAbsResSharing 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 schWeight 1 10 200 300 450 900 1000 4000 1 1 1 1 1 1 1 10000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlEnhUeDrx 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlEnhancedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlEulMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlFDpchSrbOnHsdpa 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsdpaDbMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsdpaDynamicCodeAllocation 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsdpaIncrementalRedundancy 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsdpaMc 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsdpaMcInactCtrl 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlHsdpaPowerSharing 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlImprovedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 featCtrlNbir 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 uarfcnDL 3073
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1 uarfcnUL 2848
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1
+07815 #localCellId
+8 #operatingBand
+3073 #uarfcnDL
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 airRateTypeSelector 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 chQualOffset 14
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 cqiAdjustmentOn 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 cqiErrors 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 cqiErrorsAbsent 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 defaultCqiHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 eHichMinCodePower -220
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 eulMaxNoSchEDch 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 eulMcActivationDelayTime 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 eulMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 eulMinMarginCoverage 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 eulNoERgchGroups 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraCompHsFach 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraHsScchCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraHsScchCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraHsScchCompHsFach 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraHsScchPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 extraPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsdpaDbMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsdpaMcActivityBufferThreshold 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsdpaMcCapability 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsdpaMcInactivityTimer 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsdpaPowerSharingCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsPowerMargin 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsScchMaxCodePower -20
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 hsScchMinCodePower -150
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 localCellId 07815
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxDlPowerCapability 431
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxEAgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxEAgchPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxNumEulUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxNumHsdpaUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxNumHsPdschCodes 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxUserEHichERgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 maxUserEHichPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 minBitRate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 minBitRateMinCqi 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 minDlPowerCapability 191
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 minSpreadingFactor 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 powerSharingMaxTransmissionPower 530
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 qualityCheckPower 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 qualityCheckPowerEHich 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 queueSelectAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schCongThreshGbr 5
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schCongThreshNonGbr 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schMaxDelay 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schMinPowerNonGbrHsUsers 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schNoCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schNoCongThreshGbr 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schPowerDeltaCongGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schPrioForAbsResSharing 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 schWeight 1 10 200 300 450 900 1000 4000 1 1 1 1 1 1 1 10000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlEnhUeDrx 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlEnhancedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlEulMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlFDpchSrbOnHsdpa 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsdpaDbMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsdpaDynamicCodeAllocation 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsdpaIncrementalRedundancy 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsdpaMc 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsdpaMcInactCtrl 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlHsdpaPowerSharing 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlImprovedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 featCtrlNbir 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 uarfcnDL 3073
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1 uarfcnUL 2848
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1
+07816 #localCellId
+8 #operatingBand
+3073 #uarfcnDL
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 airRateTypeSelector 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 chQualOffset 14
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 cqiAdjustmentOn 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 cqiErrors 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 cqiErrorsAbsent 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 defaultCqiHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 eHichMinCodePower -220
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 eulMaxNoSchEDch 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 eulMcActivationDelayTime 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 eulMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 eulMinMarginCoverage 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 eulNoERgchGroups 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraCompHsFach 100
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraHsScchCompEnhUeDrx 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraHsScchCompForSigHsFach 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraHsScchCompHsFach 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraHsScchPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 extraPowerForSrbOnHsdpa 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsdpaDbMcCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsdpaMcActivityBufferThreshold 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsdpaMcCapability 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsdpaMcInactivityTimer 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsdpaPowerSharingCapability 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsPowerMargin 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsScchMaxCodePower -20
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 hsScchMinCodePower -150
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 localCellId 07816
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxDlPowerCapability 431
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxEAgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxEAgchPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxNumEulUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxNumHsdpaUsers 96
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxNumHsPdschCodes 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxUserEHichERgchPowerDl -183
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 maxUserEHichPowerDlTti2 -123
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 minBitRate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 minBitRateMinCqi 8
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 minDlPowerCapability 191
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 minSpreadingFactor 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 powerSharingMaxTransmissionPower 530
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 qualityCheckPower 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 qualityCheckPowerEHich 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 queueSelectAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schCongThreshGbr 5
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schCongThreshNonGbr 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schMaxDelay 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schMinPowerNonGbrHsUsers 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schNoCongPeriodGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schNoCongThreshGbr 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schPowerDeltaCongGbr 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schPrioForAbsResSharing 15
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 schWeight 1 10 200 300 450 900 1000 4000 1 1 1 1 1 1 1 10000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlEnhUeDrx 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlEnhancedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlEulMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlFDpchSrbOnHsdpa 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsFach 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsdpaDbMc 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsdpaDynamicCodeAllocation 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsdpaIncrementalRedundancy 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsdpaMc 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsdpaMcInactCtrl 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlHsdpaPowerSharing 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlImprovedLayer2 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 featCtrlNbir 0
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 uarfcnDL 3073
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1 uarfcnUL 2848
+
+#############################################################
+### NodeBSectorCarrier WCDMA                        
+#############################################################
+lt all
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1
+2 #numOfRxAntennas
+2 #numOfTxAntennas
+SectorEquipmentFunction=1 #sectorEquipmentFunctionRef
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ Utrancell U37811
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ NodeBSectorCarrierid S1C1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ cellRange 35000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ BandwidthDL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ eulLockedNoiseFloor -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ eulMaxOwnUuLoad 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ eulMaxRotCoverage 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ eulNoiseFloorLock false
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ eulThermalLevelPrior -1040
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ fccRotMarginHigh 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ fccRotMarginLow 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ maxDlPowerCapability 419
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ minDlPowerCapability 179
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ numOfRxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ numOfTxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ BandwidthUL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ nbirAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ nbirFixedNotchPosition 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ beamdirection 000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ configuredMaxTxPower 20000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ height 2400
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ numOfBranchWithNbir 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ latitude 3863931
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ longitude -3400257
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1$ latHemisphere 1
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1
+2 #numOfRxAntennas
+2 #numOfTxAntennas
+SectorEquipmentFunction=2 #sectorEquipmentFunctionRef
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ Utrancell U37812
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ NodeBSectorCarrierid S2C1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ cellRange 35000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ BandwidthDL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ eulLockedNoiseFloor -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ eulMaxOwnUuLoad 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ eulMaxRotCoverage 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ eulNoiseFloorLock false
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ eulThermalLevelPrior -1040
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ fccRotMarginHigh 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ fccRotMarginLow 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ maxDlPowerCapability 419
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ minDlPowerCapability 179
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ numOfRxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ numOfTxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ BandwidthUL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ nbirAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ nbirFixedNotchPosition 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ beamdirection 120
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ configuredMaxTxPower 20000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ height 2400
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ numOfBranchWithNbir 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ latitude 3863931
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ longitude -3400257
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1$ latHemisphere 1
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1
+2 #numOfRxAntennas
+2 #numOfTxAntennas
+SectorEquipmentFunction=3 #sectorEquipmentFunctionRef
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ Utrancell U37813
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ NodeBSectorCarrierid S3C1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ cellRange 35000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ BandwidthDL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ eulLockedNoiseFloor -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ eulMaxOwnUuLoad 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ eulMaxRotCoverage 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ eulNoiseFloorLock false
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ eulThermalLevelPrior -1040
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ fccRotMarginHigh 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ fccRotMarginLow 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ maxDlPowerCapability 419
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ minDlPowerCapability 179
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ numOfRxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ numOfTxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ BandwidthUL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ nbirAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ nbirFixedNotchPosition 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ beamdirection 250
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ configuredMaxTxPower 20000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ height 2400
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ numOfBranchWithNbir 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ latitude 3863931
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ longitude -3400257
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1$ latHemisphere 1
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1
+2 #numOfRxAntennas
+1 #numOfTxAntennas
+SectorEquipmentFunction=4 #sectorEquipmentFunctionRef
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ Utrancell U07814
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ NodeBSectorCarrierid S4C1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ cellRange 35000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ BandwidthDL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ eulLockedNoiseFloor -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ eulMaxOwnUuLoad 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ eulMaxRotCoverage 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ eulNoiseFloorLock false
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ eulThermalLevelPrior -1040
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ fccRotMarginHigh 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ fccRotMarginLow 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ maxDlPowerCapability 431
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ minDlPowerCapability 191
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ numOfRxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ numOfTxAntennas 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ BandwidthUL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ nbirAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ nbirFixedNotchPosition 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ beamdirection 000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ configuredMaxTxPower 40000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ height 2400
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ numOfBranchWithNbir 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ latitude 3863931
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ longitude -3400257
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1$ latHemisphere 1
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1
+2 #numOfRxAntennas
+1 #numOfTxAntennas
+SectorEquipmentFunction=5 #sectorEquipmentFunctionRef
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ Utrancell U07815
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ NodeBSectorCarrierid S5C1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ cellRange 35000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ BandwidthDL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ eulLockedNoiseFloor -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ eulMaxOwnUuLoad 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ eulMaxRotCoverage 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ eulNoiseFloorLock false
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ eulThermalLevelPrior -1040
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ fccRotMarginHigh 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ fccRotMarginLow 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ maxDlPowerCapability 431
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ minDlPowerCapability 191
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ numOfRxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ numOfTxAntennas 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ BandwidthUL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ nbirAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ nbirFixedNotchPosition 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ beamdirection 120
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ configuredMaxTxPower 40000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ height 2400
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ numOfBranchWithNbir 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ latitude 3863931
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ longitude -3400257
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1$ latHemisphere 1
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1
+2 #numOfRxAntennas
+1 #numOfTxAntennas
+SectorEquipmentFunction=6 #sectorEquipmentFunctionRef
+
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ Utrancell U07816
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ NodeBSectorCarrierid S6C1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ cellRange 35000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ BandwidthDL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ eulLockedNoiseFloor -1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ eulMaxOwnUuLoad 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ eulMaxRotCoverage 130
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ eulNoiseFloorLock false
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ eulThermalLevelPrior -1040
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ fccRotMarginHigh 40
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ fccRotMarginLow 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ maxDlPowerCapability 431
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ minDlPowerCapability 191
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ numOfRxAntennas 2
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ numOfTxAntennas 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ BandwidthUL 50
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ nbirAlgorithm 1
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ nbirFixedNotchPosition 25
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ beamdirection 250
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ configuredMaxTxPower 40000
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ height 2400
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ numOfBranchWithNbir 
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ latitude 3863931
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ longitude -3400257
+set NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1$ latHemisphere 1
+
+#############################################################
+### Features WCDMA                        
+#############################################################
+lt all
+lt all
+lt all
+
+set CXC4020002$ featurestate 1
+set CXC4020014$ featurestate 1
+set CXC4021014$ featurestate 1
+set CXC4020069$ featurestate 1
+set CXC4020011$ featurestate 1
+set CXC4020042$ featurestate 1
+set CXC4020086$ featurestate 1
+set CXC4020016$ featurestate 1
+set CXC4020058$ featurestate 1
+set CXC4020003$ featurestate 1
+set CXC4020040$ featurestate 1
+set CXC4020061$ featurestate 1
+set CXC4020065$ featurestate 1
+set CXC4020070$ featurestate 1
+set CXC4020051$ featurestate 1
+set CXC4020030$ featurestate 1
+set CXC4020063$ featurestate 1
+set CXC4020031$ featurestate 1
+set CXC4010071/4006$ featurestate 1
+set CXC4020066$ featurestate 1
+set CXC4020026$ featurestate 1
+set CXC4020054$ featurestate 1
+set CXC4020013$ featurestate 1
+set CXC4020055$ featurestate 1
+set CXC4020064$ featurestate 1
+set CXC4020039$ featurestate 1
+set CXC4020025$ featurestate 1
+set CXC4020001$ featurestate 1
+set CXC4020008$ featurestate 1
+set CXC4020029$ featurestate 1
+set CXC4020032$ featurestate 1
+set CXC4020043$ featurestate 1
+set CXC4020041$ featurestate 1
+set CXC4020081$ featurestate 1
+set CXC4020098$ featurestate 1
+
+#############################################################
+### Features WCDMA                        
+#############################################################
+lt all
+lt all
+lt all
+
+set CXC4020002$ featurestate 1
+set CXC4020014$ featurestate 1
+set CXC4021014$ featurestate 1
+set CXC4020069$ featurestate 1
+set CXC4020011$ featurestate 1
+set CXC4020042$ featurestate 1
+set CXC4020086$ featurestate 1
+set CXC4020016$ featurestate 1
+set CXC4020058$ featurestate 1
+set CXC4020003$ featurestate 1
+set CXC4020040$ featurestate 1
+set CXC4020061$ featurestate 1
+set CXC4020065$ featurestate 1
+set CXC4020070$ featurestate 1
+set CXC4020051$ featurestate 1
+set CXC4020030$ featurestate 1
+set CXC4020063$ featurestate 1
+set CXC4020031$ featurestate 1
+set CXC4010071/4006$ featurestate 1
+set CXC4020066$ featurestate 1
+set CXC4020026$ featurestate 1
+set CXC4020054$ featurestate 1
+set CXC4020013$ featurestate 1
+set CXC4020055$ featurestate 1
+set CXC4020064$ featurestate 1
+set CXC4020039$ featurestate 1
+set CXC4020025$ featurestate 1
+set CXC4020001$ featurestate 1
+set CXC4020008$ featurestate 1
+set CXC4020029$ featurestate 1
+set CXC4020032$ featurestate 1
+set CXC4020043$ featurestate 1
+set CXC4020041$ featurestate 1
+set CXC4020081$ featurestate 1
+set CXC4020098$ featurestate 1
+
+
+## 3G NO PSI
+
+
+###### Correcciones ######
+confb+
+gs+
+set SwM=1,UpgradePackage=CXP9024418/15-R53M22  uri sftp://mm-software@172.25.7.33:22/smrsroot/software/radionode/RadioNode_CXP9024418_15_R53M22_22.Q2
+set SystemFunctions=1,SwM=1,UpgradePackage=CXP9024418/15-R53M22 password password=1:yxoOasH4WLb21cr3uJCcJ6vznNB47SI5
+confb+
+gs+
+set . vswrSupervisionSensitivity 1
+deb rfport
+set CXC4011018|CXC4040008|CXC4012129 featurestate 0 
+SET CXC4020002|CXC4020069|CXC4020042|CXC4020041|CXC4020016|CXC4020040|CXC4020031|CXC4020103|CXC4020005$|CXC4040011$ featurestate 1
+set . featCtrlEulFach 1
+SET CXC4020063|CXC4010071/4006 FeatureState 1
+bl FieldReplaceableUnit=SUP
+del Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=PTP_FASE
+deb cell|sector|pl
+
+cvms 3G_parametros_PD_$nodename
+
+/////////////////////////fin script Parametros\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

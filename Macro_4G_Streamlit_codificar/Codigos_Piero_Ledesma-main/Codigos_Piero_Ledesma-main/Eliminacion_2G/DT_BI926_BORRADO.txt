@@ -1,0 +1,333 @@
+@L+ BI926_BORRADO_BORRADO.log
+
+
+eaw TAB01;
+@GETTIME {HMM} HH:MM
+@GETDATE {DDMMYYYY} DD-MM-YYYY
+@COMMENT +------------------------------------------------+ ##
+@COMMENT | DATE:  {DDMMYYYY}                 TIME:  {HMM} | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT |               PRINTOUT BORRADO 2G              | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT | SITE CODE:  BI926                              | ##
+@COMMENT | SITE NAME:  BORRADO                     | ##
+@COMMENT | BSC:        TAB01                              | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT | GENERA:  ARIEL FUENTES                       | ##
+@COMMENT |------------------------------------------------| ##
+@COMMENT | F1 SERVICES & SOLUTIONS                        | ##
+@COMMENT |------------------------------------------------| ##
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |                    ALARMS                      | ##
+@COMMENT +------------------------------------------------+ ##
+ALLIP;
+ALLIP:ALCAT=EXT,ACL=A1;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |             HALTED OF CELLS IN TG              | ##
+@COMMENT +------------------------------------------------+ ##
+CACLP;
+RLSTC:CELL=39264,STATE=HALTED;
+
+RLSTC:CELL=39265,STATE=HALTED;
+
+RLSTC:CELL=39266,STATE=HALTED;
+
+
+RLSLE:CELL=39264,PERM;
+RLSLE:CELL=39265,PERM;
+RLSLE:CELL=39266,PERM;
+RLVLE:CHTYPE=TCH;
+RLVLE:CHTYPE=SDCCH;
+RLVLE:CELL=39264,CHTYPE=TCH;
+RLVLE:CELL=39264,CHTYPE=SDCCH;
+RLVLE:CELL=39265,CHTYPE=TCH;
+RLVLE:CELL=39265,CHTYPE=SDCCH;
+RLVLE:CELL=39266,CHTYPE=TCH;
+RLVLE:CELL=39266,CHTYPE=SDCCH;
+RLVLI:CHTYPE=TCH;
+RLVLI:CHTYPE=SDCCH;
+RLVLP;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |             BLOCKING AND OUTSERVICE            | ##
+@COMMENT +------------------------------------------------+ ##
+RXBLI:MO=RXOTG-113,SUBORD,FORCE;
+RXESE:MO=RXOTG-113,SUBORD;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |        TG TO CHANNEL GROUP DISCONNECTION       | ##
+@COMMENT +------------------------------------------------+ ##
+RXTCP:MO=RXOTG-113;
+RXTCE:MO=RXOTG-113,CELL=39264,CHGR=0;
+RXTCE:MO=RXOTG-113,CELL=39264,CHGR=1;
+RXTCE:MO=RXOTG-113,CELL=39265,CHGR=0;
+RXTCE:MO=RXOTG-113,CELL=39265,CHGR=1;
+RXTCE:MO=RXOTG-113,CELL=39266,CHGR=0;
+RXTCE:MO=RXOTG-113,CELL=39266,CHGR=1;
+RXTCP:MO=RXOTG-113;
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |  DESDEFINITION OF EQUIPMENT FOR BTS SITE       | ##
+@COMMENT +------------------------------------------------+ ##
+RXMOE:MO=RXOTS-113-0-0&&-7;
+RXMOE:MO=RXOTX-113-0;
+RXMOE:MO=RXORX-113-0;
+RXMOE:MO=RXOTRX-113-0;
+
+RXMOE:MO=RXOTS-113-1-0&&-7;
+RXMOE:MO=RXOTX-113-1;
+RXMOE:MO=RXORX-113-1;
+RXMOE:MO=RXOTRX-113-1;
+
+RXMOE:MO=RXOTS-113-4-0&&-7;
+RXMOE:MO=RXOTX-113-4;
+RXMOE:MO=RXORX-113-4;
+RXMOE:MO=RXOTRX-113-4;
+
+RXMOE:MO=RXOTS-113-5-0&&-7;
+RXMOE:MO=RXOTX-113-5;
+RXMOE:MO=RXORX-113-5;
+RXMOE:MO=RXOTRX-113-5;
+
+RXMOE:MO=RXOTS-113-8-0&&-7;
+RXMOE:MO=RXOTX-113-8;
+RXMOE:MO=RXORX-113-8;
+RXMOE:MO=RXOTRX-113-8;
+
+RXMOE:MO=RXOTS-113-9-0&&-7;
+RXMOE:MO=RXOTX-113-9;
+RXMOE:MO=RXORX-113-9;
+RXMOE:MO=RXOTRX-113-9;
+
+RXMOE:MO=RXOTS-113-10-0&&-7;
+RXMOE:MO=RXOTX-113-10;
+RXMOE:MO=RXORX-113-10;
+RXMOE:MO=RXOTRX-113-10;
+
+RXMOE:MO=RXOMCTR-113-0;
+RXMOE:MO=RXOMCTR-113-1;
+RXMOE:MO=RXOMCTR-113-2;
+
+RXMOE:MO=RXOCON-113;
+RXMOE:MO=RXOTF-113;
+RXMOE:MO=RXOIS-113;
+RXMOE:MO=RXOCF-113;
+RXMSP:MO=RXOTG-113,SUBORD;
+
+DTBLI:DIP=0ODP113;
+DTDIE:DIP=0ODP113;
+RXMOP:MO=RXODP-113-0;
+RXMOE:MO=RXODP-113-0;
+
+RXMOE:MO=RXOTG-113;
+
+RRSCE:SCGR=113;
+RRSGE:SCGR=113;
+RRPTE:PSTU=TDM_BI926-0;
+
+
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |        DESDEFINITION OF CELL PARAMETERS        | ##
+@COMMENT +------------------------------------------------+ ##
+CACLP;
+RLDEE:CELL=39264;
+RLDEE:CELL=39265;
+RLDEE:CELL=39266;
+
+exit;
+
+eaw NE=SAMBC01,CSL=1;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMBC01     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw VAMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: VAMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw ANMS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: ANMS01      | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw SAMS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMS01      | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw SAMSS02;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMSS02     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw SAMSS03;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: SAMSS03     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw RAMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: RAMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw COMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: COMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw NE=CHMBC01,CSL=1;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: CHMBC01     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+eaw PMMSS01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |    DEFINITION OF CELL NAME IN MSC: PMMSS01     | ##
+@COMMENT +------------------------------------------------+ ##
+exit;
+
+
+eaw TAB01;
+@T 2
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |             HALTED OF CELLS IN TG              | ##
+@COMMENT +------------------------------------------------+ ##
+RLSTP:CELL=ALL,STATE=HALTED;
+
+exit;
+@GETTIME {HMM} HH:MM
+@GETDATE {DDMMYYYY} DD-MM-YYYY
+@COMMENT +------------------------------------------------+ ##
+@COMMENT | DATE:  {DDMMYYYY}                 TIME:  {HMM} | ##
+@COMMENT +------------------------------------------------+ ##
+@L-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

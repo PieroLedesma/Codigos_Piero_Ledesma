@@ -1,0 +1,310 @@
+lt all
+confb+
+gs+
+
+
+###################################################
+# Create Iub and Cells                            #
+###################################################
+crn Transport=1,VlanPort=WCDMA
+egressQosClassification
+egressQosMarking
+egressQosQueueMap
+encapsulation EthernetPort=TN_B
+ingressQosMarking
+isTagged true
+userLabel
+vlanId 1300
+end
+
+
+crn Transport=1,VlanPort=WCDMA
+egressQosClassification
+egressQosMarking
+egressQosQueueMap
+encapsulation EthernetPort=TN_A
+ingressQosMarking
+isTagged true
+userLabel
+vlanId 1300
+end
+
+
+crn Transport=1,VlanPort=WCDMA
+egressQosClassification
+egressQosMarking
+egressQosQueueMap
+encapsulation EthernetPort=TN_C
+ingressQosMarking
+isTagged true
+userLabel
+vlanId 1300
+end
+
+
+crn Transport=1,Router=WCDMA
+hopLimit 64
+ttl 64
+userLabel
+end
+
+crn Transport=1,Router=WCDMA,InterfaceIPv4=1
+aclEgress 
+aclIngress 
+arpTimeout 300
+bfdProfile 
+bfdStaticRoutes 0 
+egressQosMarking 
+encapsulation VlanPort=WCDMA
+ingressQosMarking 
+loopback false
+mtu 1500
+pcpArp 6
+routesHoldDownTimer
+routingPolicyIngress
+userLabel
+end
+
+crn Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1
+address 10.31.156.178/29
+configurationMode 0
+dhcpClientIdentifier 
+dhcpClientIdentifierType 0
+userLabel
+end
+
+crn Transport=1,Router=WCDMA,RouteTableIPv4Static=1
+end
+
+crn Transport=1,Router=WCDMA,RouteTableIPv4Static=1,Dst=1
+dst 0.0.0.0/0
+end
+
+crn Transport=1,Router=WCDMA,RouteTableIPv4Static=1,Dst=1,NextHop=1
+address 10.31.156.177
+adminDistance 1
+bfdMonitoring true
+discard false
+reference
+end
+
+
+crn Transport=1,Synchronization=1,RadioEquipmentClock=1
+minQualityLevel qualityLevelValueOptionI=2,qualityLevelValueOptionII=2,qualityLevelValueOptionIII=1
+selectionProcessMode 2
+end
+
+
+crn Transport=1,Synchronization=1,SyncEthInput=SyncEth
+encapsulation EthernetPort=TN_A
+end
+
+crn Transport=1,Synchronization=1,SyncEthInput=SyncEth
+encapsulation EthernetPort=TN_B
+end
+
+crn Transport=1,Synchronization=1,RadioEquipmentClock=1,RadioEquipmentClockReference=SyncE
+adminQualityLevel qualityLevelValueOptionI=2,qualityLevelValueOptionII=2,qualityLevelValueOptionIII=1
+administrativeState 1
+encapsulation Synchronization=1,SyncEthInput=SyncEth
+holdOffTime 1000
+priority 1
+useQLFrom 1
+waitToRestoreTime 60
+end
+
+set Lm=1,FeatureState=CXC4040011 featureState 1
+
+
+crn Transport=1,SctpProfile=1
+alphaIndex 3
+assocMaxRtx 20
+betaIndex 2
+bundlingActivated true
+bundlingAdaptiveActivated true
+bundlingTimer 10
+cookieLife 60
+dscp 40
+hbMaxBurst 0
+heartbeatActivated true
+heartbeatInterval 30000
+incCookieLife 30
+initARWnd 131072
+initRto 700
+initialHeartbeatInterval 5000
+maxActivateThr 65535
+maxBurst 4
+maxInStreams 17
+maxInitRt 8
+maxOutStreams 17
+maxRto 2000
+maxSctpPduSize 1480
+maxShutdownRt 5
+minActivateThr 1
+minRto 700
+noSwitchback true
+pathMaxRtx 4
+primaryPathAvoidance true
+primaryPathMaxRtx 0
+sackTimer 40
+thrTransmitBuffer 192
+thrTransmitBufferCongCeased 85
+transmitBufferSize 256
+userLabel 1
+end
+
+
+
+
+crn Transport=1,SctpEndpoint=NBAP-D
+localIpAddress Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1
+portNumber 5114
+sctpProfile SctpProfile=1
+userLabel
+end
+
+crn Transport=1,SctpEndpoint=NBAP-C
+localIpAddress Transport=1,Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1
+portNumber 5113
+sctpProfile SctpProfile=1
+userLabel
+end
+
+cr NodeBFunction=1
+
+wait 1s
+
+crn NodeBFunction=1,Iub=Iub_USA140
+ipv4Address Router=WCDMA,InterfaceIPv4=1,AddressIPv4=1
+rbsId 12140
+userLabel
+end
+
+wait 1s
+crn NodeBFunction=1,Iub=Iub_USA140,NbapCommon=1
+auditRetransmissionT 5
+l3EstablishSupervisionT 302
+sctpEndpointRef SctpEndpoint=NBAP-C
+userLabel
+end
+
+wait 1s
+crn NodeBFunction=1,Iub=Iub_USA140,NbapDedicated=1
+sctpEndpointRef SctpEndpoint=NBAP-D
+userLabel
+end
+
+wait 1s
+crn NodeBFunction=1,Iub=Iub_USA140,IUBDataStreams=1
+hsDataFrameDelayThreshold 60
+hsRbrDiscardProbability 0
+hsRbrWeight 100,100,50,100,200,100,100,100,100,100,100,100,100,100,100,100
+maxHsRate 198
+schHsFlowControlOnOff 0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+userLabel
+end
+
+wait 1s
+crn NodeBFunction=1,NodeBLocalCellGroup=1
+administrativeState 0
+multiCarrierPair1
+multiCarrierPair2
+multiCarrierPair3
+multiCarrierPair4
+multiCarrierPair5
+multiCarrierPair6
+userLabel
+end
+
+wait 1s
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1
+21401 #localCellId
+2 #operatingBand
+412 #uarfcnDL
+
+ld NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,RadioLinks=1
+
+wait 1s
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1
+21402 #localCellId
+2 #operatingBand
+412 #uarfcnDL
+
+ld NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,RadioLinks=1
+
+wait 1s
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1
+21403 #localCellId
+2 #operatingBand
+412 #uarfcnDL
+
+ld NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,RadioLinks=1
+
+wait 1s
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1
+01401 #localCellId
+8 #operatingBand
+3073 #uarfcnDL
+
+ld NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,RadioLinks=1
+
+wait 1s
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1
+01402 #localCellId
+8 #operatingBand
+3073 #uarfcnDL
+
+ld NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,RadioLinks=1
+
+wait 1s
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1
+01403 #localCellId
+8 #operatingBand
+3073 #uarfcnDL
+
+ld NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,RadioLinks=1
+
+wait 1s
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S1C1,NodeBSectorCarrier=S1C1
+2 #numOfRxAntennas
+2 #numOfTxAntennas
+NodeSupport=1,SectorEquipmentFunction=1
+wait 1s
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S2C1,NodeBSectorCarrier=S2C1
+2 #numOfRxAntennas
+2 #numOfTxAntennas
+NodeSupport=1,SectorEquipmentFunction=2
+wait 1s
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S3C1,NodeBSectorCarrier=S3C1
+2 #numOfRxAntennas
+2 #numOfTxAntennas
+NodeSupport=1,SectorEquipmentFunction=3
+wait 1s
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S4C1,NodeBSectorCarrier=S4C1
+2 #numOfRxAntennas
+1 #numOfTxAntennas
+NodeSupport=1,SectorEquipmentFunction=4
+wait 1s
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S5C1,NodeBSectorCarrier=S5C1
+2 #numOfRxAntennas
+1 #numOfTxAntennas
+NodeSupport=1,SectorEquipmentFunction=5
+wait 1s
+
+cr NodeBFunction=1,NodeBLocalCellGroup=1,NodeBLocalCell=S6C1,NodeBSectorCarrier=S6C1
+2 #numOfRxAntennas
+1 #numOfTxAntennas
+NodeSupport=1,SectorEquipmentFunction=6
+wait 1s
+
+lt all
+lt all
+lrdel ENodeBFunction=1$
+y
+lt all
+cvms $nodename_Equipment_WcdmaInBaseband

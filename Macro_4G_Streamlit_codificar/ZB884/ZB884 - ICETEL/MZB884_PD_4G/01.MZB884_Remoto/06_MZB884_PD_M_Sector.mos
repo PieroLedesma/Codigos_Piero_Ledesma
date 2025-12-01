@@ -1,0 +1,265 @@
+
+
+confb+
+gs+
+
+set NodeSupport=1,MpClusterHandling=1 primaryCoreRef FieldReplaceableUnit=BB-1
+#############################################################
+### SectorEquipmentFunction                        
+#############################################################
+
+crn NodeSupport=1,SectorEquipmentFunction=1
+administrativeState 1
+rfBranchRef
+userLabel LTE2600 S1
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=2
+administrativeState 1
+rfBranchRef
+userLabel LTE2600 S2
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=3
+administrativeState 1
+rfBranchRef
+userLabel LTE2600 S3
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=7
+administrativeState 1
+rfBranchRef
+userLabel LTE1900 S1
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=8
+administrativeState 1
+rfBranchRef
+userLabel LTE1900 S2
+end
+
+crn NodeSupport=1,SectorEquipmentFunction=9
+administrativeState 1
+rfBranchRef
+userLabel LTE1900 S3
+end
+
+#############################################################
+### SectorCarrier                      
+#############################################################
+
+crn ENodeBFunction=1,SectorCarrier=1
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=1
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 120000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=1 maximumTransmissionPower 508
+set SectorCarrier=1 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=2
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=2
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 120000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=2 maximumTransmissionPower 508
+set SectorCarrier=2 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=3
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=3
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 120000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=3 maximumTransmissionPower 508
+set SectorCarrier=3 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=7
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=7
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 120000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=7 maximumTransmissionPower 508
+set SectorCarrier=7 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=8
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=8
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 120000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=8 maximumTransmissionPower 508
+set SectorCarrier=8 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=9
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=9
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 120000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=9 maximumTransmissionPower 508
+set SectorCarrier=9 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=17
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=7
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 80000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=17 maximumTransmissionPower 490
+set SectorCarrier=17 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=18
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=8
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 80000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=18 maximumTransmissionPower 490
+set SectorCarrier=18 evmPowerBackoffAllowed false
+
+crn ENodeBFunction=1,SectorCarrier=19
+noOfRxAntennas 4
+noOfTxAntennas 4
+prsEnabled true
+sectorFunctionRef NodeSupport=1,SectorEquipmentFunction=9
+ulForcedTimingAdvanceCommand 0
+txPowerPersistentLock false
+configuredMaxTxPower 80000
+rfBranchRxRef
+rfBranchTxRef
+end
+
+set SectorCarrier=19 maximumTransmissionPower 490
+set SectorCarrier=19 evmPowerBackoffAllowed false
+
+#####################################################
+#### Sector Carrier 
+#####################################################
+
+cr ENodeFunction=1,SectorCarrier=1
+NodeSupport=1,SectorEquipmentFunction=1
+
+cr ENodeFunction=1,SectorCarrier=2
+NodeSupport=1,SectorEquipmentFunction=2
+
+cr ENodeFunction=1,SectorCarrier=3
+NodeSupport=1,SectorEquipmentFunction=3
+
+cr ENodeFunction=1,SectorCarrier=7
+NodeSupport=1,SectorEquipmentFunction=7
+
+cr ENodeFunction=1,SectorCarrier=8
+NodeSupport=1,SectorEquipmentFunction=8
+
+cr ENodeFunction=1,SectorCarrier=9
+NodeSupport=1,SectorEquipmentFunction=9
+
+cr ENodeFunction=1,SectorCarrier=17
+NodeSupport=1,SectorEquipmentFunction=7
+
+cr ENodeFunction=1,SectorCarrier=18
+NodeSupport=1,SectorEquipmentFunction=8
+
+cr ENodeFunction=1,SectorCarrier=19
+NodeSupport=1,SectorEquipmentFunction=9
+
+#############################################################
+### ConfiguredMaxTxPower                      
+#############################################################
+
+bl EUtranCellFDD|sector
+y
+set ^SectorCarrier=1$    configuredMaxTxPower 120000
+set ^SectorCarrier=1$ noOfRxAntennas 4
+set ^SectorCarrier=1$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=1$ evmPowerBackoffAllowed false
+set ^SectorCarrier=2$    configuredMaxTxPower 120000
+set ^SectorCarrier=2$ noOfRxAntennas 4
+set ^SectorCarrier=2$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=2$ evmPowerBackoffAllowed false
+set ^SectorCarrier=3$    configuredMaxTxPower 120000
+set ^SectorCarrier=3$ noOfRxAntennas 4
+set ^SectorCarrier=3$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=3$ evmPowerBackoffAllowed false
+set ^SectorCarrier=7$    configuredMaxTxPower 120000
+set ^SectorCarrier=7$ noOfRxAntennas 4
+set ^SectorCarrier=7$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=7$ evmPowerBackoffAllowed false
+set ^SectorCarrier=8$    configuredMaxTxPower 120000
+set ^SectorCarrier=8$ noOfRxAntennas 4
+set ^SectorCarrier=8$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=8$ evmPowerBackoffAllowed false
+set ^SectorCarrier=9$    configuredMaxTxPower 120000
+set ^SectorCarrier=9$ noOfRxAntennas 4
+set ^SectorCarrier=9$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=9$ evmPowerBackoffAllowed false
+set ^SectorCarrier=17$    configuredMaxTxPower 80000
+set ^SectorCarrier=17$ noOfRxAntennas 4
+set ^SectorCarrier=17$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=17$ evmPowerBackoffAllowed false
+set ^SectorCarrier=18$    configuredMaxTxPower 80000
+set ^SectorCarrier=18$ noOfRxAntennas 4
+set ^SectorCarrier=18$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=18$ evmPowerBackoffAllowed false
+set ^SectorCarrier=19$    configuredMaxTxPower 80000
+set ^SectorCarrier=19$ noOfRxAntennas 4
+set ^SectorCarrier=19$ noOftxAntennas 4
+set ENodeBFunction=1,SectorCarrier=19$ evmPowerBackoffAllowed false
+COMMIT 
+
+
+gs-
+confb-
+cvms Sector_PD_$nodename
+############################# FIN SCRIPT

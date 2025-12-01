@@ -1,0 +1,9 @@
+cmedit create NetworkElement=MZB884 networkElementId=MZB884, neType="RadioNode",ossPrefix="SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Region_VIII,MeContext=MZB884",userlabel="MZB884", ossModelIdentity="22.Q2-R53A03", timeZone="UTC" -ns=OSS_NE_DEF -v=2.0.0 
+cmedit create NetworkElement=MZB884,ComConnectivityInformation=1 ComConnectivityInformationId=1,fileTransferProtocol=SFTP,ftpTlsServerPort=1636,ipAddress="10.72.84.229",port=6513,snmpAgentPort=161,snmpReadCommunity="public",snmpSecurityLevel="NO_AUTH_NO_PRIV",snmpVersion="SNMP_V2C",snmpWriteCommunity="public",transportProtocol="TLS" -ns=COM_MED -version=1.1.0 
+secadm credentials create --secureusername rbs --secureuserpassword "rbs" --ldapuser disable -n MZB884
+cmedit set NetworkElement=MZB884,CmNodeHeartbeatSupervision=1 active=true 
+cmedit set NetworkElement=MZB884,InventorySupervision=1 active=true
+cmedit set NetworkElement=MZB884,PmFunction=1 pmEnabled=true --force
+cmedit set NetworkElement=MZB884,FmFunction=1 subscriptionState=ENABLED
+cmedit action NetworkElement=MZB884,CmFunction=1 sync
+cmedit set NetworkElement=MZB884,CmNodeHeartbeatSupervision=1 active=true

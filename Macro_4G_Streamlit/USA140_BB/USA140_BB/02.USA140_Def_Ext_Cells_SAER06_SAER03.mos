@@ -1,0 +1,636 @@
+CREATE
+(
+parent "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03"
+identity "SAER03_U21401"
+     moType ExternalUtranCell
+     exception none
+     nrOfAttributes 6
+     cId Integer 21401
+     lac Integer 13502
+     rac Integer 134
+     primaryScramblingCode Integer 205
+     uarfcnDl Integer 412
+     uarfcnUl Integer 12
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     agpsEnabled Integer 1
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     cellCapability Struct
+         nrOfElements 8
+             hsdschSupport Integer 1
+             edchSupport Integer 1
+             edchTti2Support Integer 1
+             enhancedL2Support Integer 
+             fdpchSupport Integer 
+             multiCarrierSupport Integer 0
+             cpcSupport Integer 
+             qam64MimoSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     hsAqmCongCtrlSpiSupport Array Integer 10
+1
+2
+3
+4
+7
+1
+2
+3
+4
+7
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     hsAqmCongCtrlSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     individualOffset Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     maxTxPowerUl Integer 24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     primaryCpichPower Integer 315
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     qQualMin Integer -20
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+    qRxLevMin Integer -115
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     reportingRange1a Integer 6
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     transmissionScheme Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21401"
+     exception none
+     userLabel String "U21401"
+)
+
+CREATE
+(
+parent "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03"
+identity "SAER03_U21402"
+     moType ExternalUtranCell
+     exception none
+     nrOfAttributes 6
+     cId Integer 21402
+     lac Integer 13502
+     rac Integer 134
+     primaryScramblingCode Integer 213
+     uarfcnDl Integer 412
+     uarfcnUl Integer 12
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     agpsEnabled Integer 1
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     cellCapability Struct
+         nrOfElements 8
+             hsdschSupport Integer 1
+             edchSupport Integer 1
+             edchTti2Support Integer 1
+             enhancedL2Support Integer 
+             fdpchSupport Integer 
+             multiCarrierSupport Integer 0
+             cpcSupport Integer 
+             qam64MimoSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     hsAqmCongCtrlSpiSupport Array Integer 10
+1
+2
+3
+4
+7
+1
+2
+3
+4
+7
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     hsAqmCongCtrlSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     individualOffset Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     maxTxPowerUl Integer 24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     primaryCpichPower Integer 315
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     qQualMin Integer -20
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+    qRxLevMin Integer -115
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     reportingRange1a Integer 6
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     transmissionScheme Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21402"
+     exception none
+     userLabel String "U21402"
+)
+
+CREATE
+(
+parent "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03"
+identity "SAER03_U21403"
+     moType ExternalUtranCell
+     exception none
+     nrOfAttributes 6
+     cId Integer 21403
+     lac Integer 13502
+     rac Integer 134
+     primaryScramblingCode Integer 221
+     uarfcnDl Integer 412
+     uarfcnUl Integer 12
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     agpsEnabled Integer 1
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     cellCapability Struct
+         nrOfElements 8
+             hsdschSupport Integer 1
+             edchSupport Integer 1
+             edchTti2Support Integer 1
+             enhancedL2Support Integer 
+             fdpchSupport Integer 
+             multiCarrierSupport Integer 0
+             cpcSupport Integer 
+             qam64MimoSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     hsAqmCongCtrlSpiSupport Array Integer 10
+1
+2
+3
+4
+7
+1
+2
+3
+4
+7
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     hsAqmCongCtrlSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     individualOffset Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     maxTxPowerUl Integer 24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     primaryCpichPower Integer 315
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     qQualMin Integer -20
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+    qRxLevMin Integer -115
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     reportingRange1a Integer 6
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     transmissionScheme Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U21403"
+     exception none
+     userLabel String "U21403"
+)
+
+CREATE
+(
+parent "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03"
+identity "SAER03_U01403"
+     moType ExternalUtranCell
+     exception none
+     nrOfAttributes 6
+     cId Integer 01403
+     lac Integer 13502
+     rac Integer 134
+     primaryScramblingCode Integer 17
+     uarfcnDl Integer 3073
+     uarfcnUl Integer 2848
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     agpsEnabled Integer 1
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     cellCapability Struct
+         nrOfElements 8
+             hsdschSupport Integer 1
+             edchSupport Integer 1
+             edchTti2Support Integer 1
+             enhancedL2Support Integer 
+             fdpchSupport Integer 
+             multiCarrierSupport Integer 0
+             cpcSupport Integer 
+             qam64MimoSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     hsAqmCongCtrlSpiSupport Array Integer 10
+1
+2
+3
+4
+7
+1
+2
+3
+4
+7
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     hsAqmCongCtrlSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     individualOffset Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     maxTxPowerUl Integer 24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     primaryCpichPower Integer 290
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     qQualMin Integer -24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+    qRxLevMin Integer -119
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     reportingRange1a Integer 6
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     transmissionScheme Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01403"
+     exception none
+     userLabel String "U01403"
+)
+
+CREATE
+(
+parent "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03"
+identity "SAER03_U01402"
+     moType ExternalUtranCell
+     exception none
+     nrOfAttributes 6
+     cId Integer 01402
+     lac Integer 13502
+     rac Integer 134
+     primaryScramblingCode Integer 16
+     uarfcnDl Integer 3073
+     uarfcnUl Integer 2848
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     agpsEnabled Integer 1
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     cellCapability Struct
+         nrOfElements 8
+             hsdschSupport Integer 1
+             edchSupport Integer 1
+             edchTti2Support Integer 1
+             enhancedL2Support Integer 
+             fdpchSupport Integer 
+             multiCarrierSupport Integer 0
+             cpcSupport Integer 
+             qam64MimoSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     hsAqmCongCtrlSpiSupport Array Integer 10
+1
+2
+3
+4
+7
+1
+2
+3
+4
+7
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     hsAqmCongCtrlSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     individualOffset Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     maxTxPowerUl Integer 24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     primaryCpichPower Integer 290
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     qQualMin Integer -24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+    qRxLevMin Integer -119
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     reportingRange1a Integer 6
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     transmissionScheme Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01402"
+     exception none
+     userLabel String "U01402"
+)
+
+CREATE
+(
+parent "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03"
+identity "SAER03_U01401"
+     moType ExternalUtranCell
+     exception none
+     nrOfAttributes 6
+     cId Integer 01401
+     lac Integer 13502
+     rac Integer 134
+     primaryScramblingCode Integer 15
+     uarfcnDl Integer 3073
+     uarfcnUl Integer 2848
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     agpsEnabled Integer 1
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     cellCapability Struct
+         nrOfElements 8
+             hsdschSupport Integer 1
+             edchSupport Integer 1
+             edchTti2Support Integer 1
+             enhancedL2Support Integer 
+             fdpchSupport Integer 
+             multiCarrierSupport Integer 0
+             cpcSupport Integer 
+             qam64MimoSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     hsAqmCongCtrlSpiSupport Array Integer 10
+1
+2
+3
+4
+7
+1
+2
+3
+4
+7
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     hsAqmCongCtrlSupport Integer 
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     individualOffset Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     maxTxPowerUl Integer 24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     primaryCpichPower Integer 290
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     qQualMin Integer -24
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+    qRxLevMin Integer -119
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     reportingRange1a Integer 6
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     transmissionScheme Integer 0
+)
+SET
+(
+     mo "ManagedElement=1,RncFunction=1,IurLink=Iur_SAER06_SAER03,ExternalUtranCell=SAER03_U01401"
+     exception none
+     userLabel String "U01401"
+)
+

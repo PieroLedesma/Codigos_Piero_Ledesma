@@ -1,0 +1,449 @@
+# =====================================================================
+# terreno_generator_5G.py - Generación de archivos de terreno para 5G NR
+# =====================================================================
+
+from typing import Dict, Any
+
+
+def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any]) -> str:
+    """
+    Genera el archivo SiteBasic.xml para 5G NR basado en el ejemplo de GLA781.
+    
+    Args:
+        nemonico: Código nemónico del sitio
+        trama: Tipo de trama (TN_IDL_A, TN_IDL_B, etc.)
+        wsh_data: Datos extraídos del WSH
+    
+    Returns:
+        Contenido XML del SiteBasic
+    """
+    nem = nemonico.upper()
+    
+    # Extraer datos del WSH
+    ip_oam = wsh_data.get('IP_OAM', '0.0.0.0')
+    ip_trafico = wsh_data.get('IP_TRAFICO', '0.0.0.0')
+    gateway_oam = wsh_data.get('GATEWAY_OAM', '0.0.0.0')
+    gateway_trafico = wsh_data.get('GATEWAY_TRAFICO', '0.0.0.0')
+    vlan_oam = wsh_data.get('VLAN_OAM', '0')
+    vlan_trafico = wsh_data.get('VLAN_TRAFICO', '0')
+    dns = wsh_data.get('DNS', '10.170.15.42')
+    ntp1 = wsh_data.get('NTP1', '172.16.50.41')
+    ntp2 = wsh_data.get('NTP2', '172.16.50.42')
+    
+    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="1" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running />
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+       <managedElementId>1</managedElementId>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <Lm xmlns="urn:com:ericsson:ecim:RcsLM">
+            <lmId>1</lmId>
+            <fingerprint>{nem}</fingerprint>
+          </Lm>
+        </SystemFunctions>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Closing" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="2" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running />
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <Lm xmlns="urn:com:ericsson:ecim:RcsLM">
+            <lmId>1</lmId>
+            <FeatureState>
+              <featureStateId>CXC4011823</featureStateId>
+              <featureState>ACTIVATED</featureState>
+            </FeatureState>
+          </Lm>
+        </SystemFunctions>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Closing" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="3" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running />
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <SecM xmlns="urn:com:ericsson:ecim:ComSecM">
+            <secMId>1</secMId>
+            <UserManagement>
+              <userManagementId>1</userManagementId>
+              <LocalAuthorizationMethod xmlns="urn:com:ericsson:ecim:ComLocalAuthorization">
+                <localAuthorizationMethodId>1</localAuthorizationMethodId>
+             </LocalAuthorizationMethod>
+              <UserIdentity xmlns="urn:com:ericsson:ecim:RcsUser">
+                <userIdentityId>1</userIdentityId>
+                <MaintenanceUser>
+                  <maintenanceUserId>1</maintenanceUserId>
+                  <userName>rbs</userName>
+                  <password>
+                    <cleartext />
+                    <password>rbs</password>
+                  </password>
+                </MaintenanceUser>
+              </UserIdentity>
+            </UserManagement>
+          </SecM>
+          <SysM xmlns="urn:com:ericsson:ecim:RcsSysM">
+            <sysMId>1</sysMId>
+            <CliSsh>
+              <cliSshId>1</cliSshId>
+               <port>2023</port>
+            </CliSsh>
+            <NetconfSsh>
+              <netconfSshId>1</netconfSshId>
+              <port>830</port>
+            </NetconfSsh>
+            <NtpServer>
+              <ntpServerId>1</ntpServerId>
+              <serverAddress>{ntp1}</serverAddress>
+              <administrativeState>UNLOCKED</administrativeState>
+            </NtpServer>
+            <NtpServer>
+              <ntpServerId>2</ntpServerId>
+              <serverAddress>{ntp2}</serverAddress>
+              <administrativeState>UNLOCKED</administrativeState>
+            </NtpServer>
+          </SysM>
+        </SystemFunctions>
+
+        <Transport>
+          <transportId>1</transportId>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>NR_OAM</routerId>
+          </Router>
+          <EthernetPort xmlns="urn:com:ericsson:ecim:RtnL2EthernetPort">
+            <ethernetPortId>{trama}</ethernetPortId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <admOperatingMode>10G_FULL</admOperatingMode>
+            <autoNegEnable>false</autoNegEnable>
+            <encapsulation>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1,TnPort={trama}</encapsulation>
+            <userLabel>{trama}</userLabel>
+          </EthernetPort>
+          <VlanPort xmlns="urn:com:ericsson:ecim:RtnL2VlanPort">
+            <vlanPortId>NR_OAM</vlanPortId>
+            <encapsulation>ManagedElement=1,Transport=1,EthernetPort={trama}</encapsulation>
+            <vlanId>{vlan_oam}</vlanId>
+          </VlanPort>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>NR_OAM</routerId>
+            <InterfaceIPv4 xmlns="urn:com:ericsson:ecim:RtnL3InterfaceIPv4">
+              <interfaceIPv4Id>1</interfaceIPv4Id>
+              <encapsulation>ManagedElement=1,Transport=1,VlanPort=NR_OAM</encapsulation>
+              <userLabel>VLAN OAM</userLabel>
+              <AddressIPv4>
+                <addressIPv4Id>1</addressIPv4Id>
+                <address>{ip_oam}/26</address>
+              </AddressIPv4>
+            </InterfaceIPv4>
+          </Router>
+        </Transport>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <SysM xmlns="urn:com:ericsson:ecim:RcsSysM">
+            <sysMId>1</sysMId>
+            <OamAccessPoint>
+              <oamAccessPointId>1</oamAccessPointId>
+              <accessPoint>ManagedElement=1,Transport=1,Router=NR_OAM,InterfaceIPv4=1,AddressIPv4=1</accessPoint>
+            </OamAccessPoint>
+          </SysM>
+        </SystemFunctions>
+        <Transport>
+          <transportId>1</transportId>
+          <Ntp xmlns="urn:com:ericsson:ecim:RsyncNtp">
+            <ntpId>1</ntpId>
+          </Ntp>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>NR</routerId>
+          </Router>
+          <VlanPort xmlns="urn:com:ericsson:ecim:RtnL2VlanPort">
+            <vlanPortId>NR</vlanPortId>
+            <encapsulation>ManagedElement=1,Transport=1,EthernetPort={trama}</encapsulation>
+            <vlanId>{vlan_trafico}</vlanId>
+          </VlanPort>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>NR</routerId>
+            <InterfaceIPv4 xmlns="urn:com:ericsson:ecim:RtnL3InterfaceIPv4">
+              <interfaceIPv4Id>1</interfaceIPv4Id>
+              <encapsulation>ManagedElement=1,Transport=1,VlanPort=NR</encapsulation>
+              <userLabel>VLAN TRAFICO</userLabel>
+              <AddressIPv4>
+                <addressIPv4Id>1</addressIPv4Id>
+                <address>{ip_trafico}/26</address>
+              </AddressIPv4>
+            </InterfaceIPv4>
+          </Router>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>NR_OAM</routerId>
+            <DnsClient xmlns="urn:com:ericsson:ecim:RtnDnsClient">
+              <dnsClientId>1</dnsClientId>
+              <configurationMode>MANUAL</configurationMode>
+              <serverAddress>{dns}</serverAddress>
+            </DnsClient>
+            <RouteTableIPv4Static xmlns="urn:com:ericsson:ecim:RtnRoutesStaticRouteIPv4">
+              <routeTableIPv4StaticId>1</routeTableIPv4StaticId>
+              <Dst>
+                <dstId>1</dstId>
+                <dst>0.0.0.0/0</dst>
+                <NextHop>
+                  <nextHopId>1</nextHopId>
+                  <address>{gateway_oam}</address>
+                  <adminDistance>1</adminDistance>
+                </NextHop>
+              </Dst>
+            </RouteTableIPv4Static>
+          </Router>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>NR</routerId>
+            <RouteTableIPv4Static xmlns="urn:com:ericsson:ecim:RtnRoutesStaticRouteIPv4">
+              <routeTableIPv4StaticId>1</routeTableIPv4StaticId>
+              <Dst>
+                <dstId>1</dstId>
+                <dst>0.0.0.0/0</dst>
+                <NextHop>
+                  <nextHopId>1</nextHopId>
+                  <address>{gateway_trafico}</address>
+                  <adminDistance>1</adminDistance>
+                </NextHop>
+              </Dst>
+            </RouteTableIPv4Static>
+          </Router>
+        </Transport>
+        <Equipment xmlns="urn:com:ericsson:ecim:ReqEquipment">
+          <equipmentId>1</equipmentId>
+          <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+            <fieldReplaceableUnitId>BB-1</fieldReplaceableUnitId>
+            <TnPort xmlns="urn:com:ericsson:ecim:ReqTnPort">
+              <tnPortId>{trama}</tnPortId>
+            </TnPort>
+          </FieldReplaceableUnit>
+        </Equipment>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Closing" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="4" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running />
+    </target>
+    <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+       <managedElementId>1</managedElementId>
+        <networkManagedElementId>{nem}</networkManagedElementId>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Closing" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+"""
+    
+    return xml_content
+
+
+def generar_site_equipment_xml_5g(trama: str) -> str:
+    """
+    Genera el archivo SiteEquipment.xml para 5G NR basado en el ejemplo de GLA781.
+    
+    Args:
+        trama: Tipo de trama
+    
+    Returns:
+        Contenido XML del SiteEquipment
+    """
+    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+       <capabilities>
+               <capability>urn:ietf:params:netconf:base:1.0</capability>
+               <capability>urn:com:ericsson:ebase:0.1.0</capability>
+               <capability>urn:com:ericsson:ebase:1.1.0</capability>
+       </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Create primary FieldReplaceableUnit with ports in the first rpc" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<edit-config>
+       <config>
+               <ManagedElement>
+                       <managedElementId>1</managedElementId>
+                       <Equipment>
+                               <equipmentId>1</equipmentId>
+                               <FieldReplaceableUnit>
+                                       <fieldReplaceableUnitId>BB-1</fieldReplaceableUnitId>
+                                       <administrativeState>UNLOCKED</administrativeState>
+                                       <RiPort>
+                                               <riPortId>A</riPortId>
+                                       </RiPort>
+                                       <RiPort>
+                                               <riPortId>B</riPortId>
+                                       </RiPort>
+                                       <RiPort>
+                                               <riPortId>C</riPortId>
+                                       </RiPort>
+                                       <TnPort>
+                                               <tnPortId>{trama}</tnPortId>
+                                       </TnPort>
+                                       <EcPort>
+                                               <ecPortId>1</ecPortId>
+                                               <hubPosition>X</hubPosition>
+                                       </EcPort>
+                                       <SyncPort>
+                                               <syncPortId>1</syncPortId>
+                                       </SyncPort>
+                               </FieldReplaceableUnit>
+                       </Equipment>
+                       <NodeSupport>
+                               <nodeSupportId>1</nodeSupportId>
+                               <MpClusterHandling>
+                                       <mpClusterHandlingId>1</mpClusterHandlingId>
+                                       <primaryCoreRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1</primaryCoreRef>
+                               </MpClusterHandling>
+                       </NodeSupport>
+               </ManagedElement>
+       </config>
+</edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Common Support System hardware configuration" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+        <edit-config>
+                <config>
+                       <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+                                <managedElementId>1</managedElementId>
+                                <Equipment>
+                                        <equipmentId>1</equipmentId>
+                                        <EcBus>
+                                                <ecBusId>1</ecBusId>
+                                                <ecBusConnectorRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1</ecBusConnectorRef>
+                                        </EcBus>
+                                        <FieldReplaceableUnit>
+                                                <fieldReplaceableUnitId>BB-1</fieldReplaceableUnitId>
+                                                <positionRef>ManagedElement=1,Equipment=1,Cabinet=1</positionRef>
+                                                <EcPort>
+                                                        <ecPortId>1</ecPortId>
+                                                        <hubPosition>X</hubPosition>
+                                                        <ecBusRef>ManagedElement=1,Equipment=1,EcBus=1</ecBusRef>
+                                                </EcPort>
+                                        </FieldReplaceableUnit>
+                                        <FieldReplaceableUnit>
+                                                <fieldReplaceableUnitId>SUP</fieldReplaceableUnitId>
+                                                <administrativeState>UNLOCKED</administrativeState>
+                                                <positionRef>ManagedElement=1,Equipment=1,Cabinet=1</positionRef>
+                                                <EcPort>
+                                                        <ecPortId>1</ecPortId>
+                                                        <cascadingOrder>0</cascadingOrder>
+                                                        <hubPosition>NA</hubPosition>
+                                                        <ecBusRef>ManagedElement=1,Equipment=1,EcBus=1</ecBusRef>
+                                                </EcPort>
+                                                <AlarmPort>
+                                                        <alarmPortId>1</alarmPortId>
+                                                        <administrativeState>UNLOCKED</administrativeState>
+                                                        <alarmSlogan>ExternalAlarmSAUAlarmPort1</alarmSlogan>
+                                                </AlarmPort>
+                                        </FieldReplaceableUnit>
+                                        <Cabinet>
+                                                <cabinetId>1</cabinetId>
+                                                <productData>
+                                                        <productionDate>20160229</productionDate>
+                                                        <productName>DUS 52 01</productName>
+                                                        <productNumber>KDU 137 925/31</productNumber>
+                                                        <productRevision>R1E</productRevision>
+                                                        <serialNumber>D16S393592</serialNumber>
+                                                </productData>
+                                        </Cabinet>
+                                </Equipment>
+                        </ManagedElement>
+                </config>
+        </edit-config>
+</rpc>
+]]>]]>
+
+<rpc message-id="Common Support System functional configuration" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+       <edit-config>
+                <config>
+                        <ManagedElement>
+                                <managedElementId>1</managedElementId>
+                                <EquipmentSupportFunction>
+                                        <equipmentSupportFunctionId>1</equipmentSupportFunctionId>
+                                        <supportSystemControl>true</supportSystemControl>
+                                        <Climate>
+                                                <climateId>1</climateId>
+                                                <climateControlMode>NORMAL</climateControlMode>
+                                                <controlDomainRef>ManagedElement=1,Equipment=1,Cabinet=1</controlDomainRef>
+                                        </Climate>
+                                </EquipmentSupportFunction>
+                        </ManagedElement>
+                </config>
+        </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Close session" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session />
+</rpc>
+]]>]]>
+
+"""
+    
+    return xml_content

@@ -1,0 +1,2728 @@
+@L+ C:\Generador\_00a.Log_Router_6K_LA781.Log
+@GETTIME 18:28 HH:MM
+@GETDATE 05-11-2025 DD-MM-YYYY
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |SITE: LA781  IP:10.34.102.28   | ##
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |  DATE:  05-11-2025   TIME: 18:28               | ##
+@COMMENT +------------------------------------------------+ ##
+@COMMENT |  USER:   ESANMARTIN        PING_LOG             | ##
+@COMMENT +------------------------------------------------+ ##
+#########################
+#Packet Loss Nodo 10.34.102.28
+#########################
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#enable 15
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh config bridge
+Building configuration...
+
+Current configuration:
+
+!
+context local
+!
+! ** End Context **
+bridge 3g_monitor
+ lg WAN_10G_LA781 service-instance 1303
+bridge GESTION-ATN
+ lg WAN_10G_LA781 service-instance 924
+bridge MONITOREO-MOVIL
+ port 1/1 service-instance 70
+ lg WAN_10G_LA781 service-instance 70
+bridge SYNC_FASE
+ lg WAN_10G_LA781 service-instance 27
+bridge S_VLAN_MOVIL
+ no qualified-learning
+ port 1/2 service-instance 500
+ port 1/3 service-instance 500
+ port 1/7 service-instance 500
+ port 1/8 service-instance 500
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+ port 1/13 service-instance 500
+ port 1/14 service-instance 500
+ port 1/15 service-instance 500
+ port 1/16 service-instance 500
+ port 1/17 service-instance 500
+ port 1/18 service-instance 500
+ port 1/19 service-instance 500
+ port 1/20 service-instance 500
+ port 1/21 service-instance 500
+ lg WAN_10G_LA781 service-instance 500
+!
+end
+[local]CSG-6675-BARRIO-INDUSTR-LA781#h config synchronization
+                                       ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh config synchronization
+Building configuration...
+
+Current configuration:
+global synchronization option 1
+!
+!
+!
+synchronization
+ tod input tod-a
+  no shutdown
+  cable-delay 9
+  protocol ericsson-combined ericsson-personality
+  dump gpsstats
+  antenna-port-overload-detect
+ ptp pm
+ ptp-clock g8275-1 t-bc
+  acquiring-state announce default-ds
+  ptp-port 1 virtual
+   description conectado a GPS
+   attach tod-a
+   no shutdown 
+  ptp-port 3
+   description 8275.1 A eNB
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+    circuit 1/2 
+   no shutdown 
+  ptp-port 7
+   description 8275.1  A TDD SECTOR I
+   transport ethernet multicast 
+    circuit 1/7 
+   no shutdown 
+  ptp-port 8
+   description 8275.1  A TDD SECTOR II
+   transport ethernet multicast 
+    circuit 1/8 
+   no shutdown 
+  ptp-port 9
+   description 8275.1 A TDD SECTOR III
+   transport ethernet multicast 
+    circuit 1/9 
+   no shutdown 
+  ptp-port 15
+   description 8275.1 A 6648 BB for 5G NSA
+   transport ethernet multicast 
+    circuit 1/15 
+   no shutdown 
+  ptp-port 16
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+   description SM6701 Sector I
+   transport ethernet multicast 
+    circuit 1/16 
+   no shutdown 
+  ptp-port 18
+   description SM6701 Sector II
+   transport ethernet multicast 
+    circuit 1/18 
+   no shutdown 
+  ptp-port 20
+   description SM6701 Sector III
+   transport ethernet multicast 
+    circuit 1/20 
+   no shutdown 
+  ptp-port 24
+   description 8275.1 Backup
+   slave-candidate
+   transport ethernet multicast 
+    circuit 1/24 
+   no shutdown 
+ equipment-clock
+  input-source 1 external tod-a
+   priority 120
+[7m--More--[m
+[K[7mNo previous regular expression[m
+
+[K
+...skipping 23 lines
+[local]CSG-6675-BARRIO-INDUSTR-LA781#ig
+                                      ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh config synchronization
+Building configuration...
+
+Current configuration:
+global synchronization option 1
+!
+!
+!
+synchronization
+ tod input tod-a
+  no shutdown
+  cable-delay 9
+  protocol ericsson-combined ericsson-personality
+  dump gpsstats
+  antenna-port-overload-detect
+ ptp pm
+ ptp-clock g8275-1 t-bc
+  acquiring-state announce default-ds
+  ptp-port 1 virtual
+   description conectado a GPS
+   attach tod-a
+   no shutdown 
+  ptp-port 3
+   description 8275.1 A eNB
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+    circuit 1/2 
+   no shutdown 
+  ptp-port 7
+   description 8275.1  A TDD SECTOR I
+   transport ethernet multicast 
+    circuit 1/7 
+   no shutdown 
+  ptp-port 8
+   description 8275.1  A TDD SECTOR II
+   transport ethernet multicast 
+    circuit 1/8 
+   no shutdown 
+  ptp-port 9
+   description 8275.1 A TDD SECTOR III
+   transport ethernet multicast 
+    circuit 1/9 
+   no shutdown 
+  ptp-port 15
+   description 8275.1 A 6648 BB for 5G NSA
+   transport ethernet multicast 
+    circuit 1/15 
+   no shutdown 
+  ptp-port 16
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+   description SM6701 Sector I
+   transport ethernet multicast 
+    circuit 1/16 
+   no shutdown 
+  ptp-port 18
+   description SM6701 Sector II
+   transport ethernet multicast 
+    circuit 1/18 
+   no shutdown 
+  ptp-port 20
+   description SM6701 Sector III
+   transport ethernet multicast 
+    circuit 1/20 
+   no shutdown 
+  ptp-port 24
+   description 8275.1 Backup
+   slave-candidate
+   transport ethernet multicast 
+    circuit 1/24 
+   no shutdown 
+ equipment-clock
+  input-source 1 external tod-a
+   priority 120
+[7m--More--[m
+   force quality-level ql-prc
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+   priority 100
+  ql-enabled
+  wait-to-restore 0
+!
+end
+[local]CSG-6675-BARRIO-INDUSTR-LA781#h config port
+                                       ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh config port bvi
+Building configuration...
+
+Current configuration:
+!
+!
+port bvi OSS
+ no shutdown
+ bridge name 3g_monitor
+ encapsulation dot1q
+ dot1q pvc 1303 
+  bind interface OSS OSS
+!
+port bvi SYNC_8275.2
+ no shutdown
+ bridge name SYNC_FASE
+ encapsulation dot1q
+ dot1q pvc 27 
+  bind interface SYNC_8275.2 SYNC
+!
+port bvi SAFE
+ no shutdown
+ bridge name MONITOREO-MOVIL
+ encapsulation dot1q
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+  bind interface SAFE SAFE
+!
+port bvi NOC
+ no shutdown
+ bridge name GESTION-ATN
+ encapsulation dot1q
+ dot1q pvc 924 
+  bind interface NOC NOC
+!
+end
+[local]CSG-6675-BARRIO-INDUSTR-LA781#h port trans summary
+                                       ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh sync tod inp deta
+
+Input tod-a: 
+---------------------------------
+Enabled                  : Yes
+Port type                : ToD
+Port details             : RS-422 9600 8-N-1
+1PPS delay compensation  : 9 ns
+1PPS loopback            : OFF
+TAI time                 : 2025-11-05 21:29:22 TAI
+UTC time                 : N/A
+Wait-to-restore time     : 0 seconds (configured 120 seconds)
+GNSS-dampening           : OFF
+Hold-off time            : 0 milliseconds (configured 30000 milliseconds)
+GNSS restart             : 0 times
+Protocol                 : NMEA (Ericsson-combined, Ericsson-personality)
+Multi GNSS wanted        : GPS and GALILEO (Not Support)
+Multi GNSS actual        : GPS and GLONASS
+Multi GNSS status        : Wanted GNSS unsupported
+Client                   : N/A
+Client in control        : N/A
+Alarms                   : NONE
+
+GPSS Protocol            : Ericsson-combined
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+  Product No.            : NCD 901 56/1
+  Product Rev.           : R1B
+  Additional information : TU8KCN7081.1544
+  GRM hardware ID        : N/A
+  GRM serial number      : N/A
+  GRM manf date          : N/A
+  GRM firmware version   : N/A
+  GPS time (GPSW/TOW)    : 2391/336542
+  Self survey length     : 2000 sec
+  Antenna DC status      : 2 (Nominal current detected)
+  Antenna cable delay    : 119 ns
+  1PPS SM mode           : 2 (Position Hold)
+  No. of satellites used : 10
+  GPSS status            : 0 (GPSS locked)
+  GPSS faulty            : 0 (Not faulty)
+Counters:
+  1PPS                   : 11465589
+  Received sentences: 
+    PERC, GPppr : 11466105
+    PERC, GPsts : 11466105
+    PERC, GPver : 191104 
+    PERC, GPrst : 0      
+    PERC, GPssl : 1      
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+    PERC, GPpve : 0      
+    PERC, GPbrt : 0      
+    PERC, GPdly : 190827 
+    PERC, GPavp : 191103 
+    PERC, GPtsp : 349491 
+    PERC, GPcst : 0      
+    GPGSV       : 500786 
+    GPGSA       : 382204 
+    BDGSV       : 0      
+    BDGSA       : 0      
+    GLGSV       : 394392 
+    GLGSA       : 148872 
+    GAGSV       : 0      
+    GAGSA       : 0      
+    QZGSV       : 0      
+    QZGSA       : 0      
+    GIGSV       : 0      
+    GIGSA       : 0      
+    GPGGA       : 191103 
+    GPCTR       : 0      
+    PFEC, GPtps : 0      
+    PFEC, GPppf : 0      
+    Other       : 191104 
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+  Unexpected character   : 0
+  Checksum error         : 2
+  Format error           : 1
+  Other error            : 0
+[local]CSG-6675-BARRIO-INDUSTR-LA781#ync ptp-clock
+                                     ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh system alarm
+Index        Timestamp              Source                 Severity    Alarm ID/
+Type
+                Description                                                   
+--------------------------------------------------------------------------------
+----
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh release
+
+Installed releases:
+
+p01: active (will be booted after next reload)
+----------------------------------------------
+Version SPR2-CXP9060188_1-R30C279-Release
+Built on Thu Feb 27 06:30:37 CET 2025
+Copyright (C) 1998-2025, Ericsson AB. All rights reserved.
+
+p02: alternate
+--------------
+Version SPR2-CXP9060188_1-R29G232_9999-Release
+Built on Wed Nov 27 22:44:42 CET 2024
+Copyright (C) 1998-2024, Ericsson AB. All rights reserved.
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh release upgrade-package
+Upgrade package :                       1
+  State :                               INITIALIZED
+  Report progress :                     
+    Action name :                       confirm
+    Additional info :                   confirm UpgradePackage
+    Progress info :                     Confirming UpgradePackage
+    Progress percentage :               100
+    Result :                            SUCCESS
+    Result info :                       Confirm Successful
+    State :                             FINISHED
+    Action id :                         5
+    Time action started :               2000-01-01T08:26:17
+    Time action completed :             2000-01-01T08:26:17
+    Time of last status update :        2000-01-01T08:26:17
+    Step :                              -1
+    Step progress percentage :          -1
+  Ignore break points :                 true
+  User label :                          
+  Administrative data :                 
+    Product name :                      SF-RP-P1L
+    Product number :                    CXP9060188_1
+    Product revision :                  R7B121_9999
+    Production date :                   2018-11-26T04:08:44
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+    Type :                              Release
+  Activation step :                     
+    Serial number :                     1
+    Name :                              Activation(one-go)
+    Description :                       Activation in one-go
+  Created :                             2000-01-01T06:06:30Z
+  Uri :                                 file://media/flash/Release_R6K/18_Q4_667
+5
+  Creator action id :                   2
+Upgrade package :                       2
+  State :                               INITIALIZED
+  Report progress :                     
+    Action name :                       prepare
+    Additional info :                   Prepare UpgradePackage
+    Progress info :                     Distributing the UpgradePackage
+    Progress percentage :               100
+    Result :                            SUCCESS
+    Result info :                       Prepare successful
+    State :                             FINISHED
+    Action id :                         8
+    Time action started :               2000-01-01T08:27:03
+    Time action completed :             2000-01-01T08:35:13
+    Time of last status update :        2000-01-01T08:35:13
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+    Step :                              -1
+    Step progress percentage :          -1
+  Ignore break points :                 true
+  User label :                          
+  Administrative data :                 
+    Product name :                      SF-RP-P1L
+    Product number :                    CXP9060188_1
+    Product revision :                  R7B121_9999
+    Production date :                   2018-11-26T04:08:44
+    Description :                       Router 6675
+    Type :                              Release
+  Activation step :                     
+    Serial number :                     1
+    Name :                              Activation(one-go)
+    Description :                       Activation in one-go
+  Created :                             2000-01-01T06:26:40Z
+  Uri :                                 file://media/flash/Release_R6K/18_Q4_667
+5
+  Creator action id :                   7
+Upgrade package :                       3
+  State :                               INITIALIZED
+  Report progress :                     
+    Action name :                       activate
+[7m--More--[m
+[K[7mNo previous regular expression[m
+
+[K
+...skipping 1 line
+
+    Progress info :                     Activating UpgradePackage
+    Progress percentage :               100
+    Result :                            SUCCESS
+    Result info :                       Activation successful
+    State :                             FINISHED
+    Action id :                         11
+    Time action started :               2023-07-11T16:15:13
+    Time action completed :             2023-07-11T16:20:43
+    Time of last status update :        2023-07-11T16:20:43
+    Step :                              1
+    Step progress percentage :          100
+  Ignore break points :                 true
+  User label :                          
+  Administrative data :                 
+    Product name :                      SF-RP-P1L
+    Product number :                    CXP9060188_1
+    Product revision :                  R25C122_9999
+    Production date :                   2023-05-19T13:08:11
+    Description :                       Router 6675
+    Type :                              Release
+  Activation step :                     
+    Serial number :                     1
+    Name :                              Activation(one-go)
+[7m--More--[m
+[K[7mNo previous regular expression[m
+    Description :                       Activation in one-go
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+  Uri :                                 file://md/23
+  Creator action id :                   9
+[local]CSG-6675-BARRIO-INDUSTR-LA781#h conf attached_unit
+                                       ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh licensing keyfile progress
+Report progress :
+  Action name :                       loadLicKeyFile
+  Additional info :                                      
+  Progress info :                     
+  Progress percentage :               100
+  Result :                            SUCCESS
+  Result info :                       Successfully loaded the new LKF
+  State :                             FINISHED
+  Action id :                         0
+  Time action started :               2025-06-26T04:43:33+00:00
+  Time action completed :             2025-06-26T04:43:33+00:00
+  Time of last status update :        2025-06-26T04:43:33+00:00
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh port trans
+
+Port                          : 1/1                 
+SFP / Media Type              : LX / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEKLAA          
+Serial Number                 : HC222500170190      
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10247/2          
+Revision                      : R2A                 
+Vendor PartNo                 : RTXM192-406-C25     
+Vendor Rev                    : 3.0                 
+Vendor OUI                    : 00-1C-AD            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 15-JUN-2022         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -5.60     -1.00     -2.00     -11.00    -10.00   
+Rx Pwr [dbm]                   -6.22     2.00      1.00      -23.01    -22.01   
+Temperature [C]                38        93        88        -48       -43      
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+Laser Bias Current [mA]        13.10     64.10     54.10     2.41      3.01     
+Vcc [V]                        3.22      3.60      3.50      3.00      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/2                 
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : AZC21DJ             
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : FTLX1475D3BTL-E7    
+Vendor Rev                    : A                   
+Vendor OUI                    : 00-90-65            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 25-MAR-2018         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+Tx Pwr [dbm]                   -2.25     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -2.49     2.50      1.50      -16.40    -15.41   
+Temperature [C]                41        93        88        -48       -43      
+Laser Bias Current [mA]        31.55     85.00     80.00     15.00     20.00    
+Vcc [V]                        3.28      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/3                 
+SFP / Media Type              : LX / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEKLAA          
+Serial Number                 : EA171400100158      
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10247/2          
+Revision                      : R2A                 
+Vendor PartNo                 : RTXM192-406-C25     
+Vendor Rev                    : 3.0                 
+Vendor OUI                    : 00-1C-AD            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 07-APR-2017         
+[7m--More--[m
+
+[K
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -5.52     -1.00     -2.00     -11.00    -10.00   
+Rx Pwr [dbm]                   -5.56     2.00      1.00      -23.01    -22.01   
+Temperature [C]                41        93        88        -48       -43      
+Laser Bias Current [mA]        12.84     63.52     53.52     2.35      2.94     
+Vcc [V]                        3.24      3.60      3.50      3.00      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/7                 
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : AZD15J9             
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : FTLX1475D3BTL-E7    
+Vendor Rev                    : A                   
+[7m--More--[m
+[K[7mNo previous regular expression[m
+
+[K
+...skipping 1 line
+
+Vendor Name                   : Ericsson            
+Mfg Date                      : 30-MAR-2018         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -2.16     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -2.63     2.50      1.50      -16.40    -15.41   
+Temperature [C]                48        93        88        -48       -43      
+Laser Bias Current [mA]        33.95     85.00     80.00     15.00     20.00    
+Vcc [V]                        3.27      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/8                 
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : AZC23TP             
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+[7m--More--[m
+Vendor PartNo                 : FTLX1475D3BTL-E7    
+Vendor Rev                    : A                   
+Vendor OUI                    : 00-90-65            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 25-MAR-2018         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -2.04     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -1.71     2.50      1.50      -16.40    -15.41   
+Temperature [C]                44        93        88        -48       -43      
+Laser Bias Current [mA]        36.60     85.00     80.00     15.00     20.00    
+Vcc [V]                        3.32      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/9                 
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : AZD15VH             
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : FTLX1475D3BTL-E7    
+Vendor Rev                    : A                   
+Vendor OUI                    : 00-90-65            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 31-MAR-2018         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -2.22     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -2.40     2.50      1.50      -16.40    -15.41   
+Temperature [C]                49        93        88        -48       -43      
+Laser Bias Current [mA]        37.13     85.00     80.00     15.00     20.00    
+Vcc [V]                        3.26      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/16                
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : DZ8PB01N8R          
+[7m--More--[m
+Wavelength                    : 1310.00 nm          
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : EOLP-1396-10-IY     
+Vendor Rev                    : 1.0                 
+Vendor OUI                    : 70-EE-A3            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 12-DEC-2023         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -1.99     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -2.73     2.50      1.50      -16.40    -15.41   
+Temperature [C]                43        93        88        -48       -43      
+Laser Bias Current [mA]        35.11     90.00     81.00     2.00      3.00     
+Vcc [V]                        3.30      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/17                
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+Serial Number                 : DZ8PB01N85          
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : EOLP-1396-10-IY     
+Vendor Rev                    : 1.0                 
+Vendor OUI                    : 70-EE-A3            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 12-DEC-2023         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -2.01     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -2.21     2.50      1.50      -16.40    -15.41   
+Temperature [C]                49        93        88        -48       -43      
+Laser Bias Current [mA]        35.11     90.00     81.00     2.00      3.00     
+Vcc [V]                        3.26      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/18                
+SFP+ / Media Type             : LR / SM             
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : DZ8PB01N6Y          
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : EOLP-1396-10-IY     
+Vendor Rev                    : 1.0                 
+[7m--More--[m
+Vendor OUI                    : 70-EE-A3            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 12-DEC-2023         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -2.07     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -1.81     2.50      1.50      -16.40    -15.41   
+Temperature [C]                46        93        88        -48       -43      
+Laser Bias Current [mA]        36.16     90.00     81.00     2.00      3.00     
+Vcc [V]                        3.28      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/19                
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : DZ8PB01N76          
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+[7m--More--[m
+Revision                      : R1A                 
+[7m--More--[m
+Vendor PartNo                 : EOLP-1396-10-IY     
+Vendor Rev                    : 1.0                 
+Vendor OUI                    : 70-EE-A3            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 12-DEC-2023         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -1.10     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -2.37     2.50      1.50      -16.40    -15.41   
+Temperature [C]                48        93        88        -48       -43      
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+Laser Bias Current [mA]        36.68     90.00     81.00     2.00      3.00     
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+Vcc [V]                        3.32      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/20                
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : DZ8PB01N7X          
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : EOLP-1396-10-IY     
+Vendor Rev                    : 1.0                 
+Vendor OUI                    : 70-EE-A3            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 12-DEC-2023         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -1.46     2.50      1.50      -10.20    -9.20    
+[7m--More--[m
+Most commands optionally preceded by integer argument k.  Defaults in brackets.
+Star (*) indicates argument becomes new default.
+-------------------------------------------------------------------------------
+<space>                 Display next k lines of text [current screen size]
+z                       Display next k lines of text [current screen size]*
+<return>                Display next k lines of text [1]*
+d or ctrl-D             Scroll k lines [current scroll size, initially 11]*
+q or Q or <interrupt>   Exit from more
+s                       Skip forward k lines of text [1]
+f                       Skip forward k screenfuls of text [1]
+b or ctrl-B             Skip backwards k screenfuls of text [1]
+'                       Go to place where previous search started
+=                       Display current line number
+/<regular expression>   Search for kth occurrence of regular expression [1]
+n                       Search for kth occurrence of last r.e [1]
+!<cmd> or :!<cmd>       Execute <cmd> in a subshell
+v                       Start up /usr/bin/vi at current line
+ctrl-L                  Redraw screen
+:n                      Go to kth next file [1]
+:p                      Go to kth previous file [1]
+:f                      Display current file name and line number
+.                       Repeat previous command
+-------------------------------------------------------------------------------
+
+[K[7m--More--[m
+Rx Pwr [dbm]                   -2.18     2.50      1.50      -16.40    -15.41   
+Temperature [C]                43        93        88        -48       -43      
+Laser Bias Current [mA]        35.63     90.00     81.00     2.00      3.00     
+Vcc [V]                        3.32      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/21                
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEPLAA          
+Serial Number                 : DZ8PB01N73          
+Wavelength                    : 1310.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10265/3          
+Revision                      : R1A                 
+Vendor PartNo                 : EOLP-1396-10-IY     
+Vendor Rev                    : 1.0                 
+Vendor OUI                    : 70-EE-A3            
+Vendor Name                   : Ericsson            
+Mfg Date                      : 12-DEC-2023         
+
+[7m--More--[m
+
+[K
+...skipping 1 line
+
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -2.55     2.50      1.50      -10.20    -9.20    
+Rx Pwr [dbm]                   -3.09     2.50      1.50      -16.40    -15.41   
+Temperature [C]                44        93        88        -48       -43      
+Laser Bias Current [mA]        36.68     90.00     81.00     2.00      3.00     
+Vcc [V]                        3.29      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+
+Port                          : 1/24                
+SFP+ / Media Type             : LR / SM             
+Ericsson Approved             : YES                 
+Diagnostic Monitoring         : YES                 
+CLEI code                     : CRTUAEHLAA          
+Serial Number                 : 1826091B0200265     
+Wavelength                    : 1270.00 nm          
+Additional Features           : None                
+Power Level                   : Normal              
+Product No                    : RDH10270/1          
+Revision                      : R1A                 
+Vendor PartNo                 : SPBD-10G3B4K1RE1    
+Vendor Rev                    : A                   
+Vendor OUI                    : 20-F8-5E            
+Vendor Name                   : Ericsson            
+[7m--More--[m
+[K[7mNo previous regular expression[m
+Mfg Date                      : 03-JUL-2018         
+
+                                         High      High      Low       Low      
+                               Measured  Alarm     Warning   Alarm     Warning  
+Tx Pwr [dbm]                   -0.36     4.00      3.00      -5.60     -4.60    
+Rx Pwr [dbm]                   -5.11     2.50      2.00      -17.40    -16.40   
+Temperature [C]                44        93        88        -48       -43      
+Laser Bias Current [mA]        32.94     120.00    110.00    0.00      10.00    
+Vcc [V]                        3.26      3.63      3.50      2.97      3.10     
+Active Alarms                 : NONE
+[local]CSG-6675-BARRIO-INDUSTR-LA781#tod input deta
+                                      ^
+% Invalid input at '^' marker
+
+[local]CSG-6675-BARRIO-INDUSTR-LA781#show configuration synchronization | incl$guration synchronization | incl          ude ptp
+ ptp pm
+ ptp-clock g8275-1 t-bc
+  ptp-port 1 virtual
+  ptp-port 3
+  ptp-port 7
+  ptp-port 8
+  ptp-port 9
+  ptp-port 15
+  ptp-port 16
+  ptp-port 18
+  ptp-port 20
+  ptp-port 24
+  input-source 2 ptp-clock
+[local]CSG-6675-BARRIO-INDUSTR-LA781#show configuration synchronization | incl$guration synchronization | incl          ude circuynchronization | include circu           it
+    circuit 1/2 
+    circuit 1/7 
+    circuit 1/8 
+    circuit 1/9 
+    circuit 1/15 
+    circuit 1/16 
+    circuit 1/18 
+    circuit 1/20 
+    circuit 1/24 
+[local]CSG-6675-BARRIO-INDUSTR-LA781#show configuration synchronization | grep$guration synchronization | grep           circuit
+    circuit 1/2 
+    circuit 1/7 
+    circuit 1/8 
+    circuit 1/9 
+    circuit 1/15 
+    circuit 1/16 
+    circuit 1/18 
+    circuit 1/20 
+    circuit 1/24 
+[local]CSG-6675-BARRIO-INDUSTR-LA781#show field-support remote-access
+The remote access status for the Field-Support Account is enabled
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh configuration | include  "management c$ration | include  "management c          ontext OSnclude  "management context OS           S"
+management context OSS 
+[local]CSG-6675-BARRIO-INDUSTR-LA781#sh system alarm
+Index        Timestamp              Source                 Severity    Alarm ID/
+Type
+                Description                                                   
+--------------------------------------------------------------------------------
+----
+[local]CSG-6675-BARRIO-INDUSTR-LA781#
+
+#########################
+#Resultado: ping -s 10.34.102.28 1450 500
+#########################
+ping -s 10.34.102.28 1450 500
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+You have new mail.
+exesanma@cntuas2> ping -s 10.34.102.28 1450 500
+PING 10.34.102.28: 1450 data bytes
+1458 bytes from 10.34.102.28: icmp_seq=0. time=15.9 ms
+ping -s 10.34.102.28 1450 500
+1458 bytes from 10.34.102.28: icmp_seq=1. time=16.0 ms
+ping -s 10.34.102.28 1450 500
+1458 bytes from 10.34.102.28: icmp_seq=2. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=3. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=4. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=5. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=6. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=7. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=8. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=9. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=10. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=11. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=12. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=13. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=14. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=15. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=16. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=17. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=18. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=19. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=20. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=21. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=22. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=23. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=24. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=25. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=26. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=27. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=28. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=29. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=30. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=31. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=32. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=33. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=34. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=35. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=36. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=37. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=38. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=39. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=40. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=41. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=42. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=43. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=44. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=45. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=46. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=47. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=48. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=49. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=50. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=51. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=52. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=53. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=54. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=55. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=56. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=57. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=58. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=59. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=60. time=16.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=61. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=62. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=63. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=64. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=65. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=66. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=67. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=68. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=69. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=70. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=71. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=72. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=73. time=17.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=74. time=17.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=75. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=76. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=77. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=78. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=79. time=16.6 ms
+1458 bytes from 10.34.102.28: icmp_seq=80. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=81. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=82. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=83. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=84. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=85. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=86. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=87. time=17.5 ms
+1458 bytes from 10.34.102.28: icmp_seq=88. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=89. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=90. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=91. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=92. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=93. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=94. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=95. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=96. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=97. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=98. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=99. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=100. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=101. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=102. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=103. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=104. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=105. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=106. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=107. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=108. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=109. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=110. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=111. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=112. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=113. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=114. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=115. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=116. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=117. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=118. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=119. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=120. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=121. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=122. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=123. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=124. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=125. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=126. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=127. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=128. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=129. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=130. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=131. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=132. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=133. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=134. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=135. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=136. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=137. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=138. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=139. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=140. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=141. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=142. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=143. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=144. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=145. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=146. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=147. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=148. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=149. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=150. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=151. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=152. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=153. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=154. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=155. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=156. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=157. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=158. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=159. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=160. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=161. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=162. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=163. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=164. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=165. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=166. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=167. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=168. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=169. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=170. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=171. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=172. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=173. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=174. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=175. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=176. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=177. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=178. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=179. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=180. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=181. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=182. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=183. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=184. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=185. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=186. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=187. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=188. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=189. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=190. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=191. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=192. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=193. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=194. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=195. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=196. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=197. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=198. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=199. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=200. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=201. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=202. time=16.6 ms
+1458 bytes from 10.34.102.28: icmp_seq=203. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=204. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=205. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=206. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=207. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=208. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=209. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=210. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=211. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=212. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=213. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=214. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=215. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=216. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=217. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=218. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=219. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=220. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=221. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=222. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=223. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=224. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=225. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=226. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=227. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=228. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=229. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=230. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=231. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=232. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=233. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=234. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=235. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=236. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=237. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=238. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=239. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=240. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=241. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=242. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=243. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=244. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=245. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=246. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=247. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=248. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=249. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=250. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=251. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=252. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=253. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=254. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=255. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=256. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=257. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=258. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=259. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=260. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=261. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=262. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=263. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=264. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=265. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=266. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=267. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=268. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=269. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=270. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=271. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=272. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=273. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=274. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=275. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=276. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=277. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=278. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=279. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=280. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=281. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=282. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=283. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=284. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=285. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=286. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=287. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=288. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=289. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=290. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=291. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=292. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=293. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=294. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=295. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=296. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=297. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=298. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=299. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=300. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=301. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=302. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=303. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=304. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=305. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=306. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=307. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=308. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=309. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=310. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=311. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=312. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=313. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=314. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=315. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=316. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=317. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=318. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=319. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=320. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=321. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=322. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=323. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=324. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=325. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=326. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=327. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=328. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=329. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=330. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=331. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=332. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=333. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=334. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=335. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=336. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=337. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=338. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=339. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=340. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=341. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=342. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=343. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=344. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=345. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=346. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=347. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=348. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=349. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=350. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=351. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=352. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=353. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=354. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=355. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=356. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=357. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=358. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=359. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=360. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=361. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=362. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=363. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=364. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=365. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=366. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=367. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=368. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=369. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=370. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=371. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=372. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=373. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=374. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=375. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=376. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=377. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=378. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=379. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=380. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=381. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=382. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=383. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=384. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=385. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=386. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=387. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=388. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=389. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=390. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=391. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=392. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=393. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=394. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=395. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=396. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=397. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=398. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=399. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=400. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=401. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=402. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=403. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=404. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=405. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=406. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=407. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=408. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=409. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=410. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=411. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=412. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=413. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=414. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=415. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=416. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=417. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=418. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=419. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=420. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=421. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=422. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=423. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=424. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=425. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=426. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=427. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=428. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=429. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=430. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=431. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=432. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=433. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=434. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=435. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=436. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=437. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=438. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=439. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=440. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=441. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=442. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=443. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=444. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=445. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=446. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=447. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=448. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=449. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=450. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=451. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=452. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=453. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=454. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=455. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=456. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=457. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=458. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=459. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=460. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=461. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=462. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=463. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=464. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=465. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=466. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=467. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=468. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=469. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=470. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=471. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=472. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=473. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=474. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=475. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=476. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=477. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=478. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=479. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=480. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=481. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=482. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=483. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=484. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=485. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=486. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=487. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=488. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=489. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=490. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=491. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=492. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=493. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=494. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=495. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=496. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=497. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=498. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=499. time=16.0 ms
+----10.34.102.28 PING Statistics----
+500 packets transmitted, 500 packets received, 0% packet loss
+round-trip (ms)  min/avg/max/stddev = 15.8/15.970/17.9/0.1480
+exesanma@cntuas2> ping -s 10.34.102.28 1450 500
+PING 10.34.102.28: 1450 data bytes
+1458 bytes from 10.34.102.28: icmp_seq=0. time=16.0 ms
+
+#########################
+#Resultado: ping -s 10.34.102.28 1450 500
+#########################
+ping -s 10.34.102.28 1450 500
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+You have new mail.
+exesanma@cntuas2> ping -s 10.34.102.28 1450 500
+PING 10.34.102.28: 1450 data bytes
+1458 bytes from 10.34.102.28: icmp_seq=0. time=16.0 ms
+ping -s 10.34.102.28 1450 500
+1458 bytes from 10.34.102.28: icmp_seq=1. time=16.0 ms
+ping -s 10.34.102.28 1450 500
+1458 bytes from 10.34.102.28: icmp_seq=2. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=3. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=4. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=5. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=6. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=7. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=8. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=9. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=10. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=11. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=12. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=13. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=14. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=15. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=16. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=17. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=18. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=19. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=20. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=21. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=22. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=23. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=24. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=25. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=26. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=27. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=28. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=29. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=30. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=31. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=32. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=33. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=34. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=35. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=36. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=37. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=38. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=39. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=40. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=41. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=42. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=43. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=44. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=45. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=46. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=47. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=48. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=49. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=50. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=51. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=52. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=53. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=54. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=55. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=56. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=57. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=58. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=59. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=60. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=61. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=62. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=63. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=64. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=65. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=66. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=67. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=68. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=69. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=70. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=71. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=72. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=73. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=74. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=75. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=76. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=77. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=78. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=79. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=80. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=81. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=82. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=83. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=84. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=85. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=86. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=87. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=88. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=89. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=90. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=91. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=92. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=93. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=94. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=95. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=96. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=97. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=98. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=99. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=100. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=101. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=102. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=103. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=104. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=105. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=106. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=107. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=108. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=109. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=110. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=111. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=112. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=113. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=114. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=115. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=116. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=117. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=118. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=119. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=120. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=121. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=122. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=123. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=124. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=125. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=126. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=127. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=128. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=129. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=130. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=131. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=132. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=133. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=134. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=135. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=136. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=137. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=138. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=139. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=140. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=141. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=142. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=143. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=144. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=145. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=146. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=147. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=148. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=149. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=150. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=151. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=152. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=153. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=154. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=155. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=156. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=157. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=158. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=159. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=160. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=161. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=162. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=163. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=164. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=165. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=166. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=167. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=168. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=169. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=170. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=171. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=172. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=173. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=174. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=175. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=176. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=177. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=178. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=179. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=180. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=181. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=182. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=183. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=184. time=17.3 ms
+1458 bytes from 10.34.102.28: icmp_seq=185. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=186. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=187. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=188. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=189. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=190. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=191. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=192. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=193. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=194. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=195. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=196. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=197. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=198. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=199. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=200. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=201. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=202. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=203. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=204. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=205. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=206. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=207. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=208. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=209. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=210. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=211. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=212. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=213. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=214. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=215. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=216. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=217. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=218. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=219. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=220. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=221. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=222. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=223. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=224. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=225. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=226. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=227. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=228. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=229. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=230. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=231. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=232. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=233. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=234. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=235. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=236. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=237. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=238. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=239. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=240. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=241. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=242. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=243. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=244. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=245. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=246. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=247. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=248. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=249. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=250. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=251. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=252. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=253. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=254. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=255. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=256. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=257. time=16.3 ms
+1458 bytes from 10.34.102.28: icmp_seq=258. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=259. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=260. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=261. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=262. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=263. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=264. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=265. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=266. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=267. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=268. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=269. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=270. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=271. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=272. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=273. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=274. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=275. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=276. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=277. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=278. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=279. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=280. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=281. time=17.7 ms
+1458 bytes from 10.34.102.28: icmp_seq=282. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=283. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=284. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=285. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=286. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=287. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=288. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=289. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=290. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=291. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=292. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=293. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=294. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=295. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=296. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=297. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=298. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=299. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=300. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=301. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=302. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=303. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=304. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=305. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=306. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=307. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=308. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=309. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=310. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=311. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=312. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=313. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=314. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=315. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=316. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=317. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=318. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=319. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=320. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=321. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=322. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=323. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=324. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=325. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=326. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=327. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=328. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=329. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=330. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=331. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=332. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=333. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=334. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=335. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=336. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=337. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=338. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=339. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=340. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=341. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=342. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=343. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=344. time=34.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=345. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=346. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=347. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=348. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=349. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=350. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=351. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=352. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=353. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=354. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=355. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=356. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=357. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=358. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=359. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=360. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=361. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=362. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=363. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=364. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=365. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=366. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=367. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=368. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=369. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=370. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=371. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=372. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=373. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=374. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=375. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=376. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=377. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=378. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=379. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=380. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=381. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=382. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=383. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=384. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=385. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=386. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=387. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=388. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=389. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=390. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=391. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=392. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=393. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=394. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=395. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=396. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=397. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=398. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=399. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=400. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=401. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=402. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=403. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=404. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=405. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=406. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=407. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=408. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=409. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=410. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=411. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=412. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=413. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=414. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=415. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=416. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=417. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=418. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=419. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=420. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=421. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=422. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=423. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=424. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=425. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=426. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=427. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=428. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=429. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=430. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=431. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=432. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=433. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=434. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=435. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=436. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=437. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=438. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=439. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=440. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=441. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=442. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=443. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=444. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=445. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=446. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=447. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=448. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=449. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=450. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=451. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=452. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=453. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=454. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=455. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=456. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=457. time=16.7 ms
+1458 bytes from 10.34.102.28: icmp_seq=458. time=16.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=459. time=16.6 ms
+1458 bytes from 10.34.102.28: icmp_seq=460. time=16.3 ms
+1458 bytes from 10.34.102.28: icmp_seq=461. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=462. time=17.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=463. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=464. time=16.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=465. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=466. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=467. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=468. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=469. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=470. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=471. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=472. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=473. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=474. time=16.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=475. time=18.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=476. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=477. time=17.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=478. time=16.3 ms
+1458 bytes from 10.34.102.28: icmp_seq=479. time=16.3 ms
+1458 bytes from 10.34.102.28: icmp_seq=480. time=19.7 ms
+1458 bytes from 10.34.102.28: icmp_seq=481. time=16.5 ms
+1458 bytes from 10.34.102.28: icmp_seq=482. time=17.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=483. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=484. time=16.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=485. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=486. time=16.7 ms
+1458 bytes from 10.34.102.28: icmp_seq=487. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=488. time=17.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=489. time=16.4 ms
+1458 bytes from 10.34.102.28: icmp_seq=490. time=17.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=491. time=16.2 ms
+1458 bytes from 10.34.102.28: icmp_seq=492. time=17.3 ms
+1458 bytes from 10.34.102.28: icmp_seq=493. time=16.6 ms
+1458 bytes from 10.34.102.28: icmp_seq=494. time=16.5 ms
+1458 bytes from 10.34.102.28: icmp_seq=495. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=496. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=497. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=498. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=499. time=16.0 ms
+----10.34.102.28 PING Statistics----
+500 packets transmitted, 500 packets received, 0% packet loss
+round-trip (ms)  min/avg/max/stddev = 15.8/16.034/34.1/0.8652
+exesanma@cntuas2> ping -s 10.34.102.28 1450 500
+PING 10.34.102.28: 1450 data bytes
+1458 bytes from 10.34.102.28: icmp_seq=0. time=15.9 ms
+
+#########################
+#Resultado: ping -s 10.34.102.28 1450 500
+#########################
+ping -s 10.34.102.28 1450 500
+Oracle Corporation      SunOS 5.10      Generic Patch   January 2005
+You have new mail.
+exesanma@cntuas2> ping -s 10.34.102.28 1450 500
+PING 10.34.102.28: 1450 data bytes
+1458 bytes from 10.34.102.28: icmp_seq=0. time=15.9 ms
+ping -s 10.34.102.28 1450 500
+1458 bytes from 10.34.102.28: icmp_seq=1. time=15.9 ms
+ping -s 10.34.102.28 1450 500
+1458 bytes from 10.34.102.28: icmp_seq=2. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=3. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=4. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=5. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=6. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=7. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=8. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=9. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=10. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=11. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=12. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=13. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=14. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=15. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=16. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=17. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=18. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=19. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=20. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=21. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=22. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=23. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=24. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=25. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=26. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=27. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=28. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=29. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=30. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=31. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=32. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=33. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=34. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=35. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=36. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=37. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=38. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=39. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=40. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=41. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=42. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=43. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=44. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=45. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=46. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=47. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=48. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=49. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=50. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=51. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=52. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=53. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=54. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=55. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=56. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=57. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=58. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=59. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=60. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=61. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=62. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=63. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=64. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=65. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=66. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=67. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=68. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=69. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=70. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=71. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=72. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=73. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=74. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=75. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=76. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=77. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=78. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=79. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=80. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=81. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=82. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=83. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=84. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=85. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=86. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=87. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=88. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=89. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=90. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=91. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=92. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=93. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=94. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=95. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=96. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=97. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=98. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=99. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=100. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=101. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=102. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=103. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=104. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=105. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=106. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=107. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=108. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=109. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=110. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=111. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=112. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=113. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=114. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=115. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=116. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=117. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=118. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=119. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=120. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=121. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=122. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=123. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=124. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=125. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=126. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=127. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=128. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=129. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=130. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=131. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=132. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=133. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=134. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=135. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=136. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=137. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=138. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=139. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=140. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=141. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=142. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=143. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=144. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=145. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=146. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=147. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=148. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=149. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=150. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=151. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=152. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=153. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=154. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=155. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=156. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=157. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=158. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=159. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=160. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=161. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=162. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=163. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=164. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=165. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=166. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=167. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=168. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=169. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=170. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=171. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=172. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=173. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=174. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=175. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=176. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=177. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=178. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=179. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=180. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=181. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=182. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=183. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=184. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=185. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=186. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=187. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=188. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=189. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=190. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=191. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=192. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=193. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=194. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=195. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=196. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=197. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=198. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=199. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=200. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=201. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=202. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=203. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=204. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=205. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=206. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=207. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=208. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=209. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=210. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=211. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=212. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=213. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=214. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=215. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=216. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=217. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=218. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=219. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=220. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=221. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=222. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=223. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=224. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=225. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=226. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=227. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=228. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=229. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=230. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=231. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=232. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=233. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=234. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=235. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=236. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=237. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=238. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=239. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=240. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=241. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=242. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=243. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=244. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=245. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=246. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=247. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=248. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=249. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=250. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=251. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=252. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=253. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=254. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=255. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=256. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=257. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=258. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=259. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=260. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=261. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=262. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=263. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=264. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=265. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=266. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=267. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=268. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=269. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=270. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=271. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=272. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=273. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=274. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=275. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=276. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=277. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=278. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=279. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=280. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=281. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=282. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=283. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=284. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=285. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=286. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=287. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=288. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=289. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=290. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=291. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=292. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=293. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=294. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=295. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=296. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=297. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=298. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=299. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=300. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=301. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=302. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=303. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=304. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=305. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=306. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=307. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=308. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=309. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=310. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=311. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=312. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=313. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=314. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=315. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=316. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=317. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=318. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=319. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=320. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=321. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=322. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=323. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=324. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=325. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=326. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=327. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=328. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=329. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=330. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=331. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=332. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=333. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=334. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=335. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=336. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=337. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=338. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=339. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=340. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=341. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=342. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=343. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=344. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=345. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=346. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=347. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=348. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=349. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=350. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=351. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=352. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=353. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=354. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=355. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=356. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=357. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=358. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=359. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=360. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=361. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=362. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=363. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=364. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=365. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=366. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=367. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=368. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=369. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=370. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=371. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=372. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=373. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=374. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=375. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=376. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=377. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=378. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=379. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=380. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=381. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=382. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=383. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=384. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=385. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=386. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=387. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=388. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=389. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=390. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=391. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=392. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=393. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=394. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=395. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=396. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=397. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=398. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=399. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=400. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=401. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=402. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=403. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=404. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=405. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=406. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=407. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=408. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=409. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=410. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=411. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=412. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=413. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=414. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=415. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=416. time=16.1 ms
+1458 bytes from 10.34.102.28: icmp_seq=417. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=418. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=419. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=420. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=421. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=422. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=423. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=424. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=425. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=426. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=427. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=428. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=429. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=430. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=431. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=432. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=433. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=434. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=435. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=436. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=437. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=438. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=439. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=440. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=441. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=442. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=443. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=444. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=445. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=446. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=447. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=448. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=449. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=450. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=451. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=452. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=453. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=454. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=455. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=456. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=457. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=458. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=459. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=460. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=461. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=462. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=463. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=464. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=465. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=466. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=467. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=468. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=469. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=470. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=471. time=15.8 ms
+1458 bytes from 10.34.102.28: icmp_seq=472. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=473. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=474. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=475. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=476. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=477. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=478. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=479. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=480. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=481. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=482. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=483. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=484. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=485. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=486. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=487. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=488. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=489. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=490. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=491. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=492. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=493. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=494. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=495. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=496. time=16.0 ms
+1458 bytes from 10.34.102.28: icmp_seq=497. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=498. time=15.9 ms
+1458 bytes from 10.34.102.28: icmp_seq=499. time=16.0 ms
+----10.34.102.28 PING Statistics----
+500 packets transmitted, 500 packets received, 0% packet loss
+round-trip (ms)  min/avg/max/stddev = 15.8/15.941/16.1/0.04016
+exesanma@cntuas2> ping -s 10.34.102.28 1450 500
+PING 10.34.102.28: 1450 data bytes
+1458 bytes from 10.34.102.28: icmp_seq=0. time=15.9 ms
