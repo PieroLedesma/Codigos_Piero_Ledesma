@@ -32,7 +32,8 @@ def generar_archivos_zip(
     trama: str,
     region: str,
     wsh_file: Any,
-    rnd_file_xlsx: Any
+    rnd_file_xlsx: Any,
+    tipo_sitio: str = "Normal (MM/Macro)"  # Nuevo parámetro
 ) -> Tuple[Optional[bytes], str, Optional[Dict[str, str]]]:
 
     nem = nemonico.upper()
@@ -89,8 +90,8 @@ xsi:schemaLocation="http://www.ericsson.se/RbsSummaryFileSchemaSummaryFile.xsd">
     # ======================================================
     folder_remotos = f"01-{nem}_Script_Remotos"
 
-    # 00. Hardware (RRUS)
-    hardware_mos = generar_hardware_mos(nemonico, wsh_data, trama, rnd_file_xlsx)
+    # 00. Hardware (RRUS / AAS)
+    hardware_mos = generar_hardware_mos(nemonico, wsh_data, trama, rnd_file_xlsx, tipo_sitio)
 
     # 01. Celdas LTE
     cell_mos = generate_cell_config_mos(nemonico, df_cell)

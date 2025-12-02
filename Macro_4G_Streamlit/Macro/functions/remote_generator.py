@@ -558,24 +558,95 @@ def _extract_sector_carrier_config(rnd_file: Any) -> Dict[str, Dict[str, str]]:
 
     return sc_config
 
+def _extract_aas_data_tipo_p(rnd_file: Any) -> List[Dict[str, Any]]:
+    """
+    Extrae datos de equipos AAS para sitios tipo P desde RetSubUnit.
+    Retorna lista de diccionarios con datos de cada AAS.
+    """
+    # Helper para leer hoja Equipment-Configuration sin header (para buscar filas específicas)
+    # Nota: Usamos pd.read_excel directamente aquí como en el archivo original
+    try:
+        df_eq = pd.read_excel(
+            BytesIO(rnd_file.getvalue()),
+            sheet_name='Equipment-Configuration',
+            header=None
+        )
+    except Exception as e:
+        print(f"// Error al leer Equipment-Configuration para AAS: {e}")
+        return []
+    
+    aas_data = []
+    
+    try:
+        # Buscar filas de RetSubUnit
+        ret_rows = df_eq[df_eq.iloc[:, 0] == 'RetSubUnit']
+        
+        if ret_rows.empty:
+            return []
+        
+        # Encontrar las filas con los datos que necesitamos
+        fru_row = None
+        tilt_row = None
+        bearing_row = None
+        sector_row = None
+        label_row = None
+        
+        for idx in ret_rows.index:
+            attr = str(df_eq.iloc[idx, 1]).strip()
+            
+            if attr == 'Equipment=1,FieldReplaceableUnit=':
+                fru_row = df_eq.iloc[idx]
+            elif attr == 'electricalAntennaTilt':
+                tilt_row = df_eq.iloc[idx]
+            elif attr == 'iuantAntennaBearing':
+                bearing_row = df_eq.iloc[idx]
+            elif attr == 'iuantSectorId':
+                sector_row = df_eq.iloc[idx]
+            elif attr == 'userLabel':
+                label_row = df_eq.iloc[idx]
+        
+        # Si encontramos la fila de nombres, extraer datos
+        if fru_row is not None:
+            # Columnas 2 en adelante contienen los datos
+            for col_idx in range(2, len(fru_row)):
+                aas_name = str(fru_row.iloc[col_idx]).strip()
+                
+                # Solo procesar si es un nombre válido de AAS
+                if aas_name and aas_name.lower() not in ['nan', 'none', '']:
+                    aas_info = {
+                        'name': aas_name,
+                        'tilt': str(tilt_row.iloc[col_idx]).strip() if tilt_row is not None else '80',
+                        'bearing': str(bearing_row.iloc[col_idx]).strip() if bearing_row is not None else '0',
+                        'sector': str(sector_row.iloc[col_idx]).strip() if sector_row is not None else 'S1',
+                        'label': str(label_row.iloc[col_idx]).strip() if label_row is not None else 'LTE 1900 M-MIMO'
+                    }
+                    aas_data.append(aas_info)
+        
+    except Exception as e:
+        print(f"// Error al extraer datos de AAS: {e}")
+        return []
+    
+    return aas_data
+
 # ====================================================================
 # === FUNCION PRINCIPAL DE GENERACIÓN (.MOS) ===
 # ====================================================================
 
-def generar_hardware_mos(nemonico: str, wsh_data: Dict[str, str], trama: str, rnd_node_file: Any) -> str:
+def generar_hardware_mos(nemonico: str, wsh_data: Dict[str, str], trama: str, rnd_node_file: Any, tipo_sitio: str = "Normal (MM/Macro)") -> str:
     """
     Genera el contenido MOS (MML) unificado con SCTP, MMEs, RRU/RfPorts, Antenas, RiPort BB, SEF, SC y RiLinks.
+    Soporta modo Normal y modo P (Pico/AAS).
     """
     nemonico_upper = nemonico.upper()
     current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # 1. Obtener la configuración necesaria
+    # 1. Obtener la configuración necesaria (Común)
     sctp_profile_commands = _extract_sctp_profile(rnd_node_file)
     mme_full_config = _extract_mme_config(rnd_node_file)
+    sc_full_config = _extract_sector_carrier_config(rnd_node_file) 
     rru_full_config = _extract_rfport_config(rnd_node_file)
     antenna_full_config = _extract_antenna_config(rnd_node_file)
     sef_full_config = _extract_sef_config(rnd_node_file)
-    sc_full_config = _extract_sector_carrier_config(rnd_node_file) 
     
     # --- Variables Dinámicas (WSH Report) ---
     ip_address = f"{wsh_data.get('IP_TRAFICO_LTE', '0.0.0.0')}/{wsh_data.get('MASK', '26')}"
@@ -592,6 +663,7 @@ def generar_hardware_mos(nemonico: str, wsh_data: Dict[str, str], trama: str, rn
 // AUTOR: Piero Ledesma
 // FECHA DE SCRIPT: {current_date}
 // NEMONICO: {nemonico_upper}
+// TIPO SITIO: {tipo_sitio}
 // 
 // --------------------------------------------------------------------
 
@@ -733,7 +805,46 @@ end
 """
     rru_script = ""
 
-    if rru_full_config:
+    if "P" in tipo_sitio or "AAS" in tipo_sitio:
+        # --- LÓGICA TIPO P (AAS) ---
+        aas_list = _extract_aas_data_tipo_p(rnd_node_file)
+        if aas_list:
+            # 1. AAS Units
+            for aas in aas_list:
+                rru_script += f"""
+crn Equipment=1,FieldReplaceableUnit={aas['name']}
+administrativeState 1
+isSharedWithExternalMe false
+positionCoordinates 
+positionInformation 
+positionRef
+userLabel 
+end
+"""
+            # 2. RiPorts (DATA_1, DATA_2)
+            for aas in aas_list:
+                rru_script += f"""
+crn Equipment=1,FieldReplaceableUnit={aas['name']},RiPort=DATA_1
+administrativeState 1
+preferredSfpProductNumber 
+end
+
+crn Equipment=1,FieldReplaceableUnit={aas['name']},RiPort=DATA_2
+administrativeState 1
+preferredSfpProductNumber 
+end
+"""
+            # 3. Transceivers
+            for aas in aas_list:
+                rru_script += f"""
+crn Equipment=1,FieldReplaceableUnit={aas['name']},Transceiver=1
+end
+"""
+        else:
+            rru_script = "\n// ERROR: No se encontraron datos de AAS en el RND para sitio tipo P."
+
+    elif rru_full_config:
+        # --- LÓGICA NORMAL (RRU) ---
         rru_names_sorted = sorted(rru_full_config.keys())
         
         for rru_name in rru_names_sorted:
@@ -789,7 +900,53 @@ set FieldReplaceableUnit={rru_name},RfPort={port_id} userLabel {user_label}
     antenna_script = ""
     auport_script = ""
 
-    if antenna_full_config and 'au_groups' in antenna_full_config:
+    if "P" in tipo_sitio or "AAS" in tipo_sitio:
+        # --- LÓGICA TIPO P (AAS) - RETUS ---
+        aas_list = _extract_aas_data_tipo_p(rnd_node_file)
+        antenna_script += "\n## RETUS\n"
+        for aas in aas_list:
+            antenna_script += f"""
+crn Equipment=1,FieldReplaceableUnit={aas['name']},AntennaNearUnit=1
+administrativeState 1
+antennaUnitRef 
+baseStationId 
+configuredAisgVersion majorVersion=0,minorVersion=0,releaseVersion=2
+fieldReplaceableUnitRef 
+installersId 
+iuantDeviceType 1
+rfPortRef 
+uniqueId 
+end
+
+crn Equipment=1,FieldReplaceableUnit={aas['name']},AntennaNearUnit=1,RetSubUnit=1
+electricalAntennaTilt {aas['tilt']}
+iuantAntennaBearing {aas['bearing']}
+iuantAntennaModelNumber 
+iuantAntennaOperatingBand 
+iuantAntennaOperatingGain 118,118,118,118
+iuantAntennaSerialNumber 
+iuantBaseStationId 
+iuantInstallationDate 
+iuantInstallersId 
+iuantSectorId {aas['sector']}
+maxTilt 120
+minTilt 20
+userLabel {aas['label']}
+verticalBeamWidthMode 0
+end
+
+crn Equipment=1,FieldReplaceableUnit={aas['name']},Transceiver=1
+interleavedAirInstallation false
+maxTotalTilt 900
+mechanicalAntennaTilt 0
+minTotalTilt -900
+retSubUnitRef FieldReplaceableUnit={aas['name']},AntennaNearUnit=1,RetSubUnit=1
+end
+"""
+        # En Tipo P, no usamos AuPort/RfBranch estándar
+        auport_script = ""
+
+    elif antenna_full_config and 'au_groups' in antenna_full_config:
         au_groups = antenna_full_config['au_groups']
         antenna_subunits = antenna_full_config['antenna_subunits']
         rf_branches = antenna_full_config['rf_branches']
@@ -946,7 +1103,20 @@ cr Equipment=1,FieldReplaceableUnit=BB-1,RiPort=F
 // #############################################
 """
     sef_script = ""
-    if sef_full_config:
+    if "P" in tipo_sitio or "AAS" in tipo_sitio:
+        # --- LÓGICA TIPO P (AAS) - SEF ---
+        aas_list = _extract_aas_data_tipo_p(rnd_node_file)
+        for idx, aas in enumerate(aas_list, start=1):
+            sef_script += f"""
+crn NodeSupport=1,SectorEquipmentFunction={idx}
+administrativeState 1
+noiseFigure 
+rfBranchRef Equipment=1,FieldReplaceableUnit={aas['name']},Transceiver=1
+userLabel 
+end
+"""
+
+    elif sef_full_config:
         # Ordenar por ID numérico (1, 2, 3, 7, 8, 9...)
         sorted_sef_ids = sorted([k for k in sef_full_config.keys() if k.isdigit()], key=lambda x: int(x))
         
@@ -1013,7 +1183,115 @@ set SectorCarrier={sc_id}$ prsEnabled {prs_enabled}
 // #############################################
 """
     # Esta configuración es la solicitada como "Configuración Basica A-B-C"
-    rilink_script = """
+    extra_config_script = ""
+    
+    if "P" in tipo_sitio or "AAS" in tipo_sitio:
+        # --- LÓGICA TIPO P (AAS) - RILINK ---
+        rilink_script = """
+#### BORRADO RILINK
+del Equipment=1,RiLink=
+y
+"""
+        aas_list = _extract_aas_data_tipo_p(rnd_node_file)
+        bb_ports = ['A', 'B', 'C']
+        for idx, aas in enumerate(aas_list[:3]):  # Máximo 3 AAS
+            if idx < len(bb_ports):
+                rilink_script += f"""
+crn Equipment=1,RiLink=RANP-AIR3283{aas['sector']}
+fronthaulDeviceLineRate 0
+riPortRef1 FieldReplaceableUnit=BB-1,RiPort={bb_ports[idx]}
+riPortRef2 FieldReplaceableUnit={aas['name']},RiPort=DATA_1
+transportType 0
+end
+"""
+        # --- CONFIGURACIONES EXTRA TIPO P ---
+        extra_config_script += """
+set FieldReplaceableUnit=AAS isSharedWithExternalMe false
+set MpClusterHandling=1 primaryCoreRef FieldReplaceableUnit=BB-1
+
+wait 1s
+crn Equipment=1,FieldReplaceableUnit=BB-1,TnPort=TN_IDL_D
+userLabel TN_IDL_D
+end
+wait 1s
+crn Equipment=1,FieldReplaceableUnit=BB-1,TnPort=TN_IDL_C
+userLabel TN_IDL_C
+end
+
+wait 1s
+crn Transport=1,EthernetPort=TN_IDL_D
+admOperatingMode 9
+administrativeState 1
+autoNegEnable false
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation FieldReplaceableUnit=BB-1,TnPort=TN_IDL_D
+holdDownTimer 
+ingressQosMarking 
+lldpTransmit 0
+supplicant 
+userLabel 
+end
+wait 1s
+crn Transport=1,EthernetPort=TN_IDL_C
+admOperatingMode 9
+administrativeState 1
+autoNegEnable false
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation FieldReplaceableUnit=BB-1,TnPort=TN_IDL_C
+holdDownTimer 
+ingressQosMarking 
+lldpTransmit 0
+supplicant 
+userLabel 
+end
+wait 1s
+crn Transport=1,VlanPort=FH_OAM_B
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_IDL_B
+ingressQosMarking 
+isTagged true
+lowLatencySwitching false
+userLabel 
+vlanId 24
+end
+wait 1s
+crn Transport=1,VlanPort=ERAN_ULCOMP
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_IDL_D
+ingressQosMarking 
+isTagged true
+lowLatencySwitching false
+userLabel ERAN_ULCOMP
+vlanId 3114
+end
+wait 1s
+crn Transport=1,VlanPort=ERAN_E5_CA
+egressQosClassification 
+egressQosMarking 
+egressQosQueueMap 
+encapsulation EthernetPort=TN_IDL_C
+ingressQosMarking 
+isTagged true
+lowLatencySwitching false
+userLabel ERAN_E5_CA
+vlanId 3113
+end
+"""
+        # Sets finales de retSubUnitRef
+        for aas in aas_list:
+            extra_config_script += f"set FieldReplaceableUnit={aas['name']},Transceiver=1                retSubUnitRef     FieldReplaceableUnit={aas['name']},AntennaNearUnit=1,RetSubUnit=1\n"
+
+    else:
+        # --- LÓGICA NORMAL (A-B-C) ---
+        rilink_script = """
 crn Equipment=1,RiLink=1
 riPortRef1 FieldReplaceableUnit=RRU-1,RiPort=DATA_1
 riPortRef2 FieldReplaceableUnit=BB-1,RiPort=A
@@ -1059,6 +1337,7 @@ end
 
 {separator_rilink}
 {rilink_script}
+{extra_config_script}
 
 cvms HW_Pledesma
 

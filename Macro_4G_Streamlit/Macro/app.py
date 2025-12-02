@@ -42,6 +42,7 @@ def handle_form_submit(rnd_file_global, wsh_file):
     release = st.session_state['release_select_v4_4']
     trama = st.session_state['trama_select_v4_4']
     region = st.session_state['region_select_v4_4']
+    tipo_sitio = st.session_state['tipo_sitio_radio_v4_4']  # Nuevo: capturar tipo de sitio
 
     if not wsh_file:
         st.session_state['generated_data'] = {'error': "Error: Por favor, cargue el archivo WSHReport para obtener la data de red."}
@@ -54,14 +55,15 @@ def handle_form_submit(rnd_file_global, wsh_file):
     with st.spinner('✨ Generando Terreno, Enrollment y estructura ZIP...'):
         time.sleep(0.5)
         
-        # LLAMADA CORREGIDA
+        # LLAMADA CON TIPO_SITIO
         zip_data, result_name, generated_content = generar_archivos_zip(
             nemonico, 
             release, 
             trama, 
             region, 
             wsh_file, 
-            rnd_file_global 
+            rnd_file_global,
+            tipo_sitio  # Nuevo parámetro
         )
 
     if zip_data:
@@ -253,13 +255,26 @@ if script_selection == 'Script 4G':
         # MIXED MODE
         st.markdown("<h3 style='margin-top:30px;'>📡 Modo de Operación</h3>", unsafe_allow_html=True)
 
-        mixed_mode_radio = st.radio(
-            "MixedMode",
-            ('No', 'Sí'),
-            index=0,
-            horizontal=True,
-            key='mixed_mode_radio_v4_4'
-        )
+        col_mixed, col_tipo_sitio = st.columns(2)
+        
+        with col_mixed:
+            mixed_mode_radio = st.radio(
+                "MixedMode",
+                ('No', 'Sí'),
+                index=0,
+                horizontal=True,
+                key='mixed_mode_radio_v4_4'
+            )
+        
+        with col_tipo_sitio:
+            tipo_sitio_radio = st.radio(
+                "Tipo de Sitio",
+                ('Normal (Macro)', 'P (MM/AS)'),
+                index=0,
+                horizontal=True,
+                key='tipo_sitio_radio_v4_4',
+                help="Selecciona 'P' para sitios con Active Antenna Systems (AAS)"
+            )
 
         if mixed_mode_radio == 'Sí':
             st.warning("🚨 MixedMode Activo. Por favor, cargue el archivo ATND.")
