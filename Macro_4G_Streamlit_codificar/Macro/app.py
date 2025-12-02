@@ -170,67 +170,6 @@ if st.session_state.get("authentication_status"):
         st.write(f'Bienvenido *{st.session_state.get("name")}*')
         authenticator.logout(location='sidebar')
 
-# Custom CSS for compact and centered login form
-st.markdown("""
-<style>
-/* Centrar y compactar el formulario de login */
-[data-testid="stForm"] {
-    max-width: 400px !important;
-    margin: 100px auto !important;
-    padding: 30px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-}
-
-/* Cambiar título "Login" a "Identifícate" */
-[data-testid="stForm"] h2:first-of-type::before {
-    content: "Identifícate" !important;
-    font-size: 24px !important;
-    font-weight: 700 !important;
-    color: #333 !important;
-}
-
-[data-testid="stForm"] h2:first-of-type {
-    font-size: 0 !important;
-    margin-bottom: 20px !important;
-}
-
-/* Hacer inputs más compactos */
-[data-testid="stForm"] input {
-    padding: 8px 12px !important;
-    font-size: 14px !important;
-    max-width: 100% !important;
-}
-
-[data-testid="stForm"] label {
-    font-size: 14px !important;
-    margin-bottom: 5px !important;
-}
-
-/* Botón de Login en verde */
-[data-testid="stForm"] button[kind="primary"] {
-    background-color: #28a745 !important;
-    color: white !important;
-    border: none !important;
-    padding: 10px 30px !important;
-    font-weight: 600 !important;
-    border-radius: 5px !important;
-    transition: all 0.3s !important;
-}
-
-[data-testid="stForm"] button[kind="primary"]:hover {
-    background-color: #218838 !important;
-    transform: translateY(-1px) !important;
-    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3) !important;
-}
-
-/* Reducir espaciado entre campos */
-[data-testid="stForm"] > div {
-    margin-bottom: 15px !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
 # --- CSS Personalizado ---
 st.markdown("""
 <style>
@@ -294,6 +233,71 @@ div[role="radiogroup"] > label:has(input:checked) {
     background-color: #218838;
 }
 .stMarkdown { margin-top: 0px; margin-bottom: 0px; }
+
+/* ===== ESTILOS PARA LOGIN ===== */
+/* Centrar formulario de login */
+section[data-testid="stVerticalBlock"] > div:has([data-testid="stForm"]) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Compactar formulario */
+[data-testid="stForm"] {
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* Título del login */
+[data-testid="stForm"] h2 {
+    display: none;
+}
+
+[data-testid="stForm"]::before {
+    content: "Identifícate";
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Inputs más compactos */
+[data-testid="stForm"] input[type="text"],
+[data-testid="stForm"] input[type="password"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+[data-testid="stForm"] label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Botón Login en verde */
+[data-testid="stForm"] button[type="submit"] {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 24px !important;
+    font-weight: 600 !important;
+    border-radius: 5px !important;
+    width: 100%;
+    margin-top: 10px;
+}
+
+[data-testid="stForm"] button[type="submit"]:hover {
+    background-color: #218838 !important;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3) !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
