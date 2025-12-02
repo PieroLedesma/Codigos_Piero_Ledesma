@@ -4,6 +4,9 @@
 import streamlit as st
 import pandas as pd
 import time
+import streamlit_authenticator as stauth
+import yaml
+from yaml.loader import SafeLoader
 
 # ====================================================================
 # === IMPORTAR LÓGICA DE NEGOCIO (REQUIERE generator_logic.py) ===
@@ -129,6 +132,43 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# ====================================================================
+# === AUTHENTICATION SETUP ===
+# ====================================================================
+
+# Initialize authenticator with correct API for v0.3+
+try:
+    authenticator = stauth.Authenticate(
+        st.secrets["credentials"].to_dict(),
+        st.secrets["cookie"]["name"],
+        st.secrets["cookie"]["key"],
+        st.secrets["cookie"]["expiry_days"]
+    )
+except Exception as e:
+    st.error(f"Error loading authentication configuration: {e}")
+    st.stop()
+
+# Login widget
+try:
+    authenticator.login(location='main')
+except Exception as e:
+    st.error(f"Login error: {e}")
+    st.stop()
+
+# Check authentication status
+if st.session_state.get("authentication_status") == False:
+    st.error('Usuario/Contraseña incorrectos')
+    st.stop()
+elif st.session_state.get("authentication_status") is None:
+    st.warning('Por favor ingrese su usuario y contraseña')
+    st.stop()
+
+# If authenticated, show logout button in sidebar
+if st.session_state.get("authentication_status"):
+    with st.sidebar:
+        st.write(f'Bienvenido *{st.session_state.get("name")}*')
+        authenticator.logout(location='sidebar')
 
 # --- CSS Personalizado ---
 st.markdown("""
