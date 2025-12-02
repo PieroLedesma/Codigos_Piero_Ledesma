@@ -170,6 +170,67 @@ if st.session_state.get("authentication_status"):
         st.write(f'Bienvenido *{st.session_state.get("name")}*')
         authenticator.logout(location='sidebar')
 
+# Custom CSS for compact and centered login form
+st.markdown("""
+<style>
+/* Centrar y compactar el formulario de login */
+[data-testid="stForm"] {
+    max-width: 400px !important;
+    margin: 100px auto !important;
+    padding: 30px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Cambiar título "Login" a "Identifícate" */
+[data-testid="stForm"] h2:first-of-type::before {
+    content: "Identifícate" !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+}
+
+[data-testid="stForm"] h2:first-of-type {
+    font-size: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Hacer inputs más compactos */
+[data-testid="stForm"] input {
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+    max-width: 100% !important;
+}
+
+[data-testid="stForm"] label {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+}
+
+/* Botón de Login en verde */
+[data-testid="stForm"] button[kind="primary"] {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 30px !important;
+    font-weight: 600 !important;
+    border-radius: 5px !important;
+    transition: all 0.3s !important;
+}
+
+[data-testid="stForm"] button[kind="primary"]:hover {
+    background-color: #218838 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3) !important;
+}
+
+/* Reducir espaciado entre campos */
+[data-testid="stForm"] > div {
+    margin-bottom: 15px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # --- CSS Personalizado ---
 st.markdown("""
 <style>
