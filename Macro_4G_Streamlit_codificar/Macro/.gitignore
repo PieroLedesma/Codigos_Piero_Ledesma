@@ -13,6 +13,9 @@ build/
 # Streamlit
 .streamlit/secrets.toml
 
+# Generador de contraseñas
+generate_password.py
+
 # Virtual Environment
 venv/
 env/
