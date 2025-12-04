@@ -1,0 +1,11 @@
+//
+// SCRIPT     : Sector
+// NEMONICO   : ULA781
+// HORA       : 14:53:18
+// FECHA      : 03-12-2025
+//
+/////////////////////////////////////////////////////////////
+
+confb+
+gs+
+set NodeSupport=1,MpClusterHandling=1 primaryCoreRef FieldReplaceableUnit=BB-1

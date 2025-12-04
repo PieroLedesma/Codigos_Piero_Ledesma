@@ -1,23 +1,41 @@
-# =====================================================================
-# terreno_generator_5G.py - Generación de archivos de terreno para 5G NR
-# =====================================================================
+# ==============================================================================
+# terreno_generator_3G.py - Generación de archivos XML de terreno para 3G WCDMA
+# ==============================================================================
 
-from typing import Dict, Any
+from typing import Dict
 
+# ==============================================================================
+# FUNCIÓN 1: Generar RbsSummaryFile
+# ==============================================================================
 
-def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any]) -> str:
+def generar_rbssummary(nemonico: str, release: str) -> str:
     """
-    Genera el archivo SiteBasic.xml para 5G NR basado en el ejemplo de GLA781.
-    
-    Args:
-        nemonico: Código nemónico del sitio
-        trama: Tipo de trama (TN_IDL_A, TN_IDL_B, etc.)
-        wsh_data: Datos extraídos del WSH
-    
-    Returns:
-        Contenido XML del SiteBasic
+    Genera el archivo 00_{NEMONICO}_RbsSummaryFile.xml
     """
-    nem = nemonico.upper()
+    nemonico_upper = nemonico.upper()
+    
+    xml_content = f"""<summary:AutoIntegrationRbsSummaryFile
+xmlns:summary="http://www.ericsson.se/RbsSummaryFileSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.ericsson.se/RbsSummaryFileSchemaSummaryFile.xsd">
+<Format revision="F"/>
+<ConfigurationFiles
+    siteBasicFilePath="01_{nemonico_upper}_SiteBasic.xml"
+    siteEquipmentFilePath="02_{nemonico_upper}_SiteEquipment.xml"
+    upgradePackageFilePath="{release}/"/>
+</summary:AutoIntegrationRbsSummaryFile>
+"""
+    return xml_content
+
+# ==============================================================================
+# FUNCIÓN 2: Generar SiteBasic
+# ==============================================================================
+
+def generar_sitebasic(nemonico: str, wsh_data: Dict[str, str], trama: str) -> str:
+    """
+    Genera el archivo 01_{NEMONICO}_SiteBasic.xml con configuración de red WCDMA
+    """
+    nemonico_upper = nemonico.upper()
     
     # Extraer datos del WSH (estilo 4G - separado IP y mask)
     ip_oam = wsh_data.get('IP_OAM', '0.0.0.0')
@@ -26,9 +44,9 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
     mask_trafico = wsh_data.get('MASK_TRAFICO', '26')
     gateway_oam = wsh_data.get('GATEWAY_OAM', '0.0.0.0')
     gateway_trafico = wsh_data.get('GATEWAY_TRAFICO', '0.0.0.0')
-    vlan_oam = wsh_data.get('VLAN_OAM', '0')
-    vlan_trafico = wsh_data.get('VLAN_TRAFICO', '0')
-    dns = wsh_data.get('DNS', '10.170.15.42')
+    vlan_oam = wsh_data.get('VLAN_OAM', '1301')
+    vlan_trafico = wsh_data.get('VLAN_TRAFICO', '1300')
+    dns = wsh_data.get('DNS', '10.170.15.20')
     ntp1 = wsh_data.get('NTP1', '172.16.50.41')
     ntp2 = wsh_data.get('NTP2', '172.16.50.42')
     
@@ -46,12 +64,12 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
     </target>
     <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
       <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
-       <managedElementId>1</managedElementId>
+        <managedElementId>1</managedElementId>
         <SystemFunctions>
           <systemFunctionsId>1</systemFunctionsId>
           <Lm xmlns="urn:com:ericsson:ecim:RcsLM">
             <lmId>1</lmId>
-            <fingerprint>{nem}</fingerprint>
+            <fingerprint>{nemonico_upper}</fingerprint>
           </Lm>
         </SystemFunctions>
       </ManagedElement>
@@ -120,7 +138,8 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
               <userManagementId>1</userManagementId>
               <LocalAuthorizationMethod xmlns="urn:com:ericsson:ecim:ComLocalAuthorization">
                 <localAuthorizationMethodId>1</localAuthorizationMethodId>
-             </LocalAuthorizationMethod>
+                <administrativeState>UNLOCKED</administrativeState>
+              </LocalAuthorizationMethod>
               <UserIdentity xmlns="urn:com:ericsson:ecim:RcsUser">
                 <userIdentityId>1</userIdentityId>
                 <MaintenanceUser>
@@ -138,10 +157,12 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
             <sysMId>1</sysMId>
             <CliSsh>
               <cliSshId>1</cliSshId>
-               <port>2023</port>
+              <administrativeState>UNLOCKED</administrativeState>
+              <port>2023</port>
             </CliSsh>
             <NetconfSsh>
               <netconfSshId>1</netconfSshId>
+              <administrativeState>UNLOCKED</administrativeState>
               <port>830</port>
             </NetconfSsh>
             <NtpServer>
@@ -156,31 +177,30 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
             </NtpServer>
           </SysM>
         </SystemFunctions>
-
         <Transport>
           <transportId>1</transportId>
           <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
-            <routerId>NR_OAM</routerId>
+            <routerId>WCDMA_OAM</routerId>
           </Router>
           <EthernetPort xmlns="urn:com:ericsson:ecim:RtnL2EthernetPort">
             <ethernetPortId>{trama}</ethernetPortId>
             <administrativeState>UNLOCKED</administrativeState>
-            <admOperatingMode>10G_FULL</admOperatingMode>
-            <autoNegEnable>false</autoNegEnable>
+            <admOperatingMode>1G_FULL</admOperatingMode>
+            <autoNegEnable>true</autoNegEnable>
             <encapsulation>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1,TnPort={trama}</encapsulation>
             <userLabel>{trama}</userLabel>
           </EthernetPort>
           <VlanPort xmlns="urn:com:ericsson:ecim:RtnL2VlanPort">
-            <vlanPortId>NR_OAM</vlanPortId>
+            <vlanPortId>WCDMA_OAM</vlanPortId>
             <encapsulation>ManagedElement=1,Transport=1,EthernetPort={trama}</encapsulation>
             <vlanId>{vlan_oam}</vlanId>
           </VlanPort>
           <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
-            <routerId>NR_OAM</routerId>
+            <routerId>WCDMA_OAM</routerId>
             <InterfaceIPv4 xmlns="urn:com:ericsson:ecim:RtnL3InterfaceIPv4">
               <interfaceIPv4Id>1</interfaceIPv4Id>
-              <encapsulation>ManagedElement=1,Transport=1,VlanPort=NR_OAM</encapsulation>
-              <userLabel>VLAN OAM</userLabel>
+              <encapsulation>ManagedElement=1,Transport=1,VlanPort=WCDMA_OAM</encapsulation>
+              <userLabel>WCDMA_OAM</userLabel>
               <AddressIPv4>
                 <addressIPv4Id>1</addressIPv4Id>
                 <address>{ip_oam}/{mask_oam}</address>
@@ -194,7 +214,7 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
             <sysMId>1</sysMId>
             <OamAccessPoint>
               <oamAccessPointId>1</oamAccessPointId>
-              <accessPoint>ManagedElement=1,Transport=1,Router=NR_OAM,InterfaceIPv4=1,AddressIPv4=1</accessPoint>
+              <accessPoint>ManagedElement=1,Transport=1,Router=WCDMA_OAM,InterfaceIPv4=1,AddressIPv4=1</accessPoint>
             </OamAccessPoint>
           </SysM>
         </SystemFunctions>
@@ -204,19 +224,19 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
             <ntpId>1</ntpId>
           </Ntp>
           <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
-            <routerId>NR</routerId>
+            <routerId>WCDMA</routerId>
           </Router>
           <VlanPort xmlns="urn:com:ericsson:ecim:RtnL2VlanPort">
-            <vlanPortId>NR</vlanPortId>
+            <vlanPortId>WCDMA</vlanPortId>
             <encapsulation>ManagedElement=1,Transport=1,EthernetPort={trama}</encapsulation>
             <vlanId>{vlan_trafico}</vlanId>
           </VlanPort>
           <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
-            <routerId>NR</routerId>
+            <routerId>WCDMA</routerId>
             <InterfaceIPv4 xmlns="urn:com:ericsson:ecim:RtnL3InterfaceIPv4">
               <interfaceIPv4Id>1</interfaceIPv4Id>
-              <encapsulation>ManagedElement=1,Transport=1,VlanPort=NR</encapsulation>
-              <userLabel>VLAN TRAFICO</userLabel>
+              <encapsulation>ManagedElement=1,Transport=1,VlanPort=WCDMA</encapsulation>
+              <userLabel>WCDMA</userLabel>
               <AddressIPv4>
                 <addressIPv4Id>1</addressIPv4Id>
                 <address>{ip_trafico}/{mask_trafico}</address>
@@ -224,7 +244,7 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
             </InterfaceIPv4>
           </Router>
           <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
-            <routerId>NR_OAM</routerId>
+            <routerId>WCDMA_OAM</routerId>
             <DnsClient xmlns="urn:com:ericsson:ecim:RtnDnsClient">
               <dnsClientId>1</dnsClientId>
               <configurationMode>MANUAL</configurationMode>
@@ -244,7 +264,7 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
             </RouteTableIPv4Static>
           </Router>
           <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
-            <routerId>NR</routerId>
+            <routerId>WCDMA</routerId>
             <RouteTableIPv4Static xmlns="urn:com:ericsson:ecim:RtnRoutesStaticRouteIPv4">
               <routeTableIPv4StaticId>1</routeTableIPv4StaticId>
               <Dst>
@@ -291,8 +311,8 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
     </target>
     <config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
       <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
-       <managedElementId>1</managedElementId>
-        <networkManagedElementId>{nem}</networkManagedElementId>
+        <managedElementId>1</managedElementId>
+        <networkManagedElementId>{nemonico_upper}</networkManagedElementId>
       </ManagedElement>
     </config>
   </edit-config>
@@ -302,28 +322,25 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
   <close-session></close-session>
 </rpc>
 ]]>]]>
+
 """
-    
     return xml_content
 
+# ==============================================================================
+# FUNCIÓN 3: Generar SiteEquipment
+# ==============================================================================
 
-def generar_site_equipment_xml_5g(trama: str) -> str:
+def generar_siteequipment(nemonico: str) -> str:
     """
-    Genera el archivo SiteEquipment.xml para 5G NR basado en el ejemplo de GLA781.
-    
-    Args:
-        trama: Tipo de trama
-    
-    Returns:
-        Contenido XML del SiteEquipment
+    Genera el archivo 02_{NEMONICO}_SiteEquipment.xml con configuración de hardware
     """
-    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+    xml_content = """<?xml version="1.0" encoding="UTF-8"?>
 <hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
        <capabilities>
                <capability>urn:ietf:params:netconf:base:1.0</capability>
                <capability>urn:com:ericsson:ebase:0.1.0</capability>
                <capability>urn:com:ericsson:ebase:1.1.0</capability>
-       </capabilities>
+        </capabilities>
 </hello>
 ]]>]]>
 <rpc message-id="Create primary FieldReplaceableUnit with ports in the first rpc" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
@@ -346,7 +363,7 @@ def generar_site_equipment_xml_5g(trama: str) -> str:
                                                <riPortId>C</riPortId>
                                        </RiPort>
                                        <TnPort>
-                                               <tnPortId>{trama}</tnPortId>
+                                               <tnPortId></tnPortId>
                                        </TnPort>
                                        <EcPort>
                                                <ecPortId>1</ecPortId>
@@ -447,5 +464,4 @@ def generar_site_equipment_xml_5g(trama: str) -> str:
 ]]>]]>
 
 """
-    
     return xml_content

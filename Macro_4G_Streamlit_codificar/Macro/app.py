@@ -25,12 +25,16 @@ REGIONES_CHILE = [
 ]
 # MODIFICACIÓN CLAVE: Se reemplaza la lista de opciones por la única opción fija
 CONFIGURACIONES = ["Configuración Básica A-B-C (Fija)"] 
+CONFIGURACIONES_3G = ["Configuración Básica 3G"]
 
 if 'generated_data' not in st.session_state:
     st.session_state['generated_data'] = None
 
 if 'generated_data_5g' not in st.session_state:
     st.session_state['generated_data_5g'] = None
+
+if 'generated_data_3g' not in st.session_state:
+    st.session_state['generated_data_3g'] = None
 
 # ====================================================================
 # === FUNCIÓN CALLBACK PARA EL BOTÓN DE SUBMIT (CORREGIDA - RND ÚNICO) ===
@@ -121,6 +125,53 @@ def handle_form_submit_5g(wsh_file_5g, rnd_file_5g):
         }
     else:
         st.session_state['generated_data_5g'] = {'error': result_name}
+
+
+# ====================================================================
+# === FUNCIÓN CALLBACK PARA SUBMIT 3G ===
+# ====================================================================
+def handle_form_submit_3g(wsh_file_3g, rnd_file_3g):
+    """Ejecuta la lógica de generación de scripts 3G al hacer click."""
+    print("DEBUG: handle_form_submit_3g CALLED")
+    from generator_logic_3G import generar_archivos_zip_3g
+    
+    st.session_state['generated_data_3g'] = None
+    
+    # Recoger variables del formulario
+    nemonico = st.session_state['nemonico_input_3g_v1']
+    trama = st.session_state['trama_select_3g_v1']
+    release = st.session_state['release_select_3g_v1']
+    region = st.session_state['region_select_3g_v1']
+    configuracion = st.session_state['configuracion_select_3g_v1']
+    
+    print(f"DEBUG: Inputs - Nemonico: {nemonico}, Trama: {trama}, Release: {release}, Configuracion: {configuracion}")
+    
+    if not wsh_file_3g:
+        print("DEBUG: No WSH file provided")
+        st.session_state['generated_data_3g'] = {'error': "Falta archivo WSH"}
+        return
+
+    # Generar archivos
+    print("DEBUG: Calling generar_archivos_zip_3g...")
+    zip_data, result_name, generated_content = generar_archivos_zip_3g(
+        nemonico=nemonico,
+        trama=trama,
+        release=release,
+        region=region,
+        wsh_file=wsh_file_3g,
+        rnd_file=rnd_file_3g,
+        configuracion=configuracion
+    )
+    print(f"DEBUG: Result - Zip: {bool(zip_data)}, Name: {result_name}")
+    
+    if zip_data:
+        st.session_state['generated_data_3g'] = {
+            'zip_data': zip_data,
+            'zip_filename': result_name,
+            'all_content': generated_content
+        }
+    else:
+        st.session_state['generated_data_3g'] = {'error': result_name}
 
 
 # ====================================================================
@@ -264,7 +315,7 @@ if script_selection == 'Script 4G':
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("Datos Básicos")
-            nemonico_input = st.text_input("Némonico", placeholder="Ej: MZB884", key='nemonico_input_v4_4')
+            nemonico_input = st.text_input("Némonico", placeholder="Ej: MXXXXX - GXXXXX - PXXXXX", key='nemonico_input_v4_4')
             trama_select = st.selectbox("Trama", ("TN_A", "TN_B", "TN_C", "TN_D","TN_IDL_B","TN_IDL_A"), key='trama_select_v4_4')
             release_select = st.selectbox(
                 "Release",
@@ -532,4 +583,102 @@ elif script_selection == 'Script 5G':
 
 
 elif script_selection == 'Script 3G':
-    st.info("Configuración 3G: Pendiente. Pronto disponible.")
+    
+    # 3.1 FORMULARIO 3G
+    with st.form(key='script_3g_form_v1', clear_on_submit=False):
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.subheader("Datos Básicos")
+            nemonico_input_3g = st.text_input("Nemonico", placeholder="Ej: NXXXXX", key='nemonico_input_3g_v1')
+            trama_select_3g = st.selectbox("Trama", ("TN_A, TN_B, TN_C, TN_IDL_A", "TN_IDL_B", "TN_IDL_C"), key='trama_select_3g_v1')
+            release_select_3g = st.selectbox(
+                "Release",
+                ("RadioNode_CXP9024418_15_R53M22_22.Q2",),
+                key='release_select_3g_v1'
+            )
+
+        with col2:
+            st.subheader("Configuración y Región")
+            region_select_3g = st.selectbox("Región", REGIONES_CHILE, key='region_select_3g_v1')
+            configuracion_select_3g = st.selectbox("Configuración", CONFIGURACIONES_3G, key='configuracion_select_3g_v1')
+
+        # CARGA DE ARCHIVOS
+        st.markdown("<h3 style='margin-top:30px;'>📤 Carga de Archivos Requeridos</h3>", unsafe_allow_html=True)
+        col3_3g, col4_3g = st.columns(2)
+        with col3_3g:
+            wsh_file_3g = st.file_uploader(
+                "1. Cargar WSHReport (Archivo .xlsx con hoja '3G')", 
+                type=['xlsx'], 
+                key='wsh_uploader_3g_v1'
+            )
+        with col4_3g:
+            rnd_file_3g = st.file_uploader(
+                "2. Cargar RND (Archivo .xlsx)", 
+                type=['xlsx'], 
+                key='rnd_uploader_3g_v1'
+            )
+
+        st.markdown("---")
+
+        # BOTÓN SUBMIT - CONECTADO AL CALLBACK
+        st.form_submit_button(
+            label='🤖 Generar Script 3G',
+            help="Presiona para iniciar la generación de archivos de terreno 3G.",
+            type="primary",
+            on_click=handle_form_submit_3g,
+            args=(wsh_file_3g, rnd_file_3g)
+        )
+
+    # 3.2 DESCARGA Y VISUALIZACIÓN
+    st.markdown("---")
+
+    if st.session_state['generated_data_3g'] and 'zip_data' in st.session_state['generated_data_3g']:
+        data = st.session_state['generated_data_3g']
+        nemonico_display = st.session_state['nemonico_input_3g_v1'].upper()
+
+        st.success(f"✅ ¡Archivos de terreno 3G generados con éxito para **{nemonico_display}**!")
+
+        col_download, _, _ = st.columns([1, 2, 1])
+        with col_download:
+            st.download_button(
+                label="⬇️ Descargar ZIP Final 3G",
+                data=data['zip_data'],
+                file_name=data['zip_filename'],
+                mime="application/zip",
+                type="secondary"
+            )
+
+        # DEBUG EXPANDER
+        with st.expander("🔍 Ver contenido de los archivos generados"):
+            st.subheader(f"📁 00_Terreno_{nemonico_display}")
+            
+            st.markdown(f"**00_{nemonico_display}_RbsSummaryFile.xml**")
+            st.code(data['all_content']['00_RbsSummaryFile'], language='xml')
+
+            st.markdown(f"**01_{nemonico_display}_SiteBasic.xml**")
+            st.code(data['all_content']['01_SiteBasic'], language='xml')
+
+            st.markdown(f"**02_{nemonico_display}_SiteEquipment.xml**")
+            st.code(data['all_content']['02_SiteEquipment'], language='xml')
+
+            st.subheader(f"📁 01_Nodo_{nemonico_display}")
+            st.markdown(f"**00_{nemonico_display}_PL_Nodeid.mos**")
+            st.code(data['all_content']['00_NodeId'], language='text')
+
+            if '01_Sector' in data['all_content'] and data['all_content']['01_Sector']:
+                st.markdown(f"**01_{nemonico_display}_PL_Sector.mos**")
+                st.code(data['all_content']['01_Sector'], language='text')
+
+    # ERRORES
+    elif st.session_state['generated_data_3g'] and 'error' in st.session_state['generated_data_3g']:
+        st.error(st.session_state['generated_data_3g']['error'])
+        st.session_state['generated_data_3g'] = None
+
+    # LIMPIAR
+    st.markdown("---")
+    col_recharge_3g, _, _ = st.columns([1, 2, 1])
+    with col_recharge_3g:
+        if st.button("Limpiar Formulario (Reiniciar)", help="Reinicia la aplicación para limpiar todos los campos.", key='recharge_button_3g_v1'):
+            st.session_state['generated_data_3g'] = None
+            st.rerun()

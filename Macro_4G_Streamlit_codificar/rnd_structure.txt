@@ -1,0 +1,96 @@
+SHEET_NAMES:
+['EUL', 'Fach', 'Hsdsch', 'Pch', 'Rach', 'E-Fach', 'UtranCell', 'AntennaUnit', 'NodeBSectorCarrier', 'RfBranch', 'IubDataStreams', 'NodeBFunction', 'AntennaSubUnit', 'RetSubUnit', 'NodeBLocalCell', 'RfPort', 'MscParameter', 'Iub', 'Iublink', 'UtranRelation', 'CoverageRelation', 'EutranFreqRelation', 'GSMRelation___All_RNC', 'ExternalGSMCell', 'NL_IRAT_G2U', 'Del_UtranRel', 'SiteConfiguration', 'Features', 'ExternalEutranCell', 'EutranCellRelation', 'Configuraciones']
+
+SHEET: EUL
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'edchTti2Support', 'eulDchBalancingEnabled', 'eulDchBalancingLoad', 'eulDchBalancingOverload', 'eulDchBalancingReportPeriod', 'eulDchBalancingSupport', 'eulDchBalancingSuspendDownSw', 'eulDchBalancingTimerNg', 'eulLoadTriggeredSoftCong', 'eulMaxTargetRtwp', 'eulTdSchedulingSupport', 'improvedL2Support', 'numEagchCodes', 'numEhichErgchCodes', 'pathlossThresholdEulTti2', 'releaseAseUlNg', 'threshEulTti2Ecno']
+
+SHEET: Fach
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'maxFach1Power', 'maxFach2Power', 'pOffset1Fach', 'pOffset3Fach', 'sccpchOffset']
+
+SHEET: Hsdsch
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'codeThresholdPdu656', 'cqiFeedbackCycle', 'deltaAck1', 'deltaAck2', 'deltaCqi1', 'deltaCqi2', 'deltaNack1', 'deltaNack2', 'enhancedL2Support', 'enhUeDrxSupport', 'hsAqmCongCtrlSpiSupport', 'hsAqmCongCtrlSupport', 'hsFachSupport', 'hsMeasurementPowerOffset', 'initialAckNackRepetitionFactor', 'initialCqiRepetitionFactor', 'numHsPdschCodes', 'numHsScchCodes', 'qam64MimoSupport', 'qam64Support']
+
+SHEET: Pch
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'pchPower', 'pichPower', 'sccpchOffset']
+
+SHEET: Rach
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'aichPower', 'aichTransmissionTiming', 'constantValueCprach', 'increasedRachCoverageEnabled', 'maxPreambleCycle', 'powerOffsetP0', 'powerOffsetPpm', 'preambleRetransMax', 'preambleSignatures', 'scramblingCodeWordNo', 'spreadingFactor', 'subChannelNo', 'nb01Max', 'nb01Min']
+
+SHEET: E-Fach
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'availabilityStatus', 'cEdchResourcesEai', 'deltaCqi', 'eAiCapable', 'eulFachCapable', 'initDpcchPower', 'initFdpchPower', 'initInterferenceUl', 'maxCcchTime', 'maxCollisionResTime', 'numPreambleSignatures', 'operationalState', 'ulSirTarget']
+
+SHEET: UtranCell
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'administrativeState', 'absPrioCellRes_cellReselectionPriority', 'absPrioCellRes_sPrioritySearch1', 'absPrioCellRes_sPrioritySearch2', 'absPrioCellRes_threshServingLow', 'accessClassesBarredCs', 'accessClassesBarredPs', 'accessClassNBarred', 'admBlockRedirection_gsmRrc', 'admBlockRedirection_rrc', 'admBlockRedirection_speech', 'agpsEnabled', 'amrNbSelector', 'amrWbRateDlMax', 'amrWbRateUlMax', 'anrBlackList', 'anrIafUtranCellConfig_anrEnabled', 'anrIafUtranCellConfig_relationAddEnabled', 'antennaPosition_latitude', 'antennaPosition_latitudeSign', 'antennaPosition_longitude', 'aseDlAdm', 'aseLoadThresholdUlSpeech_amr12200', 'aseLoadThresholdUlSpeech_amr5900', 'aseLoadThresholdUlSpeech_amr7950', 'aseLoadThresholdUlSpeech_amrWb12650', 'aseLoadThresholdUlSpeech_amrWb8850', 'aseUlAdm', 'bchPower', 'cbsSchedulePeriodLength', 'cellBroadcastSac', 'cellReserved', 'cId', 'codeLoadThresholdDlSf128', 'compModeAdm', 'cpcSupport', 'ctchAdmMargin', 'ctchOccasionPeriod', 'cyclicAcb_acbEnabled', 'cyclicAcb_rotationGroupSize', 'cyclicAcbCs_acbEnabled', 'cyclicAcbCs_rotationGroupSize', 'cyclicAcbPs_acbEnabled', 'cyclicAcbPs_rotationGroupSize', 'dchIflsMarginCode', 'dchIflsMarginPower', 'dchIflsThreshCode', 'dchIflsThreshPower', 'dlCodeAdm', 'dlCodeOffloadLimit', 'dlPowerOffloadLimit', 'dmcrEnabled', 'dnclEnabled', 'downswitchTimer', 'eulNonServingCellUsersAdm', 'eulServingCellUsersAdm', 'eulServingCellUsersAdmTti2', 'fachMeasOccaCycLenCoeff', 'fdpchSupport', 'ganHoEnabled', 'hardIfhoCorr', 'hcsSib3Config_hcsPrio', 'hcsSib3Config_qHcs', 'hcsSib3Config_sSearchHcs', 'hcsUsage_connectedMode', 'hcsUsage_idleMode', 'hoType', 'hsdpaUsersAdm', 'hsdpaUsersOffloadLimit', 'hsdschInactivityTimer', 'hsdschInactivityTimerCpc', 'hsIflsDownswitchTrigg_fastDormancy', 'hsIflsDownswitchTrigg_toFach', 'hsIflsDownswitchTrigg_toUra', 'hsIflsHighLoadThresh', 'hsIflsMarginUsers', 'hsIflsPowerLoadThresh', 'hsIflsRedirectLoadLimit', 'hsIflsSpeechMultiRabTrigg', 'hsIflsThreshUsers', 'hsIflsTrigger_fromFach', 'hsIflsTrigger_fromUra', 'iFCong', 'iFHyst', 'iflsCpichEcnoThresh', 'iflsMode', 'iflsRedirectUarfcn', 'inactivityTimeMultiPsInteractive', 'inactivityTimer', 'inactivityTimerEnhUeDrx', 'inactivityTimerPch', 'individualOffset', 'interFreqFddMeasIndicator', 'interPwrMax', 'interRate', 'iubLinkRef', 'lac', 'loadBasedHoSupport', 'loadBasedHoType', 'loadSharingGsmFraction', 'loadSharingGsmThreshold', 'loadSharingMargin', 'localCellId', 'maximumTransmissionPower', 'maxPwrMax', 'maxRate', 'maxTxPowerUl', 'minimumRate', 'minPwrMax', 'minPwrRl', 'nOutSyncInd', 'pagingPermAccessCtrl_locRegAcb', 'pagingPermAccessCtrl_locRegRestr', 'pagingPermAccessCtrl_pagingRespRestr', 'pathlossThreshold', 'primaryCpichPower', 'primarySchPower', 'primaryScramblingCode', 'pwrAdm', 'pwrLoadThresholdDlSpeech_amr12200', 'pwrLoadThresholdDlSpeech_amr5900', 'pwrLoadThresholdDlSpeech_amr7950', 'pwrLoadThresholdDlSpeech_amrWb12650', 'pwrLoadThresholdDlSpeech_amrWb8850', 'qHyst1', 'qHyst2', 'qQualMin', 'qRxLevMin', 'qualMeasQuantity', 'rac', 'rateSelectionPsInteractive_channelType', 'rateSelectionPsInteractive_dlPrefRate', 'rateSelectionPsInteractive_ulPrefRate', 'redirectUarfcn', 'releaseRedirect', 'releaseRedirectEutraTriggers_csFallbackCsRelease', 'releaseRedirectEutraTriggers_csFallbackDchToFach', 'releaseRedirectEutraTriggers_dchToFach', 'releaseRedirectEutraTriggers_fachToUra', 'releaseRedirectEutraTriggers_fastDormancy', 'releaseRedirectEutraTriggers_normalRelease', 'releaseRedirectHsIfls', 'reportingRange1a', 'reportingRange1b', 'rlFailureT', 'rrcLcEnabled', 'sac', 'secondaryCpichPower', 'secondarySchPower', 'servDiffRrcAdmHighPrioProfile', 'serviceRestrictions_csVideoCalls', 'sf128Adm', 'sf16Adm', 'sf16AdmUl', 'sf16gAdm', 'sf32Adm', 'sf4AdmUl', 'sf64AdmUl', 'sf8Adm', 'sf8AdmUl', 'sf8gAdmUl', 'sHcsRat', 'sib1PlmnScopeValueTag', 'sInterSearch', 'sIntraSearch', 'spare', 'spareA', 'sRatSearch', 'srbAdmExempt', 'standAloneSrbSelector', 'tCell', 'timeToTrigger1a', 'timeToTrigger1b', 'transmissionScheme', 'treSelection', 'uarfcnDl', 'uarfcnUl', 'uraList', 'usedFreqThresh2dEcno', 'usedFreqThresh2dRscp', 'dlCodePowerCmEnabled', 'eulMcServingCellUsersAdmTti2', 'primaryTpsCell', 'rwrEutraCc', 'tpsCellThresholds_tpsCellThreshEnabled', 'tpsCellThresholds_tpsLockThreshold', 'tpsCellThresholds_tpsUnlockThreshold', 'rachOverloadProtect', 'ifIratHoPsIntHsEnabled', 'cellUpdateConfirmCsInitRepeat', 'cellUpdateConfirmPsInitRepeat', 'userLabel', 'lteMeasEnabled', 'psHoToLteEnabled', 'absPrioCellRes_measIndFach', 'mocnCellProfileRef']
+
+SHEET: AntennaUnit
+COLUMNS: ['Site', 'AntennaUnitGroup', 'mechanicalAntennaTilt']
+
+SHEET: NodeBSectorCarrier
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'NodeBSectorCarrierid', 'cellRange', 'BandwidthDL', 'eulLockedNoiseFloor', 'eulMaxOwnUuLoad', 'eulMaxRotCoverage', 'eulNoiseFloorLock', 'eulThermalLevelPrior', 'fccRotMarginHigh', 'fccRotMarginLow', 'maxDlPowerCapability', 'minDlPowerCapability', 'numOfRxAntennas ', 'numOfTxAntennas ', 'BandwidthUL', 'nbirAlgorithm', 'nbirFixedNotchPosition', 'beamdirection', 'configuredMaxTxPower', 'height', 'numOfBranchWithNbir', 'operationalState', 'latitude', 'longitude', 'latHemisphere']
+
+SHEET: RfBranch
+COLUMNS: ['Site', 'AntennaUnitGroup', 'RfBranch', 'auPortRef', 'dlAttenuation', 'dlTrafficDelay', 'rfPortRef', 'ulAttenuation', 'ulTrafficDelay', 'userLabel', 'reservedBy']
+
+SHEET: IubDataStreams
+COLUMNS: ['RNC', 'Site', 'hsDataFrameDelayThreshold', 'hsRbrDiscardProbability', 'hsRbrWeight', 'maxHsRate', 'schHsFlowControlOnOff', 'UserLabel', 'noOfCommonStreams', 'noOfDedicatedStreams']
+
+SHEET: NodeBFunction
+COLUMNS: ['RNC', 'Site', 'eul2msFirstSchedStep', 'eulDchMaxAllowedSchRate', 'eulInactivityHighRateTime', 'eulInactivityLowRateTime', 'eulLowRate', 'eulLowUsageTime', 'eulMaxAllowedSchRate', 'eulMaxShoRate', 'eulMaxTotalProtectedRate', 'eulNonServHwRate', 'eulNoReschUsers', 'eulSchedulingWeight', 'eulTargetRate', 'nbapDscp']
+
+SHEET: AntennaSubUnit
+COLUMNS: ['Site', 'AntennaUnitGroup', 'AntennaSubunit', 'azimuthHalfPowerBeamwidth', 'commonChBeamfrmPortMap', 'customComChBeamfrmWtsAmplitude', 'customComChBeamfrmWtsPhase', 'maxTotalTilt', 'minTotalTilt', 'totalTilt']
+
+SHEET: RetSubUnit
+COLUMNS: ['Site', 'AntennaUnitGroup', 'AntennaNearUnit', 'electricalAntennaTilt', 'iuantAntennaBearing', 'iuantSectorId', 'userLabel']
+
+SHEET: NodeBLocalCell
+COLUMNS: ['RNC', 'Site', 'NodeBLocalCellid', 'operatingBand', 'operationalState', 'airRateTypeSelector', 'chQualOffset', 'cqiAdjustmentOn', 'cqiErrors', 'cqiErrorsAbsent', 'defaultCqiHsFach', 'eHichMinCodePower', 'eulMaxNoSchEDch', 'eulMcActivationDelayTime', 'eulMcCapability', 'eulMinMarginCoverage', 'eulNoERgchGroups', 'extraCompEnhUeDrx', 'extraCompForSigHsFach', 'extraCompHsFach', 'extraHsScchCompEnhUeDrx', 'extraHsScchCompForSigHsFach', 'extraHsScchCompHsFach', 'extraHsScchPowerForSrbOnHsdpa', 'extraPowerForSrbOnHsdpa', 'hsdpaDbMcCapability', 'hsdpaMcActivityBufferThreshold', 'hsdpaMcCapability', 'hsdpaMcInactivityTimer', 'hsdpaPowerSharingCapability', 'hsPowerMargin', 'hsScchMaxCodePower', 'hsScchMinCodePower', 'localCellId', 'maxDlPowerCapability', 'maxEAgchPowerDl', 'maxEAgchPowerDlTti2', 'maxNumEulUsers', 'maxNumHsdpaUsers', 'maxNumHsPdschCodes', 'maxUserEHichERgchPowerDl', 'maxUserEHichPowerDlTti2', 'minBitRate', 'minBitRateMinCqi', 'minDlPowerCapability', 'minSpreadingFactor', 'powerSharingMaxTransmissionPower', 'qualityCheckPower', 'qualityCheckPowerEHich', 'queueSelectAlgorithm', 'schCongPeriodGbr', 'schCongThreshGbr', 'schCongThreshNonGbr', 'schMaxDelay', 'schMinPowerNonGbrHsUsers', 'schNoCongPeriodGbr', 'schNoCongThreshGbr', 'schPowerDeltaCongGbr', 'schPrioForAbsResSharing', 'schWeight', 'featCtrlEnhUeDrx', 'featCtrlEnhancedLayer2', 'featCtrlEulMc', 'featCtrlFDpchSrbOnHsdpa', 'featCtrlHsFach', 'featCtrlHsdpaDbMc', 'featCtrlHsdpaDynamicCodeAllocation', 'featCtrlHsdpaIncrementalRedundancy', 'featCtrlHsdpaMc', 'featCtrlHsdpaMcInactCtrl', 'featCtrlHsdpaPowerSharing', 'featCtrlImprovedLayer2', 'featCtrlNbir', 'uarfcnDL', 'uarfcnUL']
+
+SHEET: RfPort
+COLUMNS: ['Site', 'FieldReplaceableUnit', 'RfPort', 'administrativeState', 'userLabel', 'vswrSupervisionActive', 'vswrSupervisionSensitivity', 'dlFrequencyRanges', 'ulFrequencyRanges']
+
+SHEET: MscParameter
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'EA', 'LOCNO', 'RO', 'EC', 'ERIND=1', 'ERIND=2', 'ERIND=3', 'ERIND=4', 'ERIND=5', 'ERIND=6', 'ERIND=7', 'ERIND=8', 'ERIND=9', 'ERIND=10', 'ERIND=11', 'ERIND=12', 'ZC']
+
+SHEET: Iub
+COLUMNS: ['RNC', 'Site', 'Iub', 'rbsId']
+
+SHEET: Iublink
+COLUMNS: ['RNC', 'Site', 'Iub', 'dlHwAdm', 'rbsId', 'softCongThreshGbrBwDl', 'softCongThreshGbrBwUl', 'ulHwAdm']
+
+SHEET: UtranRelation
+COLUMNS: ['Relation', 'RNC', 'CELL', 'RNC_R', 'CELL_R', 'qOffset1sn', 'qOffset2sn', 'selectionPriority']
+
+SHEET: CoverageRelation
+COLUMNS: ['RNC', 'Utrancell', 'CoverageRelationId', 'coverageIndicator', 'hsIflsDownswitch', 'hsPathlossThreshold', 'relationCapability_dchLoadSharing', 'relationCapability_hsCellSelection', 'relationCapability_hsLoadSharing', 'utranCellRef', 'relationCapability_powerSave']
+
+SHEET: EutranFreqRelation
+COLUMNS: ['RNC', 'Site', 'Utrancell', 'cellReselectionPriority', 'qRxLevMin', 'threshHigh', 'threshlow', 'redirectionOrder', 'eutranFrequency', 'thresh2dRwr', 'coSitedCellAvailable']
+
+SHEET: GSMRelation___All_RNC
+COLUMNS: ['RNC', 'UtranCell', 'GsmRelation', 'mobilityRelationType', 'qOffset1sn', 'Selection Priority']
+
+SHEET: ExternalGSMCell
+COLUMNS: ['BSC_ID', 'GSM_CELL_ID', 'USERLABEL', 'cI', 'ncc', 'bcc', 'bcchArfcn', 'LAC']
+
+SHEET: NL_IRAT_G2U
+COLUMNS: ['BSC id', 'GSMCellId', 'UTRANCellId']
+
+SHEET: Del_UtranRel
+COLUMNS: ['Source_cell', 'Target_Cell']
+
+SHEET: SiteConfiguration
+COLUMNS: ['Project', 'Site', 'Utrancell', 'Name', 'RNC', 'Longitude', 'Latitude', 'End beamdirection', 'Before beamdirection', 'Revisión beamdirection', 'End electricalAntennaTilt', 'Before electricalAntennaTilt', 'Revisión electricalAntennaTilt', 'End mechanicalAntennaTilt', 'Before mechanicalAntennaTilt', 'Revisión mechanicalAntennaTilt', 'height Antennas', 'Antenna', 'RBS Type']
+
+SHEET: Features
+COLUMNS: ['RNC', 'Site', '16Qam', '64Qam', 'CeCapEul', 'CeEfficiencyEul', 'CeExtForEul', 'CombinedCell', 'DlPowerControlEul', 'DualStackIub', 'DualTmaSupport', 'Eul2msTti', 'EulForLargeRbsConfig', 'EulLowLatencyPresched', 'Grake', 'HsAqmCongCtrl', 'HsdpaFlexibleScheduler', 'HsdpaImprovedLinkAdaptation', 'HsdpaMcInterDuSched', 'HsdpaMinBitRate', 'HsdpaRbrQosProfiling', 'IncreasedCellCarrierSupport', 'IncreasedHsCodeCap', 'IncrNumHsCodes', 'InterferenceSuppression', 'IntSuppAllBearers', 'IntSuppEul10ms', 'MixedMode', 'MultiSectorPerRadio', 'PerHarqProcessGrant', 'PsiCoverage', 'RbsMpLoadSharing', 'RetCascading', 'StandardizedRet', 'StandardizedTma', 'UlCoMpReception', 'UlFcc', '4wayRxDiversity', '64QamMimo', 'Cpc', 'DchEulBalancing', 'EnhancedLayer2', 'EnhUeDrx', 'EulFach', 'EulMc', 'EulTdScheduling', 'FDpchSrbOnHsdpa', 'HsdpaDbMc', 'HsdpaDynamicCodeAllocation', 'HsdpaIncrementalRedundancy', 'HsdpaMc', 'HsdpaMcInactCtrl', 'HsdpaPowerSharing', 'HsFach', 'HsOlpc', 'ImprovedLayer2', 'Mimo', 'Nbir', 'HsAdaptiveBler', 'HsdpaMixedModePowerSharing', 'AbsoluteTimeSynch', 'ImprovedDAgc', 'MbmsIubEfficiency', 'UlSpectrumAnalyzer', 'EulDynRot', 'HsdpaMcMimo']
+
+SHEET: ExternalEutranCell
+COLUMNS: ['RNC', 'EutranFrequency', 'ExternalEutranCellId', 'cellId', 'eNodeBId', 'physicalCellIdentity', 'tac']
+
+SHEET: EutranCellRelation
+COLUMNS: ['RNC', 'Utrancell', 'EutranFreqRelation', 'EutranCellRelation', 'coSited', 'externalEutranCellRef']
+
+SHEET: Configuraciones
+COLUMNS: ['Pop', 'Site ID', 'Sector', 'Cobertura', 'Modelo Antena', 'Altura', 'Az', 'Dtm', 'Dte', 'Tecno Banda', 'Modelo RBS', 'Rru', 'Observacion']
+

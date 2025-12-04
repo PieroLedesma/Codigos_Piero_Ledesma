@@ -19,9 +19,11 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
     """
     nem = nemonico.upper()
     
-    # Extraer datos del WSH
+    # Extraer datos del WSH (estilo 4G - separado IP y mask)
     ip_oam = wsh_data.get('IP_OAM', '0.0.0.0')
     ip_trafico = wsh_data.get('IP_TRAFICO', '0.0.0.0')
+    mask_oam = wsh_data.get('MASK_OAM', '26')
+    mask_trafico = wsh_data.get('MASK_TRAFICO', '26')
     gateway_oam = wsh_data.get('GATEWAY_OAM', '0.0.0.0')
     gateway_trafico = wsh_data.get('GATEWAY_TRAFICO', '0.0.0.0')
     vlan_oam = wsh_data.get('VLAN_OAM', '0')
@@ -181,7 +183,7 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
               <userLabel>VLAN OAM</userLabel>
               <AddressIPv4>
                 <addressIPv4Id>1</addressIPv4Id>
-                <address>{ip_oam}/26</address>
+                <address>{ip_oam}/{mask_oam}</address>
               </AddressIPv4>
             </InterfaceIPv4>
           </Router>
@@ -217,7 +219,7 @@ def generar_site_basic_xml_5g(nemonico: str, trama: str, wsh_data: Dict[str, Any
               <userLabel>VLAN TRAFICO</userLabel>
               <AddressIPv4>
                 <addressIPv4Id>1</addressIPv4Id>
-                <address>{ip_trafico}/26</address>
+                <address>{ip_trafico}/{mask_trafico}</address>
               </AddressIPv4>
             </InterfaceIPv4>
           </Router>
