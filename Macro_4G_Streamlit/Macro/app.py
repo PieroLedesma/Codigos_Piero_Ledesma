@@ -296,7 +296,7 @@ with st.sidebar:
     st.markdown("<h3 style='text-align: center; color: #007bff;'>🚀 Tipo de Script</h3>", unsafe_allow_html=True)
     script_selection = st.radio(
         "Elige la tecnología:",
-        ('Script 4G', 'Script 5G', 'Script 3G'),
+        ('Script 4G', 'Script 5G', 'Script 3G BB'),
         index=0,
         key='sidebar_selection_v4_4'
     )
@@ -582,7 +582,7 @@ elif script_selection == 'Script 5G':
             st.rerun()
 
 
-elif script_selection == 'Script 3G':
+elif script_selection == 'Script 3G BB':
     
     # 3.1 FORMULARIO 3G
     with st.form(key='script_3g_form_v1', clear_on_submit=False):
@@ -591,7 +591,7 @@ elif script_selection == 'Script 3G':
         with col1:
             st.subheader("Datos Básicos")
             nemonico_input_3g = st.text_input("Nemonico", placeholder="Ej: NXXXXX", key='nemonico_input_3g_v1')
-            trama_select_3g = st.selectbox("Trama", ("TN_A, TN_B, TN_C, TN_IDL_A", "TN_IDL_B", "TN_IDL_C"), key='trama_select_3g_v1')
+            trama_select_3g = st.selectbox("Trama", ("TN_A", "TN_B", "TN_C", "TN_IDL_A", "TN_IDL_B", "TN_IDL_C"), key='trama_select_3g_v1')
             release_select_3g = st.selectbox(
                 "Release",
                 ("RadioNode_CXP9024418_15_R53M22_22.Q2",),
@@ -669,6 +669,40 @@ elif script_selection == 'Script 3G':
             if '01_Sector' in data['all_content'] and data['all_content']['01_Sector']:
                 st.markdown(f"**01_{nemonico_display}_PL_Sector.mos**")
                 st.code(data['all_content']['01_Sector'], language='text')
+
+            if '02_Parametros' in data['all_content'] and data['all_content']['02_Parametros']:
+                st.markdown(f"**02_{nemonico_display}_PL_Parametros.mos**")
+                st.code(data['all_content']['02_Parametros'], language='text')
+
+            if '03_RNC_IUB' in data['all_content'] and data['all_content']['03_RNC_IUB']:
+                st.subheader(f"📁 02_RNC_..._{nemonico_display}")
+                st.markdown(f"**01_..._PL_Create_IUB.mos**")
+                st.code(data['all_content']['03_RNC_IUB'], language='text')
+
+            if '04_UtranCell' in data['all_content'] and data['all_content']['04_UtranCell']:
+                st.markdown(f"**02_..._PL_UtranCell.mos**")
+                st.code(data['all_content']['04_UtranCell'], language='text')
+
+            if '05_UtranRelation' in data['all_content'] and data['all_content']['05_UtranRelation']:
+                st.markdown(f"**03_..._PL_Create_Relations.mos**")
+                st.code(data['all_content']['05_UtranRelation'], language='text')
+
+            if '06_MSC' in data['all_content'] and data['all_content']['06_MSC']:
+                st.markdown(f"**04_MSC_..._PL_Delete_Create_Cells.mos**")
+                st.code(data['all_content']['06_MSC'], language='text')
+
+            if '07_CNA' in data['all_content'] and data['all_content']['07_CNA']:
+                st.markdown(f"**05_CNA_..._PL.import**")
+                st.code(data['all_content']['07_CNA'], language='text')
+
+            if '08_Enrollment_Identity' in data['all_content'] and data['all_content']['08_Enrollment_Identity']:
+                st.subheader(f"📁 03_Enrroll_{nemonico_display}")
+                st.markdown(f"**00_Create_Identity.xml**")
+                st.code(data['all_content']['08_Enrollment_Identity'], language='xml')
+
+            if '09_Enrollment_ENM' in data['all_content'] and data['all_content']['09_Enrollment_ENM']:
+                st.markdown(f"**01_ENM_{nemonico_display}.xml**")
+                st.code(data['all_content']['09_Enrollment_ENM'], language='xml')
 
     # ERRORES
     elif st.session_state['generated_data_3g'] and 'error' in st.session_state['generated_data_3g']:

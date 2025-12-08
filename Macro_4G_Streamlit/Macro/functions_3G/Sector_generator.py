@@ -149,8 +149,10 @@ def generate_header(nemonico: str) -> str:
     hora = now.strftime("%H:%M:%S")
     fecha = now.strftime("%d-%m-%Y")
     
-    header = f"""//
+    header = f"""/////////////////////////////////////////////////////////////
+//
 // SCRIPT     : Sector
+// AUTOR      : PIERO LEDESMA
 // NEMONICO   : {nemonico}
 // HORA       : {hora}
 // FECHA      : {fecha}

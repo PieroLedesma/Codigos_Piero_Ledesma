@@ -1,3 +1,4 @@
+
 # =====================================================================
 # data_reader_3G.py - Lectura de datos WSH y RND para 3G WCDMA
 # =====================================================================
@@ -161,7 +162,7 @@ def leer_rnd_sheets_3g(rnd_file: Any) -> Tuple[Optional[Dict[str, pd.DataFrame]]
 
     # 3. Lectura de Otras Hojas Útiles (Generico)
     # Agregamos 'SiteConfiguration' o 'Equipment-Configuration' si existen
-    other_sheets = ['SITECONFIGURATION', 'EQUIPMENT-CONFIGURATION', 'UTRANCELL', 'NODEBSECTORCARRIER']
+    other_sheets = ['SITECONFIGURATION', 'EQUIPMENT-CONFIGURATION', 'UTRANCELL', 'NODEBSECTORCARRIER', 'NODEBFUNCTION', 'IUBLINK', 'IUBDATASTREAMS', 'NODEBLOCALCELL', 'FEATURES', 'RACH', 'PCH', 'HSDSCH', 'FACH', 'EUL', 'E-FACH', 'UTRANRELATION', 'EUTRANFREQRELATION', 'EXTERNALEUTRANCELL', 'EUTRANCELLRELATION', 'MSCPARAMETER']
     
     for sh_key in other_sheets:
         if sh_key in sheet_map:
