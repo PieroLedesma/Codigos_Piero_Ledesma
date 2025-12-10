@@ -361,7 +361,7 @@ if script_selection == 'Script 4G':
     # 3.1 FORMULARIO
     with st.form(key='script_4g_form_v4_4', clear_on_submit=False):
 
-        col1, col2 = st.columns(2)
+        col1, col2, _ = st.columns([2, 2, 1])
         with col1:
             st.subheader("Datos Básicos")
             nemonico_input = st.text_input("Némonico", placeholder="Ej: MXXXXX - GXXXXX - PXXXXX", key='nemonico_input_v4_4')
@@ -379,7 +379,7 @@ if script_selection == 'Script 4G':
 
         # CARGA DE ARCHIVOS
         st.markdown("<h3 style='margin-top:30px;'>📤 Carga de Archivos Requeridos (Excel)</h3>", unsafe_allow_html=True)
-        col3, col4 = st.columns(2)
+        col3, col4, _ = st.columns([2, 2, 1])
         with col3:
             rnd_file_global = st.file_uploader(
                 "1. Cargar RND Completo (Archivo único .xlsx)", 
@@ -396,7 +396,7 @@ if script_selection == 'Script 4G':
         # MIXED MODE
         st.markdown("<h3 style='margin-top:30px;'>📡 Modo de Operación</h3>", unsafe_allow_html=True)
 
-        col_mixed, col_tipo_sitio = st.columns(2)
+        col_mixed, col_tipo_sitio, _ = st.columns([2, 2, 1])
         
         with col_mixed:
             mixed_mode_radio = st.radio(
@@ -526,7 +526,7 @@ elif script_selection == 'Script 5G':
     # 3.1 FORMULARIO 5G
     with st.form(key='script_5g_form_v1', clear_on_submit=False):
 
-        col1, col2 = st.columns(2)
+        col1, col2, _ = st.columns([2, 2, 1])
         with col1:
             st.subheader("Datos Básicos")
             nemonico_input_5g = st.text_input("Nemonico", placeholder="Ej: NXXXXX", key='nemonico_input_5g_v1')
@@ -543,7 +543,7 @@ elif script_selection == 'Script 5G':
 
         # CARGA DE ARCHIVOS
         st.markdown("<h3 style='margin-top:30px;'>📤 Carga de Archivos Requeridos</h3>", unsafe_allow_html=True)
-        col3_5g, col4_5g = st.columns(2)
+        col3_5g, col4_5g, _ = st.columns([2, 2, 1])
         with col3_5g:
             wsh_file_5g = st.file_uploader(
                 "1. Cargar WSHReport (Archivo .xlsx con hoja '5G')", 
@@ -636,7 +636,7 @@ elif script_selection == 'Script 3G BB':
     # 3.1 FORMULARIO 3G
     with st.form(key='script_3g_form_v1', clear_on_submit=False):
 
-        col1, col2 = st.columns(2)
+        col1, col2, _ = st.columns([2, 2, 1])
         with col1:
             st.subheader("Datos Básicos")
             nemonico_input_3g = st.text_input("Nemonico", placeholder="Ej: NXXXXX", key='nemonico_input_3g_v1')
@@ -654,7 +654,7 @@ elif script_selection == 'Script 3G BB':
 
         # CARGA DE ARCHIVOS
         st.markdown("<h3 style='margin-top:30px;'>📤 Carga de Archivos Requeridos</h3>", unsafe_allow_html=True)
-        col3_3g, col4_3g = st.columns(2)
+        col3_3g, col4_3g, _ = st.columns([2, 2, 1])
         with col3_3g:
             wsh_file_3g = st.file_uploader(
                 "1. Cargar WSHReport (Archivo .xlsx con hoja '3G')", 
