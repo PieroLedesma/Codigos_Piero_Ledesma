@@ -36,6 +36,9 @@ if 'generated_data_5g' not in st.session_state:
 if 'generated_data_3g' not in st.session_state:
     st.session_state['generated_data_3g'] = None
 
+if 'generated_data_atnd' not in st.session_state:
+    st.session_state['generated_data_atnd'] = None
+
 # ====================================================================
 # === FUNCIÓN CALLBACK PARA EL BOTÓN DE SUBMIT (CORREGIDA - RND ÚNICO) ===
 # ====================================================================
@@ -175,6 +178,52 @@ def handle_form_submit_3g(wsh_file_3g, rnd_file_3g):
 
 
 # ====================================================================
+# === FUNCIÓN CALLBACK PARA SUBMIT ATND BB ===
+# ====================================================================
+def handle_form_submit_atnd(atnd_file):
+    """Ejecuta la lógica de generación de scripts ATND BB al hacer click."""
+    print("DEBUG: handle_form_submit_atnd CALLED")
+    from generator_logic_atnd import generar_archivos_atnd
+    
+    st.session_state['generated_data_atnd'] = None
+    
+    # Recoger variables del formulario
+    nemonico = st.session_state['nemonico_input_atnd_v1']
+    
+    print(f"DEBUG: Inputs - Nemonico: {nemonico}")
+    
+    if not atnd_file:
+        print("DEBUG: No ATND file provided")
+        st.session_state['generated_data_atnd'] = {'error': "Falta archivo ATND"}
+        return
+    
+    if not nemonico:
+        print("DEBUG: No nemonico provided")
+        st.session_state['generated_data_atnd'] = {'error': "Falta némónico"}
+        return
+    
+    # Generar archivos ATND
+    print("DEBUG: Calling generar_archivos_atnd...")
+    with st.spinner('✨ Procesando archivo ATND y generando ZIP...'):
+        zip_data, zip_filename, generated_content = generar_archivos_atnd(
+            nemonico=nemonico.upper(),
+            atnd_file=atnd_file
+        )
+    
+    print(f"DEBUG: Result - ZIP: {bool(zip_data)}, Name: {zip_filename}")
+    
+    if zip_data:
+        st.session_state['generated_data_atnd'] = {
+            'zip_data': zip_data,
+            'zip_filename': zip_filename,
+            'all_content': generated_content
+        }
+    else:
+        error_msg = generated_content.get('error', 'Error desconocido') if generated_content else 'Error al generar archivo'
+        st.session_state['generated_data_atnd'] = {'error': error_msg}
+
+
+# ====================================================================
 # === 1. CONFIGURACIÓN INICIAL Y ESTILO (Estilo de píldora mantenido) ===
 # ====================================================================
 
@@ -296,7 +345,7 @@ with st.sidebar:
     st.markdown("<h3 style='text-align: center; color: #007bff;'>🚀 Tipo de Script</h3>", unsafe_allow_html=True)
     script_selection = st.radio(
         "Elige la tecnología:",
-        ('Script 4G', 'Script 5G', 'Script 3G BB'),
+        ('Script 4G', 'Script 5G', 'Script 3G BB', 'ATND BB'),
         index=0,
         key='sidebar_selection_v4_4'
     )
@@ -715,4 +764,88 @@ elif script_selection == 'Script 3G BB':
     with col_recharge_3g:
         if st.button("Limpiar Formulario (Reiniciar)", help="Reinicia la aplicación para limpiar todos los campos.", key='recharge_button_3g_v1'):
             st.session_state['generated_data_3g'] = None
+            st.rerun()
+
+
+elif script_selection == 'ATND BB':
+    
+    # 3.1 FORMULARIO ATND BB
+    with st.form(key='script_atnd_form_v1', clear_on_submit=False):
+
+        st.subheader("📋 Datos Básicos")
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            nemonico_input_atnd = st.text_input(
+                "Némónico", 
+                placeholder="Ej: MXXXXX", 
+                key='nemonico_input_atnd_v1',
+                help="Ingrese el némónico del sitio"
+            )
+        
+        with col2:
+            st.write("")  # Espaciador
+
+        # CARGA DE ARCHIVO ATND
+        st.markdown("<h3 style='margin-top:30px;'>📤 Carga de Archivo ATND</h3>", unsafe_allow_html=True)
+        col_atnd, _, _ = st.columns([2, 1, 1])
+        with col_atnd:
+            atnd_file_upload = st.file_uploader(
+                "Cargar archivo ATND (Excel)", 
+                type=['xlsx', 'xls'], 
+                key='atnd_uploader_v1',
+                help="Seleccione el archivo ATND en formato Excel"
+            )
+
+        st.markdown("---")
+
+        # BOTÓN SUBMIT
+        st.form_submit_button(
+            label='🤖 Procesar ATND',
+            help="Presiona para procesar el archivo ATND.",
+            type="primary",
+            on_click=handle_form_submit_atnd,
+            args=(atnd_file_upload,)
+        )
+
+    # 3.2 RESULTADOS
+    st.markdown("---")
+
+    if st.session_state['generated_data_atnd'] and 'zip_data' in st.session_state['generated_data_atnd']:
+        data = st.session_state['generated_data_atnd']
+        nemonico_display = st.session_state['nemonico_input_atnd_v1'].upper()
+
+        st.success(f"✅ ¡Archivos ATND generados con éxito para **{nemonico_display}**!")
+        
+        col_download, _, _ = st.columns([1, 2, 1])
+        with col_download:
+            st.download_button(
+                label="⬇️ Descargar ZIP ATND",
+                data=data['zip_data'],
+                file_name=data['zip_filename'],
+                mime="application/zip",
+                type="secondary"
+            )
+        
+        # DEBUG EXPANDER - Mostrar contenido generado
+        with st.expander("🔍 Ver contenido del archivo generado"):
+            st.markdown(f"**00.-{nemonico_display}_ATND_BB.txt**")
+            st.code(data['all_content']['atnd_txt'], language='text')
+
+            st.markdown("---") # Separador visual
+    
+            st.markdown(f"**📄 01.-{nemonico_display}_QUEUE_BB.txt**")
+            st.code(data['all_content']['queue_txt'], language='text')
+
+    # ERRORES
+    elif st.session_state['generated_data_atnd'] and 'error' in st.session_state['generated_data_atnd']:
+        st.error(st.session_state['generated_data_atnd']['error'])
+        st.session_state['generated_data_atnd'] = None
+
+    # LIMPIAR
+    st.markdown("---")
+    col_recharge_atnd, _, _ = st.columns([1, 2, 1])
+    with col_recharge_atnd:
+        if st.button("Limpiar Formulario (Reiniciar)", help="Reinicia la aplicación para limpiar todos los campos.", key='recharge_button_atnd_v1'):
+            st.session_state['generated_data_atnd'] = None
             st.rerun()
