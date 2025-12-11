@@ -14,6 +14,7 @@ from yaml.loader import SafeLoader
 try:
     from generator_logic import generar_archivos_zip
     from generator_logic_5G import generar_archivos_zip_5g
+    from generator_logic_relation import generar_archivos_relation
 except ImportError as e:
     st.error(f"🚨 Error crítico: No se encuentra el archivo de lógica de generación: {e}")
     st.stop()
@@ -38,6 +39,9 @@ if 'generated_data_3g' not in st.session_state:
 
 if 'generated_data_atnd' not in st.session_state:
     st.session_state['generated_data_atnd'] = None
+
+if 'generated_data_relation' not in st.session_state:
+    st.session_state['generated_data_relation'] = None
 
 # ====================================================================
 # === FUNCIÓN CALLBACK PARA EL BOTÓN DE SUBMIT (CORREGIDA - RND ÚNICO) ===
@@ -222,6 +226,51 @@ def handle_form_submit_atnd(atnd_file):
         error_msg = generated_content.get('error', 'Error desconocido') if generated_content else 'Error al generar archivo'
         st.session_state['generated_data_atnd'] = {'error': error_msg}
 
+# ====================================================================
+# === FUNCIÓN CALLBACK PARA SUBMIT RELATION LTE->3G (CORREGIDA) ===
+# ====================================================================
+def handle_form_submit_relation(relation_file):
+    """Ejecuta la lógica de generación de scripts de Relaciones LTE->3G."""
+    
+    print("DEBUG: handle_form_submit_relation CALLED")
+    
+    st.session_state['generated_data_relation'] = None
+    
+    # 1. Recoger variables del formulario (se lee nemonico DENTRO del callback)
+    # ESTA LÍNEA ES CLAVE: Funciona porque el widget ya se renderizó.
+    try:
+        nemonico = st.session_state['nemonico_input_relation_v1']
+    except KeyError:
+        st.session_state['generated_data_relation'] = {'error': "Error: No se encontró el Némónico. Intente recargar la página."}
+        return
+
+    if not nemonico:
+        st.session_state['generated_data_relation'] = {'error': "Falta el némónico"}
+        return # Detiene la ejecución
+
+    if not relation_file:
+        st.session_state['generated_data_relation'] = {'error': "Falta el archivo de Excel de Relaciones"}
+        return # Detiene la ejecución
+
+    # 2. LLAMADA A GENERADOR DE RELACIONES
+    print("DEBUG: Calling generar_archivos_relation...")
+    with st.spinner('✨ Procesando archivo de Relaciones y generando script MOS...'):
+        zip_data, zip_filename, generated_content = generar_archivos_relation(
+            nemonico=nemonico.upper(),
+            relation_file=relation_file # Usamos el argumento de la función
+        )
+
+    # 3. Guardar Resultados
+    if zip_data:
+        st.session_state['generated_data_relation'] = {
+            'zip_data': zip_data,
+            'zip_filename': zip_filename,
+            'all_content': generated_content
+        }
+    else:
+        error_msg = generated_content.get('error', 'Error desconocido') if generated_content else 'Error al generar archivo'
+        st.session_state['generated_data_relation'] = {'error': error_msg}
+
 
 # ====================================================================
 # === 1. CONFIGURACIÓN INICIAL Y ESTILO (Estilo de píldora mantenido) ===
@@ -345,7 +394,7 @@ with st.sidebar:
     st.markdown("<h3 style='text-align: center; color: #007bff;'>🚀 Tipo de Script</h3>", unsafe_allow_html=True)
     script_selection = st.radio(
         "Elige la tecnología:",
-        ('Script 4G', 'Script 5G', 'Script 3G BB', 'ATND BB'),
+        ('Script 4G', 'Script 5G', 'Script 3G BB', 'ATND BB', 'Relation LTE->3G'),
         index=0,
         key='sidebar_selection_v4_4'
     )
@@ -575,7 +624,7 @@ elif script_selection == 'Script 5G':
         data = st.session_state['generated_data_5g']
         nemonico_display = st.session_state['nemonico_input_5g_v1'].upper()
 
-        st.success(f"✅ ¡Archivos de terreno 5G NR generados con éxito para **{nemonico_display}**!")
+        st.success(f"✅ ¡Archivos 5G NR generados con éxito para **{nemonico_display}**!")
 
         col_download, _, _ = st.columns([1, 2, 1])
         with col_download:
@@ -686,7 +735,7 @@ elif script_selection == 'Script 3G BB':
         data = st.session_state['generated_data_3g']
         nemonico_display = st.session_state['nemonico_input_3g_v1'].upper()
 
-        st.success(f"✅ ¡Archivos de terreno 3G generados con éxito para **{nemonico_display}**!")
+        st.success(f"✅ ¡Archivos 3G generados con éxito para **{nemonico_display}**!")
 
         col_download, _, _ = st.columns([1, 2, 1])
         with col_download:
@@ -848,4 +897,92 @@ elif script_selection == 'ATND BB':
     with col_recharge_atnd:
         if st.button("Limpiar Formulario (Reiniciar)", help="Reinicia la aplicación para limpiar todos los campos.", key='recharge_button_atnd_v1'):
             st.session_state['generated_data_atnd'] = None
+            st.rerun()
+
+
+elif script_selection == 'Relation LTE->3G':
+    
+    # 🚨 Importación de Lógica (Debe estar al inicio, pero la incluimos aquí por referencia)
+    # from generator_logic_relation import generar_archivos_relation 
+    
+    # === 1. FORMULARIO RELATIONS LTE->3G ===
+    with st.form(key='script_relation_form_v1', clear_on_submit=False):
+
+        st.subheader("📋 Generación de Script de Relaciones LTE -> 3G")
+        
+        # PRIMERA FILA: NÉMÓNICO (Usando el ratio [2, 2, 1])
+        col1, col2, col3 = st.columns([2, 2, 1])
+
+        with col1:
+            nemonico_input_relation = st.text_input(
+                "Némónico del Sitio (LTE)", 
+                placeholder="Ej: MXXXXX", 
+                key='nemonico_input_relation_v1',
+                help="Ingrese el némónico del sitio Macro/LTE"
+            )
+            # col2 y col3 quedan como espaciadores para el némónico.
+            
+        # SEGUNDA FILA: CARGA DE ARCHIVO (También usando el ratio [2, 2, 1])
+        st.markdown("<h4 style='margin-top:20px;'>📤 Archivo de Relaciones (Excel)</h4>", unsafe_allow_html=True)
+        
+        col_file1, col_file2, col_file3 = st.columns([2, 2, 1])
+        
+        with col_file1:
+            relation_file_upload = st.file_uploader(
+                "Cargar Excel de Relaciones", 
+                type=['xlsx', 'xls'], 
+                key='relation_uploader_v1',
+                help="Seleccione el archivo Excel que contiene la data de red y relaciones"
+            )
+        # col_file2 y col_file3 quedan como espaciadores para la carga de archivo.
+        
+        st.markdown("---")
+
+        # BOTÓN SUBMIT
+        st.form_submit_button(
+            label='🤖 Generar Script de Relaciones',
+            help="Presiona para generar el archivo .mos de relaciones LTE->3G.",
+            type="primary",
+            on_click=handle_form_submit_relation,
+            args=(relation_file_upload,)
+        )
+
+    # === 2. RESULTADOS ===
+    st.markdown("---") # <-- AQUI COMIENZA EL BLOQUE DE RESULTADOS
+    
+    if st.session_state['generated_data_relation'] and 'zip_data' in st.session_state['generated_data_relation']:
+        data = st.session_state['generated_data_relation']
+        try:
+            nemonico_display = st.session_state['nemonico_input_relation_v1'].upper()
+        except KeyError:
+            nemonico_display = "SITIO"
+
+        st.success(f"✅ ¡Script de Relaciones LTE->3G generado con éxito para **{nemonico_display}**!")
+        
+        # 1. BOTÓN DE DESCARGA: Mantenemos las columnas para centrar el botón
+        col_download, _, _ = st.columns([1, 2, 1])
+        with col_download:
+            st.download_button(
+                label="⬇️ Descargar ZIP Relaciones",
+                data=data['zip_data'],
+                file_name=data['zip_filename'],
+                mime="application/zip",
+                type="secondary"
+            )
+        
+        # 2. DEBUG EXPANDER: Saca este bloque fuera de las columnas
+        with st.expander("🔍 Ver contenido del archivo generado (Ancho Máximo)"):
+            st.markdown(f"**00_PL_Relaciones_{nemonico_display}.mos**") 
+            if 'relation_mos' in data['all_content']:
+                st.code(data['all_content']['relation_mos'], language='text') 
+
+    # ERRORES
+    elif st.session_state['generated_data_relation'] and 'error' in st.session_state['generated_data_relation']:
+        st.error(st.session_state['generated_data_relation']['error'])
+
+    # LIMPIAR
+    st.markdown("---")
+    col_recharge_relation, _, _ = st.columns([1, 2, 1])
+    with col_recharge_relation:
+        if st.button("Limpiar Formulario (Reiniciar)", help="Reinicia la aplicación para limpiar todos los campos.", key='recharge_button_relation_v1'):
             st.rerun()
