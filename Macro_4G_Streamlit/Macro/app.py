@@ -28,6 +28,53 @@ REGIONES_CHILE = [
 CONFIGURACIONES = ["Configuración Básica A-B-C (Fija)"] 
 CONFIGURACIONES_3G = ["Configuración Básica 3G"]
 
+# Configuraciones 3G-DUW (archivos de la carpeta HW_DUW/SITE_2022)
+CONFIGURACIONES_3G_DUW = [
+    "00.SITE_1X1_RRU_3G900.xml",
+    "00.SITE_2X1_RRU_3G900.xml",
+    "00.SITE_2x1_4415_CON_RETU_RHHT_BUENO.xml",
+    "00.SITE_2x1_4415_MMR.xml",
+    "00.SITE_2x1_4415_Sin_RETU.xml",
+    "00.SITE_2x1_RRU_3G900_CON_RETU.xml",
+    "00.SITE_3G900_TMF_3Sectores_CON_RRU.xml",
+    "00.SITE_3X1_4415_RHHT.xml",
+    "00.SITE_3X1_900_6102.xml",
+    "00.SITE_3X1_900_6102_ARETU.xml",
+    "00.SITE_3X2_4415_CON_RHHT.xml",
+    "00.SITE_3X2_4415_SIN_RETU_SIN_MMR.xml",
+    "00.SITE_3x1_4415_MMR.xml",
+    "00.SITE_3x1_4415_MMR_v2_SINSUP.xml",
+    "00.SITE_3x1_4415_SIN_MMR.xml",
+    "00.SITE_3x1_6601_RRUS_900.xml",
+    "00.SITE_3x1_6601_RRUS_dualduw_1900.xml",
+    "00.SITE_3x1_AIR21.xml",
+    "00.SITE_3x1_RBS6201V2W.xml",
+    "00.SITE_3x1_RBS6201V2W_ARETU.xml",
+    "00.SITE_3x1_RRU4415_MMR_22Q2.xml",
+    "00.SITE_3x1_RRU_3G1900_CON_RETU.xml",
+    "00.SITE_3x1_RRU_3G1900_SIN_RETU.xml",
+    "00.SITE_3x1_RRU_3G900_CON_RETU.xml",
+    "00.SITE_3x1_RRU_3G900_SIN_RETU.xml",
+    "00.SITE_3x1_RRU_RETU_BANDA_A.xml",
+    "00.SITE_3x2_6601_RRUS_900.xml",
+    "00.SITE_3x2_RRU4415_MMR.xml",
+    "00.SITE_PSI_3SECTORES_1TMF_FQBAND_9521_9471.xml",
+    "00.SITE_PSI_3SECTORES_1TMF_FQBAND_9571_9471.xml",
+    "00.Site3x2_RRUW_CON_ARETU.xml",
+    "00.Site3x2_RRUW_CON_RETU_W16_DELAY_OK.xml",
+    "00.Site_3x1_bandaA_AIR21_1DUW.xml",
+    "00.site_3x2_RRU_RETU_BANDA_A_SRETU.xml",
+    "00.CAB_6601_900_3x2_w18.xml",
+    "00.CAB_6601_dual.xml",
+    "00.CAB_900.xml",
+    "00.CAB_RBS6201V2W.xml",
+    "16.Create_Site_Equipment_URM355_B2conARETU.xml",
+    "16.Create_Site_Equipment_URM355_in_SAER06.xml",
+    "UGE643_cabinet.xml",
+    "URM643_cabinet.xml",
+    "URM643_site_2Tx.xml"
+]
+
 if 'generated_data' not in st.session_state:
     st.session_state['generated_data'] = None
 
@@ -147,11 +194,20 @@ def handle_form_submit_3g(wsh_file_3g, rnd_file_3g):
     # Recoger variables del formulario
     nemonico = st.session_state['nemonico_input_3g_v1']
     trama = st.session_state['trama_select_3g_v1']
-    release = st.session_state['release_select_3g_v1']
-    region = st.session_state['region_select_3g_v1']
-    configuracion = st.session_state['configuracion_select_3g_v1']
+    tipo_3g = st.session_state.get('tipo_3g_radio_v1', '3G-BB')  # Nuevo: capturar tipo 3G
     
-    print(f"DEBUG: Inputs - Nemonico: {nemonico}, Trama: {trama}, Release: {release}, Configuracion: {configuracion}")
+    # Solo leer release, region, configuracion si es modo BB
+    if tipo_3g == '3G-BB':
+        release = st.session_state['release_select_3g_v1']
+        region = st.session_state['region_select_3g_v1']
+        configuracion = st.session_state['configuracion_select_3g_v1']
+    else:
+        # Para DUW, usar configuración seleccionada del selector
+        release = "RadioNode_CXP9024418_15_R53M22_22.Q2"
+        region = "XIII"
+        configuracion = st.session_state.get('configuracion_duw_select_3g_v1', CONFIGURACIONES_3G_DUW[0])
+    
+    print(f"DEBUG: Inputs - Nemonico: {nemonico}, Trama: {trama}, Tipo: {tipo_3g}, Release: {release}, Configuracion: {configuracion}")
     
     if not wsh_file_3g:
         print("DEBUG: No WSH file provided")
@@ -160,6 +216,10 @@ def handle_form_submit_3g(wsh_file_3g, rnd_file_3g):
 
     # Generar archivos
     print("DEBUG: Calling generar_archivos_zip_3g...")
+    
+    # Convertir tipo_3g a formato esperado por generador: "BB" o "DUW"
+    tipo_param = "DUW" if tipo_3g == "3G-DUW" else "BB"
+    
     zip_data, result_name, generated_content = generar_archivos_zip_3g(
         nemonico=nemonico,
         trama=trama,
@@ -167,7 +227,8 @@ def handle_form_submit_3g(wsh_file_3g, rnd_file_3g):
         region=region,
         wsh_file=wsh_file_3g,
         rnd_file=rnd_file_3g,
-        configuracion=configuracion
+        configuracion=configuracion,
+        tipo_3g=tipo_param  # Nuevo parámetro
     )
     print(f"DEBUG: Result - Zip: {bool(zip_data)}, Name: {result_name}")
     
@@ -394,7 +455,7 @@ with st.sidebar:
     st.markdown("<h3 style='text-align: center; color: #007bff;'>🚀 Tipo de Script</h3>", unsafe_allow_html=True)
     script_selection = st.radio(
         "Elige la tecnología:",
-        ('Script 4G', 'Script 5G', 'Script 3G BB', 'ATND BB', 'Relation LTE->3G'),
+        ('Script 4G', 'Script 5G', 'Script 3G', 'ATND BB', 'Relation LTE->3G'),
         index=0,
         key='sidebar_selection_v4_4'
     )
@@ -680,7 +741,20 @@ elif script_selection == 'Script 5G':
             st.rerun()
 
 
-elif script_selection == 'Script 3G BB':
+elif script_selection == 'Script 3G':
+    
+    # SELECTOR DE TIPO 3G (FUERA DEL FORMULARIO para permitir condicionales dinámicos)
+    st.markdown("<h3 style='margin-bottom:20px;'>🔧 Tipo de Configuración 3G</h3>", unsafe_allow_html=True)
+    tipo_3g_selected = st.radio(
+        "Selecciona el tipo de configuración:",
+        ('3G-BB', '3G-DUW'),
+        index=0,
+        horizontal=True,
+        key='tipo_3g_radio_v1',
+        help="3G-BB: BaseStation (configuración estándar), 3G-DUW: DualUnitWCDMA (sin terreno)"
+    )
+    
+    st.markdown("---")
     
     # 3.1 FORMULARIO 3G
     with st.form(key='script_3g_form_v1', clear_on_submit=False):
@@ -690,16 +764,29 @@ elif script_selection == 'Script 3G BB':
             st.subheader("Datos Básicos")
             nemonico_input_3g = st.text_input("Nemonico", placeholder="Ej: NXXXXX", key='nemonico_input_3g_v1')
             trama_select_3g = st.selectbox("Trama", ("TN_A", "TN_B", "TN_C", "TN_IDL_A", "TN_IDL_B", "TN_IDL_C"), key='trama_select_3g_v1')
-            release_select_3g = st.selectbox(
-                "Release",
-                ("RadioNode_CXP9024418_15_R53M22_22.Q2",),
-                key='release_select_3g_v1'
-            )
+            
+            # Mostrar Release solo si es BB
+            if tipo_3g_selected == '3G-BB':
+                release_select_3g = st.selectbox(
+                    "Release",
+                    ("RadioNode_CXP9024418_15_R53M22_22.Q2",),
+                    key='release_select_3g_v1'
+                )
 
         with col2:
-            st.subheader("Configuración y Región")
-            region_select_3g = st.selectbox("Región", REGIONES_CHILE, key='region_select_3g_v1')
-            configuracion_select_3g = st.selectbox("Configuración", CONFIGURACIONES_3G, key='configuracion_select_3g_v1')
+            # Mostrar Configuración y Región solo si es BB
+            if tipo_3g_selected == '3G-BB':
+                st.subheader("Configuración y Región")
+                region_select_3g = st.selectbox("Región", REGIONES_CHILE, key='region_select_3g_v1')
+                configuracion_select_3g = st.selectbox("Configuración", CONFIGURACIONES_3G, key='configuracion_select_3g_v1')
+            else:
+                st.subheader("Configuración DUW")
+                configuracion_duw_select = st.selectbox(
+                    "Selecciona configuración HW",
+                    CONFIGURACIONES_3G_DUW,
+                    key='configuracion_duw_select_3g_v1',
+                    help="Archivos de configuración de hardware de la carpeta HW_DUW/SITE_2022"
+                )
 
         # CARGA DE ARCHIVOS
         st.markdown("<h3 style='margin-top:30px;'>📤 Carga de Archivos Requeridos</h3>", unsafe_allow_html=True)
@@ -711,8 +798,10 @@ elif script_selection == 'Script 3G BB':
                 key='wsh_uploader_3g_v1'
             )
         with col4_3g:
+            # RND es opcional para DUW
+            label_rnd = "2. Cargar RND (Archivo .xlsx)" if tipo_3g_selected == '3G-BB' else "2. Cargar RND (Opcional para DUW)"
             rnd_file_3g = st.file_uploader(
-                "2. Cargar RND (Archivo .xlsx)", 
+                label_rnd, 
                 type=['xlsx'], 
                 key='rnd_uploader_3g_v1'
             )
@@ -747,31 +836,57 @@ elif script_selection == 'Script 3G BB':
                 type="secondary"
             )
 
-        # DEBUG EXPANDER
+        #DEBUG EXPANDER
         with st.expander("🔍 Ver contenido de los archivos generados"):
-            st.subheader(f"📁 00_Terreno_{nemonico_display}")
+            # Obten el tipo seleccionado
+            tipo_3g_display = st.session_state.get('tipo_3g_radio_v1', '3G-BB')
             
-            st.markdown(f"**00_{nemonico_display}_RbsSummaryFile.xml**")
-            st.code(data['all_content']['00_RbsSummaryFile'], language='xml')
+            # Terreno (Solo BB)
+            if tipo_3g_display == '3G-BB':
+                st.subheader(f"📁 00_Terreno_{nemonico_display}")
+                
+                st.markdown(f"**00_{nemonico_display}_RbsSummaryFile.xml**")
+                st.code(data['all_content']['00_RbsSummaryFile'], language='xml')
 
-            st.markdown(f"**01_{nemonico_display}_SiteBasic.xml**")
-            st.code(data['all_content']['01_SiteBasic'], language='xml')
+                st.markdown(f"**01_{nemonico_display}_SiteBasic.xml**")
+                st.code(data['all_content']['01_SiteBasic'], language='xml')
 
-            st.markdown(f"**02_{nemonico_display}_SiteEquipment.xml**")
-            st.code(data['all_content']['02_SiteEquipment'], language='xml')
+                st.markdown(f"**02_{nemonico_display}_SiteEquipment.xml**")
+                st.code(data['all_content']['02_SiteEquipment'], language='xml')
 
-            st.subheader(f"📁 01_Nodo_{nemonico_display}")
-            st.markdown(f"**00_{nemonico_display}_PL_Nodeid.mos**")
-            st.code(data['all_content']['00_NodeId'], language='text')
+                st.subheader(f"📁 01_Nodo_{nemonico_display}")
+                st.markdown(f"**00_{nemonico_display}_PL_Nodeid.mos**")
+                st.code(data['all_content']['00_NodeId'], language='text')
 
-            if '01_Sector' in data['all_content'] and data['all_content']['01_Sector']:
-                st.markdown(f"**01_{nemonico_display}_PL_Sector.mos**")
-                st.code(data['all_content']['01_Sector'], language='text')
+                if '01_Sector' in data['all_content'] and data['all_content']['01_Sector']:
+                    st.markdown(f"**01_{nemonico_display}_PL_Sector.mos**")
+                    st.code(data['all_content']['01_Sector'], language='text')
 
-            if '02_Parametros' in data['all_content'] and data['all_content']['02_Parametros']:
-                st.markdown(f"**02_{nemonico_display}_PL_Parametros.mos**")
-                st.code(data['all_content']['02_Parametros'], language='text')
+                if '02_Parametros' in data['all_content'] and data['all_content']['02_Parametros']:
+                    st.markdown(f"**02_{nemonico_display}_PL_Parametros.mos**")
+                    st.code(data['all_content']['02_Parametros'], language='text')
+            
+            # Nodo DUW (Solo DUW)
+            else:  # 3G-DUW
+                st.subheader(f"📁 01_Nodo_{nemonico_display}")
+                if '10_OAM_XML' in data['all_content'] and data['all_content']['10_OAM_XML']:
+                    st.markdown(f"**00_Create_Oam_{nemonico_display}.xml**")
+                    st.code(data['all_content']['10_OAM_XML'], language='xml')
+                
+                if '12_IUB_MO' in data['all_content'] and data['all_content']['12_IUB_MO']:
+                    st.markdown(f"**01_{nemonico_display}_iub.mo**")
+                    st.code(data['all_content']['12_IUB_MO'], language='text')
+                
+                if '13_PARAMETROS_TXT' in data['all_content'] and data['all_content']['13_PARAMETROS_TXT']:
+                    st.markdown(f"**02_{nemonico_display}_parametros.txt**")
+                    st.code(data['all_content']['13_PARAMETROS_TXT'], language='text')
+                
+                if '11_HW_Config' in data['all_content'] and data['all_content']['11_HW_Config']:
+                    hw_config_name = data['all_content']['11_HW_Config']
+                    st.markdown(f"**03_{hw_config_name}**")
+                    st.info(f"Archivo de configuración HW: {hw_config_name}")
 
+            # RNC (Siempre se muestra)
             if '03_RNC_IUB' in data['all_content'] and data['all_content']['03_RNC_IUB']:
                 st.subheader(f"📁 02_RNC_..._{nemonico_display}")
                 st.markdown(f"**01_..._PL_Create_IUB.mos**")
@@ -793,14 +908,16 @@ elif script_selection == 'Script 3G BB':
                 st.markdown(f"**05_CNA_..._PL.import**")
                 st.code(data['all_content']['07_CNA'], language='text')
 
-            if '08_Enrollment_Identity' in data['all_content'] and data['all_content']['08_Enrollment_Identity']:
-                st.subheader(f"📁 03_Enrroll_{nemonico_display}")
-                st.markdown(f"**00_Create_Identity.xml**")
-                st.code(data['all_content']['08_Enrollment_Identity'], language='xml')
+            # Enrollment (Solo BB)
+            if tipo_3g_display == '3G-BB':
+                if '08_Enrollment_Identity' in data['all_content'] and data['all_content']['08_Enrollment_Identity']:
+                    st.subheader(f"📁 03_Enrroll_{nemonico_display}")
+                    st.markdown(f"**00_Create_Identity.xml**")
+                    st.code(data['all_content']['08_Enrollment_Identity'], language='xml')
 
-            if '09_Enrollment_ENM' in data['all_content'] and data['all_content']['09_Enrollment_ENM']:
-                st.markdown(f"**01_ENM_{nemonico_display}.xml**")
-                st.code(data['all_content']['09_Enrollment_ENM'], language='xml')
+                if '09_Enrollment_ENM' in data['all_content'] and data['all_content']['09_Enrollment_ENM']:
+                    st.markdown(f"**01_ENM_{nemonico_display}.xml**")
+                    st.code(data['all_content']['09_Enrollment_ENM'], language='xml')
 
     # ERRORES
     elif st.session_state['generated_data_3g'] and 'error' in st.session_state['generated_data_3g']:

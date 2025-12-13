@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Site SYSTEM "SiteEquipment.dtd"  >
+<!-- 	Generated with BEM by: excpolan  Mon Feb 28 15:00:19 CLST 2022  -->
+<!--  	Site Equipment Configuration   -->
+<Site>
+<Format
+revision="BD"
+/>
+<TimingUnitConfig
+gpsOutEnabled="FALSE"
+/>
+<OptionalEquipmentConfiguration
+cabinetNumber="1"
+noOfPdu="0"
+configureSau="NO"
+configureClimate="YES"
+configurePowerSupply="NO"
+configureBatteryBackup="NO"
+smokeDetector="FALSE"
+fanSpeedSupervision="0"
+>
+</OptionalEquipmentConfiguration>
+<SiteLocationConfiguration
+siteName="Call Center Reubicaci??n (Ex RS538)"
+logicalName="UAS938"
+lmtPorts="UNLOCKED"
+>
+<SectorData
+sectorNumber="1"
+latitude="3121193"
+latHemisphere="SOUTH"
+longitude="-3291082"
+geoDatum="WGS84"
+beamDirection="010"
+height="1100"
+noiseFigure="-1"
+sectorGroup="-1"
+mixedModeRadio="TRUE"
+>
+<RadioUnit
+radioUnitNumber="1"
+isSharedWithExternalMe="TRUE"
+/>
+</SectorData>
+<SectorData
+sectorNumber="2"
+latitude="3121193"
+latHemisphere="SOUTH"
+longitude="-3291082"
+geoDatum="WGS84"
+beamDirection="150"
+height="1100"
+noiseFigure="-1"
+sectorGroup="-1"
+mixedModeRadio="TRUE"
+>
+<RadioUnit
+radioUnitNumber="1"
+isSharedWithExternalMe="TRUE"
+/>
+</SectorData>
+
+</SiteLocationConfiguration>
+<SectorCapabilitySettings>
+<SectorCapability
+sectorNumber="1"
+cpriLineRate="X4"
+radioBuildingBlock="RBB44_1D"
+primaryPortId="BU1_A"
+sectorSequenceNumber="1"
+auUnitType="RRUWRRUS"
+/>
+<SectorCapability
+sectorNumber="2"
+cpriLineRate="X4"
+radioBuildingBlock="RBB44_1D"
+primaryPortId="BU1_B"
+sectorSequenceNumber="1"
+auUnitType="RRUWRRUS"
+/>
+
+</SectorCapabilitySettings>
+<SectorEquipmentConfiguration>
+<TmaConfiguration>
+<TmaSector
+sectorNumber="1"
+tmaType="NONE"
+tmaType2="NONE"
+tmaType3="NONE"
+typeOfRet="NONE"
+typeOfRet2="NONE"
+typeOfRet3="NONE"
+riuInstalled="NO"
+riuInstalled2="NO"
+currentLowSupervision_A="OFF"
+currentLowSupervision_B="OFF"
+currentLowSupervision_C="OFF"
+currentLowSupervision_D="OFF"
+/>
+<TmaSector
+sectorNumber="2"
+tmaType="NONE"
+tmaType2="NONE"
+tmaType3="NONE"
+typeOfRet="NONE"
+typeOfRet2="NONE"
+typeOfRet3="NONE"
+riuInstalled="NO"
+riuInstalled2="NO"
+currentLowSupervision_A="OFF"
+currentLowSupervision_B="OFF"
+currentLowSupervision_C="OFF"
+currentLowSupervision_D="OFF"
+/>
+
+</TmaConfiguration>
+<AntennaConfiguration>
+<AntennaSector
+sectorNumber="1"
+antennaType="99"
+antennaType2="0"
+antennaType3="0"
+mechanicalTilt="0"
+mechanicalTilt2="0"
+mechanicalTilt3="0"
+fqBandHighEdgeBranchA="19400"
+fqBandLowEdgeBranchA="19300"
+fqBandHighEdgeBranchB="19400"
+fqBandLowEdgeBranchB="19300"
+fqBandHighEdgeBranchC="19400"
+fqBandLowEdgeBranchC="19300"
+fqBandHighEdgeBranchD="19400"
+fqBandLowEdgeBranchD="19300"
+dlFeederAttenuationBranchA="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchA="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchA="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchA="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlFeederAttenuationBranchB="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchB="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchB="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchB="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlFeederAttenuationBranchC="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchC="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchC="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchC="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlFeederAttenuationBranchD="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchD="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchD="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchD="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchA="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchA="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchB="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchB="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchC="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchC="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchC="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchC="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchD="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchD="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchD="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchD="-1, -1, -1, -1"
+lockSectorOutputPowerLow="FALSE"
+sectorOutputPower="40"
+sectorOutputPowerLow="-1"
+beamDirection="010"
+beamDirection2="000"
+beamDirection3="000"
+/>
+<AntennaSector
+sectorNumber="2"
+antennaType="99"
+antennaType2="0"
+antennaType3="0"
+mechanicalTilt="0"
+mechanicalTilt2="0"
+mechanicalTilt3="0"
+fqBandHighEdgeBranchA="19400"
+fqBandLowEdgeBranchA="19300"
+fqBandHighEdgeBranchB="19400"
+fqBandLowEdgeBranchB="19300"
+fqBandHighEdgeBranchC="19400"
+fqBandLowEdgeBranchC="19300"
+fqBandHighEdgeBranchD="19400"
+fqBandLowEdgeBranchD="19300"
+dlFeederAttenuationBranchA="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchA="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchA="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchA="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlFeederAttenuationBranchB="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchB="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchB="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchB="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlFeederAttenuationBranchC="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchC="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchC="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchC="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlFeederAttenuationBranchD="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+ulFeederAttenuationBranchD="13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, -1, -1, -1"
+dlFeederDelayBranchD="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+ulFeederDelayBranchD="0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1"
+dlAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchA="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchA="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchB="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchB="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchC="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchC="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchC="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchC="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchD="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchD="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchD="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchD="-1, -1, -1, -1"
+lockSectorOutputPowerLow="FALSE"
+sectorOutputPower="40"
+sectorOutputPowerLow="-1"
+beamDirection="150"
+beamDirection2="000"
+beamDirection3="000"
+/>
+
+</AntennaConfiguration>
+<RetConfiguration>
+<RetProfile
+antennaType="100"
+retType="1"
+minTilt="25"
+maxTilt="120"
+retParam1="0"
+retParam2="0"
+retParam3="0"
+retParam4="0"
+retParam5="0"
+retParam6="0"
+retParam7="0"
+retParam8="0"
+checkSum="3331"
+/>
+<RetProfile
+antennaType="99"
+retType="1"
+minTilt="20"
+maxTilt="120"
+retParam1="0"
+retParam2="0"
+retParam3="0"
+retParam4="0"
+retParam5="0"
+retParam6="0"
+retParam7="0"
+retParam8="0"
+checkSum="31040"
+/>
+<RetProfile
+antennaType="98"
+retType="1"
+minTilt="20"
+maxTilt="140"
+retParam1="0"
+retParam2="0"
+retParam3="0"
+retParam4="0"
+retParam5="0"
+retParam6="0"
+retParam7="0"
+retParam8="0"
+checkSum="17619"
+/>
+<RetProfile
+antennaType="2"
+retType="1"
+minTilt="0"
+maxTilt="60"
+retParam1="0"
+retParam2="0"
+retParam3="0"
+retParam4="0"
+retParam5="0"
+retParam6="0"
+retParam7="0"
+retParam8="0"
+checkSum="15351"
+/>
+<RetProfile
+antennaType="5"
+retType="1"
+minTilt="0"
+maxTilt="100"
+retParam1="0"
+retParam2="0"
+retParam3="0"
+retParam4="0"
+retParam5="0"
+retParam6="0"
+retParam7="0"
+retParam8="0"
+checkSum="37098"
+/>
+</RetConfiguration>
+<InitiateSectorsConfiguration>
+<InitiatedSector
+sectorNumber="1"
+antennaSupervisionBranchA="0"
+antennaSupervisionBranchB="0"
+antennaSupervisionBranchC="0"
+antennaSupervisionBranchD="0"
+antennaSupervisionBranchE="0"
+antennaSupervisionBranchF="0"
+/>
+<InitiatedSector
+sectorNumber="2"
+antennaSupervisionBranchA="0"
+antennaSupervisionBranchB="0"
+antennaSupervisionBranchC="0"
+antennaSupervisionBranchD="0"
+antennaSupervisionBranchE="0"
+antennaSupervisionBranchF="0"
+/>
+
+</InitiateSectorsConfiguration>
+<LocalCellConfiguration
+carrierAllocationMode="Flexible"
+>
+<Sector
+sectorNumber="1"
+>
+<Cell
+cellNumber="1"
+cellCreated="YES"
+cellIdentity="7271"
+cellRange="35000"
+baseBandPoolId="1"
+numberOfTxBranches="2"
+numberOfRxBranches="2"
+operatingBand="2"
+/>
+</Sector>
+<Sector
+sectorNumber="2"
+>
+<Cell
+cellNumber="1"
+cellCreated="YES"
+cellIdentity="7272"
+cellRange="35000"
+baseBandPoolId="1"
+numberOfTxBranches="2"
+numberOfRxBranches="2"
+operatingBand="2"
+/>
+</Sector>
+
+</LocalCellConfiguration>
+</SectorEquipmentConfiguration>
+<ExternalAlarmConfiguration
+cabinetNumber="1"
+>
+<Alarm
+externalAlarmUnit="Sup"
+portId="1"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="2"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="3"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="4"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="5"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="6"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="7"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Sup"
+portId="8"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+</ExternalAlarmConfiguration>
+<EcPort
+unitType="DUW"
+unitNumber="1"
+portNumber="1"
+hubPosition="EC_A"
+cascadingOrder="0"
+/>
+<Cabinet
+cabinetNumber="1"
+sharedCabinetIdentifier=""
+alarmInExternalMe="FALSE"
+equipmentSupportFunctionId="1"
+>
+<ClimateSystem
+climateSystem="Standard"
+/>
+<ClimateRegulationSystem
+climateRegulationSystem="NotApplicable"
+/>
+</Cabinet>
+<SupportSystemControl
+supportSystemControl="TRUE"
+/>
+<WantedPosition
+latitude=""
+longitude=""
+altitude=""
+tolerance="50"
+/>
+<PositionConfiguration
+sectorNumber="1"
+unitType="Antenna"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="1"
+unitType="Antenna"
+unitNumber="2"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="2"
+unitType="Antenna"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="2"
+unitType="Antenna"
+unitNumber="2"
+positionInformation=""
+/>
+
+<PositionConfiguration
+sectorNumber="1"
+unitType="RadioUnit"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="2"
+unitType="RadioUnit"
+unitNumber="1"
+positionInformation=""
+/>
+</Site>

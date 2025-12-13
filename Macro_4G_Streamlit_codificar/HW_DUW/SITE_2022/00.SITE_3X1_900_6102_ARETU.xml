@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Site SYSTEM "SiteEquipment.dtd"  >
+<!-- 	Generated with BEM by: BTYS_CPOLANCO  Tue Sep 12 17:33:27 CLST 2023  -->
+<!--  	Site Equipment Configuration   -->
+<Site>
+<Format
+revision="BK1"
+/>
+<TimingUnitConfig
+gpsOutEnabled="FALSE"
+/>
+<OptionalEquipmentConfiguration
+cabinetNumber="1"
+noOfPdu="3"
+configureSau="NO"
+configureClimate="YES"
+configurePowerSupply="NO"
+configureBatteryBackup="NO"
+smokeDetector="TRUE"
+fanSpeedSupervision="12"
+>
+</OptionalEquipmentConfiguration>
+<SiteLocationConfiguration
+siteName="Lomas Coloradas"
+logicalName="UHH225"
+lmtPorts="UNLOCKED"
+>
+<SectorData
+sectorNumber="1"
+latitude="3438108"
+latHemisphere="SOUTH"
+longitude="-3408530"
+geoDatum="WGS84"
+beamDirection="060"
+height="3300"
+noiseFigure="-1"
+sectorGroup="-1"
+mixedModeRadio="FALSE"
+>
+<RadioUnit
+radioUnitNumber="1"
+isSharedWithExternalMe="FALSE"
+/>
+</SectorData>
+<SectorData
+sectorNumber="2"
+latitude="3438108"
+latHemisphere="SOUTH"
+longitude="-3408530"
+geoDatum="WGS84"
+beamDirection="200"
+height="3300"
+noiseFigure="-1"
+sectorGroup="-1"
+mixedModeRadio="FALSE"
+>
+<RadioUnit
+radioUnitNumber="1"
+isSharedWithExternalMe="FALSE"
+/>
+</SectorData>
+<SectorData
+sectorNumber="3"
+latitude="3438108"
+latHemisphere="SOUTH"
+longitude="-3408530"
+geoDatum="WGS84"
+beamDirection="330"
+height="3300"
+noiseFigure="-1"
+sectorGroup="-1"
+mixedModeRadio="FALSE"
+>
+<RadioUnit
+radioUnitNumber="1"
+isSharedWithExternalMe="FALSE"
+/>
+</SectorData>
+</SiteLocationConfiguration>
+<SectorEquipmentConfiguration>
+<TmaConfiguration>
+<TmaSector
+sectorNumber="1"
+tmaType="NONE"
+tmaType2="NONE"
+tmaType3="NONE"
+typeOfRet="ARETU"
+typeOfRet2="NONE"
+typeOfRet3="NONE"
+riuInstalled="NO"
+riuInstalled2="NO"
+currentLowSupervision_A="OFF"
+currentLowSupervision_B="OFF"
+currentLowSupervision_C="ON"
+currentLowSupervision_D="ON"
+/>
+<TmaSector
+sectorNumber="2"
+tmaType="NONE"
+tmaType2="NONE"
+tmaType3="NONE"
+typeOfRet="ARETU"
+typeOfRet2="NONE"
+typeOfRet3="NONE"
+riuInstalled="NO"
+riuInstalled2="NO"
+currentLowSupervision_A="OFF"
+currentLowSupervision_B="OFF"
+currentLowSupervision_C="ON"
+currentLowSupervision_D="ON"
+/>
+<TmaSector
+sectorNumber="3"
+tmaType="NONE"
+tmaType2="NONE"
+tmaType3="NONE"
+typeOfRet="ARETU"
+typeOfRet2="NONE"
+typeOfRet3="NONE"
+riuInstalled="NO"
+riuInstalled2="NO"
+currentLowSupervision_A="OFF"
+currentLowSupervision_B="OFF"
+currentLowSupervision_C="ON"
+currentLowSupervision_D="ON"
+/>
+</TmaConfiguration>
+<AntennaConfiguration>
+<AntennaSector
+sectorNumber="1"
+antennaType="99"
+antennaType2="0"
+antennaType3="0"
+mechanicalTilt="0"
+mechanicalTilt2="0"
+mechanicalTilt3="0"
+fqBandHighEdgeBranchA="9571"
+fqBandLowEdgeBranchA="9471"
+fqBandHighEdgeBranchB="9571"
+fqBandLowEdgeBranchB="9471"
+dlFeederAttenuationBranchA="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederAttenuationBranchA="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederDelayBranchA="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederDelayBranchA="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederAttenuationBranchB="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederAttenuationBranchB="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederDelayBranchB="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederDelayBranchB="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchA="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchA="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchB="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchB="-1, -1, -1, -1"
+lockSectorOutputPowerLow="FALSE"
+sectorOutputPower="40"
+sectorOutputPowerLow="-1"
+beamDirection="060"
+beamDirection2="000"
+beamDirection3="000"
+/>
+<AntennaSector
+sectorNumber="2"
+antennaType="99"
+antennaType2="0"
+antennaType3="0"
+mechanicalTilt="0"
+mechanicalTilt2="0"
+mechanicalTilt3="0"
+fqBandHighEdgeBranchA="9571"
+fqBandLowEdgeBranchA="9471"
+fqBandHighEdgeBranchB="9571"
+fqBandLowEdgeBranchB="9471"
+dlFeederAttenuationBranchA="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederAttenuationBranchA="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederDelayBranchA="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederDelayBranchA="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederAttenuationBranchB="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederAttenuationBranchB="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederDelayBranchB="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederDelayBranchB="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchA="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchA="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchB="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchB="-1, -1, -1, -1"
+lockSectorOutputPowerLow="FALSE"
+sectorOutputPower="40"
+sectorOutputPowerLow="-1"
+beamDirection="200"
+beamDirection2="000"
+beamDirection3="000"
+/>
+<AntennaSector
+sectorNumber="3"
+antennaType="99"
+antennaType2="0"
+antennaType3="0"
+mechanicalTilt="20"
+mechanicalTilt2="0"
+mechanicalTilt3="0"
+fqBandHighEdgeBranchA="9571"
+fqBandLowEdgeBranchA="9471"
+fqBandHighEdgeBranchB="9571"
+fqBandLowEdgeBranchB="9471"
+dlFeederAttenuationBranchA="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederAttenuationBranchA="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederDelayBranchA="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederDelayBranchA="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederAttenuationBranchB="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederAttenuationBranchB="34, 34, 34, 34, 34, 34, 34, -1, -1, -1, -1, -1, -1, -1, -1"
+dlFeederDelayBranchB="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+ulFeederDelayBranchB="152, 152, 152, 152, 152, 152, 152, -1, -1, -1, -1, -1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchA="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchA="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchA="-1, -1, -1, -1"
+dlAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+ulAttenuationPerFqRangeBranchB="-1, -1, -1, -1"
+dlDelayPerFqRangeBranchB="-1, -1, -1, -1"
+ulDelayPerFqRangeBranchB="-1, -1, -1, -1"
+lockSectorOutputPowerLow="FALSE"
+sectorOutputPower="40"
+sectorOutputPowerLow="-1"
+beamDirection="330"
+beamDirection2="000"
+beamDirection3="000"
+/>
+</AntennaConfiguration>
+<InitiateSectorsConfiguration>
+<InitiatedSector
+sectorNumber="1"
+antennaSupervisionBranchA="0"
+antennaSupervisionBranchB="0"
+antennaSupervisionBranchC="0"
+antennaSupervisionBranchD="0"
+antennaSupervisionBranchE="0"
+antennaSupervisionBranchF="0"
+/>
+<InitiatedSector
+sectorNumber="2"
+antennaSupervisionBranchA="0"
+antennaSupervisionBranchB="0"
+antennaSupervisionBranchC="0"
+antennaSupervisionBranchD="0"
+antennaSupervisionBranchE="0"
+antennaSupervisionBranchF="0"
+/>
+<InitiatedSector
+sectorNumber="3"
+antennaSupervisionBranchA="0"
+antennaSupervisionBranchB="0"
+antennaSupervisionBranchC="0"
+antennaSupervisionBranchD="0"
+antennaSupervisionBranchE="0"
+antennaSupervisionBranchF="0"
+/>
+</InitiateSectorsConfiguration>
+<LocalCellConfiguration
+carrierAllocationMode="Basic"
+>
+<Sector
+sectorNumber="1"
+>
+<Cell
+cellNumber="1"
+cellCreated="YES"
+cellIdentity="3464"
+cellRange="35000"
+numberOfTxBranches="1"
+numberOfRxBranches="2"
+operatingBand="8"
+/>
+</Sector>
+<Sector
+sectorNumber="2"
+>
+<Cell
+cellNumber="1"
+cellCreated="YES"
+cellIdentity="3465"
+cellRange="35000"
+numberOfTxBranches="1"
+numberOfRxBranches="2"
+operatingBand="8"
+/>
+</Sector>
+<Sector
+sectorNumber="3"
+>
+<Cell
+cellNumber="1"
+cellCreated="YES"
+cellIdentity="3466"
+cellRange="35000"
+numberOfTxBranches="1"
+numberOfRxBranches="2"
+operatingBand="8"
+/>
+</Sector>
+</LocalCellConfiguration>
+</SectorEquipmentConfiguration>
+<HsdpaSettings
+steeredHsAllocation="FALSE"
+>
+<HsdpaSlot
+slot="1"
+numHsCodeResources="3"
+/>
+</HsdpaSettings>
+<EulSettings>
+<EulSlot
+slot="1"
+numEulResources="1"
+/>
+</EulSettings>
+<ExternalAlarmConfiguration
+cabinetNumber="1"
+>
+<Alarm
+externalAlarmUnit="Scu"
+portId="1"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="2"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="3"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="4"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="5"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="6"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="7"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="8"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="9"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="10"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="11"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="12"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="13"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="14"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="15"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+<Alarm
+externalAlarmUnit="Scu"
+portId="16"
+alarmSlogan=""
+normallyOpen="YES"
+severity="Minor"
+probableCause="550"
+alarmInExternalMe="FALSE"
+/>
+</ExternalAlarmConfiguration>
+<Cabinet
+cabinetNumber="1"
+sharedCabinetIdentifier=""
+alarmInExternalMe="FALSE"
+equipmentSupportFunctionId="1"
+>
+<ClimateSystem
+climateSystem="Standard"
+/>
+<ClimateRegulationSystem
+climateRegulationSystem="NotApplicable"
+/>
+</Cabinet>
+<SupportSystemControl
+supportSystemControl="TRUE"
+/>
+<WantedPosition
+latitude=""
+longitude=""
+altitude=""
+tolerance="50"
+/>
+<PositionConfiguration
+sectorNumber="1"
+unitType="Antenna"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="2"
+unitType="Antenna"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="3"
+unitType="Antenna"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="1"
+unitType="RadioUnit"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="2"
+unitType="RadioUnit"
+unitNumber="1"
+positionInformation=""
+/>
+<PositionConfiguration
+sectorNumber="3"
+unitType="RadioUnit"
+unitNumber="1"
+positionInformation=""
+/>
+</Site>

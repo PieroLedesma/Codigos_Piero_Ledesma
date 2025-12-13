@@ -51,7 +51,7 @@ def generate_utrancell_mos(nemonico: str, rnd_data: Optional[Dict[str, Any]] = N
                             break
                 break
 
-    mml_output.append("//////////////////////-PDUARTE-///////////////////////////////")
+    mml_output.append("///////////////////////////////////////////////////////////")
     mml_output.append("//")
     mml_output.append("// SCRIPT     : CREATE_CELLS")
     mml_output.append(f"// NEMONICO   : {rnc_value}")

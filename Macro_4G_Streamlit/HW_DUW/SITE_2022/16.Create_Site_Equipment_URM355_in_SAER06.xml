@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Site SYSTEM "SiteEquipment.dtd">
+<!-- Site Equipment Configuration -->
+<!-- Created by cavi -->
+<!-- Created 25-02-2025 10:15:27 -->
+<Site>
+    <Format revision="AL1"/>
+    <OptionalEquipmentConfiguration configureSau="NO"></OptionalEquipmentConfiguration>
+    <SiteLocationConfiguration siteName="El Vergel" logicalName="URM355">
+        <SectorData sectorNumber="1" latitude="3115950" latHemisphere="SOUTH" longitude="-3289943" geoDatum="WGS84" beamDirection="50" height="2500" sectorGroup="-1" mixedModeRadio="FALSE" />
+        <SectorData sectorNumber="2" latitude="3115950" latHemisphere="SOUTH" longitude="-3289943" geoDatum="WGS84" beamDirection="150" height="2500" sectorGroup="-1" mixedModeRadio="FALSE" />
+        <SectorData sectorNumber="3" latitude="3115950" latHemisphere="SOUTH" longitude="-3289943" geoDatum="WGS84" beamDirection="340" height="2500" sectorGroup="-1" mixedModeRadio="FALSE" />
+        <SectorData sectorNumber="4" latitude="3115950" latHemisphere="SOUTH" longitude="-3289943" geoDatum="WGS84" beamDirection="20" height="2500" sectorGroup="-1" mixedModeRadio="FALSE" />
+        <SectorData sectorNumber="5" latitude="3115950" latHemisphere="SOUTH" longitude="-3289943" geoDatum="WGS84" beamDirection="140" height="2500" sectorGroup="-1" mixedModeRadio="FALSE" />
+        <SectorData sectorNumber="6" latitude="3115950" latHemisphere="SOUTH" longitude="-3289943" geoDatum="WGS84" beamDirection="340" height="2500" sectorGroup="-1" mixedModeRadio="FALSE" />
+    </SiteLocationConfiguration>
+    <SectorCapabilitySettings>
+        <SectorCapability sectorNumber="1" sectorSequenceNumber="1" radioBuildingBlock="RBB12_1A" cpriLineRate="Ox2" primaryPortId="BU1_A" auUnitType="RRUWRRUS" />
+        <SectorCapability sectorNumber="2" sectorSequenceNumber="1" radioBuildingBlock="RBB12_1A" cpriLineRate="Ox2" primaryPortId="BU1_B" auUnitType="RRUWRRUS" />
+        <SectorCapability sectorNumber="3" sectorSequenceNumber="1" radioBuildingBlock="RBB12_1A" cpriLineRate="Ox2" primaryPortId="BU1_C" auUnitType="RRUWRRUS" />
+
+    </SectorCapabilitySettings>
+    <SectorEquipmentConfiguration>
+        <TmaConfiguration>
+            <TmaSector sectorNumber="1" tmaType="NONE" tmaType2="NONE" tmaType3="NONE" typeOfRet="NONE" typeOfRet2="NONE" typeOfRet3="NONE" riuInstalled="NO" riuInstalled2="NO" currentLowSupervision_A="ON" currentLowSupervision_B="ON" currentLowSupervision_C="ON" currentLowSupervision_D="ON" />
+            <TmaSector sectorNumber="2" tmaType="NONE" tmaType2="NONE" tmaType3="NONE" typeOfRet="NONE" typeOfRet2="NONE" typeOfRet3="NONE" riuInstalled="NO" riuInstalled2="NO" currentLowSupervision_A="ON" currentLowSupervision_B="ON" currentLowSupervision_C="ON" currentLowSupervision_D="ON" />
+            <TmaSector sectorNumber="3" tmaType="NONE" tmaType2="NONE" tmaType3="NONE" typeOfRet="NONE" typeOfRet2="NONE" typeOfRet3="NONE" riuInstalled="NO" riuInstalled2="NO" currentLowSupervision_A="ON" currentLowSupervision_B="ON" currentLowSupervision_C="ON" currentLowSupervision_D="ON" />
+            <TmaSector sectorNumber="4" tmaType="NONE" typeOfRet="ARETU" riuInstalled="YES" currentLowSupervision_A="ON" currentLowSupervision_B="ON" currentLowSupervision_C="ON" currentLowSupervision_D="ON" />
+            <TmaSector sectorNumber="5" tmaType="NONE" typeOfRet="ARETU" riuInstalled="YES" currentLowSupervision_A="ON" currentLowSupervision_B="ON" currentLowSupervision_C="ON" currentLowSupervision_D="ON" />
+            <TmaSector sectorNumber="6" tmaType="NONE" typeOfRet="ARETU" riuInstalled="YES" currentLowSupervision_A="ON" currentLowSupervision_B="ON" currentLowSupervision_C="ON" currentLowSupervision_D="ON" />
+        </TmaConfiguration>
+        <AntennaConfiguration>
+            <AntennaSector sectorNumber="1" antennaType="99" band="2" beamDirection="50" mechanicalTilt="30" electricalTilt="0" fqBandHighEdgeBranchA="19400" fqBandLowEdgeBranchA="19300" fqBandHighEdgeBranchB="19400" fqBandLowEdgeBranchB="19300" fqBandHighEdgeBranchC="" fqBandLowEdgeBranchC="" fqBandHighEdgeBranchD="" fqBandLowEdgeBranchD="" fqBandHighEdgeBranchE="" fqBandLowEdgeBranchE="" fqBandHighEdgeBranchF="" fqBandLowEdgeBranchF="" dlFeederAttenuationBranchA="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" ulFeederAttenuationBranchA="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" dlFeederDelayBranchA="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" ulFeederDelayBranchA="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" dlFeederAttenuationBranchB="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" ulFeederAttenuationBranchB="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" dlFeederDelayBranchB="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" ulFeederDelayBranchB="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" dlFeederAttenuationBranchC="" ulFeederAttenuationBranchC="" dlFeederDelayBranchC="" ulFeederDelayBranchC="" dlFeederAttenuationBranchD="" ulFeederAttenuationBranchD="" dlFeederDelayBranchD="" ulFeederDelayBranchD="" sectorOutputPower="-1" />
+            <AntennaSector sectorNumber="2" antennaType="99" band="2" beamDirection="150" mechanicalTilt="20" electricalTilt="0" fqBandHighEdgeBranchA="19400" fqBandLowEdgeBranchA="19300" fqBandHighEdgeBranchB="19400" fqBandLowEdgeBranchB="19300" fqBandHighEdgeBranchC="" fqBandLowEdgeBranchC="" fqBandHighEdgeBranchD="" fqBandLowEdgeBranchD="" fqBandHighEdgeBranchE="" fqBandLowEdgeBranchE="" fqBandHighEdgeBranchF="" fqBandLowEdgeBranchF="" dlFeederAttenuationBranchA="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" ulFeederAttenuationBranchA="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" dlFeederDelayBranchA="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" ulFeederDelayBranchA="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" dlFeederAttenuationBranchB="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" ulFeederAttenuationBranchB="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" dlFeederDelayBranchB="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" ulFeederDelayBranchB="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" dlFeederAttenuationBranchC="" ulFeederAttenuationBranchC="" dlFeederDelayBranchC="" ulFeederDelayBranchC="" dlFeederAttenuationBranchD="" ulFeederAttenuationBranchD="" dlFeederDelayBranchD="" ulFeederDelayBranchD="" sectorOutputPower="-1" />
+            <AntennaSector sectorNumber="3" antennaType="99" band="2" beamDirection="340" mechanicalTilt="20" electricalTilt="0" fqBandHighEdgeBranchA="19400" fqBandLowEdgeBranchA="19300" fqBandHighEdgeBranchB="19400" fqBandLowEdgeBranchB="19300" fqBandHighEdgeBranchC="" fqBandLowEdgeBranchC="" fqBandHighEdgeBranchD="" fqBandLowEdgeBranchD="" fqBandHighEdgeBranchE="" fqBandLowEdgeBranchE="" fqBandHighEdgeBranchF="" fqBandLowEdgeBranchF="" dlFeederAttenuationBranchA="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" ulFeederAttenuationBranchA="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" dlFeederDelayBranchA="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" ulFeederDelayBranchA="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" dlFeederAttenuationBranchB="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" ulFeederAttenuationBranchB="5,5,5,5,5,5,5,5,5,5,5,5,-1,-1,-1" dlFeederDelayBranchB="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" ulFeederDelayBranchB="15,15,15,15,15,15,15,15,15,15,15,15,-1,-1,-1" dlFeederAttenuationBranchC="" ulFeederAttenuationBranchC="" dlFeederDelayBranchC="" ulFeederDelayBranchC="" dlFeederAttenuationBranchD="" ulFeederAttenuationBranchD="" dlFeederDelayBranchD="" ulFeederDelayBranchD="" sectorOutputPower="-1" />
+            <AntennaSector sectorNumber="4" antennaType="5" band="8" beamDirection="20" mechanicalTilt="50" electricalTilt="100" fqBandHighEdgeBranchA="9571" fqBandLowEdgeBranchA="9471" fqBandHighEdgeBranchB="9571" fqBandLowEdgeBranchB="9471" fqBandHighEdgeBranchC="" fqBandLowEdgeBranchC="" fqBandHighEdgeBranchD="" fqBandLowEdgeBranchD="" fqBandHighEdgeBranchE="" fqBandLowEdgeBranchE="" fqBandHighEdgeBranchF="" fqBandLowEdgeBranchF="" dlFeederAttenuationBranchA="20,20,20,20,20,20,20,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederAttenuationBranchA="20,20,20,20,20,20,20,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederDelayBranchA="61,61,61,61,61,61,61,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederDelayBranchA="61,61,61,61,61,61,61,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederAttenuationBranchB="20,20,20,20,20,20,20,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederAttenuationBranchB="20,20,20,20,20,20,20,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederDelayBranchB="61,61,61,61,61,61,61,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederDelayBranchB="61,61,61,61,61,61,61,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederAttenuationBranchC="" ulFeederAttenuationBranchC="" dlFeederDelayBranchC="" ulFeederDelayBranchC="" dlFeederAttenuationBranchD="" ulFeederAttenuationBranchD="" dlFeederDelayBranchD="" ulFeederDelayBranchD="" sectorOutputPower="-1" />
+            <AntennaSector sectorNumber="5" antennaType="5" band="8" beamDirection="140" mechanicalTilt="50" electricalTilt="100" fqBandHighEdgeBranchA="9571" fqBandLowEdgeBranchA="9471" fqBandHighEdgeBranchB="9571" fqBandLowEdgeBranchB="9471" fqBandHighEdgeBranchC="" fqBandLowEdgeBranchC="" fqBandHighEdgeBranchD="" fqBandLowEdgeBranchD="" fqBandHighEdgeBranchE="" fqBandLowEdgeBranchE="" fqBandHighEdgeBranchF="" fqBandLowEdgeBranchF="" dlFeederAttenuationBranchA="23,23,23,23,23,23,23,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederAttenuationBranchA="23,23,23,23,23,23,23,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederDelayBranchA="87,87,87,87,87,87,87,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederDelayBranchA="87,87,87,87,87,87,87,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederAttenuationBranchB="23,23,23,23,23,23,23,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederAttenuationBranchB="23,23,23,23,23,23,23,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederDelayBranchB="87,87,87,87,87,87,87,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederDelayBranchB="87,87,87,87,87,87,87,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederAttenuationBranchC="" ulFeederAttenuationBranchC="" dlFeederDelayBranchC="" ulFeederDelayBranchC="" dlFeederAttenuationBranchD="" ulFeederAttenuationBranchD="" dlFeederDelayBranchD="" ulFeederDelayBranchD="" sectorOutputPower="-1" />
+            <AntennaSector sectorNumber="6" antennaType="5" band="8" beamDirection="340" mechanicalTilt="50" electricalTilt="100" fqBandHighEdgeBranchA="9571" fqBandLowEdgeBranchA="9471" fqBandHighEdgeBranchB="9571" fqBandLowEdgeBranchB="9471" fqBandHighEdgeBranchC="" fqBandLowEdgeBranchC="" fqBandHighEdgeBranchD="" fqBandLowEdgeBranchD="" fqBandHighEdgeBranchE="" fqBandLowEdgeBranchE="" fqBandHighEdgeBranchF="" fqBandLowEdgeBranchF="" dlFeederAttenuationBranchA="18,18,18,18,18,18,18,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederAttenuationBranchA="18,18,18,18,18,18,18,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederDelayBranchA="38,38,38,38,38,38,38,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederDelayBranchA="38,38,38,38,38,38,38,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederAttenuationBranchB="18,18,18,18,18,18,18,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederAttenuationBranchB="18,18,18,18,18,18,18,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederDelayBranchB="38,38,38,38,38,38,38,-1,-1,-1,-1,-1,-1,-1,-1" ulFeederDelayBranchB="38,38,38,38,38,38,38,-1,-1,-1,-1,-1,-1,-1,-1" dlFeederAttenuationBranchC="" ulFeederAttenuationBranchC="" dlFeederDelayBranchC="" ulFeederDelayBranchC="" dlFeederAttenuationBranchD="" ulFeederAttenuationBranchD="" dlFeederDelayBranchD="" ulFeederDelayBranchD="" sectorOutputPower="-1" />
+        </AntennaConfiguration>
+        <RetConfiguration>
+            <RetProfile antennaType="100" retType="1" minTilt="25" maxTilt="120" retParam1="0" retParam2="0" retParam3="0" retParam4="0" retParam5="0" retParam6="0" retParam7="0" retParam8="0" checkSum="3331" />
+            <RetProfile antennaType="99" retType="1" minTilt="20" maxTilt="120" retParam1="0" retParam2="0" retParam3="0" retParam4="0" retParam5="0" retParam6="0" retParam7="0" retParam8="0" checkSum="31040" />
+            <RetProfile antennaType="98" retType="1" minTilt="20" maxTilt="140" retParam1="0" retParam2="0" retParam3="0" retParam4="0" retParam5="0" retParam6="0" retParam7="0" retParam8="0" checkSum="17619" />
+          <RetProfile antennaType="2" retType="1" minTilt="0" maxTilt="60"  retParam1="0" retParam2="0" retParam3="0" retParam4="0" retParam5="0" retParam6="0" retParam7="0" retParam8="0" checkSum="15351" />
+            <RetProfile antennaType="5" retType="1" minTilt="0" maxTilt="100" retParam1="0" retParam2="0" retParam3="0" retParam4="0" retParam5="0" retParam6="0" retParam7="0" retParam8="0" checkSum="37098" />
+        </RetConfiguration>
+        <InitiateSectorsConfiguration>
+            <InitiatedSector sectorNumber="1" antennaSupervisionBranchA="0" antennaSupervisionBranchB="0" antennaSupervisionBranchC="0" antennaSupervisionBranchD="0" antennaSupervisionBranchE="0" antennaSupervisionBranchF="0" />
+            <InitiatedSector sectorNumber="2" antennaSupervisionBranchA="0" antennaSupervisionBranchB="0" antennaSupervisionBranchC="0" antennaSupervisionBranchD="0" antennaSupervisionBranchE="0" antennaSupervisionBranchF="0" />
+            <InitiatedSector sectorNumber="3" antennaSupervisionBranchA="0" antennaSupervisionBranchB="0" antennaSupervisionBranchC="0" antennaSupervisionBranchD="0" antennaSupervisionBranchE="0" antennaSupervisionBranchF="0" />
+            <InitiatedSector sectorNumber="4" antennaSupervisionBranchA="0" antennaSupervisionBranchB="0" antennaSupervisionBranchC="0" antennaSupervisionBranchD="0" antennaSupervisionBranchE="0" antennaSupervisionBranchF="0" />
+            <InitiatedSector sectorNumber="5" antennaSupervisionBranchA="0" antennaSupervisionBranchB="0" antennaSupervisionBranchC="0" antennaSupervisionBranchD="0" antennaSupervisionBranchE="0" antennaSupervisionBranchF="0" />
+            <InitiatedSector sectorNumber="6" antennaSupervisionBranchA="0" antennaSupervisionBranchB="0" antennaSupervisionBranchC="0" antennaSupervisionBranchD="0" antennaSupervisionBranchE="0" antennaSupervisionBranchF="0" />
+        </InitiateSectorsConfiguration>
+        <LocalCellConfiguration carrierAllocationMode="Flexible">
+            <Sector sectorNumber="1">
+                <Cell cellNumber="1" cellCreated="YES" cellIdentity="53551" cellRange="35000" baseBandPoolId="1" numberOfTxBranches="1" numberOfRxBranches="2" />
+            </Sector>
+            <Sector sectorNumber="2">
+                <Cell cellNumber="1" cellCreated="YES" cellIdentity="53552" cellRange="35000" baseBandPoolId="1" numberOfTxBranches="1" numberOfRxBranches="2" />
+            </Sector>
+            <Sector sectorNumber="3">
+                <Cell cellNumber="1" cellCreated="YES" cellIdentity="53553" cellRange="35000" baseBandPoolId="1" numberOfTxBranches="1" numberOfRxBranches="2" />
+            </Sector>
+            <Sector sectorNumber="4">
+                <Cell cellNumber="1" cellCreated="YES" cellIdentity="03551" cellRange="35000" baseBandPoolId="1" numberOfTxBranches="1" numberOfRxBranches="2" />
+            </Sector>
+            <Sector sectorNumber="5">
+                <Cell cellNumber="1" cellCreated="YES" cellIdentity="03552" cellRange="35000" baseBandPoolId="1" numberOfTxBranches="1" numberOfRxBranches="2" />
+            </Sector>
+            <Sector sectorNumber="6">
+                <Cell cellNumber="1" cellCreated="YES" cellIdentity="03553" cellRange="35000" baseBandPoolId="1" numberOfTxBranches="1" numberOfRxBranches="2" />
+            </Sector>
+        </LocalCellConfiguration>
+    </SectorEquipmentConfiguration>
+    <HsdpaSettings steeredHsAllocation="FALSE">
+        <HsdpaSlot slot="1" numHsCodeResources="3" />
+    </HsdpaSettings>
+    <EulSettings>
+        <EulSlot slot="1" numEulResources="1" />
+    </EulSettings>
+</Site>
