@@ -974,8 +974,7 @@ def generate_parametros_duw_txt(
                         mml_output.append(f"{val}")
                         mml_output.append("")
 
-                        mml_output.append(f"{val}")
-                        mml_output.append("")
+
 
         # ==================================================================
         # SECCIÓN 17: Final Static
