@@ -8,6 +8,17 @@ import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
 
+
+# ====================================================================
+# === 1. CONFIGURACIÓN INICIAL Y ESTILO (Estilo de píldora mantenido) ===
+# ====================================================================
+
+st.set_page_config(
+    page_title="Generador de Scripts - Proyecto 4G/5G",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 # ====================================================================
 # === IMPORTAR LÓGICA DE NEGOCIO (REQUIERE generator_logic.py) ===
 # ====================================================================
@@ -15,9 +26,89 @@ try:
     from generator_logic import generar_archivos_zip
     from generator_logic_5G import generar_archivos_zip_5g
     from generator_logic_relation import generar_archivos_relation
+    from generator_logic_relation import generar_archivos_relation
+    from generator_logic_router import generar_archivos_r6k
 except ImportError as e:
     st.error(f"🚨 Error crítico: No se encuentra el archivo de lógica de generación: {e}")
     st.stop()
+
+
+# --- LISTAS ESTATICAS REQUERIDAS ---
+REGIONES_CHILE = [
+    "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI"
+]
+# MODIFICACIÓN CLAVE: Se reemplaza la lista de opciones por la única opción fija
+CONFIGURACIONES = ["Configuración Básica A-B-C (Fija)"] 
+CONFIGURACIONES_3G = ["Configuración Básica 3G"]
+
+# ... (omitted lines) ...
+
+# ====================================================================
+# === 2. BARRA LATERAL ===
+# ====================================================================
+with st.sidebar:
+    st.markdown("<h3 style='text-align: center; color: #007bff;'>🚀 Tipo de Script</h3>", unsafe_allow_html=True)
+    script_selection = st.radio(
+        "Elige la tecnología:",
+        ('Script 4G', 'Script 5G', 'Script 3G', 'ATND BB', 'Relation LTE->3G', 'Script R6K'),
+        index=0,
+        key='sidebar_selection_v4_4'
+    )
+
+# ... (omitted lines) ...
+
+# ====================================================================
+# === FUNCIÓN CALLBACK PARA SUBMIT SCRIPT R6K ===
+# ====================================================================
+def handle_form_submit_r6k(atnd_file):
+    """Ejecuta la lógica de generación de scripts R6K."""
+    print("DEBUG: handle_form_submit_r6k CALLED")
+    
+    st.session_state['generated_data_r6k'] = None
+    
+    # Recoger variables del formulario
+    try:
+        nemonico = st.session_state['nemonico_input_r6k_v1']
+    except KeyError:
+        st.session_state['generated_data_r6k'] = {'error': "Error: No se encontró el Némónico. Intente recargar la página."}
+        return
+
+    if not nemonico:
+        st.session_state['generated_data_r6k'] = {'error': "Falta el némónico"}
+        return
+
+    if not atnd_file:
+        st.session_state['generated_data_r6k'] = {'error': "Falta el archivo ATND"}
+        return
+
+    # LLAMADA A GENERADOR R6K
+    print("DEBUG: Calling generar_archivos_r6k...")
+    with st.spinner('✨ Procesando archivo y generando Script R6K...'):
+        zip_data, zip_filename, generated_content = generar_archivos_r6k(
+            nemonico=nemonico.upper(),
+            atnd_file=atnd_file
+        )
+
+    # Guardar Resultados
+    if zip_data:
+        st.session_state['generated_data_r6k'] = {
+            'zip_data': zip_data,
+            'zip_filename': zip_filename,
+            'all_content': generated_content
+        }
+    else:
+        error_msg = generated_content if isinstance(generated_content, str) else 'Error al generar archivo'
+        st.session_state['generated_data_r6k'] = {'error': error_msg}
+
+
+# ... (omitted lines) ...
+
+if 'generated_data_r6k' not in st.session_state:
+    st.session_state['generated_data_r6k'] = None
+
+# ... (omitted lines) ...
+
+
 
 
 # --- LISTAS ESTATICAS REQUERIDAS ---
@@ -72,7 +163,8 @@ CONFIGURACIONES_3G_DUW = [
     "16.Create_Site_Equipment_URM355_in_SAER06.xml",
     "UGE643_cabinet.xml",
     "URM643_cabinet.xml",
-    "URM643_site_2Tx.xml"
+    "URM643_site_2Tx.xml",
+    "site_6x1_DUW.xml"
 ]
 
 if 'generated_data' not in st.session_state:
@@ -89,6 +181,9 @@ if 'generated_data_atnd' not in st.session_state:
 
 if 'generated_data_relation' not in st.session_state:
     st.session_state['generated_data_relation'] = None
+
+if 'generated_data_r6k' not in st.session_state:
+    st.session_state['generated_data_r6k'] = None
 
 # ====================================================================
 # === FUNCIÓN CALLBACK PARA EL BOTÓN DE SUBMIT (CORREGIDA - RND ÚNICO) ===
@@ -333,15 +428,96 @@ def handle_form_submit_relation(relation_file):
         st.session_state['generated_data_relation'] = {'error': error_msg}
 
 
-# ====================================================================
-# === 1. CONFIGURACIÓN INICIAL Y ESTILO (Estilo de píldora mantenido) ===
-# ====================================================================
 
-st.set_page_config(
-    page_title="Generador de Scripts - Proyecto 4G/5G",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
+# ====================================================================
+# === FUNCIÓN CALLBACK PARA ANÁLISIS SCRIPT R6K (PASO 1) ===
+# ====================================================================
+def handle_analyze_r6k(atnd_file, nemonico_input):
+    """
+    PASO 1: Analiza el archivo ATND y extrae información del router.
+    """
+    print("DEBUG: handle_analyze_r6k CALLED")
+    from generator_logic_router import analizar_atnd_router
+    
+    # Limpiar resultados anteriores
+    st.session_state['router_analysis'] = None
+    st.session_state['generated_data_r6k'] = None
+    
+    if not atnd_file:
+        st.session_state['router_analysis'] = {'error': "Por favor, cargue un archivo ATND"}
+        return
+    
+    if not nemonico_input:
+        st.session_state['router_analysis'] = {'error': "Por favor, ingrese el némónico"}
+        return
+    
+    # Analizar ATND
+    print("DEBUG: Analyzing ATND file...")
+    with st.spinner('🔍 Analizando archivo ATND...'):
+        info, error = analizar_atnd_router(atnd_file)
+    
+    if error:
+        st.session_state['router_analysis'] = {'error': error}
+    else:
+        # Guardar nemonico del input del usuario (prioridad sobre el detectado)
+        info['nemonico_input'] = nemonico_input.upper()
+        # Guardar el archivo para el Paso 2
+        info['atnd_file'] = atnd_file
+        st.session_state['router_analysis'] = info
+        print(f"DEBUG: Analysis successful - Type: {info['vlan_type']}, Nemonico: {info['nemonico']}")
+
+
+# ====================================================================
+# === FUNCIÓN CALLBACK PARA GENERACIÓN SCRIPT R6K (PASO 2) ===
+# ====================================================================
+def handle_generate_r6k(vlan_type_selected):
+    """
+    PASO 2: Genera los scripts R6K con el tipo de VLAN seleccionado.
+    """
+    print(f"DEBUG: handle_generate_r6k CALLED with vlan_type={vlan_type_selected}")
+    
+    st.session_state['generated_data_r6k'] = None
+    
+    # Recuperar información del análisis
+    if 'router_analysis' not in st.session_state or not st.session_state['router_analysis']:
+        st.session_state['generated_data_r6k'] = {'error': "Error: Primero debe analizar el archivo ATND"}
+        return
+    
+    analysis = st.session_state['router_analysis']
+    
+    # Verificar que tengamos el archivo ATND guardado
+    if 'atnd_file' not in analysis:
+        st.session_state['generated_data_r6k'] = {'error': "Error: Archivo ATND no disponible. Por favor, analice nuevamente."}
+        return
+    
+    nemonico = analysis['nemonico_input']
+    atnd_file = analysis['atnd_file']
+    
+    # LLAMADA A GENERADOR R6K con VLAN type explícito
+    print(f"DEBUG: Generating scripts with VLAN type: {vlan_type_selected}")
+    with st.spinner(f'✨ Generando Script R6K ({vlan_type_selected})...'):
+        zip_data, zip_filename, generated_content = generar_archivos_r6k(
+            nemonico=nemonico,
+            atnd_file=atnd_file,
+            vlan_type=vlan_type_selected
+        )
+    
+    # Guardar Resultados
+    if zip_data:
+        st.session_state['generated_data_r6k'] = {
+            'zip_data': zip_data,
+            'zip_filename': zip_filename,
+            'all_content': generated_content,
+            'vlan_type_used': vlan_type_selected
+        }
+        print("DEBUG: Scripts generated successfully")
+    else:
+        error_msg = generated_content if isinstance(generated_content, str) else 'Error al generar archivo'
+        st.session_state['generated_data_r6k'] = {'error': error_msg}
+        print(f"DEBUG: Generation failed: {error_msg}")
+
+
+
 
 # ====================================================================
 # === AUTHENTICATION SETUP ===
@@ -451,14 +627,7 @@ div[role="radiogroup"] > label:has(input:checked) {
 # ====================================================================
 # === 2. BARRA LATERAL ===
 # ====================================================================
-with st.sidebar:
-    st.markdown("<h3 style='text-align: center; color: #007bff;'>🚀 Tipo de Script</h3>", unsafe_allow_html=True)
-    script_selection = st.radio(
-        "Elige la tecnología:",
-        ('Script 4G', 'Script 5G', 'Script 3G', 'ATND BB', 'Relation LTE->3G'),
-        index=0,
-        key='sidebar_selection_v4_4'
-    )
+
 
 # ====================================================================
 # === 3. CONTENIDO PRINCIPAL ===
@@ -1102,4 +1271,173 @@ elif script_selection == 'Relation LTE->3G':
     col_recharge_relation, _, _ = st.columns([1, 2, 1])
     with col_recharge_relation:
         if st.button("Limpiar Formulario (Reiniciar)", help="Reinicia la aplicación para limpiar todos los campos.", key='recharge_button_relation_v1'):
+            st.rerun()
+
+
+elif script_selection == 'Script R6K':
+    
+    st.markdown("<h3 style='color: #007bff;'>🔧 Generador de Script R6K - Flujo Profesional</h3>", unsafe_allow_html=True)
+    st.markdown("**Nuevo flujo en 2 pasos**: Primero analiza el ATND, luego selecciona el tipo de VLAN para generar.")
+    st.markdown("---")
+    
+    # ===================================================================
+    # PASO 1: ANALIZAR ATND
+    # ===================================================================
+    st.subheader("📋 Paso 1: Analizar Archivo ATND")
+    
+    with st.form(key='r6k_analyze_form_v2', clear_on_submit=False):
+        col1, col2, _ = st.columns([2, 2, 1])
+        
+        with col1:
+            nemonico_input_r6k = st.text_input(
+                "Némónico del Router", 
+                placeholder="Ej: BI919, AN163", 
+                key='nemonico_input_r6k_v2',
+                help="Ingrese el némónico del router (se detectará automáticamente pero puede sobrescribirse)"
+            )
+            
+        with col2:
+            atnd_file_r6k = st.file_uploader(
+                "Cargar Archivo ATND (Excel)", 
+                type=['xlsx', 'xls'], 
+                key='atnd_uploader_r6k_v2',
+                help="Archivo ATND del router en formato Excel"
+            )
+        
+        # Botón de análisis
+        analyze_button = st.form_submit_button(
+            label='🔍 Analizar ATND',
+            help="Analiza el archivo para detectar tipo de VLAN y parámetros",
+            type="primary",
+            on_click=handle_analyze_r6k,
+            args=(atnd_file_r6k, nemonico_input_r6k)
+        )
+    
+    # ===================================================================
+    # MOSTRAR RESULTADOS DEL ANÁLISIS
+    # ===================================================================
+    st.markdown("---")
+    
+    if st.session_state.get('router_analysis'):
+        analysis = st.session_state['router_analysis']
+        
+        # Verificar si hay error
+        if 'error' in analysis:
+            st.error(f"❌ {analysis['error']}")
+        else:
+            st.success("✅ Archivo ATND analizado correctamente")
+            
+            # Mostrar información detectada
+            col_info1, col_info2, col_info3 = st.columns(3)
+            
+            with col_info1:
+                st.metric(
+                    label="📡 Némónico Detectado",
+                    value=analysis.get('nemonico', 'NO_DETECTADO')
+                )
+            
+            with col_info2:
+                st.metric(
+                    label="🏷️ Nombre del Router",
+                    value=analysis.get('router_name', 'NO_DETECTADO')
+                )
+            
+            with col_info3:
+                vlan_type_display = analysis.get('vlan_type_display', 'Unknown')
+                # Color verde para Master, azul para All
+                color = "#28a745" if analysis.get('vlan_type') == 'MASTER_VLAN' else "#007bff"
+                st.markdown(
+                    f"<div style='padding: 10px; background-color: {color}20; border-radius: 5px; border-left: 4px solid {color};'>"
+                    f"<p style='margin:0; color: #666; font-size: 14px;'>🔖 Tipo Detectado</p>"
+                    f"<p style='margin:0; color: {color}; font-size: 24px; font-weight: bold;'>{vlan_type_display}</p>"
+                    f"</div>",
+                    unsafe_allow_html=True
+                )
+            
+            # ===================================================================
+            # PASO 2: SELECCIONAR TIPO Y GENERAR
+            # ===================================================================
+            st.markdown("---")
+            st.subheader("⚙️ Paso 2: Seleccionar Tipo de VLAN y Generar Script")
+            
+            st.info(
+                "💡 **Información**: Puedes generar scripts para ambos tipos de VLAN. "
+                "El tipo detectado es solo una sugerencia basada en el ATND."
+            )
+            
+            col_btn1, col_btn2, _ = st.columns([1, 1, 1])
+            
+            with col_btn1:
+                if st.button(
+                    "🟢 Generar Master VLAN Script",
+                    key='btn_master_vlan_v2',
+                    help="Genera script usando la hoja 'Layer 2 MASTER VLAN'",
+                    use_container_width=True
+                ):
+                    handle_generate_r6k("MASTER_VLAN")
+                    st.rerun()
+            
+            with col_btn2:
+                if st.button(
+                    "🔵 Generar All VLAN Script",
+                    key='btn_all_vlan_v2',
+                    help="Genera script usando la hoja 'Layer 2 ALL CLIENT'",
+                    use_container_width=True
+                ):
+                    handle_generate_r6k("ALL_VLAN")
+                    st.rerun()
+    
+    # ===================================================================
+    # RESULTADOS DE LA GENERACIÓN
+    # ===================================================================
+    st.markdown("---")
+    
+    if st.session_state.get('generated_data_r6k'):
+        data = st.session_state['generated_data_r6k']
+        
+        if 'error' in data:
+            st.error(f"❌ {data['error']}")
+        elif 'zip_data' in data:
+            # Mostrar información del script generado
+            vlan_type_used = data.get('vlan_type_used', 'UNKNOWN')
+            vlan_display = "Master VLAN" if vlan_type_used == "MASTER_VLAN" else "All VLAN"
+            
+            analysis = st.session_state.get('router_analysis', {})
+            nemonico_used = analysis.get('nemonico_input', 'ROUTER')
+            
+            st.success(f"✅ ¡Scripts R6K ({vlan_display}) generados con éxito para **{nemonico_used}**!")
+            
+            # Botón de descarga
+            col_download, _, _ = st.columns([1, 2, 1])
+            with col_download:
+                st.download_button(
+                    label=f"⬇️ Descargar ZIP {vlan_display}",
+                    data=data['zip_data'],
+                    file_name=data['zip_filename'],
+                    mime="application/zip",
+                    type="secondary"
+                )
+            
+            # DEBUG EXPANDER
+            with st.expander("🔍 Ver Contenido Generado (Debug)"):
+                if 'basic_script' in data['all_content']:
+                    st.markdown(f"**Script_Basic_{nemonico_used}.txt**")
+                    st.code(data['all_content']['basic_script'], language='text')
+                    
+                if 'advanced_script' in data['all_content']:
+                    vlan_suffix = "MASTER" if vlan_type_used == "MASTER_VLAN" else "ALL"
+                    st.markdown(f"**SCRIPT_ADVANCED_{vlan_suffix}_{nemonico_used}.txt**")
+                    st.code(data['all_content']['advanced_script'], language='text')
+    
+    # LIMPIAR / REINICIAR
+    st.markdown("---")
+    col_recharge_r6k, _, _ = st.columns([1, 2, 1])
+    with col_recharge_r6k:
+        if st.button(
+            "🔄 Limpiar y Reiniciar", 
+            help="Limpia todos los datos y comienza de nuevo",
+            key='recharge_button_r6k_v2'
+        ):
+            st.session_state['router_analysis'] = None
+            st.session_state['generated_data_r6k'] = None
             st.rerun()
