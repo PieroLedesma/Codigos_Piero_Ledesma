@@ -26,6 +26,8 @@ from functions_3G.oam_generator_3G import generate_oam_xml
 from functions_3G.hw_xml_customizer import customize_hw_xml
 from functions_3G.iub_generator_duw import generate_iub_duw_mo
 from functions_3G.parametros_generator_duw import generate_parametros_duw_txt
+from functions_3G.generador_Siteeqm import generar_site_equipment_auto
+
 
 # ===========================================================================
 # FUNCIÓN PRINCIPAL: Generar archivos ZIP para 3G
@@ -90,6 +92,10 @@ def generar_archivos_zip_3g(
         xml_oam = ""
         mo_iub = ""  # Inicializar IUB MO (solo para DUW)
         txt_parametros = ""  # Inicializar parámetros TXT (solo para DUW)
+        
+        # Inicializar variables de contenido opcional
+        xml_site_equipment_auto = ""
+        hw_template_content = ""
         
         # ===== 2. GENERAR CONTENIDOS XML Y MOS =====
         # SOLO para modo BB - En modo DUW solo se genera OAM
@@ -529,32 +535,52 @@ def generar_archivos_zip_3g(
                 else:
                     print(f"WARNING: Could not generate parametros TXT")
                 
-                # Agregar archivo de configuración HW_DUW seleccionado
+                # Agregar archivo de configuración HW_DUW seleccionado o generar automático
                 import os
-                hw_duw_path = os.path.join(
-                    os.path.dirname(os.path.dirname(__file__)),  # Retroceder a la raíz del proyecto
-                    "HW_DUW",
-                    "SITE_2022",
-                    configuracion  # configuracion contiene el nombre del archivo (ej: "00.SITE_3x1_RRU_3G900_CON_RETU.xml")
-                )
                 
-                print(f"DEBUG: Reading HW configuration from: {hw_duw_path}")
+                xml_site_equipment_auto = "" # Reiniciar para DUW
                 
-                if os.path.exists(hw_duw_path):
-                    with open(hw_duw_path, 'r', encoding='utf-8') as f:
-                        hw_config_content = f.read()
-                    
-                    # TODO: Personalización de XML deshabilitada temporalmente
-                    # En el futuro, se personalizará con datos del RND (nemonico, lat/lon, azimut, etc.)
-                    
-                    # Agregar al ZIP usando contenido original del template
-                    zip_file.writestr(
-                        f"{carpeta_nodo_duw}01_{configuracion}",
-                        hw_config_content.encode('utf-8')
+                if configuracion == "Automático":
+                    print("DEBUG: Generating automatic Site Equipment...")
+                    success_seqm, xml_seqm, filename_seqm = generar_site_equipment_auto(
+                        nemonico=nemonico_upper,
+                        wsh_data=wsh_data,
+                        rnd_data=rnd_data
                     )
-                    print(f"DEBUG: Added HW configuration file: {configuracion}")
+                    if success_seqm:
+                        xml_site_equipment_auto = xml_seqm
+                        # Usar el nombre retornado (ya incluye el 00_) y sin prefijo adicional
+                        zip_file.writestr(
+                            f"{carpeta_nodo_duw}{filename_seqm}",
+                            xml_seqm.encode('utf-8')
+                        )
+                        print(f"DEBUG: Added automatic Site Equipment file: {filename_seqm}")
+                    else:
+                        print(f"WARNING: Could not generate automatic Site Equipment")
                 else:
-                    print(f"WARNING: HW configuration file not found: {hw_duw_path}")
+                    # Lógica existente para archivos estáticos
+                    hw_duw_path = os.path.join(
+                        os.path.dirname(os.path.dirname(__file__)),  # Retroceder a la raíz del proyecto
+                        "HW_DUW",
+                        "SITE_2022",
+                        configuracion  # configuracion contiene el nombre del archivo (ej: "00.SITE_3x1_RRU_3G900_CON_RETU.xml")
+                    )
+                    
+                    print(f"DEBUG: Reading HW configuration from: {hw_duw_path}")
+                    
+                    if os.path.exists(hw_duw_path):
+                        with open(hw_duw_path, 'r', encoding='utf-8') as f:
+                            hw_template_content = f.read()
+                        
+                        # Agregar al ZIP usando contenido original del template
+                        zip_file.writestr(
+                            f"{carpeta_nodo_duw}01_{configuracion}",
+                            hw_template_content.encode('utf-8')
+                        )
+                        print(f"DEBUG: Added HW configuration file: {configuracion}")
+                    else:
+                        print(f"WARNING: HW configuration file not found: {hw_duw_path}")
+
                 
                 # Agregar carpeta de RNC en modo DUW también
                 if success_rnc:
@@ -614,10 +640,14 @@ def generar_archivos_zip_3g(
             '10_OAM_XML': xml_oam if tipo_3g == "DUW" else "",  # Solo para DUW
             '11_HW_Config': configuracion if tipo_3g == "DUW" else "",  # Solo para DUW
             '12_IUB_MO': mo_iub if tipo_3g == "DUW" and 'mo_iub' in locals() else "",  # Solo para DUW
-            '13_PARAMETROS_TXT': txt_parametros if tipo_3g == "DUW" else ""  # Solo para DUW
+            '13_PARAMETROS_TXT': txt_parametros if tipo_3g == "DUW" else "",  # Solo para DUW
+            '14_SITE_EQUIPMENT_AUTO_XML': xml_site_equipment_auto if tipo_3g == "DUW" and configuracion == "Automático" else "",
+            '15_HW_TEMPLATE_CONTENT': hw_template_content if tipo_3g == "DUW" and configuracion != "Automático" else ""
         }
         
         return zip_bytes, zip_filename, all_content
         
     except Exception as e:
-        return None, "", {'error': f'Error inesperado durante la generación: {str(e)}'}
+        error_msg = f"Error inesperado durante la generación: {str(e)}"
+        print(f"ERROR: {error_msg}")
+        return None, error_msg, {'error': error_msg}

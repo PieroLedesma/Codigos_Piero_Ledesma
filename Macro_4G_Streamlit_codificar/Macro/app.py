@@ -121,6 +121,7 @@ CONFIGURACIONES_3G = ["Configuración Básica 3G"]
 
 # Configuraciones 3G-DUW (archivos de la carpeta HW_DUW/SITE_2022)
 CONFIGURACIONES_3G_DUW = [
+    "Automático",
     "00.SITE_1X1_RRU_3G900.xml",
     "00.SITE_2X1_RRU_3G900.xml",
     "00.SITE_2x1_4415_CON_RETU_RHHT_BUENO.xml",
@@ -1006,7 +1007,7 @@ elif script_selection == 'Script 3G':
             )
 
         #DEBUG EXPANDER
-        with st.expander("🔍 Ver contenido de los archivos generados"):
+        with st.expander("🔍 Ver contenido de los archivos generados (Debug)"):
             # Obten el tipo seleccionado
             tipo_3g_display = st.session_state.get('tipo_3g_radio_v1', '3G-BB')
             
@@ -1042,6 +1043,11 @@ elif script_selection == 'Script 3G':
                     st.markdown(f"**00_Create_Oam_{nemonico_display}.xml**")
                     st.code(data['all_content']['10_OAM_XML'], language='xml')
                 
+                # Site Equipment Automático (luego del OAM)
+                if '14_SITE_EQUIPMENT_AUTO_XML' in data['all_content'] and data['all_content']['14_SITE_EQUIPMENT_AUTO_XML']:
+                    st.markdown(f"**00_site_equipment_{nemonico_display}.xml**")
+                    st.code(data['all_content']['14_SITE_EQUIPMENT_AUTO_XML'], language='xml')
+                
                 if '12_IUB_MO' in data['all_content'] and data['all_content']['12_IUB_MO']:
                     st.markdown(f"**01_{nemonico_display}_iub.mo**")
                     st.code(data['all_content']['12_IUB_MO'], language='text')
@@ -1052,8 +1058,12 @@ elif script_selection == 'Script 3G':
                 
                 if '11_HW_Config' in data['all_content'] and data['all_content']['11_HW_Config']:
                     hw_config_name = data['all_content']['11_HW_Config']
-                    st.markdown(f"**03_{hw_config_name}**")
-                    st.info(f"Archivo de configuración HW: {hw_config_name}")
+                    if hw_config_name != "Automático":
+                        st.markdown(f"**03_{hw_config_name}**")
+                        if '15_HW_TEMPLATE_CONTENT' in data['all_content'] and data['all_content']['15_HW_TEMPLATE_CONTENT']:
+                            st.code(data['all_content']['15_HW_TEMPLATE_CONTENT'], language='xml')
+                        else:
+                            st.info(f"Archivo de configuración HW: {hw_config_name}")
 
             # RNC (Siempre se muestra)
             if '03_RNC_IUB' in data['all_content'] and data['all_content']['03_RNC_IUB']:
